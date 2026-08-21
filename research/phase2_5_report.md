@@ -1,7 +1,10 @@
 # Phase 2.5 — Freshness and Analyst Calibration
 
 **Prepared:** 2026-08-21 · **Status:** complete. **Phase 3 not started, pending review.**
-Baseline checkpoint: `0ee89ef`. Phase 1 and Phase 2 reports are unchanged; every correction is recorded here.
+Baseline checkpoint: `0ee89ef`. Completion commit: **`984fb27af9efd984b95dabc188eaccf568cd40ee`** (`984fb27`).
+Phase 1 and Phase 2 reports are unchanged; every correction is recorded here.
+
+**Commit sequence preserved:** `c077851` Phase 1 research → `8a7b4dc` Phase 2 pipeline → `0ee89ef` Phase 2.5 freshness discovery → `984fb27` Phase 2.5 completion. Nothing was amended or squashed; the trail shows the system exposing its own weaknesses and being repaired rather than the findings being rewritten.
 
 ---
 
