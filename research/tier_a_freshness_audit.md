@@ -138,8 +138,33 @@ USAspending, accessed 2026-08-21. **Bold = material change from Phase 2.**
 
 ---
 
-## 5. Status
+## 5. Bounded freshness repair applied
 
-Completed: ARMADA freshness audit, ARMADA patent review, 3newable freshness audit, Tier-A federal-award audit, source-freshness schema and module with regression tests.
+The audit proved the staleness was fixable, so a **bounded** repair was run — not a sourcing expansion. `src/ofr/ingestion/refresh.py` re-queries USAspending **by company name for a bounded cohort only** (the 121 candidates scoring ≥11) and adds awards we did not already hold. It never creates candidates, so it cannot widen the universe.
 
-Outstanding for the remainder of Phase 2.5: tier assignment logic (A/B/C), analyst review cards, the Frontier Signals queue, the Phase 1 retrieval regression fixture, and `research/phase2_5_report.md`.
+**Result: 633 new evidence rows across 121 candidates.**
+
+Two data-integrity issues surfaced and were fixed:
+
+1. **Double counting.** The same award arrives from two sources with different punctuation and different values — the SBIR bulk file records the Navy EPADS contract as `N68335-23-C-0142` at its original $999,028; USAspending records `N6833523C0142` at its current $1,998,926. Summing both reported ARMADA's federal total as **$4.7M instead of $3.0M**. Award identifiers are now normalised and deduplicated, keeping the larger (current) value. After the fix, the generated totals match the hand-verified figures **exactly**: ARMADA $2,972,287, 3newable $2,474,731.
+2. **Phase misclassification.** A NOAA Phase I award of $174,798 was typed as Phase II because the words "phase II" appeared elsewhere in a long abstract. Award size now overrides free text below $400K. Ten rows were reclassified.
+
+## 6. Final tier outcome for the Phase 2 Tier-A cohort
+
+| Phase 2 Tier-A candidate | Phase 2.5 queue | Change |
+|---|---|---|
+| ARMADA Marine Robotics | **Tier A** | Strengthened — $2.97M verified, funded to 2028 |
+| Juice Robotics | **Tier A** | Qualified — zero federal awards; thinnest corroboration in Tier A |
+| 3newable LLC | **Tier A** | Qualified — single funder, contract ended Nov 2025 |
+| Certus Core, Inc. | Tier A *(machine)* | **Analyst override: excluded.** Defence data-platform business; ocean centrality overstated |
+| Designer Ecosystems LLC | **Tier A** | Unchanged |
+| Grow Oyster Reefs, LLC | **Tier A** | Unchanged |
+| NEXUMA L.L.C. | **Tier A** | Strengthened — Phase II now runs to 2028-06-30 |
+| Ocean Motion Technologies | **Tier C** | **Demoted.** ~$7.15M across six awards → `BEYOND_STAGE` |
+| X-HAB 3D, INC. | **Tier A** | Qualified — ~$3.98M but mostly non-marine construction work |
+
+**Materially changed: five of nine.** Two demoted or overridden, one strengthened, two qualified. That is the audit earning its place: relying on the Phase 2 shortlist unchecked would have carried a defence data company and a $7M-funded firm into diligence.
+
+## 7. Status
+
+Phase 2.5 audit complete. See `research/phase2_5_report.md` for the decision gate, `research/frontier_signals.md` for the pre-company queue, and `outputs/` for machine-readable exports.

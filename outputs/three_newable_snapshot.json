@@ -1,0 +1,302 @@
+{
+ "meta": {
+  "generated_at": "2026-08-21T16:55:32",
+  "phase": "2.5",
+  "note": "Queues allocate analyst attention. Numeric component scores are DIAGNOSTIC METADATA only, never an investment ranking. Ordering within Tier A is analyst judgment.",
+  "tier_criteria": {
+   "tier_a": "Not incidental, not established/beyond-stage, technical>=2, commercial>=2, relevance>=2, and latest signal within 24 months.",
+   "tier_b": "Relevant and not excluded, but missing one or two Tier A criteria.",
+   "tier_c": "Incidental, established/beyond-stage, dormant, or too little evidence.",
+   "frontier": "Pre-company signals. Separate framework; never compared numerically against funded companies."
+  }
+ },
+ "snapshot": {
+  "candidate": "3newable LLC",
+  "candidate_id": "3newable",
+  "candidate_type": "company",
+  "queue": "tier_a",
+  "institution": "Ocean Observatories Initiative (WHOI) \u2014 collaboration",
+  "geography": "Portola Valley, California, USA",
+  "website": "https://3newable.com",
+  "people": [
+   {
+    "name": "Julie Fouquet",
+    "role": "Principal Investigator",
+    "role_type": "academic_and_founder",
+    "affiliation": "3NEWABLE LLC"
+   },
+   {
+    "name": "Julie Fouquet",
+    "role": "CEO",
+    "role_type": "founder",
+    "affiliation": "3newable LLC"
+   }
+  ],
+  "taxonomy": [
+   "blue_food",
+   "marine_materials",
+   "ocean_sensing",
+   "offshore_energy"
+  ],
+  "ocean_centrality": "central_mechanism",
+  "differentiated_sourcing_signal": "emerging",
+  "latest_meaningful_signal": "2025-12-04",
+  "total_federal_award_value_usd": 2474731.0,
+  "evidence_count": 12,
+  "material_evidence": {
+   "most_recent": "[2025-12-04] industry_partnership: Co-developing the buoy-mounted WEC and UV-C LED module with the Ocean Observatories Initiative at WHOI; OOI Endurance Array co-PI Jonathan Fram named as collaborator.",
+   "largest_funding": "[2020-06-29] sbir_phase_ii ($2,474,731): Federal award DESC0020921 from Department of Energy / Department of Energy: PREVENTING BIOFOULING OF OCEANOGRAPHIC SENSORS USING UV ILLUMINATION POWERED BY A COMPACT WAVE ENERGY CONVERTER",
+   "strongest_technical": "[2025-04-01] field_trial: Second field deployment at OOI Coastal Endurance Array buoy CE04 (spring 2025).",
+   "strongest_commercial": "[2025-12-04] industry_partnership: Co-developing the buoy-mounted WEC and UV-C LED module with the Ocean Observatories Initiative at WHOI; OOI Endurance Array co-PI Jonathan Fram named as collaborator."
+  },
+  "material_evidence_ids": {
+   "most_recent": "ev_6c7c9b242abc3e6e",
+   "largest_funding": "ev_3ecf05cb1b65fcf3",
+   "strongest_technical": "ev_eb1ed109220aa50b",
+   "strongest_commercial": "ev_6c7c9b242abc3e6e"
+  },
+  "why_it_surfaced": [
+   "Ocean Observatories Initiative",
+   "SBIR.gov / Department of Energy",
+   "TEAMER (DOE Hydropower and Hydrokinetic Office / Pacific Ocean Energy Trust)",
+   "USAspending.gov"
+  ],
+  "technical_evidence": [
+   "[2023-08-28] sbir_phase_ii ($1,149,047): SBIR Phase II award from Department of Energy: Preventing Biofouling of Oceanographic Sensors Using UV Illumination Powered by a Compact Wave Energy Converter",
+   "[2021-08-23] sttr_phase_ii ($1,099,971): STTR Phase II award from Department of Energy: Preventing Biofouling of Oceanographic Sensors Using UV Illumination Powered by a Compact Wave Energy Converter",
+   "[2020-06-29] sttr_phase_i ($205,713): STTR Phase I award from Department of Energy: Preventing Biofouling of Oceanographic Sensors Using UV Illumination Powered by a Compact Wave Energy Converter",
+   "[2023-10-01] field_trial: First field deployment of the wave energy converter on OOI's Coastal Endurance Array (autumn 2023).",
+   "[2025-04-01] field_trial: Second field deployment at OOI Coastal Endurance Array buoy CE04 (spring 2025).",
+   "[date not published] independent_validation: Independent testing at PNNL Marine and Coastal Research Laboratory under the DOE-sponsored TEAMER RFTS 2 program, producing imagery, quantitative biofouling mass measurements and SEM analysis.",
+   "[2025-12-04] technical_milestone: Reported performance: laboratory capacity up to 50 watts; expected real-world yield 7-8 watts time-averaged annually; most recent deployment produced 0.91 watts average over 1.5 weeks with a 2.4 watt peak over a 5-minute interval.",
+   "[2025-12-04] technical_claim: WEC converts buoy tilting motion into rotational power via a rack-and-pinion mechanism; UV illuminator targets biofouling on salinity sensor conductivity cells and is designed to retrofit existing sensors.",
+   "[2020-06-29] sbir_phase_ii ($2,474,731): Federal award DESC0020921 from Department of Energy / Department of Energy: PREVENTING BIOFOULING OF OCEANOGRAPHIC SENSORS USING UV ILLUMINATION POWERED BY A COMPACT WAVE ENERGY CONVERTER"
+  ],
+  "commercialization_evidence": [
+   "[2023-08-28] sbir_phase_ii ($1,149,047): SBIR Phase II award from Department of Energy: Preventing Biofouling of Oceanographic Sensors Using UV Illumination Powered by a Compact Wave Energy Converter",
+   "[2021-08-23] sttr_phase_ii ($1,099,971): STTR Phase II award from Department of Energy: Preventing Biofouling of Oceanographic Sensors Using UV Illumination Powered by a Compact Wave Energy Converter",
+   "[2021-08-23] research_institution_partnership: STTR research institution partner: Woods Hole Oceanographic Institution",
+   "[2020-06-29] sttr_phase_i ($205,713): STTR Phase I award from Department of Energy: Preventing Biofouling of Oceanographic Sensors Using UV Illumination Powered by a Compact Wave Energy Converter",
+   "[2020-06-29] research_institution_partnership: STTR research institution partner: Woods Hole Oceanographic Institute",
+   "[2025-12-04] industry_partnership: Co-developing the buoy-mounted WEC and UV-C LED module with the Ocean Observatories Initiative at WHOI; OOI Endurance Array co-PI Jonathan Fram named as collaborator.",
+   "[2020-06-29] sbir_phase_ii ($2,474,731): Federal award DESC0020921 from Department of Energy / Department of Energy: PREVENTING BIOFOULING OF OCEANOGRAPHIC SENSORS USING UV ILLUMINATION POWERED BY A COMPACT WAVE ENERGY CONVERTER"
+  ],
+  "funding_evidence": [
+   "[2020-06-29] sbir_phase_ii ($2,474,731): Federal award DESC0020921 from Department of Energy / Department of Energy: PREVENTING BIOFOULING OF OCEANOGRAPHIC SENSORS USING UV ILLUMINATION POWERED BY A COMPACT WAVE ENERGY CONVERTER"
+  ],
+  "distinct_federal_awards": 1,
+  "observed": [
+   "All verified federal funding, $2,474,731, sits on a single DOE contract line (DE-SC0020921) whose period of performance ended 2025-11-15."
+  ],
+  "inferred": [
+   "Attacks BOTH gating constraints on persistent ocean sensing at once - power and biofouling - which is unusual. Most companies address one and inherit the other.",
+   "The retrofit framing (a module for existing sensors) is commercially smarter than a new sensor platform: it sells into an installed base rather than displacing it.",
+   "Publicly reported output of 0.91 W average against an expected 7-8 W time-averaged annual yield is roughly an order of magnitude below target. This may reflect deployment conditions or an unresolved conversion problem; the gap is the central technical question.",
+   "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Current activity: latest signal 2025-12-04 (~9 months old). Against: none",
+   "PHASE 2.5 CORRECTION. Phase 2 characterised the 0.91 W result as roughly an order-of-magnitude shortfall against a 7-8 W target. OOI frames it as achieved 'even in relatively low-energy conditions', so it is a single measurement in benign sea states and is not directly comparable to an annual time-average. The honest statement is that reconciling the two is an open technical question, not that the technology underperformed."
+  ],
+  "unknown": [
+   "No public evidence of a paying customer, unit price, or manufacturing plan. OOI is a co-development partner, not necessarily a purchaser.",
+   "No public evidence of equity financing, team size beyond the CEO, or IP position.",
+   "No public evidence of federal funding beyond Nov 2025, of equity financing at any point, or of a paying customer. OOI is a co-development partner, not necessarily a purchaser.",
+   "Whether the company is actively commercializing in 2026 cannot be established from public sources. The website is live with a 2025 copyright and the most recent third-party coverage is Dec 2025. Absence of evidence is not evidence of failure, but it is also not evidence of momentum."
+  ],
+  "what_must_be_true": [
+   "A wave energy converter small enough to sit on a buoy must deliver enough average power, reliably enough, to beat simply oversizing the battery and servicing it on the existing ship schedule."
+  ],
+  "technical_kill_question": [
+   "Is the 0.91 W measured output a site/sea-state artefact or a fundamental limit of the rack-and-pinion tilt conversion? If the latter, the UV duty cycle needed to prevent fouling may never be sustainable on harvested power alone."
+  ],
+  "commercial_kill_question": [
+   "Ocean observing budgets are largely federal and grant-funded. If the buyer is only NSF/NOAA programme budgets, this is a small, slow market regardless of how well the technology works - and current federal funding uncertainty is acknowledged by the CEO.",
+   "Ocean observing budgets are largely federal and grant-funded. If the only buyer is NSF/NOAA programme money, the market is small and slow regardless of how well the technology works - and the CEO has publicly noted federal funding uncertainty."
+  ],
+  "flags": [],
+  "priority_components_diagnostic": {
+   "commercialization_signal": {
+    "points": 2,
+    "max": 3,
+    "rationale": "Commercialization funding won partly on commercial merit."
+   },
+   "differentiated_sourcing": {
+    "points": 2,
+    "max": 3,
+    "rationale": "Emerging: company exists with limited visibility."
+   },
+   "propeller_relevance": {
+    "points": 3,
+    "max": 3,
+    "rationale": "Ocean centrality 'central_mechanism'; maps to taxonomy categories ['blue_food', 'marine_materials', 'ocean_sensing', 'offshore_energy'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline."
+   },
+   "technical_evidence": {
+    "points": 3,
+    "max": 3,
+    "rationale": "Validated beyond the lab (Phase II, field trial, or executed license)."
+   },
+   "timing": {
+    "points": 2,
+    "max": 2,
+    "rationale": "Most recent evidence 2025-12-04 (~9 months old)."
+   },
+   "venture_potential": {
+    "points": 2,
+    "max": 3,
+    "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]"
+   }
+  },
+  "priority_total_diagnostic": 14,
+  "priority_note": "Diagnostic metadata only. Not an investment ranking. Ordering within Tier A is analyst judgment.",
+  "sources": [
+   "https://oceanobservatories.org/2025/12/wave-power-and-uv-beams-ooi-and-3newable-advance-wave-powered-ocean-observing/",
+   "https://teamer-us.org/report/3newable-llc-initial-testing-of-wave-energy-powered-uv-c-led-anti-biofouling-system/",
+   "https://www.sbir.gov/awards",
+   "https://www.usaspending.gov/search/?keywords=DESC0020921"
+  ],
+  "full_evidence_chronology": [
+   {
+    "evidence_type": "industry_partnership",
+    "observed_claim": "Co-developing the buoy-mounted WEC and UV-C LED module with the Ocean Observatories Initiative at WHOI; OOI Endurance Array co-PI Jonathan Fram named as collaborator.",
+    "evidence_date": "2025-12-04",
+    "quantitative_value": null,
+    "unit": null,
+    "extraction_method": "human_read",
+    "url": "https://oceanobservatories.org/2025/12/wave-power-and-uv-beams-ooi-and-3newable-advance-wave-powered-ocean-observing/",
+    "publisher": "Ocean Observatories Initiative",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "technical_milestone",
+    "observed_claim": "Reported performance: laboratory capacity up to 50 watts; expected real-world yield 7-8 watts time-averaged annually; most recent deployment produced 0.91 watts average over 1.5 weeks with a 2.4 watt peak over a 5-minute interval.",
+    "evidence_date": "2025-12-04",
+    "quantitative_value": null,
+    "unit": null,
+    "extraction_method": "human_read",
+    "url": "https://oceanobservatories.org/2025/12/wave-power-and-uv-beams-ooi-and-3newable-advance-wave-powered-ocean-observing/",
+    "publisher": "Ocean Observatories Initiative",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "technical_claim",
+    "observed_claim": "WEC converts buoy tilting motion into rotational power via a rack-and-pinion mechanism; UV illuminator targets biofouling on salinity sensor conductivity cells and is designed to retrofit existing sensors.",
+    "evidence_date": "2025-12-04",
+    "quantitative_value": null,
+    "unit": null,
+    "extraction_method": "human_read",
+    "url": "https://oceanobservatories.org/2025/12/wave-power-and-uv-beams-ooi-and-3newable-advance-wave-powered-ocean-observing/",
+    "publisher": "Ocean Observatories Initiative",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "field_trial",
+    "observed_claim": "Second field deployment at OOI Coastal Endurance Array buoy CE04 (spring 2025).",
+    "evidence_date": "2025-04-01",
+    "quantitative_value": null,
+    "unit": null,
+    "extraction_method": "human_read",
+    "url": "https://oceanobservatories.org/2025/12/wave-power-and-uv-beams-ooi-and-3newable-advance-wave-powered-ocean-observing/",
+    "publisher": "Ocean Observatories Initiative",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "field_trial",
+    "observed_claim": "First field deployment of the wave energy converter on OOI's Coastal Endurance Array (autumn 2023).",
+    "evidence_date": "2023-10-01",
+    "quantitative_value": null,
+    "unit": null,
+    "extraction_method": "human_read",
+    "url": "https://oceanobservatories.org/2025/12/wave-power-and-uv-beams-ooi-and-3newable-advance-wave-powered-ocean-observing/",
+    "publisher": "Ocean Observatories Initiative",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "sbir_phase_ii",
+    "observed_claim": "SBIR Phase II award from Department of Energy: Preventing Biofouling of Oceanographic Sensors Using UV Illumination Powered by a Compact Wave Energy Converter",
+    "evidence_date": "2023-08-28",
+    "quantitative_value": 1149047.0,
+    "unit": "USD",
+    "extraction_method": "structured_field",
+    "url": "https://www.sbir.gov/awards",
+    "publisher": "SBIR.gov / Department of Energy",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "sttr_phase_ii",
+    "observed_claim": "STTR Phase II award from Department of Energy: Preventing Biofouling of Oceanographic Sensors Using UV Illumination Powered by a Compact Wave Energy Converter",
+    "evidence_date": "2021-08-23",
+    "quantitative_value": 1099971.0,
+    "unit": "USD",
+    "extraction_method": "structured_field",
+    "url": "https://www.sbir.gov/awards",
+    "publisher": "SBIR.gov / Department of Energy",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "research_institution_partnership",
+    "observed_claim": "STTR research institution partner: Woods Hole Oceanographic Institution",
+    "evidence_date": "2021-08-23",
+    "quantitative_value": null,
+    "unit": null,
+    "extraction_method": "structured_field",
+    "url": "https://www.sbir.gov/awards",
+    "publisher": "SBIR.gov / Department of Energy",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "sttr_phase_i",
+    "observed_claim": "STTR Phase I award from Department of Energy: Preventing Biofouling of Oceanographic Sensors Using UV Illumination Powered by a Compact Wave Energy Converter",
+    "evidence_date": "2020-06-29",
+    "quantitative_value": 205713.0,
+    "unit": "USD",
+    "extraction_method": "structured_field",
+    "url": "https://www.sbir.gov/awards",
+    "publisher": "SBIR.gov / Department of Energy",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "research_institution_partnership",
+    "observed_claim": "STTR research institution partner: Woods Hole Oceanographic Institute",
+    "evidence_date": "2020-06-29",
+    "quantitative_value": null,
+    "unit": null,
+    "extraction_method": "structured_field",
+    "url": "https://www.sbir.gov/awards",
+    "publisher": "SBIR.gov / Department of Energy",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "sbir_phase_ii",
+    "observed_claim": "Federal award DESC0020921 from Department of Energy / Department of Energy: PREVENTING BIOFOULING OF OCEANOGRAPHIC SENSORS USING UV ILLUMINATION POWERED BY A COMPACT WAVE ENERGY CONVERTER",
+    "evidence_date": "2020-06-29",
+    "quantitative_value": 2474731.0,
+    "unit": "USD",
+    "extraction_method": "structured_field",
+    "url": "https://www.usaspending.gov/search/?keywords=DESC0020921",
+    "publisher": "USAspending.gov",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "independent_validation",
+    "observed_claim": "Independent testing at PNNL Marine and Coastal Research Laboratory under the DOE-sponsored TEAMER RFTS 2 program, producing imagery, quantitative biofouling mass measurements and SEM analysis.",
+    "evidence_date": null,
+    "quantitative_value": null,
+    "unit": null,
+    "extraction_method": "human_read",
+    "url": "https://teamer-us.org/report/3newable-llc-initial-testing-of-wave-energy-powered-uv-c-led-anti-biofouling-system/",
+    "publisher": "TEAMER (DOE Hydropower and Hydrokinetic Office / Pacific Ocean Energy Trust)",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   }
+  ]
+ }
+}

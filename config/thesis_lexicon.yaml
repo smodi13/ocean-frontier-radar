@@ -53,6 +53,14 @@ global_exclusions:
 
 ocean_context_terms: &ocean_context
   - ocean
+  # Morphological variants matter: term matching is word-bounded, so "ocean"
+  # does NOT match "oceanographic" - a word that appears in almost every
+  # relevant abstract. A recall canary caught this: 3newable's own award text
+  # classified as `incidental` because it says "oceanographic" and never
+  # "ocean" or "marine".
+  - oceanographic
+  - oceanography
+  - oceanic
   - marine
   - offshore
   - subsea
@@ -75,6 +83,12 @@ ocean_context_terms: &ocean_context
   - port
   - harbor
   - harbour
+  - buoy
+  - mooring
+  - hydrographic
+  - bathymetric
+  - littoral
+  - nearshore
 
 categories:
 

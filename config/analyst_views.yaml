@@ -56,3 +56,37 @@ views:
     - {type: inferred, statement: "Ocean relevance is real but not central: marine corrosion is one application among aerospace, defence and general industrial plating. The ocean is neither the mechanism, the operating environment, nor the primary customer context."}
     - {type: unknown, statement: "No public evidence of marine-specific qualification, marine customers, or seawater-immersion performance data."}
     - {type: what_must_be_true, statement: "For this to be a Propeller candidate rather than a generalist materials candidate, marine and offshore assets would have to be a deliberate primary market, not an incidental one."}
+
+  # ---------------- Phase 2.5 additions, after the freshness audit ----------------
+  # These supersede nothing; they are added alongside the Phase 2 views.
+
+  armada-marine-robotics:
+    - {type: inferred, statement: "PHASE 2.5 CORRECTION. Verified federal awards total $2,972,287 across NSF, Navy, NOAA and OSD - not the $255,821 NSF STTR the Phase 2 report described. The Navy Phase II is $1,998,926 and its period of performance now runs to 2028-03-20."}
+    - {type: inferred, statement: "Three SBIR Phase I awards from three different agencies inside four months (Aug, Oct, Nov 2024) is meaningful validation: three independent technical review panels funded the company in one budget cycle. It is not revenue."}
+    - {type: inferred, statement: "This is not one technology. Propulsion (NSF/WHOI IP), EPADS payload deployment (Navy, the largest programme by value) and a persistent sensing constellation (NOAA) are three distinct product threads with different customers and different IP positions."}
+    - {type: unknown, statement: "The Jan 2025 WHOI licence announcement names US 9,873,499 and US 11,990,857 only. The EPADS work traces to US 10,112,686, also WHOI-assigned, which is not named. What rights ARMADA holds to the EPADS IP is unresolved from public sources."}
+    - {type: unknown, statement: "Licence terms are not public: field of use, sublicensing rights, diligence milestones and termination conditions are all unknown."}
+    - {type: unknown, statement: "No equity financing disclosed since a March 2025 accelerator round; no commercial (non-government) customer identified in any public source."}
+    - {type: technical_kill_question, statement: "Does single-motor asymmetric propulsion retain adequate control authority in realistic currents and sea states? Removing actuators is elegant in benign conditions; degradation where cheap attritable vehicles matter most would remove the value."}
+    - {type: commercial_kill_question, statement: "Is ARMADA a defence prime subcontractor or a venture-scale product company? Roughly two thirds of verified funding is DoD, and the Navy contract runs to 2028. A company optimised around SBIR sequencing can be a good business and still be a poor venture fit."}
+
+  3newable:
+    - {type: inferred, statement: "PHASE 2.5 CORRECTION. Phase 2 characterised the 0.91 W result as roughly an order-of-magnitude shortfall against a 7-8 W target. OOI frames it as achieved 'even in relatively low-energy conditions', so it is a single measurement in benign sea states and is not directly comparable to an annual time-average. The honest statement is that reconciling the two is an open technical question, not that the technology underperformed."}
+    - {type: observed, statement: "All verified federal funding, $2,474,731, sits on a single DOE contract line (DE-SC0020921) whose period of performance ended 2025-11-15.", evidence_ids: "ev_3ecf05cb1b65fcf3"}
+    - {type: unknown, statement: "No public evidence of federal funding beyond Nov 2025, of equity financing at any point, or of a paying customer. OOI is a co-development partner, not necessarily a purchaser."}
+    - {type: unknown, statement: "Whether the company is actively commercializing in 2026 cannot be established from public sources. The website is live with a 2025 copyright and the most recent third-party coverage is Dec 2025. Absence of evidence is not evidence of failure, but it is also not evidence of momentum."}
+    - {type: commercial_kill_question, statement: "Ocean observing budgets are largely federal and grant-funded. If the only buyer is NSF/NOAA programme money, the market is small and slow regardless of how well the technology works - and the CEO has publicly noted federal funding uncertainty."}
+
+  certus-core:
+    - {type: inferred, statement: "PHASE 2.5 CORRECTION - ANALYST OVERRIDE OF MACHINE OUTPUT. The classifier places Certus Core in Tier A on maritime autonomy, but its SBIR.gov firm page shows 9 employees and $4.46M in awards dominated by a Semantic Knowledge Graph for US Air Force data, with further awards from SOCOM and the Missile Defense Agency. The AUV-swarming award is one thread in a defence data-platform business."}
+    - {type: inferred, statement: "Ocean centrality is overstated. Defence abstracts are written to hit many capability keywords, which trips the ocean-centrality logic more readily than it should. Excluded from the analyst shortlist despite its machine tier."}
+    - {type: unknown, statement: "Whether any maritime autonomy work continues beyond the single SOCOM AUV award."}
+
+  ocean-motion-technologies:
+    - {type: inferred, statement: "PHASE 2.5 CORRECTION. The freshness audit found six awards totalling roughly $7.15M across DOE, NSF and NASA, running to Dec 2027 - materially larger than Phase 2 knew. Now flagged BEYOND_STAGE and moved to Tier C: this is past the pre-seed to Series A window the system targets."}
+
+  x-hab-3d:
+    - {type: inferred, statement: "PHASE 2.5 QUALIFICATION. Seven awards totalling roughly $3.98M, but the portfolio is dominated by general construction and 3D printing for the Army, NASA and DOT. The DARPA artificial-reef work is one strand, so ocean centrality is weaker than the Phase 2 tier implied."}
+
+  juice-robotics:
+    - {type: inferred, statement: "PHASE 2.5 QUALIFICATION. USAspending shows no federal awards of any kind. Its entire evidence base is one university announcement plus an undisclosed VC round - a materially thinner and less independently corroborated profile than the rest of Tier A."}

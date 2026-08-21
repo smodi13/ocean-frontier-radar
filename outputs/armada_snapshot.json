@@ -1,0 +1,383 @@
+{
+ "meta": {
+  "generated_at": "2026-08-21T16:55:32",
+  "phase": "2.5",
+  "note": "Queues allocate analyst attention. Numeric component scores are DIAGNOSTIC METADATA only, never an investment ranking. Ordering within Tier A is analyst judgment.",
+  "tier_criteria": {
+   "tier_a": "Not incidental, not established/beyond-stage, technical>=2, commercial>=2, relevance>=2, and latest signal within 24 months.",
+   "tier_b": "Relevant and not excluded, but missing one or two Tier A criteria.",
+   "tier_c": "Incidental, established/beyond-stage, dormant, or too little evidence.",
+   "frontier": "Pre-company signals. Separate framework; never compared numerically against funded companies."
+  }
+ },
+ "snapshot": {
+  "candidate": "ARMADA Marine Robotics",
+  "candidate_id": "armada-marine-robotics",
+  "candidate_type": "spinout",
+  "queue": "tier_a",
+  "institution": "Woods Hole Oceanographic Institution",
+  "geography": "Massachusetts, USA",
+  "website": "https://www.armadamarinerobotics.com",
+  "people": [
+   {
+    "name": "Jeff Kaeli",
+    "role": "Principal Investigator",
+    "role_type": "founder",
+    "affiliation": "ARMADA MARINE ROBOTICS INC"
+   },
+   {
+    "name": "Jeffrey Kaeli",
+    "role": "Principal Investigator",
+    "role_type": "academic_and_founder",
+    "affiliation": "ARMADA MARINE ROBOTICS INC"
+   },
+   {
+    "name": "Robin Littlefield",
+    "role": "Co-founder",
+    "role_type": "academic_and_founder",
+    "affiliation": "WHOI"
+   },
+   {
+    "name": "Jeff Kaeli",
+    "role": "Co-founder",
+    "role_type": "academic_and_founder",
+    "affiliation": "WHOI"
+   }
+  ],
+  "taxonomy": [
+   "maritime_autonomy",
+   "ocean_sensing"
+  ],
+  "ocean_centrality": "central_mechanism",
+  "differentiated_sourcing_signal": "pre_company",
+  "latest_meaningful_signal": "2025-01-01",
+  "total_federal_award_value_usd": 2972287.0,
+  "evidence_count": 16,
+  "material_evidence": {
+   "most_recent": "[2025-01-01] exclusive_license: WHOI executed two exclusive license agreements with ARMADA Marine Robotics, a WHOI spin-off co-founded by WHOI engineers Robin Littlefield and Jeff Kaeli.",
+   "largest_funding": "[2023-01-30] sbir_phase_ii ($1,998,926): Federal award N6833523C0142 from Department of Defense / Department of the Navy: RESEARCH AND DEVELOPMENT",
+   "strongest_technical": "[2025-01-01] exclusive_license: WHOI executed two exclusive license agreements with ARMADA Marine Robotics, a WHOI spin-off co-founded by WHOI engineers Robin Littlefield and Jeff Kaeli.",
+   "strongest_commercial": "[2024-11-15] sbir_phase_i ($146,455): Federal award N6833525C0057 from Department of Defense / Department of the Navy: SBIR PHASE 1."
+  },
+  "material_evidence_ids": {
+   "most_recent": "ev_8ae92a4cf21b6b1f",
+   "largest_funding": "ev_fab9b86a893d00f4",
+   "strongest_technical": "ev_8ae92a4cf21b6b1f",
+   "strongest_commercial": "ev_3d3a316a707220fa"
+  },
+  "why_it_surfaced": [
+   "Ocean News & Technology",
+   "OpenAlex",
+   "SBIR.gov / Department of Defense",
+   "SBIR.gov / National Science Foundation",
+   "USAspending.gov",
+   "Woods Hole Oceanographic Institution"
+  ],
+  "technical_evidence": [
+   "[2023-01-30] sbir_phase_ii ($999,028): SBIR Phase II award from Department of Defense / Navy: External Payload Deployment System for Cylindrical UUVs",
+   "[2021-10-20] sbir_phase_i ($246,320): SBIR Phase I award from Department of Defense / Navy: A Robust System for Deploying Various External Payloads from Cylindrical UUVs",
+   "[2020-08-01] sttr_phase_i ($255,821): STTR Phase I award from National Science Foundation: STTR Phase I: Asymmetric Propulsion for Enhancing Marine Maneuverability",
+   "[2025-01-01] exclusive_license: WHOI executed two exclusive license agreements with ARMADA Marine Robotics, a WHOI spin-off co-founded by WHOI engineers Robin Littlefield and Jeff Kaeli.",
+   "[date not published] patent_granted: Exclusive rights to Asymmetric Propulsion, US Patent No. 9,873,499.",
+   "[date not published] patent_granted: Exclusive rights to Rotational Feedback Control, US Patent No. 11,990,857.",
+   "[date not published] sttr_phase_i ($255,821): NSF STTR Phase I contract of $255,821 to develop Asymmetric Propulsion in collaboration with WHOI.",
+   "[date not published] technical_claim: Asymmetric Propulsion provides both propulsion and low-speed maneuvering using a single electric motor, eliminating fins and additional motors, reducing weight, drag, complexity and cost.",
+   "[2017-06-01] peer_reviewed_publication ($1): Publication co-authored by Jeffrey Kaeli: Do AUVs Dream of Electric Eels?",
+   "[2024-08-01] sbir_phase_i ($174,798): Federal award NA24OARX021G0026 from Department of Commerce / National Oceanic and Atmospheric Administration: PURPOSE:  ARMADA HAS A BOLD PLAN TO BECOME THE SPACEX OF THE SEA WITH A SCALABLE SOLUTION THAT REDUCES THE CARBON FOOTPRINT OF IN SITU OCEAN MONITORING WHILE EL",
+   "[2020-08-01] sttr_phase_i ($255,821): Federal award 2026230 from National Science Foundation / National Science Foundation: STTR PHASE I: ASYMMETRIC PROPULSION FOR ENHANCING MARINE MANEUVERABILITY",
+   "[2024-11-15] sbir_phase_i ($146,455): Federal award N6833525C0057 from Department of Defense / Department of the Navy: SBIR PHASE 1.",
+   "[2024-10-11] sbir_phase_i ($149,967): Federal award HY023325PE002 from Department of Defense / Immediate Office of the Secretary of Defense: SBIR PHASE I",
+   "[2023-01-30] sbir_phase_ii ($1,998,926): Federal award N6833523C0142 from Department of Defense / Department of the Navy: RESEARCH AND DEVELOPMENT",
+   "[2021-10-20] sbir_phase_i ($246,320): Federal award N6833522C0035 from Department of Defense / Department of the Navy: SBIR PHASE 1"
+  ],
+  "commercialization_evidence": [
+   "[2023-01-30] sbir_phase_ii ($999,028): SBIR Phase II award from Department of Defense / Navy: External Payload Deployment System for Cylindrical UUVs",
+   "[2021-10-20] sbir_phase_i ($246,320): SBIR Phase I award from Department of Defense / Navy: A Robust System for Deploying Various External Payloads from Cylindrical UUVs",
+   "[2020-08-01] sttr_phase_i ($255,821): STTR Phase I award from National Science Foundation: STTR Phase I: Asymmetric Propulsion for Enhancing Marine Maneuverability",
+   "[2020-08-01] research_institution_partnership: STTR research institution partner: Woods Hole Oceanographic Institution",
+   "[date not published] sttr_phase_i ($255,821): NSF STTR Phase I contract of $255,821 to develop Asymmetric Propulsion in collaboration with WHOI.",
+   "[2024-08-01] sbir_phase_i ($174,798): Federal award NA24OARX021G0026 from Department of Commerce / National Oceanic and Atmospheric Administration: PURPOSE:  ARMADA HAS A BOLD PLAN TO BECOME THE SPACEX OF THE SEA WITH A SCALABLE SOLUTION THAT REDUCES THE CARBON FOOTPRINT OF IN SITU OCEAN MONITORING WHILE EL",
+   "[2020-08-01] sttr_phase_i ($255,821): Federal award 2026230 from National Science Foundation / National Science Foundation: STTR PHASE I: ASYMMETRIC PROPULSION FOR ENHANCING MARINE MANEUVERABILITY",
+   "[2024-11-15] sbir_phase_i ($146,455): Federal award N6833525C0057 from Department of Defense / Department of the Navy: SBIR PHASE 1.",
+   "[2024-10-11] sbir_phase_i ($149,967): Federal award HY023325PE002 from Department of Defense / Immediate Office of the Secretary of Defense: SBIR PHASE I",
+   "[2023-01-30] sbir_phase_ii ($1,998,926): Federal award N6833523C0142 from Department of Defense / Department of the Navy: RESEARCH AND DEVELOPMENT",
+   "[2021-10-20] sbir_phase_i ($246,320): Federal award N6833522C0035 from Department of Defense / Department of the Navy: SBIR PHASE 1"
+  ],
+  "funding_evidence": [
+   "[2024-11-15] sbir_phase_i ($146,455): Federal award N6833525C0057 from Department of Defense / Department of the Navy: SBIR PHASE 1.",
+   "[2024-10-11] sbir_phase_i ($149,967): Federal award HY023325PE002 from Department of Defense / Immediate Office of the Secretary of Defense: SBIR PHASE I",
+   "[2024-08-01] sbir_phase_i ($174,798): Federal award NA24OARX021G0026 from Department of Commerce / National Oceanic and Atmospheric Administration: PURPOSE:  ARMADA HAS A BOLD PLAN TO BECOME THE SPACEX OF THE SEA WITH A SCALABLE SOLUTION THAT REDUCES THE CARBON FOOTPRINT OF IN SITU OCEAN MONITORING WHILE EL",
+   "[2023-01-30] sbir_phase_ii ($1,998,926): Federal award N6833523C0142 from Department of Defense / Department of the Navy: RESEARCH AND DEVELOPMENT",
+   "[2021-10-20] sbir_phase_i ($246,320): SBIR Phase I award from Department of Defense / Navy: A Robust System for Deploying Various External Payloads from Cylindrical UUVs",
+   "[2020-08-01] sttr_phase_i ($255,821): STTR Phase I award from National Science Foundation: STTR Phase I: Asymmetric Propulsion for Enhancing Marine Maneuverability"
+  ],
+  "distinct_federal_awards": 6,
+  "observed": [],
+  "inferred": [
+   "Reducing an underwater vehicle to a single actuator attacks cost at the component level rather than competing on vehicle integration - a supplier position beneath the AUV market rather than inside it.",
+   "Backing from BlueSwell, NOAA and DoD sources alongside a WHOI licence suggests validation from several independent technical reviewers, which is meaningful for a team of this size.",
+   "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Current activity: latest signal 2025-01-01 (~20 months old). Against: none",
+   "PHASE 2.5 CORRECTION. Verified federal awards total $2,972,287 across NSF, Navy, NOAA and OSD - not the $255,821 NSF STTR the Phase 2 report described. The Navy Phase II is $1,998,926 and its period of performance now runs to 2028-03-20.",
+   "Three SBIR Phase I awards from three different agencies inside four months (Aug, Oct, Nov 2024) is meaningful validation: three independent technical review panels funded the company in one budget cycle. It is not revenue.",
+   "This is not one technology. Propulsion (NSF/WHOI IP), EPADS payload deployment (Navy, the largest programme by value) and a persistent sensing constellation (NOAA) are three distinct product threads with different customers and different IP positions."
+  ],
+  "unknown": [
+   "No public evidence of a paying customer, unit volume, or whether the business model is vehicle manufacture or component licensing to OEMs. This distinction determines the entire venture case.",
+   "No public performance data - no disclosed control authority, sea-state envelope, or efficiency comparison against conventional multi-actuator designs.",
+   "The Jan 2025 WHOI licence announcement names US 9,873,499 and US 11,990,857 only. The EPADS work traces to US 10,112,686, also WHOI-assigned, which is not named. What rights ARMADA holds to the EPADS IP is unresolved from public sources.",
+   "Licence terms are not public: field of use, sublicensing rights, diligence milestones and termination conditions are all unknown.",
+   "No equity financing disclosed since a March 2025 accelerator round; no commercial (non-government) customer identified in any public source."
+  ],
+  "what_must_be_true": [
+   "Vehicle cost, not support-ship and launch-and-recovery cost, must be the binding constraint on how many UUVs a customer deploys."
+  ],
+  "technical_kill_question": [
+   "Does single-motor asymmetric propulsion retain adequate control authority in realistic currents and sea states? Removing actuators is elegant in benign conditions; degradation where cheap attritable vehicles matter most would remove the value."
+  ],
+  "commercial_kill_question": [
+   "Public procurement records show buyers paying $1.68M-$1.99M per AUV, but the dominant lifetime cost in ocean operations is frequently the support vessel. If so, a cheaper propulsion module does not change the customer's economics and the addressable value is far smaller than vehicle price implies.",
+   "Is ARMADA a defence prime subcontractor or a venture-scale product company? Roughly two thirds of verified funding is DoD, and the Navy contract runs to 2028. A company optimised around SBIR sequencing can be a good business and still be a poor venture fit."
+  ],
+  "flags": [],
+  "priority_components_diagnostic": {
+   "commercialization_signal": {
+    "points": 2,
+    "max": 3,
+    "rationale": "Commercialization funding won partly on commercial merit."
+   },
+   "differentiated_sourcing": {
+    "points": 3,
+    "max": 3,
+    "rationale": "Pre-company or hidden adjacency: surfaced from an under-read source."
+   },
+   "propeller_relevance": {
+    "points": 3,
+    "max": 3,
+    "rationale": "Ocean centrality 'central_mechanism'; maps to taxonomy categories ['maritime_autonomy', 'ocean_sensing'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline."
+   },
+   "technical_evidence": {
+    "points": 3,
+    "max": 3,
+    "rationale": "Validated beyond the lab (Phase II, field trial, or executed license)."
+   },
+   "timing": {
+    "points": 1,
+    "max": 2,
+    "rationale": "Most recent evidence 2025-01-01 (~20 months old)."
+   },
+   "venture_potential": {
+    "points": 3,
+    "max": 3,
+    "rationale": "Protected or licensed IP combined with scaled non-dilutive funding or institutional capital \u2014 a plausible mechanism for durable advantage. [inferred]"
+   }
+  },
+  "priority_total_diagnostic": 15,
+  "priority_note": "Diagnostic metadata only. Not an investment ranking. Ordering within Tier A is analyst judgment.",
+  "sources": [
+   "https://doi.org/10.5670/oceanog.2017.239",
+   "https://oceannews.com/news/science-technology/armada-marine-robotics-wins-nsf-contract/",
+   "https://www.sbir.gov/awards",
+   "https://www.usaspending.gov/search/?keywords=2026230",
+   "https://www.usaspending.gov/search/?keywords=HY023325PE002",
+   "https://www.usaspending.gov/search/?keywords=N6833522C0035",
+   "https://www.usaspending.gov/search/?keywords=N6833523C0142",
+   "https://www.usaspending.gov/search/?keywords=N6833525C0057",
+   "https://www.usaspending.gov/search/?keywords=NA24OARX021G0026",
+   "https://www.whoi.edu/press-room/news-release/armada"
+  ],
+  "full_evidence_chronology": [
+   {
+    "evidence_type": "exclusive_license",
+    "observed_claim": "WHOI executed two exclusive license agreements with ARMADA Marine Robotics, a WHOI spin-off co-founded by WHOI engineers Robin Littlefield and Jeff Kaeli.",
+    "evidence_date": "2025-01-01",
+    "quantitative_value": null,
+    "unit": null,
+    "extraction_method": "human_read",
+    "url": "https://www.whoi.edu/press-room/news-release/armada",
+    "publisher": "Woods Hole Oceanographic Institution",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "sbir_phase_i",
+    "observed_claim": "Federal award N6833525C0057 from Department of Defense / Department of the Navy: SBIR PHASE 1.",
+    "evidence_date": "2024-11-15",
+    "quantitative_value": 146455.0,
+    "unit": "USD",
+    "extraction_method": "structured_field",
+    "url": "https://www.usaspending.gov/search/?keywords=N6833525C0057",
+    "publisher": "USAspending.gov",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "sbir_phase_i",
+    "observed_claim": "Federal award HY023325PE002 from Department of Defense / Immediate Office of the Secretary of Defense: SBIR PHASE I",
+    "evidence_date": "2024-10-11",
+    "quantitative_value": 149967.0,
+    "unit": "USD",
+    "extraction_method": "structured_field",
+    "url": "https://www.usaspending.gov/search/?keywords=HY023325PE002",
+    "publisher": "USAspending.gov",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "sbir_phase_i",
+    "observed_claim": "Federal award NA24OARX021G0026 from Department of Commerce / National Oceanic and Atmospheric Administration: PURPOSE:  ARMADA HAS A BOLD PLAN TO BECOME THE SPACEX OF THE SEA WITH A SCALABLE SOLUTION THAT REDUCES THE CARBON FOOTPRINT OF IN SITU OCEAN MONITORING WHILE EL",
+    "evidence_date": "2024-08-01",
+    "quantitative_value": 174798.0,
+    "unit": "USD",
+    "extraction_method": "structured_field",
+    "url": "https://www.usaspending.gov/search/?keywords=NA24OARX021G0026",
+    "publisher": "USAspending.gov",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "sbir_phase_ii",
+    "observed_claim": "SBIR Phase II award from Department of Defense / Navy: External Payload Deployment System for Cylindrical UUVs",
+    "evidence_date": "2023-01-30",
+    "quantitative_value": 999028.0,
+    "unit": "USD",
+    "extraction_method": "structured_field",
+    "url": "https://www.sbir.gov/awards",
+    "publisher": "SBIR.gov / Department of Defense",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "sbir_phase_ii",
+    "observed_claim": "Federal award N6833523C0142 from Department of Defense / Department of the Navy: RESEARCH AND DEVELOPMENT",
+    "evidence_date": "2023-01-30",
+    "quantitative_value": 1998926.0,
+    "unit": "USD",
+    "extraction_method": "structured_field",
+    "url": "https://www.usaspending.gov/search/?keywords=N6833523C0142",
+    "publisher": "USAspending.gov",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "sbir_phase_i",
+    "observed_claim": "SBIR Phase I award from Department of Defense / Navy: A Robust System for Deploying Various External Payloads from Cylindrical UUVs",
+    "evidence_date": "2021-10-20",
+    "quantitative_value": 246320.0,
+    "unit": "USD",
+    "extraction_method": "structured_field",
+    "url": "https://www.sbir.gov/awards",
+    "publisher": "SBIR.gov / Department of Defense",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "sbir_phase_i",
+    "observed_claim": "Federal award N6833522C0035 from Department of Defense / Department of the Navy: SBIR PHASE 1",
+    "evidence_date": "2021-10-20",
+    "quantitative_value": 246320.0,
+    "unit": "USD",
+    "extraction_method": "structured_field",
+    "url": "https://www.usaspending.gov/search/?keywords=N6833522C0035",
+    "publisher": "USAspending.gov",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "sttr_phase_i",
+    "observed_claim": "STTR Phase I award from National Science Foundation: STTR Phase I: Asymmetric Propulsion for Enhancing Marine Maneuverability",
+    "evidence_date": "2020-08-01",
+    "quantitative_value": 255821.0,
+    "unit": "USD",
+    "extraction_method": "structured_field",
+    "url": "https://www.sbir.gov/awards",
+    "publisher": "SBIR.gov / National Science Foundation",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "research_institution_partnership",
+    "observed_claim": "STTR research institution partner: Woods Hole Oceanographic Institution",
+    "evidence_date": "2020-08-01",
+    "quantitative_value": null,
+    "unit": null,
+    "extraction_method": "structured_field",
+    "url": "https://www.sbir.gov/awards",
+    "publisher": "SBIR.gov / National Science Foundation",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "sttr_phase_i",
+    "observed_claim": "Federal award 2026230 from National Science Foundation / National Science Foundation: STTR PHASE I: ASYMMETRIC PROPULSION FOR ENHANCING MARINE MANEUVERABILITY",
+    "evidence_date": "2020-08-01",
+    "quantitative_value": 255821.0,
+    "unit": "USD",
+    "extraction_method": "structured_field",
+    "url": "https://www.usaspending.gov/search/?keywords=2026230",
+    "publisher": "USAspending.gov",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "peer_reviewed_publication",
+    "observed_claim": "Publication co-authored by Jeffrey Kaeli: Do AUVs Dream of Electric Eels?",
+    "evidence_date": "2017-06-01",
+    "quantitative_value": 1.0,
+    "unit": "citations",
+    "extraction_method": "structured_field",
+    "url": "https://doi.org/10.5670/oceanog.2017.239",
+    "publisher": "OpenAlex",
+    "source_quality": "tier2",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "patent_granted",
+    "observed_claim": "Exclusive rights to Asymmetric Propulsion, US Patent No. 9,873,499.",
+    "evidence_date": null,
+    "quantitative_value": null,
+    "unit": null,
+    "extraction_method": "human_read",
+    "url": "https://www.whoi.edu/press-room/news-release/armada",
+    "publisher": "Woods Hole Oceanographic Institution",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "patent_granted",
+    "observed_claim": "Exclusive rights to Rotational Feedback Control, US Patent No. 11,990,857.",
+    "evidence_date": null,
+    "quantitative_value": null,
+    "unit": null,
+    "extraction_method": "human_read",
+    "url": "https://www.whoi.edu/press-room/news-release/armada",
+    "publisher": "Woods Hole Oceanographic Institution",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "sttr_phase_i",
+    "observed_claim": "NSF STTR Phase I contract of $255,821 to develop Asymmetric Propulsion in collaboration with WHOI.",
+    "evidence_date": null,
+    "quantitative_value": 255821.0,
+    "unit": "USD",
+    "extraction_method": "human_read",
+    "url": "https://oceannews.com/news/science-technology/armada-marine-robotics-wins-nsf-contract/",
+    "publisher": "Ocean News & Technology",
+    "source_quality": "tier2",
+    "accessed_at": "2026-08-21"
+   },
+   {
+    "evidence_type": "technical_claim",
+    "observed_claim": "Asymmetric Propulsion provides both propulsion and low-speed maneuvering using a single electric motor, eliminating fins and additional motors, reducing weight, drag, complexity and cost.",
+    "evidence_date": null,
+    "quantitative_value": null,
+    "unit": null,
+    "extraction_method": "human_read",
+    "url": "https://www.whoi.edu/press-room/news-release/armada",
+    "publisher": "Woods Hole Oceanographic Institution",
+    "source_quality": "tier1",
+    "accessed_at": "2026-08-21"
+   }
+  ]
+ }
+}

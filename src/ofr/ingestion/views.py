@@ -25,6 +25,16 @@ def ingest(conn, path: Path = PATH, verbose: bool = True) -> dict:
             skipped += len(views)
             continue
         for v in views:
+            # An 'observed' view must cite a real evidence id, not a note.
+            if v["type"] == "observed":
+                eids = [e.strip() for e in (v.get("evidence_ids") or "").split(",") if e.strip()]
+                known = {r[0] for r in conn.execute(
+                    "SELECT evidence_id FROM evidence WHERE candidate_id=?", (cid,))}
+                bogus = [e for e in eids if e not in known]
+                if not eids or bogus:
+                    raise ValueError(
+                        f"{cid}: 'observed' view cites unknown evidence ids {bogus or '(none)'}; "
+                        f"observations must be traceable.")
             conn.execute(
                 """INSERT OR REPLACE INTO analyst_views
                    (view_id,candidate_id,view_type,statement,evidence_ids,author,created_at)

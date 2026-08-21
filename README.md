@@ -1,6 +1,6 @@
 # Ocean Frontier Radar
 
-> ## 🚧 Work in progress — Phase 2 (sourcing pipeline) complete, Phase 3 not started
+> ## 🚧 Work in progress — Phase 2.5 (freshness + triage) complete, Phase 3 not started
 >
 > This repository contains **research and a working sourcing pipeline**. There is no public application, no deployment, and no investment memo. Nothing here should be read as an investment recommendation.
 
@@ -34,13 +34,16 @@ That choice is grounded in something Propeller says about its own portfolio: man
 | Phase | Status |
 |---|---|
 | **Phase 1 — Research foundation** | ✅ Complete |
-| **Phase 2 — Sourcing pipeline + database** | ✅ Complete, awaiting review |
+| **Phase 2 — Sourcing pipeline + database** | ✅ Complete |
+| **Phase 2.5 — Freshness audit + triage calibration** | ✅ Complete, awaiting review |
 | Phase 3 — Deep diligence on one candidate | ⬜ Not started |
 | Phase 4 — Public interface | ⬜ Not started |
 
 **Phase 1 produced:** a sourced dossier on Propeller's public strategy; a working taxonomy; a mapped sourcing universe; an empirically tested data-source assessment; an evidence model; a prioritization framework; and **28 real, source-backed candidate opportunities**.
 
-**Phase 2 produced:** a reproducible ingestion pipeline across five sources; a 13-table SQLite evidence store; a problem-first search lexicon; a two-stage retrieval/classification engine; conservative entity resolution; a six-dimension sourcing-priority score; **562 candidates (198 qualified) from 211,361 source records**; and 59 offline tests.
+**Phase 2 produced:** a reproducible ingestion pipeline across five sources; a 13-table SQLite evidence store; a problem-first search lexicon; a two-stage retrieval/classification engine; conservative entity resolution; a six-dimension sourcing-priority score; **562 candidates (198 qualified) from 211,361 source records**; and 59 offline tests (127 after Phase 2.5).
+
+**Phase 2.5 produced:** a freshness audit that found Phase 2 had *understated ARMADA's federal funding by an order of magnitude* — and that the missing award was already in the database, making it a reporting failure rather than only a stale-data one; separation of `source_accessed_at` / `evidence_date` / `candidate_latest_signal_date`; replacement of ordinal ranking with **Tier A/B/C triage** plus a dedicated **Frontier Signals** queue for pre-company research; analyst review cards with a **reporting-completeness guarantee**; and **12 recall canaries** that immediately caught the lexicon failing to match "oceanographic".
 
 Phase 2 closed the Phase 1 blocker: SBIR.gov's *API* returns HTTP 403, but SBIR.gov publishes the complete award dataset as an official public download. Ingesting it brought in **ten agencies** — including the Navy and NOAA candidates Phase 1 was blind to. Three of the final top five come from sources Phase 1 could not reach.
 
@@ -78,14 +81,17 @@ ocean-frontier-radar/
 │   ├── prioritization_framework.md  Sourcing-priority scoring (not investment scoring)
 │   ├── initial_leads.csv / .md      Phase 1's 28 hand-built candidates
 │   ├── phase1_report.md             Phase 1 decision gate
-│   └── phase2_report.md             Phase 2 decision gate
+│   ├── phase2_report.md             Phase 2 decision gate
+│   ├── tier_a_freshness_audit.md    Phase 2.5 freshness audit + corrections
+│   ├── frontier_signals.md          Pre-company queue
+│   └── phase2_5_report.md           Phase 2.5 decision gate
 ├── src/ofr/
 │   ├── schema.sql                   13 tables; facts and interpretation kept separate
 │   ├── db.py  lexicon.py  entity.py  prioritize.py  export.py  pipeline.py
 │   └── ingestion/                   sbir · nsf · usaspending · openalex · curated · views
 ├── outputs/                         Generated JSON — regenerate, do not edit
 ├── sources/source_registry.csv      20 data sources with tested access status
-└── tests/                           59 offline tests
+└── tests/                           127 offline tests
 ```
 
 ## Running the pipeline
@@ -98,7 +104,9 @@ curl -L -o data/raw/sbir_award_data.csv \
 
 python3 src/ofr/pipeline.py --full     # ingest everything, resolve, score, export
 python3 src/ofr/pipeline.py --score    # re-resolve, re-score and re-export only
-python3 -m pytest tests -q             # 59 tests, no network required
+python3 src/ofr/tiering.py             # refresh signal dates, assign queues
+python3 src/ofr/export_phase25.py      # Tier A cards, frontier queue, snapshots
+python3 -m pytest tests -q             # 127 tests, no network required
 ```
 
 `data/` is gitignored — the raw CSV and the SQLite database both regenerate. `outputs/*.json` are committed as derived views.

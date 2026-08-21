@@ -1,0 +1,151 @@
+# Recall canaries — pipeline-health fixtures, NOT production data.
+#
+# Phase 2 silently lost two Phase 1 top-five candidates: Sea-Gal Technologies
+# (a missing plural form) and Hydrokinetx (a Stage A threshold). Neither
+# failure was visible from the output - a list of 562 plausible candidates
+# looks like success whether or not the best ones are missing.
+#
+# These fixtures answer one question: given the CURRENT retrieval and
+# classification pipeline, do known-relevant examples still surface?
+#
+# Rules:
+#   * Text is representative source text, close to the real abstract.
+#   * Nothing here is hard-coded into production output. These names never
+#     enter the candidate universe from this file.
+#   * The test asserts SURVIVAL through each stage, never a ranking.
+#   * `expect_category` is asserted only where the mapping is unambiguous.
+#   * `expect_centrality` accepts a list where a short abstract makes the
+#     distinction genuinely ambiguous. Asserting an exact value on truncated
+#     text tests the fixture, not the pipeline.
+
+canaries:
+
+  - id: sea-gal-underwater-comms
+    label: Sea-Gal Technologies (Phase 1 top five, lost in Phase 2 to a plural)
+    pattern: ocean sensing / underwater communications
+    expect_category: ocean_sensing
+    expect_centrality: central_mechanism
+    text: >
+      High Data-Rate Multiple-Input Multiple-Output (MIMO) Underwater Acoustic
+      Communications. The proposed high-frequency MIMO acoustic communication
+      technology minimizes noise pollution in marine environments, operating at
+      frequencies outside the range of marine mammal communication. The project
+      will help develop new ocean technologies and the blue economy.
+
+  - id: hydrokinetx-marine-energy
+    label: Hydrokinetx (Phase 1 top five, lost in Phase 2 to the Stage A gate)
+    pattern: offshore energy / persistent power for sensing
+    expect_centrality: central_mechanism
+    text: >
+      Empowering Oceanic Intelligence with Unlimited Marine Energy. This project
+      addresses a critical challenge in maritime sensing: the lack of long
+      lasting, reliable power for ocean monitoring. Using ocean wave energy, the
+      system powers sensors that would otherwise depend on batteries.
+
+  - id: armada-asymmetric-propulsion
+    label: ARMADA Marine Robotics
+    pattern: maritime autonomy / propulsion
+    expect_category: maritime_autonomy
+    expect_centrality: central_mechanism
+    text: >
+      Asymmetric Propulsion for Enhancing Marine Maneuverability. Asymmetric
+      Propulsion uses a single-bladed propeller to both move and steer an
+      autonomous underwater vehicle, eliminating the need for control fins and
+      additional motors on the underwater vehicle.
+
+  - id: iowa-state-bioshield
+    label: Iowa State BioShield CP (hidden adjacency, no ocean vocabulary)
+    pattern: hidden adjacency / marine materials
+    expect_category: marine_materials
+    expect_centrality: strong_adjacency
+    text: >
+      Mitigating corrosion is a grand challenge that costs the United States over
+      half a trillion dollars annually. Current corrosion control measures, which
+      mainly rely on chemical coatings, often come with high cost and risks to
+      human and environmental health. Microorganisms play key roles in corrosion,
+      in which they can either accelerate or inhibit corrosion of metal surfaces.
+      The researchers will develop a biological coating system for resilient
+      corrosion protection.
+
+  - id: wavearray-antifouling
+    label: WaveArray Antifouling Systems
+    pattern: marine materials / biofouling
+    expect_category: marine_materials
+    text: >
+      Novel Autonomous Electronic Methods to prevent biofouling, the unwanted
+      attachment of biological species such as barnacles, oysters and mussels, on
+      ships. Current antifouling methods are both harmful to the environment and
+      costly. Toxic paints may pollute marine environments.
+
+  - id: 3newable-uv-biofouling
+    label: 3newable (biofouling + wave energy)
+    pattern: marine materials / ocean sensing
+    # This short text carries a single marine context word ("oceanographic"),
+    # which is not enough to distinguish mechanism from end-market. Either is
+    # acceptable; `incidental` is not.
+    expect_centrality: [central_mechanism, primary_end_market]
+    text: >
+      Preventing Biofouling of Oceanographic Sensors Using UV Illumination
+      Powered by a Compact Wave Energy Converter. Oceanographic instrumentation
+      is located far from power grids in environments prone to biological growth
+      that covers scientific instruments and interferes with data collection.
+
+  - id: ebb-ocean-alkalinity
+    label: Marine carbon / ocean alkalinity enhancement
+    pattern: marine carbon
+    expect_category: marine_carbon
+    text: >
+      Electrochemical ocean alkalinity enhancement for marine carbon dioxide
+      removal. The process enhances the ocean's natural ability to store CO2
+      while reducing ocean acidification, using existing seawater intake
+      infrastructure at coastal industrial sites.
+
+  - id: cultimar-aquaculture
+    label: Cultimar Technologies (organics / blue food)
+    pattern: blue food / aquaculture
+    expect_category: blue_food
+    text: >
+      Introduction of a Novel Chemical Protein Filtration Method for Aquaculture
+      Production. This alleviates off flavor currently experienced by aquaculture
+      farmers, which adds billions in production costs and reduces farmer
+      profitability for finfish and shellfish operations.
+
+  - id: aikido-floating-offshore-wind
+    label: Offshore energy / floating platforms
+    pattern: offshore energy
+    expect_category: offshore_energy
+    text: >
+      Floating offshore wind platforms that can be built compactly in port and
+      then up-ended at sea, reducing installation cost. The design also supports
+      subsea cable connection and offshore power delivery for coastal facilities.
+
+  - id: osu-subsea-connection-precompany
+    label: Oregon State autonomous subsea connection (pre-company I-Corps)
+    pattern: pre-company research
+    expect_centrality: central_mechanism
+    text: >
+      This I-Corps project is based on the development of an autonomous system
+      that connects and disconnects underwater equipment without human divers.
+      Currently human divers or expert-piloted underwater vehicles install and
+      service offshore devices. Commercial diving is one of the world's most
+      dangerous professions, and robotic alternatives are hard to control
+      precisely because wave motion constantly disturbs the vehicle.
+
+  - id: vims-shellfish-rfid-precompany
+    label: VIMS shellfish aquaculture RFID (pre-company I-Corps)
+    pattern: pre-company research / blue food
+    expect_category: blue_food
+    text: >
+      This I-Corps project is based on the development of a digital farm
+      management platform for commercial shellfish aquaculture. Shellfish farmers
+      manage crops numbering in the millions, yet inventory records still rely on
+      handwritten logs, memory and spreadsheets.
+
+  - id: northeastern-hydrophone-precompany
+    label: Northeastern coherent hydrophone arrays (pre-company PFI)
+    pattern: pre-company research / ocean sensing
+    expect_category: ocean_sensing
+    text: >
+      Compact, coherent hydrophone array systems for real-time, instantaneous,
+      wide-area ocean acoustic monitoring from wind farms and other ocean
+      platforms, implementing passive ocean acoustic waveguide remote sensing.

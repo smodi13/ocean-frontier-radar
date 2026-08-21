@@ -1,0 +1,1442 @@
+{
+ "meta": {
+  "generated_at": "2026-08-21T16:55:32",
+  "phase": "2.5",
+  "note": "Queues allocate analyst attention. Numeric component scores are DIAGNOSTIC METADATA only, never an investment ranking. Ordering within Tier A is analyst judgment.",
+  "tier_criteria": {
+   "tier_a": "Not incidental, not established/beyond-stage, technical>=2, commercial>=2, relevance>=2, and latest signal within 24 months.",
+   "tier_b": "Relevant and not excluded, but missing one or two Tier A criteria.",
+   "tier_c": "Incidental, established/beyond-stage, dormant, or too little evidence.",
+   "frontier": "Pre-company signals. Separate framework; never compared numerically against funded companies."
+  }
+ },
+ "count": 31,
+ "signals": [
+  {
+   "candidate_id": "aquasteady-balancing-soil-moisture-a-seaweed-based-hydrogel",
+   "name": "AquaSteady - Balancing Soil Moisture, A Seaweed-Based Hydrogel for Sustainable Agriculture",
+   "institution": "Pratt Institute",
+   "signal_type": "commercialization_grant",
+   "signal_date": "2023-12-15",
+   "ocean_centrality": "central_mechanism",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 3,
+     "max": 3,
+     "why": "Substantial translation funding ($4,998,876)."
+    },
+    "ocean_relevance": {
+     "points": 3,
+     "max": 3,
+     "why": "Ocean centrality 'central_mechanism'."
+    },
+    "recency": {
+     "points": 1,
+     "max": 3,
+     "why": "Signal ~32 months old."
+    }
+   },
+   "frontier_total": 9,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "blue_food",
+   "geography": "BROOKLYN, NY",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "commercialization_grant",
+     "observed_claim": "NSF Convergence Accelerator Resrch award: NSF Convergence Accelerator Track J Phase 2: AquaSteady - Balancing Soil Moisture, A Seaweed-Based Hydrogel for Sustainable Agriculture",
+     "evidence_date": "2023-12-15",
+     "quantitative_value": 4998876.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2345052"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "bioshield-cp-a-microbial-coating-system-for-resilient-corros",
+   "name": "BioShield CP: A microbial coating system for resilient corrosion protection",
+   "institution": "Iowa State University",
+   "signal_type": "commercialization_grant",
+   "signal_date": "2025-06-30",
+   "ocean_centrality": "strong_adjacency",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 3,
+     "max": 3,
+     "why": "Substantial translation funding ($4,999,999)."
+    },
+    "ocean_relevance": {
+     "points": 2,
+     "max": 3,
+     "why": "Ocean centrality 'strong_adjacency'."
+    },
+    "recency": {
+     "points": 2,
+     "max": 3,
+     "why": "Signal ~14 months old."
+    }
+   },
+   "frontier_total": 9,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "marine_materials",
+   "geography": "AMES, IA",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "commercialization_grant",
+     "observed_claim": "NSF Convergence Accelerator Resrch, Special Projects award: Convergence Accelerator Bio-Inspired Design Innovations: BioShield CP: A microbial coating system for resilient corrosion protection",
+     "evidence_date": "2025-06-30",
+     "quantitative_value": 4999999.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2452538"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "translation-potential-of-explainable-artificial-intelligence",
+   "name": "Translation Potential of Explainable Artificial Intelligence (AI) for Satellite-Derived Nearshore Bathymetry a",
+   "institution": "University of Alaska Fairbanks Campus",
+   "signal_type": "icorps",
+   "signal_date": "2026-08-19",
+   "ocean_centrality": "central_mechanism",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 1,
+     "max": 3,
+     "why": "Small award ($50,000)."
+    },
+    "ocean_relevance": {
+     "points": 3,
+     "max": 3,
+     "why": "Ocean centrality 'central_mechanism'."
+    },
+    "recency": {
+     "points": 3,
+     "max": 3,
+     "why": "Signal ~0 months old."
+    }
+   },
+   "frontier_total": 9,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "ocean_sensing",
+   "geography": "FAIRBANKS, AK",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "icorps",
+     "observed_claim": "NSF I-Corps award: I-Corps: Translation Potential of Explainable Artificial Intelligence (AI) for Satellite-Derived Nearshore Bathymetry and River Profiles",
+     "evidence_date": "2026-08-19",
+     "quantitative_value": 50000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2630206"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "translation-potential-of-a-multi-modal-sensor-fusion-platfor",
+   "name": "Translation Potential of a Multi-Modal Sensor Fusion Platform that Provides Precision Drone Swarm Tracking",
+   "institution": "University of Massachusetts Amherst",
+   "signal_type": "icorps",
+   "signal_date": "2026-08-04",
+   "ocean_centrality": "central_mechanism",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 1,
+     "max": 3,
+     "why": "Small award ($50,000)."
+    },
+    "ocean_relevance": {
+     "points": 3,
+     "max": 3,
+     "why": "Ocean centrality 'central_mechanism'."
+    },
+    "recency": {
+     "points": 3,
+     "max": 3,
+     "why": "Signal ~1 months old."
+    }
+   },
+   "frontier_total": 9,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "maritime_software",
+   "geography": "AMHERST, MA",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "icorps",
+     "observed_claim": "NSF I-Corps award: I-Corps:  Translation Potential of a Multi-Modal Sensor Fusion Platform that Provides Precision Drone Swarm Tracking",
+     "evidence_date": "2026-08-04",
+     "quantitative_value": 50000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2628986"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "translation-potential-of-a-marine-adapted-radio-frequency-id",
+   "name": "Translation Potential of a marine-adapted radio frequency identification (RFID) and analytics platform for dig",
+   "institution": "College of William & Mary Virginia Institute of Marine Science",
+   "signal_type": "icorps",
+   "signal_date": "2026-08-19",
+   "ocean_centrality": "central_mechanism",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 1,
+     "max": 3,
+     "why": "Small award ($50,000)."
+    },
+    "ocean_relevance": {
+     "points": 3,
+     "max": 3,
+     "why": "Ocean centrality 'central_mechanism'."
+    },
+    "recency": {
+     "points": 3,
+     "max": 3,
+     "why": "Signal ~0 months old."
+    }
+   },
+   "frontier_total": 9,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "blue_food",
+   "geography": "GLOUCESTER POINT, VA",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "icorps",
+     "observed_claim": "NSF I-Corps award: I-Corps:  Translation Potential of a marine-adapted radio frequency identification (RFID) and analytics platform for digital inventory management in shellfish aquaculture",
+     "evidence_date": "2026-08-19",
+     "quantitative_value": 50000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2637876"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "translation-potential-of-an-artificial-intelligence-ai-surro",
+   "name": "Translation Potential of an Artificial Intelligence (AI) Surrogate for Coastal Storm Surge and Water Level For",
+   "institution": "University of Florida",
+   "signal_type": "icorps",
+   "signal_date": "2026-08-19",
+   "ocean_centrality": "central_mechanism",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 1,
+     "max": 3,
+     "why": "Small award ($50,000)."
+    },
+    "ocean_relevance": {
+     "points": 3,
+     "max": 3,
+     "why": "Ocean centrality 'central_mechanism'."
+    },
+    "recency": {
+     "points": 3,
+     "max": 3,
+     "why": "Signal ~0 months old."
+    }
+   },
+   "frontier_total": 9,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "coastal_adaptation",
+   "geography": "GAINESVILLE, FL",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "icorps",
+     "observed_claim": "NSF I-Corps award: I-Corps: Translation Potential of an Artificial Intelligence (AI) Surrogate for Coastal Storm Surge and Water Level Forecasting",
+     "evidence_date": "2026-08-19",
+     "quantitative_value": 50000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2633942"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "translation-potential-of-an-artificial-intelligence-ai-enabl",
+   "name": "Translation Potential of an Artificial Intelligence (AI)-Enabled Autonomous Subsea Connection System",
+   "institution": "Oregon State University",
+   "signal_type": "icorps",
+   "signal_date": "2026-08-17",
+   "ocean_centrality": "central_mechanism",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 1,
+     "max": 3,
+     "why": "Small award ($50,000)."
+    },
+    "ocean_relevance": {
+     "points": 3,
+     "max": 3,
+     "why": "Ocean centrality 'central_mechanism'."
+    },
+    "recency": {
+     "points": 3,
+     "max": 3,
+     "why": "Signal ~0 months old."
+    }
+   },
+   "frontier_total": 9,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "maritime_autonomy",
+   "geography": "CORVALLIS, OR",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "icorps",
+     "observed_claim": "NSF I-Corps award: I-Corps: Translation Potential of an Artificial Intelligence (AI)-Enabled Autonomous Subsea Connection System",
+     "evidence_date": "2026-08-17",
+     "quantitative_value": 50000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2630730"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "translation-potential-of-a-digital-workflow-for-steel-infras",
+   "name": "Translation potential of a digital workflow for steel infrastructure corrosion inspection, analysis, and repai",
+   "institution": "Massachusetts Institute of Technology",
+   "signal_type": "icorps",
+   "signal_date": "2026-08-17",
+   "ocean_centrality": "central_mechanism",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 1,
+     "max": 3,
+     "why": "Small award ($50,000)."
+    },
+    "ocean_relevance": {
+     "points": 3,
+     "max": 3,
+     "why": "Ocean centrality 'central_mechanism'."
+    },
+    "recency": {
+     "points": 3,
+     "max": 3,
+     "why": "Signal ~0 months old."
+    }
+   },
+   "frontier_total": 9,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "marine_materials",
+   "geography": "CAMBRIDGE, MA",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "icorps",
+     "observed_claim": "NSF I-Corps award: I-Corps: Translation potential of a digital workflow for steel infrastructure corrosion inspection, analysis, and repair",
+     "evidence_date": "2026-08-17",
+     "quantitative_value": 50000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2638231"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "a-new-biomanufacturing-process-for-making-precipitated-calci",
+   "name": "A new biomanufacturing process for making precipitated calcium carbonate and plant-based compounds that suppor",
+   "institution": "University of Maryland Center for Environmental Sciences",
+   "signal_type": "commercialization_grant",
+   "signal_date": "2024-01-09",
+   "ocean_centrality": "central_mechanism",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 2,
+     "max": 3,
+     "why": "Meaningful award ($650,000)."
+    },
+    "ocean_relevance": {
+     "points": 3,
+     "max": 3,
+     "why": "Ocean centrality 'central_mechanism'."
+    },
+    "recency": {
+     "points": 1,
+     "max": 3,
+     "why": "Signal ~31 months old."
+    }
+   },
+   "frontier_total": 8,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "blue_food",
+   "geography": "CAMBRIDGE, MD",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "commercialization_grant",
+     "observed_claim": "NSF Convergence Accelerator Resrch award: NSF Convergence Accelerator Track M: A new biomanufacturing process for making precipitated calcium carbonate and plant-based compounds that support human health",
+     "evidence_date": "2024-01-09",
+     "quantitative_value": 650000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2344228"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "backyard-buoys-equipping-underserved-communities-with-ocean",
+   "name": "Backyard Buoys: Equipping Underserved Communities with Ocean Intelligence Platforms",
+   "institution": "University of Washington",
+   "signal_type": "commercialization_grant",
+   "signal_date": "2022-09-15",
+   "ocean_centrality": "central_mechanism",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 3,
+     "max": 3,
+     "why": "Substantial translation funding ($4,981,779)."
+    },
+    "ocean_relevance": {
+     "points": 3,
+     "max": 3,
+     "why": "Ocean centrality 'central_mechanism'."
+    },
+    "recency": {
+     "points": 0,
+     "max": 3,
+     "why": "Signal ~47 months old; likely dormant."
+    }
+   },
+   "frontier_total": 8,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "ocean_sensing",
+   "geography": "SEATTLE, WA",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "commercialization_grant",
+     "observed_claim": "NSF Convergence Accelerator Resrch award: NSF Convergence Accelerator Track E: Backyard Buoys: Equipping Underserved Communities with Ocean Intelligence Platforms",
+     "evidence_date": "2022-09-15",
+     "quantitative_value": 4981779.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2230479"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "biospace-biosensing-surveillance-of-pathogens-in-aquaculture",
+   "name": "BioSPACE: Biosensing Surveillance of Pathogens in Aquaculture and Coastal Environments",
+   "institution": "University of Massachusetts Lowell",
+   "signal_type": "commercialization_grant",
+   "signal_date": "2023-08-18",
+   "ocean_centrality": "central_mechanism",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 3,
+     "max": 3,
+     "why": "Substantial translation funding ($1,000,000)."
+    },
+    "ocean_relevance": {
+     "points": 3,
+     "max": 3,
+     "why": "Ocean centrality 'central_mechanism'."
+    },
+    "recency": {
+     "points": 0,
+     "max": 3,
+     "why": "Signal ~36 months old; likely dormant."
+    }
+   },
+   "frontier_total": 8,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "blue_food",
+   "geography": "LOWELL, MA",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "commercialization_grant",
+     "observed_claim": "NSF PFI-Partnrships for Innovation award: PFI-RP: BioSPACE: Biosensing Surveillance of Pathogens in Aquaculture and Coastal Environments",
+     "evidence_date": "2023-08-18",
+     "quantitative_value": 1000000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2329826"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "compact-coherent-hydrophone-array-systems-for-real-time-inst",
+   "name": "Compact, Coherent, Hydrophone Array Systems for Real-Time, Instantaneous, Wide-Area, Ocean Acoustic Monitoring",
+   "institution": "Northeastern University",
+   "signal_type": "commercialization_grant",
+   "signal_date": "2024-04-01",
+   "ocean_centrality": "central_mechanism",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 2,
+     "max": 3,
+     "why": "Meaningful award ($550,000)."
+    },
+    "ocean_relevance": {
+     "points": 3,
+     "max": 3,
+     "why": "Ocean centrality 'central_mechanism'."
+    },
+    "recency": {
+     "points": 1,
+     "max": 3,
+     "why": "Signal ~29 months old."
+    }
+   },
+   "frontier_total": 8,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "ocean_sensing",
+   "geography": "BOSTON, MA",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "commercialization_grant",
+     "observed_claim": "NSF PFI-Partnrships for Innovation award: PFI-TT: Compact, Coherent, Hydrophone Array Systems for Real-Time, Instantaneous, Wide-Area, Ocean Acoustic Monitoring from Wind Farms and Other Ocean Platforms",
+     "evidence_date": "2024-04-01",
+     "quantitative_value": 550000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2345791"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "digital-reefs-a-globally-coordinated-universally-accessible",
+   "name": "Digital Reefs: A Globally Coordinated, Universally Accessible Digital Twin Network for the Coral Reef Blue Eco",
+   "institution": "Woods Hole Oceanographic Institution",
+   "signal_type": "commercialization_grant",
+   "signal_date": "2022-09-15",
+   "ocean_centrality": "central_mechanism",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 3,
+     "max": 3,
+     "why": "Substantial translation funding ($4,980,807)."
+    },
+    "ocean_relevance": {
+     "points": 3,
+     "max": 3,
+     "why": "Ocean centrality 'central_mechanism'."
+    },
+    "recency": {
+     "points": 0,
+     "max": 3,
+     "why": "Signal ~47 months old; likely dormant."
+    }
+   },
+   "frontier_total": 8,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "ocean_sensing",
+   "geography": "WOODS HOLE, MA",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "commercialization_grant",
+     "observed_claim": "NSF Convergence Accelerator Resrch award: NSF Convergence Accelerator Track E: Digital Reefs: A Globally Coordinated, Universally Accessible Digital Twin Network for the Coral Reef Blue Economy",
+     "evidence_date": "2022-09-15",
+     "quantitative_value": 4980807.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2230734"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "prototyping-decision-support-and-monitoring-tools-for-manage",
+   "name": "Prototyping Decision Support and Monitoring Tools for Management of Salt Contamination of Water Supplies in Ti",
+   "institution": "University of Maryland Center for Environmental Sciences",
+   "signal_type": "commercialization_grant",
+   "signal_date": "2024-01-05",
+   "ocean_centrality": "central_mechanism",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 2,
+     "max": 3,
+     "why": "Meaningful award ($650,000)."
+    },
+    "ocean_relevance": {
+     "points": 3,
+     "max": 3,
+     "why": "Ocean centrality 'central_mechanism'."
+    },
+    "recency": {
+     "points": 1,
+     "max": 3,
+     "why": "Signal ~32 months old."
+    }
+   },
+   "frontier_total": 8,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "marine_materials",
+   "geography": "CAMBRIDGE, MD",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "commercialization_grant",
+     "observed_claim": "NSF Convergence Accelerator Resrch award: NSF Convergence Accelerator Track K: Prototyping Decision Support and Monitoring Tools for Management of Salt Contamination of Water Supplies in Tidal Rivers",
+     "evidence_date": "2024-01-05",
+     "quantitative_value": 650000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2344042"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "towards-resilient-equitable-safe-and-sustainable-water-for-i",
+   "name": "Towards Resilient, Equitable, Safe and Sustainable Water for Islands (RESSI-H2O)",
+   "institution": "University of South Florida",
+   "signal_type": "commercialization_grant",
+   "signal_date": "2024-01-04",
+   "ocean_centrality": "central_mechanism",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 2,
+     "max": 3,
+     "why": "Meaningful award ($650,000)."
+    },
+    "ocean_relevance": {
+     "points": 3,
+     "max": 3,
+     "why": "Ocean centrality 'central_mechanism'."
+    },
+    "recency": {
+     "points": 1,
+     "max": 3,
+     "why": "Signal ~32 months old."
+    }
+   },
+   "frontier_total": 8,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "marine_materials",
+   "geography": "TAMPA, FL",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "commercialization_grant",
+     "observed_claim": "NSF Convergence Accelerator Resrch award: NSF Convergence Accelerator Track K: Towards Resilient, Equitable, Safe and Sustainable Water for Islands (RESSI-H2O)",
+     "evidence_date": "2024-01-04",
+     "quantitative_value": 650000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2344418"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "translation-potential-of-artificial-intelligence-ai-driven-w",
+   "name": "Translation Potential of Artificial Intelligence (AI)-Driven Wave Predictions for Sustainable Shipping and Fue",
+   "institution": "University of California-Berkeley",
+   "signal_type": "icorps",
+   "signal_date": "2025-07-31",
+   "ocean_centrality": "central_mechanism",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 1,
+     "max": 3,
+     "why": "Small award ($50,000)."
+    },
+    "ocean_relevance": {
+     "points": 3,
+     "max": 3,
+     "why": "Ocean centrality 'central_mechanism'."
+    },
+    "recency": {
+     "points": 2,
+     "max": 3,
+     "why": "Signal ~13 months old."
+    }
+   },
+   "frontier_total": 8,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "offshore_energy",
+   "geography": "BERKELEY, CA",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "icorps",
+     "observed_claim": "NSF I-Corps award: I-Corps: Translation Potential of Artificial Intelligence (AI)-Driven Wave Predictions for Sustainable Shipping and Fuel Efficiency",
+     "evidence_date": "2025-07-31",
+     "quantitative_value": 50000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2533913"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "translational-potential-of-on-paper-porous-silicon-sensors-f",
+   "name": "Translational Potential of On-Paper Porous Silicon Sensors for Quantitative Rapid Diagnostic Tests",
+   "institution": "Vanderbilt University",
+   "signal_type": "icorps",
+   "signal_date": "2026-08-17",
+   "ocean_centrality": "strong_adjacency",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 1,
+     "max": 3,
+     "why": "Small award ($50,000)."
+    },
+    "ocean_relevance": {
+     "points": 2,
+     "max": 3,
+     "why": "Ocean centrality 'strong_adjacency'."
+    },
+    "recency": {
+     "points": 3,
+     "max": 3,
+     "why": "Signal ~0 months old."
+    }
+   },
+   "frontier_total": 8,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "marine_materials",
+   "geography": "NASHVILLE, TN",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "icorps",
+     "observed_claim": "NSF I-Corps award: I-Corps: Translational Potential of On-Paper Porous Silicon Sensors for Quantitative Rapid Diagnostic Tests",
+     "evidence_date": "2026-08-17",
+     "quantitative_value": 50000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2631182"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "a-cost-effective-and-scalable-tidal-current-energy-harvestin",
+   "name": "A Cost-Effective and Scalable Tidal Current Energy Harvesting System",
+   "institution": "University of Maryland Baltimore County",
+   "signal_type": "commercialization_grant",
+   "signal_date": "2023-08-16",
+   "ocean_centrality": "central_mechanism",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 2,
+     "max": 3,
+     "why": "Meaningful award ($550,000)."
+    },
+    "ocean_relevance": {
+     "points": 3,
+     "max": 3,
+     "why": "Ocean centrality 'central_mechanism'."
+    },
+    "recency": {
+     "points": 0,
+     "max": 3,
+     "why": "Signal ~36 months old; likely dormant."
+    }
+   },
+   "frontier_total": 7,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "offshore_energy",
+   "geography": "BALTIMORE, MD",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "commercialization_grant",
+     "observed_claim": "NSF PFI-Partnrships for Innovation award: PFI-TT: A Cost-Effective and Scalable Tidal Current Energy Harvesting System",
+     "evidence_date": "2023-08-16",
+     "quantitative_value": 550000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2329791"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "biofilm-based-corrosion-control-using-3d-printed-biotechnolo",
+   "name": "Biofilm-based Corrosion Control using 3D Printed Biotechnology",
+   "institution": "Iowa State University",
+   "signal_type": "commercialization_grant",
+   "signal_date": "2024-01-10",
+   "ocean_centrality": "strong_adjacency",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 2,
+     "max": 3,
+     "why": "Meaningful award ($650,000)."
+    },
+    "ocean_relevance": {
+     "points": 2,
+     "max": 3,
+     "why": "Ocean centrality 'strong_adjacency'."
+    },
+    "recency": {
+     "points": 1,
+     "max": 3,
+     "why": "Signal ~31 months old."
+    }
+   },
+   "frontier_total": 7,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "marine_materials",
+   "geography": "AMES, IA",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "commercialization_grant",
+     "observed_claim": "NSF Convergence Accelerator Resrch award: NSF Convergence Accelerator Track M: Biofilm-based Corrosion Control using 3D Printed Biotechnology",
+     "evidence_date": "2024-01-10",
+     "quantitative_value": 650000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2344389"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "cost-effective-anchor-for-offshore-floating-energy-harvestin",
+   "name": "Cost-Effective Anchor for Offshore, Floating, Energy-harvesting Wind Towers",
+   "institution": "Texas A&M Engineering Experiment Station",
+   "signal_type": "commercialization_grant",
+   "signal_date": "2022-08-08",
+   "ocean_centrality": "central_mechanism",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 2,
+     "max": 3,
+     "why": "Meaningful award ($250,000)."
+    },
+    "ocean_relevance": {
+     "points": 3,
+     "max": 3,
+     "why": "Ocean centrality 'central_mechanism'."
+    },
+    "recency": {
+     "points": 0,
+     "max": 3,
+     "why": "Signal ~48 months old; likely dormant."
+    }
+   },
+   "frontier_total": 7,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "offshore_energy",
+   "geography": "COLLEGE STATION, TX",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "commercialization_grant",
+     "observed_claim": "NSF PFI-Partnrships for Innovation award: PFI-TT: Cost-Effective Anchor for Offshore, Floating, Energy-harvesting Wind Towers",
+     "evidence_date": "2022-08-08",
+     "quantitative_value": 250000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2214009"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "accelerating-commercial-marine-fish-production-in-us-develop",
+   "name": "Accelerating commercial marine fish production in US: developing sustainable feeds, establishing feed supplier",
+   "institution": "University of North Carolina at Wilmington",
+   "signal_type": "commercialization_grant",
+   "signal_date": "2022-11-02",
+   "ocean_centrality": "central_mechanism",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 1,
+     "max": 3,
+     "why": "Small award ($244,974)."
+    },
+    "ocean_relevance": {
+     "points": 3,
+     "max": 3,
+     "why": "Ocean centrality 'central_mechanism'."
+    },
+    "recency": {
+     "points": 0,
+     "max": 3,
+     "why": "Signal ~46 months old; likely dormant."
+    }
+   },
+   "frontier_total": 6,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "blue_food",
+   "geography": "WILMINGTON, NC",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "commercialization_grant",
+     "observed_claim": "NSF Convergence Accelerator Resrch award: NSF Convergence Accelerator Track J: Accelerating commercial marine fish production in US: developing sustainable feeds, establishing feed suppliers and enhancing market acceptance",
+     "evidence_date": "2022-11-02",
+     "quantitative_value": 244974.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2235258"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "aqua-sacs-for-sustainable-agriculture-in-a-changing-climate",
+   "name": "Aqua Sacs for Sustainable Agriculture in a Changing Climate",
+   "institution": "Pratt Institute",
+   "signal_type": "commercialization_grant",
+   "signal_date": "2022-11-02",
+   "ocean_centrality": "primary_end_market",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 2,
+     "max": 3,
+     "why": "Meaningful award ($750,000)."
+    },
+    "ocean_relevance": {
+     "points": 2,
+     "max": 3,
+     "why": "Ocean centrality 'primary_end_market'."
+    },
+    "recency": {
+     "points": 0,
+     "max": 3,
+     "why": "Signal ~46 months old; likely dormant."
+    }
+   },
+   "frontier_total": 6,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "blue_food",
+   "geography": "BROOKLYN, NY",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "commercialization_grant",
+     "observed_claim": "NSF Convergence Accelerator Resrch award: NSF Convergence Accelerator Track J:  Aqua Sacs for Sustainable Agriculture in a Changing Climate",
+     "evidence_date": "2022-11-02",
+     "quantitative_value": 750000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2236235"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "autonomous-aquabots-for-water-main-inspections-michigan-stat",
+   "name": "Autonomous Aquabots for Water Main Inspections",
+   "institution": "Michigan State University",
+   "signal_type": "icorps",
+   "signal_date": "2024-01-11",
+   "ocean_centrality": "primary_end_market",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 1,
+     "max": 3,
+     "why": "Small award ($50,000)."
+    },
+    "ocean_relevance": {
+     "points": 2,
+     "max": 3,
+     "why": "Ocean centrality 'primary_end_market'."
+    },
+    "recency": {
+     "points": 1,
+     "max": 3,
+     "why": "Signal ~31 months old."
+    }
+   },
+   "frontier_total": 6,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "maritime_autonomy",
+   "geography": "EAST LANSING, MI",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "icorps",
+     "observed_claim": "NSF I-Corps award: I-Corps: Autonomous Aquabots for Water Main Inspections",
+     "evidence_date": "2024-01-11",
+     "quantitative_value": 50000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2345478"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "antimicrobial-polyvinyl-chloride-pvc-pipe-to-reduce-biofouli",
+   "name": "Antimicrobial polyvinyl chloride (PVC) pipe to reduce biofouling in hydroponic farming",
+   "institution": "Kent State University",
+   "signal_type": "icorps",
+   "signal_date": "2023-08-01",
+   "ocean_centrality": "strong_adjacency",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 1,
+     "max": 3,
+     "why": "Small award ($50,000)."
+    },
+    "ocean_relevance": {
+     "points": 2,
+     "max": 3,
+     "why": "Ocean centrality 'strong_adjacency'."
+    },
+    "recency": {
+     "points": 0,
+     "max": 3,
+     "why": "Signal ~37 months old; likely dormant."
+    }
+   },
+   "frontier_total": 5,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "marine_materials",
+   "geography": "KENT, OH",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "icorps",
+     "observed_claim": "NSF I-Corps award: I-Corps:  Antimicrobial polyvinyl chloride (PVC) pipe to reduce biofouling in hydroponic farming",
+     "evidence_date": "2023-08-01",
+     "quantitative_value": 50000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2334423"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "high-intensity-pulsed-light-for-the-removal-of-off-flavor-co",
+   "name": "High Intensity pulsed light for the removal of off-flavor compounds in aquaculture effluents",
+   "institution": "University of Wisconsin-Milwaukee",
+   "signal_type": "icorps",
+   "signal_date": "2023-01-17",
+   "ocean_centrality": "primary_end_market",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 1,
+     "max": 3,
+     "why": "Small award ($50,000)."
+    },
+    "ocean_relevance": {
+     "points": 2,
+     "max": 3,
+     "why": "Ocean centrality 'primary_end_market'."
+    },
+    "recency": {
+     "points": 0,
+     "max": 3,
+     "why": "Signal ~43 months old; likely dormant."
+    }
+   },
+   "frontier_total": 5,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "blue_food",
+   "geography": "MILWAUKEE, WI",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "icorps",
+     "observed_claim": "NSF I-Corps award: I-Corps: High Intensity pulsed light for the removal of off-flavor compounds in aquaculture effluents",
+     "evidence_date": "2023-01-17",
+     "quantitative_value": 50000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2306173"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "high-thermal-conductivity-polymers-and-phase-change-material",
+   "name": "High thermal conductivity polymers and phase change materials based on graphene",
+   "institution": "University of Oklahoma Norman Campus",
+   "signal_type": "icorps",
+   "signal_date": "2023-06-15",
+   "ocean_centrality": "primary_end_market",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 1,
+     "max": 3,
+     "why": "Small award ($50,000)."
+    },
+    "ocean_relevance": {
+     "points": 2,
+     "max": 3,
+     "why": "Ocean centrality 'primary_end_market'."
+    },
+    "recency": {
+     "points": 0,
+     "max": 3,
+     "why": "Signal ~38 months old; likely dormant."
+    }
+   },
+   "frontier_total": 5,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "marine_materials",
+   "geography": "NORMAN, OK",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "icorps",
+     "observed_claim": "NSF I-Corps award: I-Corps:  High thermal conductivity polymers and phase change materials based on graphene",
+     "evidence_date": "2023-06-15",
+     "quantitative_value": 50000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2330247"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "iron-supplementation-hydrogel-plant-substrate-for-aquaponics",
+   "name": "Iron supplementation hydrogel plant substrate for aquaponics",
+   "institution": "Bowling Green State University",
+   "signal_type": "icorps",
+   "signal_date": "2023-08-01",
+   "ocean_centrality": "primary_end_market",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 1,
+     "max": 3,
+     "why": "Small award ($50,000)."
+    },
+    "ocean_relevance": {
+     "points": 2,
+     "max": 3,
+     "why": "Ocean centrality 'primary_end_market'."
+    },
+    "recency": {
+     "points": 0,
+     "max": 3,
+     "why": "Signal ~37 months old; likely dormant."
+    }
+   },
+   "frontier_total": 5,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "blue_food",
+   "geography": "BOWLING GREEN, OH",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "icorps",
+     "observed_claim": "NSF I-Corps award: I-Corps:   Iron supplementation hydrogel plant substrate for aquaponics",
+     "evidence_date": "2023-08-01",
+     "quantitative_value": 50000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2336019"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "omniphobic-anodic-coatings-stevens-institute-of-technology",
+   "name": "Omniphobic Anodic Coatings",
+   "institution": "Stevens Institute of Technology",
+   "signal_type": "icorps",
+   "signal_date": "2023-06-12",
+   "ocean_centrality": "primary_end_market",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 1,
+     "max": 3,
+     "why": "Small award ($50,000)."
+    },
+    "ocean_relevance": {
+     "points": 2,
+     "max": 3,
+     "why": "Ocean centrality 'primary_end_market'."
+    },
+    "recency": {
+     "points": 0,
+     "max": 3,
+     "why": "Signal ~38 months old; likely dormant."
+    }
+   },
+   "frontier_total": 5,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "marine_materials",
+   "geography": "HOBOKEN, NJ",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "icorps",
+     "observed_claim": "NSF I-Corps award: I-Corps: Omniphobic Anodic Coatings",
+     "evidence_date": "2023-06-12",
+     "quantitative_value": 50000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2326666"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "scalable-development-of-multifunctional-hexagonal-boron-nitr",
+   "name": "Scalable Development of Multifunctional Hexagonal Boron Nitride Protective Coatings",
+   "institution": "William Marsh Rice University",
+   "signal_type": "icorps",
+   "signal_date": "2023-05-24",
+   "ocean_centrality": "strong_adjacency",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 1,
+     "max": 3,
+     "why": "Small award ($50,000)."
+    },
+    "ocean_relevance": {
+     "points": 2,
+     "max": 3,
+     "why": "Ocean centrality 'strong_adjacency'."
+    },
+    "recency": {
+     "points": 0,
+     "max": 3,
+     "why": "Signal ~39 months old; likely dormant."
+    }
+   },
+   "frontier_total": 5,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "marine_materials",
+   "geography": "HOUSTON, TX",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "icorps",
+     "observed_claim": "NSF I-Corps award: I-Corps: Scalable Development of Multifunctional Hexagonal Boron Nitride Protective Coatings",
+     "evidence_date": "2023-05-24",
+     "quantitative_value": 50000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2325675"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "surface-innovation-for-energy-efficiency-and-water-managemen",
+   "name": "Surface Innovation for Energy Efficiency and Water Management",
+   "institution": "Massachusetts Institute of Technology",
+   "signal_type": "icorps",
+   "signal_date": "2023-05-10",
+   "ocean_centrality": "primary_end_market",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 1,
+     "max": 3,
+     "why": "Small award ($50,000)."
+    },
+    "ocean_relevance": {
+     "points": 2,
+     "max": 3,
+     "why": "Ocean centrality 'primary_end_market'."
+    },
+    "recency": {
+     "points": 0,
+     "max": 3,
+     "why": "Signal ~39 months old; likely dormant."
+    }
+   },
+   "frontier_total": 5,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "marine_materials",
+   "geography": "CAMBRIDGE, MA",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "icorps",
+     "observed_claim": "NSF I-Corps award: I-Corps: Surface Innovation for Energy Efficiency and Water Management",
+     "evidence_date": "2023-05-10",
+     "quantitative_value": 50000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2326986"
+    }
+   ],
+   "company_formed": false
+  },
+  {
+   "candidate_id": "surface-modification-of-complex-structures-by-self-limiting",
+   "name": "Surface Modification of Complex Structures by Self-Limiting Electrospray Deposition",
+   "institution": "Rutgers University New Brunswick",
+   "signal_type": "icorps",
+   "signal_date": "2023-06-15",
+   "ocean_centrality": "strong_adjacency",
+   "components": {
+    "translation_intent": {
+     "points": 2,
+     "max": 3,
+     "why": "Funded customer discovery or translation programme underway."
+    },
+    "technical_depth": {
+     "points": 1,
+     "max": 3,
+     "why": "Small award ($50,000)."
+    },
+    "ocean_relevance": {
+     "points": 2,
+     "max": 3,
+     "why": "Ocean centrality 'strong_adjacency'."
+    },
+    "recency": {
+     "points": 0,
+     "max": 3,
+     "why": "Signal ~38 months old; likely dormant."
+    }
+   },
+   "frontier_total": 5,
+   "frontier_max": 12,
+   "note": "Frontier signals are scored on their own framework and are never compared numerically against funded companies.",
+   "taxonomy": "marine_materials",
+   "geography": "NEW BRUNSWICK, NJ",
+   "candidate_type": "research_project",
+   "evidence": [
+    {
+     "evidence_type": "icorps",
+     "observed_claim": "NSF I-Corps award: I-Corps: Surface Modification of Complex Structures by Self-Limiting Electrospray Deposition",
+     "evidence_date": "2023-06-15",
+     "quantitative_value": 50000.0,
+     "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2330956"
+    }
+   ],
+   "company_formed": false
+  }
+ ]
+}

@@ -1,0 +1,101 @@
+{
+ "meta": {
+  "generated_at": "2026-08-21T16:55:32",
+  "phase": "2.5",
+  "note": "Queues allocate analyst attention. Numeric component scores are DIAGNOSTIC METADATA only, never an investment ranking. Ordering within Tier A is analyst judgment.",
+  "tier_criteria": {
+   "tier_a": "Not incidental, not established/beyond-stage, technical>=2, commercial>=2, relevance>=2, and latest signal within 24 months.",
+   "tier_b": "Relevant and not excluded, but missing one or two Tier A criteria.",
+   "tier_c": "Incidental, established/beyond-stage, dormant, or too little evidence.",
+   "frontier": "Pre-company signals. Separate framework; never compared numerically against funded companies."
+  }
+ },
+ "total_candidates": 579,
+ "by_queue": {
+  "tier_a": 38,
+  "tier_b": 65,
+  "tier_c": 445,
+  "frontier": 31
+ },
+ "by_queue_and_category": {
+  "tier_a": {
+   "marine_materials": 7,
+   "maritime_autonomy": 5,
+   "blue_food": 12,
+   "coastal_adaptation": 4,
+   "offshore_energy": 4,
+   "ocean_sensing": 6
+  },
+  "tier_b": {
+   "offshore_energy": 13,
+   "marine_materials": 10,
+   "maritime_autonomy": 10,
+   "coastal_adaptation": 3,
+   "blue_food": 21,
+   "ocean_sensing": 5,
+   "marine_carbon": 3
+  },
+  "tier_c": {
+   "marine_materials": 154,
+   "ocean_sensing": 58,
+   "maritime_software": 15,
+   "coastal_adaptation": 15,
+   "offshore_energy": 28,
+   "maritime_autonomy": 88,
+   "blue_food": 85,
+   "marine_carbon": 2
+  },
+  "frontier": {
+   "maritime_autonomy": 2,
+   "ocean_sensing": 4,
+   "blue_food": 8,
+   "marine_materials": 12,
+   "offshore_energy": 3,
+   "coastal_adaptation": 1,
+   "maritime_software": 1
+  }
+ },
+ "by_queue_and_centrality": {
+  "tier_a": {
+   "central_mechanism": 22,
+   "strong_adjacency": 4,
+   "primary_end_market": 12
+  },
+  "tier_b": {
+   "central_mechanism": 29,
+   "primary_end_market": 34,
+   "strong_adjacency": 2
+  },
+  "tier_c": {
+   "primary_end_market": 196,
+   "central_mechanism": 142,
+   "strong_adjacency": 107
+  },
+  "frontier": {
+   "central_mechanism": 18,
+   "primary_end_market": 7,
+   "strong_adjacency": 6
+  }
+ },
+ "by_queue_and_type": {
+  "tier_a": {
+   "company": 36,
+   "spinout": 2
+  },
+  "tier_b": {
+   "company": 63,
+   "spinout": 2
+  },
+  "tier_c": {
+   "company": 445
+  },
+  "frontier": {
+   "research_project": 31
+  }
+ },
+ "pre_company_share": {
+  "frontier_count": 31,
+  "actionable_universe": 134,
+  "frontier_share_of_actionable": 0.231
+ }
+}

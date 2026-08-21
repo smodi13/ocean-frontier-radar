@@ -1,7 +1,7 @@
 {
  "meta": {
-  "generated_at": "2026-08-21T13:24:24",
-  "n_candidates": 562,
+  "generated_at": "2026-08-21T16:49:24",
+  "n_candidates": 579,
   "priority_max": 17,
   "note": "Priority scores rank ANALYST ATTENTION, not investment quality. Totals are computed from components and are meaningless without them.",
   "ingest_log": [
@@ -49,6 +49,33 @@
     "records_kept": 1,
     "status": "ok",
     "message": null
+   },
+   {
+    "module": "refresh",
+    "started_at": "2026-08-21T13:51:20",
+    "finished_at": "2026-08-21T13:52:30",
+    "records_seen": 60,
+    "records_kept": 302,
+    "status": "ok",
+    "message": null
+   },
+   {
+    "module": "refresh",
+    "started_at": "2026-08-21T16:31:28",
+    "finished_at": "2026-08-21T16:33:43",
+    "records_seen": 121,
+    "records_kept": 633,
+    "status": "ok",
+    "message": null
+   },
+   {
+    "module": "nsf",
+    "started_at": "2026-08-21T16:40:31",
+    "finished_at": "2026-08-21T16:47:19",
+    "records_seen": 4040,
+    "records_kept": 119,
+    "status": "error",
+    "message": "curl failed for 'wave energy': ; curl failed for 'reef': "
    }
   ]
  },
@@ -139,6 +166,12 @@
      "statement": "Public procurement records show buyers paying $1.68M-$1.99M per AUV, but the dominant lifetime cost in ocean operations is frequently the support vessel. If so, a cheaper propulsion module does not change the customer's economics and the addressable value is far smaller than vehicle price implies.",
      "evidence_ids": [],
      "author": "analyst"
+    },
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Current activity: latest signal 2025-01-01 (~20 months old). Against: none",
+     "evidence_ids": [],
+     "author": "analyst"
     }
    ],
    "priority_components": {
@@ -150,7 +183,13 @@
       "ev_c332bb9af011c38c",
       "ev_9597524b449007c8",
       "ev_7b28e25341b0a525",
-      "ev_2917e2519710ac31"
+      "ev_2917e2519710ac31",
+      "ev_3a6b629bf780267f",
+      "ev_9eb2674cd129d73f",
+      "ev_3d3a316a707220fa",
+      "ev_cd0383c798409ff4",
+      "ev_fab9b86a893d00f4",
+      "ev_e28e0ada05d3c676"
      ],
      "analyst_override": false
     },
@@ -180,7 +219,8 @@
      "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
      "evidence_ids": [
       "ev_c332bb9af011c38c",
-      "ev_8ae92a4cf21b6b1f"
+      "ev_8ae92a4cf21b6b1f",
+      "ev_fab9b86a893d00f4"
      ],
      "analyst_override": false
     },
@@ -207,7 +247,253 @@
       "ev_fabb762949abe7e8",
       "ev_2917e2519710ac31",
       "ev_0e5414ed3ed12c05",
-      "ev_19adcfa31dc49175"
+      "ev_19adcfa31dc49175",
+      "ev_3a6b629bf780267f",
+      "ev_9eb2674cd129d73f"
+     ],
+     "analyst_override": false
+    }
+   },
+   "priority_total": 15,
+   "priority_max": 17,
+   "evidence_count": 16,
+   "date_first_seen": "2026-08-21"
+  },
+  {
+   "candidate_id": "aroboticscompany",
+   "name": "AROBOTICSCOMPANY, INC",
+   "candidate_type": "company",
+   "institution": null,
+   "company": "AROBOTICSCOMPANY, INC",
+   "geography": "Ossining, NY",
+   "website": "http://arobotics.company",
+   "current_stage": "seed",
+   "company_formed": 1,
+   "ocean_centrality": "strong_adjacency",
+   "sourcing_signal": "emerging",
+   "primary_category": "marine_materials",
+   "categories": [
+    "marine_materials"
+   ],
+   "people": [
+    {
+     "name": "Akaash Kancharla",
+     "role": "Principal Investigator",
+     "role_type": "founder",
+     "affiliation": "AROBOTICSCOMPANY, INC"
+    }
+   ],
+   "flags": [
+    {
+     "flag": "BEYOND_STAGE",
+     "rationale": "Cumulative federal awards $15,021,832 (largest $1,999,936) indicate a company operating well above Propeller's stated $500K-$3M pre-seed to Series A model."
+    },
+    {
+     "flag": "REPEAT_SBIR_RECIPIENT",
+     "rationale": "10 lifetime SBIR/STTR awards (2023-2023): repeat SBIR recipient."
+    }
+   ],
+   "analyst_views": [
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_c'. For: none Against: Outside early-stage scope: BEYOND_STAGE.",
+     "evidence_ids": [],
+     "author": "analyst"
+    }
+   ],
+   "priority_components": {
+    "commercialization_signal": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Real customer relationship (pilot, contract, offtake, or revenue).",
+     "evidence_ids": [
+      "ev_45f9aa2e320b8976",
+      "ev_5ca13962c8715d90",
+      "ev_fb756f355ffd92de",
+      "ev_67ad92de591a4274",
+      "ev_a58201c7e7288ed2",
+      "ev_40819ad7e379ac9c",
+      "ev_9124bff1bbb76667",
+      "ev_86e918e32118b44e",
+      "ev_a9cac51911267a8f",
+      "ev_c1353885eda099d2"
+     ],
+     "analyst_override": false
+    },
+    "differentiated_sourcing": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Solves a problem acute in ocean-exposed industries without marketing itself as ocean technology \u2014 the hidden-adjacency case.",
+     "evidence_ids": [],
+     "analyst_override": false
+    },
+    "propeller_relevance": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Ocean centrality 'strong_adjacency'; maps to taxonomy categories ['marine_materials'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
+     "evidence_ids": [
+      "ev_eafc248a48fc6b01",
+      "ev_45f9aa2e320b8976",
+      "ev_bea0caad39d66650",
+      "ev_5ca13962c8715d90",
+      "ev_fb756f355ffd92de"
+     ],
+     "analyst_override": false
+    },
+    "technical_evidence": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
+     "evidence_ids": [
+      "ev_eafc248a48fc6b01",
+      "ev_bea0caad39d66650",
+      "ev_812ffac0d13226e3",
+      "ev_96cfe1d9149ae89e",
+      "ev_49c96e6b296e0eaa",
+      "ev_603fd3b9fe307930",
+      "ev_b28d7d376e236385",
+      "ev_e03daa7f6e4a552e",
+      "ev_4c56e71e681b72e4",
+      "ev_21a12feac29e547e"
+     ],
+     "analyst_override": false
+    },
+    "timing": {
+     "points": 2,
+     "max": 2,
+     "rationale": "Most recent evidence 2026-04-10 (~4 months old).",
+     "evidence_ids": [
+      "ev_45f9aa2e320b8976"
+     ],
+     "analyst_override": false
+    },
+    "venture_potential": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
+     "evidence_ids": [
+      "ev_eafc248a48fc6b01",
+      "ev_45f9aa2e320b8976",
+      "ev_bea0caad39d66650",
+      "ev_5ca13962c8715d90",
+      "ev_fb756f355ffd92de",
+      "ev_812ffac0d13226e3",
+      "ev_6c73c5814ccae3d4",
+      "ev_1275b2a4836d1dcc",
+      "ev_67ad92de591a4274",
+      "ev_a58201c7e7288ed2",
+      "ev_1f36f6558c08b48b",
+      "ev_40819ad7e379ac9c"
+     ],
+     "analyst_override": false
+    }
+   },
+   "priority_total": 15,
+   "priority_max": 17,
+   "evidence_count": 23,
+   "date_first_seen": "2026-08-21"
+  },
+  {
+   "candidate_id": "certus-core",
+   "name": "Certus Core, Inc.",
+   "candidate_type": "company",
+   "institution": "Institute of Applied Engineering - University of South Florida",
+   "company": "Certus Core, Inc.",
+   "geography": "Tampa, FL",
+   "website": "http://certusgroup.org",
+   "current_stage": "pre_seed",
+   "company_formed": 1,
+   "ocean_centrality": "central_mechanism",
+   "sourcing_signal": "emerging",
+   "primary_category": "maritime_autonomy",
+   "categories": [
+    "maritime_autonomy",
+    "ocean_sensing"
+   ],
+   "people": [
+    {
+     "name": "Lucius Dyal",
+     "role": "Principal Investigator",
+     "role_type": "academic_and_founder",
+     "affiliation": "Certus Core, Inc."
+    }
+   ],
+   "flags": [],
+   "analyst_views": [
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Current activity: latest signal 2025-12-29 (~8 months old). Against: none",
+     "evidence_ids": [],
+     "author": "analyst"
+    }
+   ],
+   "priority_components": {
+    "commercialization_signal": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Real customer relationship (pilot, contract, offtake, or revenue).",
+     "evidence_ids": [
+      "ev_c8b249dc6cad64eb",
+      "ev_34ca3b0e830589b4",
+      "ev_627f7fb3e100f3e4"
+     ],
+     "analyst_override": false
+    },
+    "differentiated_sourcing": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Emerging: company exists with limited visibility.",
+     "evidence_ids": [],
+     "analyst_override": false
+    },
+    "propeller_relevance": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Ocean centrality 'central_mechanism'; maps to taxonomy categories ['maritime_autonomy', 'ocean_sensing'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
+     "evidence_ids": [
+      "ev_d0ede847c3933725",
+      "ev_f0e67337ed696a15",
+      "ev_1f6d1d5c2c4e84e5",
+      "ev_2ce1ed1030220032",
+      "ev_c8b249dc6cad64eb"
+     ],
+     "analyst_override": false
+    },
+    "technical_evidence": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
+     "evidence_ids": [
+      "ev_d0ede847c3933725",
+      "ev_9222bbc389546d56",
+      "ev_d4a72bb7f0f96a55"
+     ],
+     "analyst_override": false
+    },
+    "timing": {
+     "points": 2,
+     "max": 2,
+     "rationale": "Most recent evidence 2025-12-29 (~8 months old).",
+     "evidence_ids": [
+      "ev_c8b249dc6cad64eb"
+     ],
+     "analyst_override": false
+    },
+    "venture_potential": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
+     "evidence_ids": [
+      "ev_d0ede847c3933725",
+      "ev_f0e67337ed696a15",
+      "ev_1f6d1d5c2c4e84e5",
+      "ev_2ce1ed1030220032",
+      "ev_c8b249dc6cad64eb",
+      "ev_9222bbc389546d56",
+      "ev_34ca3b0e830589b4",
+      "ev_627f7fb3e100f3e4",
+      "ev_d4a72bb7f0f96a55",
+      "ev_b4259ca25e37837b"
      ],
      "analyst_override": false
     }
@@ -215,6 +501,128 @@
    "priority_total": 15,
    "priority_max": 17,
    "evidence_count": 10,
+   "date_first_seen": "2026-08-21"
+  },
+  {
+   "candidate_id": "dynamic-dimension-technologies",
+   "name": "DYNAMIC DIMENSION TECHNOLOGIES, LLC",
+   "candidate_type": "company",
+   "institution": "Regents of the University of Minnesota",
+   "company": "DYNAMIC DIMENSION TECHNOLOGIES, LLC",
+   "geography": "Westminster, MD",
+   "website": "http://www.dynamicdimensiontechnologies.com",
+   "current_stage": "pre_seed",
+   "company_formed": 1,
+   "ocean_centrality": "strong_adjacency",
+   "sourcing_signal": "emerging",
+   "primary_category": "ocean_sensing",
+   "categories": [
+    "ocean_sensing"
+   ],
+   "people": [
+    {
+     "name": "Karl Leodler",
+     "role": "Principal Investigator",
+     "role_type": "founder",
+     "affiliation": "DYNAMIC DIMENSION TECHNOLOGIES, LLC"
+    },
+    {
+     "name": "Karl Leodler Karl Leodler",
+     "role": "Principal Investigator",
+     "role_type": "academic_and_founder",
+     "affiliation": "DYNAMIC DIMENSION TECHNOLOGIES, LLC"
+    }
+   ],
+   "flags": [
+    {
+     "flag": "REPEAT_SBIR_RECIPIENT",
+     "rationale": "8 lifetime SBIR/STTR awards (2016-2022): repeat SBIR recipient."
+    }
+   ],
+   "analyst_views": [
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 2/3 with ocean centrality 'strong_adjacency'. Current activity: latest signal 2025-09-15 (~11 months old). Against: none",
+     "evidence_ids": [],
+     "author": "analyst"
+    }
+   ],
+   "priority_components": {
+    "commercialization_signal": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Real customer relationship (pilot, contract, offtake, or revenue).",
+     "evidence_ids": [
+      "ev_be2ae6a3bb36d344",
+      "ev_7cd8a70989a64cfd"
+     ],
+     "analyst_override": false
+    },
+    "differentiated_sourcing": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Solves a problem acute in ocean-exposed industries without marketing itself as ocean technology \u2014 the hidden-adjacency case.",
+     "evidence_ids": [],
+     "analyst_override": false
+    },
+    "propeller_relevance": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Ocean centrality 'strong_adjacency'; maps to taxonomy categories ['ocean_sensing'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
+     "evidence_ids": [
+      "ev_34d5159461a70ff9",
+      "ev_6c4242504f16e32b",
+      "ev_4f06677e532c2257",
+      "ev_7f04b0c2d9cf2e3e",
+      "ev_0533a3a11625afdd"
+     ],
+     "analyst_override": false
+    },
+    "technical_evidence": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
+     "evidence_ids": [
+      "ev_34d5159461a70ff9",
+      "ev_43677e1cfb8a9efe",
+      "ev_fbfb128ff3adaa7f",
+      "ev_1495433e07f174fd"
+     ],
+     "analyst_override": false
+    },
+    "timing": {
+     "points": 2,
+     "max": 2,
+     "rationale": "Most recent evidence 2025-09-15 (~11 months old).",
+     "evidence_ids": [
+      "ev_0533a3a11625afdd"
+     ],
+     "analyst_override": false
+    },
+    "venture_potential": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
+     "evidence_ids": [
+      "ev_34d5159461a70ff9",
+      "ev_6c4242504f16e32b",
+      "ev_4f06677e532c2257",
+      "ev_7f04b0c2d9cf2e3e",
+      "ev_0533a3a11625afdd",
+      "ev_43677e1cfb8a9efe",
+      "ev_fbfb128ff3adaa7f",
+      "ev_1495433e07f174fd",
+      "ev_cbf190ea976a425f",
+      "ev_3aac4f2a86aefb32",
+      "ev_be2ae6a3bb36d344",
+      "ev_7cd8a70989a64cfd"
+     ],
+     "analyst_override": false
+    }
+   },
+   "priority_total": 15,
+   "priority_max": 17,
+   "evidence_count": 12,
    "date_first_seen": "2026-08-21"
   },
   {
@@ -291,6 +699,12 @@
      "statement": "With a defence-heavy market and a small team, does the company sell hardware or drift into selling survey services? The services path is available immediately and would cap the venture outcome.",
      "evidence_ids": [],
      "author": "analyst"
+    },
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Current activity: latest signal 2026-07-01 (~2 months old). Against: none",
+     "evidence_ids": [],
+     "author": "analyst"
     }
    ],
    "priority_components": {
@@ -359,6 +773,753 @@
    "priority_total": 15,
    "priority_max": 17,
    "evidence_count": 4,
+   "date_first_seen": "2026-08-21"
+  },
+  {
+   "candidate_id": "natrx",
+   "name": "NATRX, INC.",
+   "candidate_type": "company",
+   "institution": null,
+   "company": "NATRX, INC.",
+   "geography": "RALEIGH, NC",
+   "website": "https://natrx.io",
+   "current_stage": "pre_seed",
+   "company_formed": 1,
+   "ocean_centrality": "central_mechanism",
+   "sourcing_signal": "emerging",
+   "primary_category": "coastal_adaptation",
+   "categories": [
+    "coastal_adaptation",
+    "marine_carbon",
+    "marine_materials",
+    "ocean_sensing"
+   ],
+   "people": [
+    {
+     "name": "Matthew Campbell",
+     "role": "Principal Investigator",
+     "role_type": "founder",
+     "affiliation": "NATRX INC"
+    },
+    {
+     "name": "Not disclosed in reviewed sources",
+     "role": null,
+     "role_type": null,
+     "affiliation": "Natrx"
+    },
+    {
+     "name": "Lise Montefiore",
+     "role": "Principal Investigator",
+     "role_type": "founder",
+     "affiliation": "NATRX, INC."
+    }
+   ],
+   "flags": [],
+   "analyst_views": [
+    {
+     "type": "inferred",
+     "statement": "Having raised $3.5M and deployed across roughly two dozen projects, Natrx is materially ahead of the other coastal-adaptation candidates here and is likely past the stage this system is designed to surface.",
+     "evidence_ids": [],
+     "author": "analyst"
+    },
+    {
+     "type": "inferred",
+     "statement": "Its existence sets the competitive bar for every other nature-based coastal protection candidate in this universe, including Grow Oyster Reefs and Reef Arches.",
+     "evidence_ids": [],
+     "author": "analyst"
+    },
+    {
+     "type": "unknown",
+     "statement": "Revenue model and whether deployments are recurring product sales or one-off funded projects.",
+     "evidence_ids": [],
+     "author": "analyst"
+    },
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 3/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Current activity: latest signal 2024-09-27 (~23 months old). Against: none",
+     "evidence_ids": [],
+     "author": "analyst"
+    }
+   ],
+   "priority_components": {
+    "commercialization_signal": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Real customer relationship (pilot, contract, offtake, or revenue).",
+     "evidence_ids": [
+      "ev_25fb1056f47aa3b7"
+     ],
+     "analyst_override": false
+    },
+    "differentiated_sourcing": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Emerging: company exists with limited visibility.",
+     "evidence_ids": [],
+     "analyst_override": false
+    },
+    "propeller_relevance": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Ocean centrality 'central_mechanism'; maps to taxonomy categories ['coastal_adaptation', 'marine_carbon', 'marine_materials', 'ocean_sensing'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
+     "evidence_ids": [
+      "ev_dd3e9c041e6992ff",
+      "ev_f320d5e0ccf393e3",
+      "ev_e713549bcb7c1beb",
+      "ev_25fb1056f47aa3b7",
+      "ev_fa6919ea15c832ac"
+     ],
+     "analyst_override": false
+    },
+    "technical_evidence": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
+     "evidence_ids": [
+      "ev_dd3e9c041e6992ff",
+      "ev_fa6919ea15c832ac",
+      "ev_e9bf2f11892fa83a"
+     ],
+     "analyst_override": false
+    },
+    "timing": {
+     "points": 1,
+     "max": 2,
+     "rationale": "Most recent evidence 2024-09-27 (~23 months old).",
+     "evidence_ids": [
+      "ev_e9bf2f11892fa83a"
+     ],
+     "analyst_override": false
+    },
+    "venture_potential": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Protected or licensed IP combined with scaled non-dilutive funding or institutional capital \u2014 a plausible mechanism for durable advantage. [inferred]",
+     "evidence_ids": [
+      "ev_dd3e9c041e6992ff",
+      "ev_f320d5e0ccf393e3",
+      "ev_e713549bcb7c1beb",
+      "ev_25fb1056f47aa3b7",
+      "ev_fa6919ea15c832ac",
+      "ev_a532b2494caaa0db",
+      "ev_e9bf2f11892fa83a",
+      "ev_179a5c5d9c90bf7a"
+     ],
+     "analyst_override": false
+    }
+   },
+   "priority_total": 15,
+   "priority_max": 17,
+   "evidence_count": 8,
+   "date_first_seen": "2026-08-21"
+  },
+  {
+   "candidate_id": "oli-systems",
+   "name": "OLI SYSTEMS INC",
+   "candidate_type": "company",
+   "institution": null,
+   "company": "OLI SYSTEMS INC",
+   "geography": "Parsippany, NJ",
+   "website": "https://www.olisystems.com",
+   "current_stage": "pre_seed",
+   "company_formed": 1,
+   "ocean_centrality": "strong_adjacency",
+   "sourcing_signal": "emerging",
+   "primary_category": "marine_materials",
+   "categories": [
+    "marine_materials"
+   ],
+   "people": [
+    {
+     "name": "Andre Anderko",
+     "role": "Principal Investigator",
+     "role_type": "founder",
+     "affiliation": "OLI SYSTEMS INC"
+    }
+   ],
+   "flags": [],
+   "analyst_views": [
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 2/3 with ocean centrality 'strong_adjacency'. Current activity: latest signal 2026-05-23 (~3 months old). Against: none",
+     "evidence_ids": [],
+     "author": "analyst"
+    }
+   ],
+   "priority_components": {
+    "commercialization_signal": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Real customer relationship (pilot, contract, offtake, or revenue).",
+     "evidence_ids": [
+      "ev_05953a53d65fe84f",
+      "ev_5589258eff443f7f",
+      "ev_1c4a0077a18d2f6b",
+      "ev_97a99fb6e2a6902d",
+      "ev_b012384fdbb081f5",
+      "ev_b3cf52f06230258e",
+      "ev_9830b6f2a1de61a2",
+      "ev_5959ad3cdf16e191",
+      "ev_e1070e50f2120c14",
+      "ev_273ece2ef4f9fe93"
+     ],
+     "analyst_override": false
+    },
+    "differentiated_sourcing": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Solves a problem acute in ocean-exposed industries without marketing itself as ocean technology \u2014 the hidden-adjacency case.",
+     "evidence_ids": [],
+     "analyst_override": false
+    },
+    "propeller_relevance": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Ocean centrality 'strong_adjacency'; maps to taxonomy categories ['marine_materials'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
+     "evidence_ids": [
+      "ev_d63ebd38937d5640",
+      "ev_5ccc042a8b948e99",
+      "ev_fccd08e3fc49aaea",
+      "ev_e407c5e42f9c2e64",
+      "ev_29da6e136fb859a2"
+     ],
+     "analyst_override": false
+    },
+    "technical_evidence": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
+     "evidence_ids": [
+      "ev_d63ebd38937d5640",
+      "ev_29da6e136fb859a2"
+     ],
+     "analyst_override": false
+    },
+    "timing": {
+     "points": 2,
+     "max": 2,
+     "rationale": "Most recent evidence 2026-05-23 (~3 months old).",
+     "evidence_ids": [
+      "ev_05953a53d65fe84f"
+     ],
+     "analyst_override": false
+    },
+    "venture_potential": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
+     "evidence_ids": [
+      "ev_d63ebd38937d5640",
+      "ev_5ccc042a8b948e99",
+      "ev_fccd08e3fc49aaea",
+      "ev_e407c5e42f9c2e64",
+      "ev_29da6e136fb859a2",
+      "ev_05953a53d65fe84f",
+      "ev_5589258eff443f7f",
+      "ev_1c4a0077a18d2f6b",
+      "ev_97a99fb6e2a6902d",
+      "ev_b012384fdbb081f5",
+      "ev_b3cf52f06230258e",
+      "ev_9830b6f2a1de61a2"
+     ],
+     "analyst_override": false
+    }
+   },
+   "priority_total": 15,
+   "priority_max": 17,
+   "evidence_count": 15,
+   "date_first_seen": "2026-08-21"
+  },
+  {
+   "candidate_id": "oceancomm",
+   "name": "OceanComm Incorporated",
+   "candidate_type": "company",
+   "institution": null,
+   "company": "OceanComm Incorporated",
+   "geography": "Champaign, IL",
+   "website": "http://www.oceancomm.co",
+   "current_stage": "pre_seed",
+   "company_formed": 1,
+   "ocean_centrality": "central_mechanism",
+   "sourcing_signal": "emerging",
+   "primary_category": "maritime_autonomy",
+   "categories": [
+    "maritime_autonomy",
+    "ocean_sensing"
+   ],
+   "people": [
+    {
+     "name": "Thomas Riedl",
+     "role": "Principal Investigator",
+     "role_type": "founder",
+     "affiliation": "OceanComm Incorporated"
+    }
+   ],
+   "flags": [
+    {
+     "flag": "BEYOND_STAGE",
+     "rationale": "Cumulative federal awards $11,551,070 (largest $2,710,634) indicate a company operating well above Propeller's stated $500K-$3M pre-seed to Series A model."
+    }
+   ],
+   "analyst_views": [
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_c'. For: none Against: Outside early-stage scope: BEYOND_STAGE.",
+     "evidence_ids": [],
+     "author": "analyst"
+    }
+   ],
+   "priority_components": {
+    "commercialization_signal": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Real customer relationship (pilot, contract, offtake, or revenue).",
+     "evidence_ids": [
+      "ev_42b343165258aa75",
+      "ev_46a3cc2df37ce073",
+      "ev_13316702d3eff142"
+     ],
+     "analyst_override": false
+    },
+    "differentiated_sourcing": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Emerging: company exists with limited visibility.",
+     "evidence_ids": [],
+     "analyst_override": false
+    },
+    "propeller_relevance": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Ocean centrality 'central_mechanism'; maps to taxonomy categories ['maritime_autonomy', 'ocean_sensing'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
+     "evidence_ids": [
+      "ev_22af708aa3b9493e",
+      "ev_9933cfe212c276e1",
+      "ev_8f3b3a725df34256",
+      "ev_a4bc3aa8ad1e50f2",
+      "ev_4d02aa9b23264d14"
+     ],
+     "analyst_override": false
+    },
+    "technical_evidence": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
+     "evidence_ids": [
+      "ev_9933cfe212c276e1",
+      "ev_a4bc3aa8ad1e50f2",
+      "ev_4d2e69b2db5b1fd6",
+      "ev_3a6d5be5991a7eae",
+      "ev_07a0a1a2a35995db",
+      "ev_bf6440ffcef7416f",
+      "ev_29d128c56aff0c19"
+     ],
+     "analyst_override": false
+    },
+    "timing": {
+     "points": 2,
+     "max": 2,
+     "rationale": "Most recent evidence 2025-11-19 (~9 months old).",
+     "evidence_ids": [
+      "ev_42b343165258aa75"
+     ],
+     "analyst_override": false
+    },
+    "venture_potential": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
+     "evidence_ids": [
+      "ev_22af708aa3b9493e",
+      "ev_9933cfe212c276e1",
+      "ev_8f3b3a725df34256",
+      "ev_a4bc3aa8ad1e50f2",
+      "ev_4d02aa9b23264d14",
+      "ev_4d2e69b2db5b1fd6",
+      "ev_42b343165258aa75",
+      "ev_46a3cc2df37ce073",
+      "ev_3a6d5be5991a7eae",
+      "ev_78e407ab054d1eb1",
+      "ev_07a0a1a2a35995db",
+      "ev_bf6440ffcef7416f"
+     ],
+     "analyst_override": false
+    }
+   },
+   "priority_total": 15,
+   "priority_max": 17,
+   "evidence_count": 14,
+   "date_first_seen": "2026-08-21"
+  },
+  {
+   "candidate_id": "simple-technology-solutions",
+   "name": "SIMPLE TECHNOLOGY SOLUTIONS INC.",
+   "candidate_type": "company",
+   "institution": null,
+   "company": "SIMPLE TECHNOLOGY SOLUTIONS INC.",
+   "geography": "Washington, DC",
+   "website": "https://www.keepitsts.com",
+   "current_stage": "pre_seed",
+   "company_formed": 1,
+   "ocean_centrality": "strong_adjacency",
+   "sourcing_signal": "emerging",
+   "primary_category": "marine_materials",
+   "categories": [
+    "marine_materials"
+   ],
+   "people": [
+    {
+     "name": "Eric Chasin",
+     "role": "Principal Investigator",
+     "role_type": "founder",
+     "affiliation": "SIMPLE TECHNOLOGY SOLUTIONS INC."
+    },
+    {
+     "name": "Aaron Kilinski",
+     "role": "Principal Investigator",
+     "role_type": "founder",
+     "affiliation": "SIMPLE TECHNOLOGY SOLUTIONS INC."
+    }
+   ],
+   "flags": [
+    {
+     "flag": "BEYOND_STAGE",
+     "rationale": "Cumulative federal awards $75,260,082 (largest $19,780,266) indicate a company operating well above Propeller's stated $500K-$3M pre-seed to Series A model."
+    }
+   ],
+   "analyst_views": [
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_c'. For: none Against: Outside early-stage scope: BEYOND_STAGE.",
+     "evidence_ids": [],
+     "author": "analyst"
+    }
+   ],
+   "priority_components": {
+    "commercialization_signal": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Real customer relationship (pilot, contract, offtake, or revenue).",
+     "evidence_ids": [
+      "ev_8a30f302aaa40e15",
+      "ev_54c7eab6812f795e",
+      "ev_7cb756543eb1a1f7",
+      "ev_e0ea95644c536066",
+      "ev_51ab4150e4035b94",
+      "ev_a4f1f744cc279bbb",
+      "ev_292cf7c2c4b83723"
+     ],
+     "analyst_override": false
+    },
+    "differentiated_sourcing": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Solves a problem acute in ocean-exposed industries without marketing itself as ocean technology \u2014 the hidden-adjacency case.",
+     "evidence_ids": [],
+     "analyst_override": false
+    },
+    "propeller_relevance": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Ocean centrality 'strong_adjacency'; maps to taxonomy categories ['marine_materials'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
+     "evidence_ids": [
+      "ev_63cc84684e9378ce",
+      "ev_d7f5ed441d9eb938",
+      "ev_8a30f302aaa40e15",
+      "ev_54c7eab6812f795e",
+      "ev_37076eefb5b7cd14"
+     ],
+     "analyst_override": false
+    },
+    "technical_evidence": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
+     "evidence_ids": [
+      "ev_63cc84684e9378ce",
+      "ev_37076eefb5b7cd14",
+      "ev_2e83c60de0548d63",
+      "ev_17395a6ddf1b97f2",
+      "ev_cc755617887f24fc",
+      "ev_bbd4417accf42b97",
+      "ev_3110b6730be56584",
+      "ev_c3ad45d3b21790fa",
+      "ev_ac5f1bff9419d202",
+      "ev_ccb39812f42d1e80",
+      "ev_ea5de735f608def6",
+      "ev_1398d5389cc69339"
+     ],
+     "analyst_override": false
+    },
+    "timing": {
+     "points": 2,
+     "max": 2,
+     "rationale": "Most recent evidence 2026-08-05 (~1 months old).",
+     "evidence_ids": [
+      "ev_8a30f302aaa40e15"
+     ],
+     "analyst_override": false
+    },
+    "venture_potential": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
+     "evidence_ids": [
+      "ev_63cc84684e9378ce",
+      "ev_d7f5ed441d9eb938",
+      "ev_8a30f302aaa40e15",
+      "ev_54c7eab6812f795e",
+      "ev_37076eefb5b7cd14",
+      "ev_2e83c60de0548d63",
+      "ev_17395a6ddf1b97f2",
+      "ev_7cb756543eb1a1f7",
+      "ev_cc755617887f24fc",
+      "ev_bbd4417accf42b97",
+      "ev_3110b6730be56584",
+      "ev_e0ea95644c536066"
+     ],
+     "analyst_override": false
+    }
+   },
+   "priority_total": 15,
+   "priority_max": 17,
+   "evidence_count": 26,
+   "date_first_seen": "2026-08-21"
+  },
+  {
+   "candidate_id": "trac9",
+   "name": "TRAC9, LLC",
+   "candidate_type": "company",
+   "institution": null,
+   "company": "TRAC9, LLC",
+   "geography": "Huntsville, AL",
+   "website": "www.T9lab.com",
+   "current_stage": "seed",
+   "company_formed": 1,
+   "ocean_centrality": "strong_adjacency",
+   "sourcing_signal": "emerging",
+   "primary_category": "marine_materials",
+   "categories": [
+    "marine_materials"
+   ],
+   "people": [
+    {
+     "name": "greg laue",
+     "role": "Principal Investigator",
+     "role_type": "founder",
+     "affiliation": "TRAC9, LLC"
+    }
+   ],
+   "flags": [
+    {
+     "flag": "BEYOND_STAGE",
+     "rationale": "Cumulative federal awards $14,701,555 (largest $2,928,293) indicate a company operating well above Propeller's stated $500K-$3M pre-seed to Series A model."
+    }
+   ],
+   "analyst_views": [
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_c'. For: none Against: Outside early-stage scope: BEYOND_STAGE.",
+     "evidence_ids": [],
+     "author": "analyst"
+    }
+   ],
+   "priority_components": {
+    "commercialization_signal": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Real customer relationship (pilot, contract, offtake, or revenue).",
+     "evidence_ids": [
+      "ev_7083925f2ec7cdd3",
+      "ev_6a4ee3269e6146f2",
+      "ev_5f8138bc258f2630",
+      "ev_9e8d3d4a88dd6a11",
+      "ev_ef9f61a19f72e075",
+      "ev_2c3c81e20c9cb0ac",
+      "ev_a9c710d3c4a549fd",
+      "ev_5c94646fad2c6a6e",
+      "ev_12feb7e6b15ae6ef",
+      "ev_c8a35a6b9b27e6ca",
+      "ev_1e52e1214e1e8f90",
+      "ev_186401ed1a4e6c2a"
+     ],
+     "analyst_override": false
+    },
+    "differentiated_sourcing": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Solves a problem acute in ocean-exposed industries without marketing itself as ocean technology \u2014 the hidden-adjacency case.",
+     "evidence_ids": [],
+     "analyst_override": false
+    },
+    "propeller_relevance": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Ocean centrality 'strong_adjacency'; maps to taxonomy categories ['marine_materials'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
+     "evidence_ids": [
+      "ev_8216cdc5413368d9",
+      "ev_7083925f2ec7cdd3",
+      "ev_6a4ee3269e6146f2",
+      "ev_f277c85f90910fc5",
+      "ev_5f8138bc258f2630"
+     ],
+     "analyst_override": false
+    },
+    "technical_evidence": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
+     "evidence_ids": [
+      "ev_8216cdc5413368d9",
+      "ev_f277c85f90910fc5",
+      "ev_0e40fe588ba5e4e9",
+      "ev_0b7ea0faa13b2b07",
+      "ev_0931fecc0c5c052e",
+      "ev_cf97bdd0aea54346"
+     ],
+     "analyst_override": false
+    },
+    "timing": {
+     "points": 2,
+     "max": 2,
+     "rationale": "Most recent evidence 2026-04-23 (~4 months old).",
+     "evidence_ids": [
+      "ev_7083925f2ec7cdd3"
+     ],
+     "analyst_override": false
+    },
+    "venture_potential": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
+     "evidence_ids": [
+      "ev_8216cdc5413368d9",
+      "ev_7083925f2ec7cdd3",
+      "ev_6a4ee3269e6146f2",
+      "ev_f277c85f90910fc5",
+      "ev_5f8138bc258f2630",
+      "ev_0e40fe588ba5e4e9",
+      "ev_9e8d3d4a88dd6a11",
+      "ev_ef9f61a19f72e075",
+      "ev_2c3c81e20c9cb0ac",
+      "ev_a9c710d3c4a549fd",
+      "ev_8765d4ec43125c64",
+      "ev_d2da46f9a6eaf7d8"
+     ],
+     "analyst_override": false
+    }
+   },
+   "priority_total": 15,
+   "priority_max": 17,
+   "evidence_count": 20,
+   "date_first_seen": "2026-08-21"
+  },
+  {
+   "candidate_id": "x-hab-3d",
+   "name": "X-HAB 3D, INC.",
+   "candidate_type": "company",
+   "institution": null,
+   "company": "X-HAB 3D, INC.",
+   "geography": "State College, PA",
+   "website": "https://www.xhab3d.com",
+   "current_stage": "seed",
+   "company_formed": 1,
+   "ocean_centrality": "central_mechanism",
+   "sourcing_signal": "emerging",
+   "primary_category": "coastal_adaptation",
+   "categories": [
+    "coastal_adaptation"
+   ],
+   "people": [
+    {
+     "name": "Nate Watson",
+     "role": "Principal Investigator",
+     "role_type": "founder",
+     "affiliation": "X-HAB 3D, INC."
+    }
+   ],
+   "flags": [],
+   "analyst_views": [
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Current activity: latest signal 2025-09-29 (~11 months old). Against: none",
+     "evidence_ids": [],
+     "author": "analyst"
+    }
+   ],
+   "priority_components": {
+    "commercialization_signal": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Real customer relationship (pilot, contract, offtake, or revenue).",
+     "evidence_ids": [
+      "ev_d680c200d871ed72",
+      "ev_bf32d9eb021c7d72",
+      "ev_2c8718ec2fee8be5",
+      "ev_fbe55c8ce15e44f1",
+      "ev_5f878056ef217bb9"
+     ],
+     "analyst_override": false
+    },
+    "differentiated_sourcing": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Emerging: company exists with limited visibility.",
+     "evidence_ids": [],
+     "analyst_override": false
+    },
+    "propeller_relevance": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Ocean centrality 'central_mechanism'; maps to taxonomy categories ['coastal_adaptation'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
+     "evidence_ids": [
+      "ev_d6cdfa1baf14a93e",
+      "ev_8af046ff6b3b378b",
+      "ev_d680c200d871ed72",
+      "ev_bf32d9eb021c7d72",
+      "ev_2c8718ec2fee8be5"
+     ],
+     "analyst_override": false
+    },
+    "technical_evidence": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
+     "evidence_ids": [
+      "ev_d6cdfa1baf14a93e",
+      "ev_e63b97b031d67d11"
+     ],
+     "analyst_override": false
+    },
+    "timing": {
+     "points": 2,
+     "max": 2,
+     "rationale": "Most recent evidence 2025-09-29 (~11 months old).",
+     "evidence_ids": [
+      "ev_8af046ff6b3b378b"
+     ],
+     "analyst_override": false
+    },
+    "venture_potential": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
+     "evidence_ids": [
+      "ev_d6cdfa1baf14a93e",
+      "ev_8af046ff6b3b378b",
+      "ev_d680c200d871ed72",
+      "ev_bf32d9eb021c7d72",
+      "ev_2c8718ec2fee8be5",
+      "ev_e63b97b031d67d11",
+      "ev_fbe55c8ce15e44f1",
+      "ev_5f878056ef217bb9"
+     ],
+     "analyst_override": false
+    }
+   },
+   "priority_total": 15,
+   "priority_max": 17,
+   "evidence_count": 8,
    "date_first_seen": "2026-08-21"
   },
   {
@@ -443,6 +1604,12 @@
      "statement": "Ocean observing budgets are largely federal and grant-funded. If the buyer is only NSF/NOAA programme budgets, this is a small, slow market regardless of how well the technology works - and current federal funding uncertainty is acknowledged by the CEO.",
      "evidence_ids": [],
      "author": "analyst"
+    },
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Current activity: latest signal 2025-12-04 (~9 months old). Against: none",
+     "evidence_ids": [],
+     "author": "analyst"
     }
    ],
    "priority_components": {
@@ -454,7 +1621,8 @@
       "ev_c6efc3899ba50d2d",
       "ev_31e49fb74f741727",
       "ev_be57a5e0b57643ad",
-      "ev_6c7c9b242abc3e6e"
+      "ev_6c7c9b242abc3e6e",
+      "ev_3ecf05cb1b65fcf3"
      ],
      "analyst_override": false
     },
@@ -487,7 +1655,8 @@
       "ev_31e49fb74f741727",
       "ev_f8e18bb29fa31648",
       "ev_eb1ed109220aa50b",
-      "ev_b23345e721228d91"
+      "ev_b23345e721228d91",
+      "ev_3ecf05cb1b65fcf3"
      ],
      "analyst_override": false
     },
@@ -517,70 +1686,88 @@
       "ev_b23345e721228d91",
       "ev_6c7c9b242abc3e6e",
       "ev_85ab591f259943ef",
-      "ev_f6bbca9dcbacf2f0"
+      "ev_f6bbca9dcbacf2f0",
+      "ev_3ecf05cb1b65fcf3"
      ],
      "analyst_override": false
     }
    },
    "priority_total": 14,
    "priority_max": 17,
-   "evidence_count": 11,
+   "evidence_count": 12,
    "date_first_seen": "2026-08-21"
   },
   {
-   "candidate_id": "certus-core",
-   "name": "Certus Core, Inc.",
+   "candidate_id": "aquagga",
+   "name": "AQUAGGA, INC.",
    "candidate_type": "company",
-   "institution": "Institute of Applied Engineering - University of South Florida",
-   "company": "Certus Core, Inc.",
-   "geography": "Tampa, FL",
-   "website": "http://certusgroup.org",
+   "institution": "Idaho National Laboratory",
+   "company": "AQUAGGA, INC.",
+   "geography": "TACOMA, WA",
+   "website": "https://www.aquagga.com",
    "current_stage": "pre_seed",
    "company_formed": 1,
-   "ocean_centrality": "central_mechanism",
+   "ocean_centrality": "strong_adjacency",
    "sourcing_signal": "emerging",
-   "primary_category": "maritime_autonomy",
+   "primary_category": "marine_materials",
    "categories": [
-    "maritime_autonomy",
-    "ocean_sensing"
+    "marine_materials"
    ],
    "people": [
     {
-     "name": "Lucius Dyal",
+     "name": "Brian Pinkard",
      "role": "Principal Investigator",
-     "role_type": "academic_and_founder",
-     "affiliation": "Certus Core, Inc."
+     "role_type": "founder",
+     "affiliation": "AQUAGGA, INC."
     }
    ],
-   "flags": [],
-   "analyst_views": [],
+   "flags": [
+    {
+     "flag": "REPEAT_SBIR_RECIPIENT",
+     "rationale": "8 lifetime SBIR/STTR awards (2021-2023): repeat SBIR recipient."
+    }
+   ],
+   "analyst_views": [
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 2/3 with ocean centrality 'strong_adjacency'. Current activity: latest signal 2025-08-04 (~13 months old). Against: none",
+     "evidence_ids": [],
+     "author": "analyst"
+    }
+   ],
    "priority_components": {
     "commercialization_signal": {
-     "points": 2,
+     "points": 3,
      "max": 3,
-     "rationale": "Commercialization funding won partly on commercial merit.",
+     "rationale": "Real customer relationship (pilot, contract, offtake, or revenue).",
      "evidence_ids": [
-      "ev_d0ede847c3933725",
-      "ev_1f6d1d5c2c4e84e5"
+      "ev_3a8c50217e1259fa",
+      "ev_e3187ef0ada9e2f1",
+      "ev_3bbb0c063d0deadb",
+      "ev_307b74517062cf14",
+      "ev_0dd6611ce647f78a",
+      "ev_6993efff104493d6",
+      "ev_3973686d8804c683"
      ],
      "analyst_override": false
     },
     "differentiated_sourcing": {
-     "points": 2,
+     "points": 3,
      "max": 3,
-     "rationale": "Emerging: company exists with limited visibility.",
+     "rationale": "Solves a problem acute in ocean-exposed industries without marketing itself as ocean technology \u2014 the hidden-adjacency case.",
      "evidence_ids": [],
      "analyst_override": false
     },
     "propeller_relevance": {
-     "points": 3,
+     "points": 2,
      "max": 3,
-     "rationale": "Ocean centrality 'central_mechanism'; maps to taxonomy categories ['maritime_autonomy', 'ocean_sensing'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
+     "rationale": "Ocean centrality 'strong_adjacency'; maps to taxonomy categories ['marine_materials'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
      "evidence_ids": [
-      "ev_d0ede847c3933725",
-      "ev_f0e67337ed696a15",
-      "ev_1f6d1d5c2c4e84e5",
-      "ev_2ce1ed1030220032"
+      "ev_acf3e984a5a0af62",
+      "ev_07e9b60da899e63d",
+      "ev_616ed78778fd2885",
+      "ev_7ed690e53b34f294",
+      "ev_ddc105043f2378a5"
      ],
      "analyst_override": false
     },
@@ -589,17 +1776,20 @@
      "max": 3,
      "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
      "evidence_ids": [
-      "ev_d0ede847c3933725"
+      "ev_acf3e984a5a0af62",
+      "ev_7ed690e53b34f294",
+      "ev_0ea6a57a04bb805c",
+      "ev_541118b6685c3f75",
+      "ev_1f77f1dfabaaaf7e"
      ],
      "analyst_override": false
     },
     "timing": {
      "points": 1,
      "max": 2,
-     "rationale": "Most recent evidence 2023-09-28 (~35 months old).",
+     "rationale": "Most recent evidence 2025-08-04 (~13 months old).",
      "evidence_ids": [
-      "ev_d0ede847c3933725",
-      "ev_f0e67337ed696a15"
+      "ev_3a8c50217e1259fa"
      ],
      "analyst_override": false
     },
@@ -608,53 +1798,75 @@
      "max": 3,
      "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
      "evidence_ids": [
-      "ev_d0ede847c3933725",
-      "ev_f0e67337ed696a15",
-      "ev_1f6d1d5c2c4e84e5",
-      "ev_2ce1ed1030220032"
+      "ev_acf3e984a5a0af62",
+      "ev_07e9b60da899e63d",
+      "ev_616ed78778fd2885",
+      "ev_7ed690e53b34f294",
+      "ev_ddc105043f2378a5",
+      "ev_3a8c50217e1259fa",
+      "ev_e3187ef0ada9e2f1",
+      "ev_3bbb0c063d0deadb",
+      "ev_0ea6a57a04bb805c",
+      "ev_307b74517062cf14",
+      "ev_0dd6611ce647f78a",
+      "ev_541118b6685c3f75"
      ],
      "analyst_override": false
     }
    },
-   "priority_total": 13,
+   "priority_total": 14,
    "priority_max": 17,
-   "evidence_count": 4,
+   "evidence_count": 17,
    "date_first_seen": "2026-08-21"
   },
   {
-   "candidate_id": "designer-ecosystems",
-   "name": "DESIGNER ECOSYSTEMS LLC",
+   "candidate_id": "artimus-robotics",
+   "name": "ARTIMUS ROBOTICS INC",
    "candidate_type": "company",
    "institution": null,
-   "company": "DESIGNER ECOSYSTEMS LLC",
-   "geography": "ALEXANDRIA, VA",
-   "website": null,
-   "current_stage": "pre_seed",
+   "company": "ARTIMUS ROBOTICS INC",
+   "geography": "Boulder, CO",
+   "website": "https://www.artimusrobotics.com",
+   "current_stage": "seed",
    "company_formed": 1,
    "ocean_centrality": "central_mechanism",
    "sourcing_signal": "emerging",
-   "primary_category": "coastal_adaptation",
+   "primary_category": "maritime_autonomy",
    "categories": [
-    "coastal_adaptation"
+    "maritime_autonomy"
    ],
    "people": [
     {
-     "name": "Bridget Baumgartner",
+     "name": "Shane Mitchell",
      "role": "Principal Investigator",
      "role_type": "founder",
-     "affiliation": "DESIGNER ECOSYSTEMS LLC"
+     "affiliation": "ARTIMUS ROBOTICS INC"
     }
    ],
-   "flags": [],
-   "analyst_views": [],
+   "flags": [
+    {
+     "flag": "REPEAT_SBIR_RECIPIENT",
+     "rationale": "8 lifetime SBIR/STTR awards (2020-2022): repeat SBIR recipient."
+    }
+   ],
+   "analyst_views": [
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_b'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Against: Latest signal 2024-07-15 (~25 months old) is outside the 24-month window.",
+     "evidence_ids": [],
+     "author": "analyst"
+    }
+   ],
    "priority_components": {
     "commercialization_signal": {
-     "points": 2,
+     "points": 3,
      "max": 3,
-     "rationale": "Commercialization funding won partly on commercial merit.",
+     "rationale": "Real customer relationship (pilot, contract, offtake, or revenue).",
      "evidence_ids": [
-      "ev_c51e1fb2848263cd",
-      "ev_589784b81159f2a2"
+      "ev_f8258c926260df41",
+      "ev_0e35a77bf05044ab",
+      "ev_fdd04fbf622dd4e6",
+      "ev_7ad69df596df4fcb"
      ],
      "analyst_override": false
     },
@@ -668,29 +1880,34 @@
     "propeller_relevance": {
      "points": 3,
      "max": 3,
-     "rationale": "Ocean centrality 'central_mechanism'; maps to taxonomy categories ['coastal_adaptation'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
+     "rationale": "Ocean centrality 'central_mechanism'; maps to taxonomy categories ['maritime_autonomy'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
      "evidence_ids": [
-      "ev_c51e1fb2848263cd",
-      "ev_589784b81159f2a2"
+      "ev_73898e328dd4a36b",
+      "ev_4600bf4c6dd44bd1",
+      "ev_a5c275abe13b2571",
+      "ev_dcf37dd17aa379aa",
+      "ev_765a784de7693849"
      ],
      "analyst_override": false
     },
     "technical_evidence": {
-     "points": 2,
+     "points": 3,
      "max": 3,
-     "rationale": "Built and demonstrated (prototype, granted patent, or Phase I).",
+     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
      "evidence_ids": [
-      "ev_c51e1fb2848263cd",
-      "ev_589784b81159f2a2"
+      "ev_4600bf4c6dd44bd1",
+      "ev_dcf37dd17aa379aa",
+      "ev_f1471cf8b9f63596",
+      "ev_1f6ce178110475dd"
      ],
      "analyst_override": false
     },
     "timing": {
-     "points": 2,
+     "points": 1,
      "max": 2,
-     "rationale": "Most recent evidence 2026-07-24 (~1 months old).",
+     "rationale": "Most recent evidence 2024-07-15 (~25 months old).",
      "evidence_ids": [
-      "ev_c51e1fb2848263cd"
+      "ev_bf31f617fa0f95bf"
      ],
      "analyst_override": false
     },
@@ -699,15 +1916,847 @@
      "max": 3,
      "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
      "evidence_ids": [
-      "ev_c51e1fb2848263cd",
-      "ev_589784b81159f2a2"
+      "ev_73898e328dd4a36b",
+      "ev_4600bf4c6dd44bd1",
+      "ev_a5c275abe13b2571",
+      "ev_dcf37dd17aa379aa",
+      "ev_765a784de7693849",
+      "ev_5a7aa74681b36f42",
+      "ev_bf31f617fa0f95bf",
+      "ev_f8258c926260df41",
+      "ev_f1471cf8b9f63596",
+      "ev_1f6ce178110475dd",
+      "ev_0e35a77bf05044ab",
+      "ev_fdd04fbf622dd4e6"
      ],
      "analyst_override": false
     }
    },
-   "priority_total": 13,
+   "priority_total": 14,
    "priority_max": 17,
-   "evidence_count": 2,
+   "evidence_count": 14,
+   "date_first_seen": "2026-08-21"
+  },
+  {
+   "candidate_id": "big-metal-additive",
+   "name": "BIG METAL ADDITIVE LLC",
+   "candidate_type": "company",
+   "institution": null,
+   "company": "BIG METAL ADDITIVE LLC",
+   "geography": "Denver, CO",
+   "website": "http://www.bigmetaladditive.com",
+   "current_stage": "seed",
+   "company_formed": 1,
+   "ocean_centrality": "primary_end_market",
+   "sourcing_signal": "emerging",
+   "primary_category": "maritime_autonomy",
+   "categories": [
+    "maritime_autonomy"
+   ],
+   "people": [
+    {
+     "name": "Slade Gardner",
+     "role": "Principal Investigator",
+     "role_type": "founder",
+     "affiliation": "BIG METAL ADDITIVE LLC"
+    }
+   ],
+   "flags": [
+    {
+     "flag": "BEYOND_STAGE",
+     "rationale": "Cumulative federal awards $10,523,470 (largest $1,963,423) indicate a company operating well above Propeller's stated $500K-$3M pre-seed to Series A model."
+    },
+    {
+     "flag": "REPEAT_SBIR_RECIPIENT",
+     "rationale": "8 lifetime SBIR/STTR awards (2020-2023): repeat SBIR recipient."
+    }
+   ],
+   "analyst_views": [
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_c'. For: none Against: Outside early-stage scope: BEYOND_STAGE.",
+     "evidence_ids": [],
+     "author": "analyst"
+    }
+   ],
+   "priority_components": {
+    "commercialization_signal": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Real customer relationship (pilot, contract, offtake, or revenue).",
+     "evidence_ids": [
+      "ev_dc0e3a4e25e53585",
+      "ev_8ca52ce9153cc640",
+      "ev_512efb5c545bb37a",
+      "ev_4a60568fa97d6ffe",
+      "ev_775a4e431e876c04",
+      "ev_a3003aae15366273",
+      "ev_a54d58e267e6200d",
+      "ev_f8b5630e6786bdbd",
+      "ev_c2786842d2fa35ca"
+     ],
+     "analyst_override": false
+    },
+    "differentiated_sourcing": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Emerging: company exists with limited visibility.",
+     "evidence_ids": [],
+     "analyst_override": false
+    },
+    "propeller_relevance": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Ocean centrality 'primary_end_market'; maps to taxonomy categories ['maritime_autonomy'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
+     "evidence_ids": [
+      "ev_49eaea0625fb03e3",
+      "ev_805b02dfe450a8d8",
+      "ev_c67709499e84f673",
+      "ev_bd549e99ffdebc44",
+      "ev_920aa09137eba6c5"
+     ],
+     "analyst_override": false
+    },
+    "technical_evidence": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
+     "evidence_ids": [
+      "ev_49eaea0625fb03e3",
+      "ev_c67709499e84f673",
+      "ev_bd549e99ffdebc44",
+      "ev_9ed7fb1df3aa3c63",
+      "ev_e6f9105b5142ddbf"
+     ],
+     "analyst_override": false
+    },
+    "timing": {
+     "points": 2,
+     "max": 2,
+     "rationale": "Most recent evidence 2026-04-10 (~4 months old).",
+     "evidence_ids": [
+      "ev_c67709499e84f673"
+     ],
+     "analyst_override": false
+    },
+    "venture_potential": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
+     "evidence_ids": [
+      "ev_49eaea0625fb03e3",
+      "ev_805b02dfe450a8d8",
+      "ev_c67709499e84f673",
+      "ev_bd549e99ffdebc44",
+      "ev_920aa09137eba6c5",
+      "ev_dc0e3a4e25e53585",
+      "ev_8ca52ce9153cc640",
+      "ev_512efb5c545bb37a",
+      "ev_9ed7fb1df3aa3c63",
+      "ev_4a60568fa97d6ffe",
+      "ev_775a4e431e876c04",
+      "ev_e6f9105b5142ddbf"
+     ],
+     "analyst_override": false
+    }
+   },
+   "priority_total": 14,
+   "priority_max": 17,
+   "evidence_count": 16,
+   "date_first_seen": "2026-08-21"
+  },
+  {
+   "candidate_id": "bionet-sonar",
+   "name": "BioNet Sonar",
+   "candidate_type": "company",
+   "institution": null,
+   "company": "BioNet Sonar",
+   "geography": "Newton, MA",
+   "website": "http://www.bionetsonar.com",
+   "current_stage": "pre_seed",
+   "company_formed": 1,
+   "ocean_centrality": "primary_end_market",
+   "sourcing_signal": "emerging",
+   "primary_category": "ocean_sensing",
+   "categories": [
+    "ocean_sensing"
+   ],
+   "people": [
+    {
+     "name": "Tommaso Melodia",
+     "role": "Principal Investigator",
+     "role_type": "founder",
+     "affiliation": "BioNet Sonar"
+    },
+    {
+     "name": "Emrecan Demirors",
+     "role": "Principal Investigator",
+     "role_type": "founder",
+     "affiliation": "BioNet Sonar"
+    }
+   ],
+   "flags": [
+    {
+     "flag": "REPEAT_SBIR_RECIPIENT",
+     "rationale": "6 lifetime SBIR/STTR awards (2016-2021): repeat SBIR recipient."
+    }
+   ],
+   "analyst_views": [
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 2/3 with ocean centrality 'primary_end_market'. Current activity: latest signal 2026-04-09 (~4 months old). Against: none",
+     "evidence_ids": [],
+     "author": "analyst"
+    }
+   ],
+   "priority_components": {
+    "commercialization_signal": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Real customer relationship (pilot, contract, offtake, or revenue).",
+     "evidence_ids": [
+      "ev_001f7710c37d0e32",
+      "ev_223125e0c775ffe2"
+     ],
+     "analyst_override": false
+    },
+    "differentiated_sourcing": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Emerging: company exists with limited visibility.",
+     "evidence_ids": [],
+     "analyst_override": false
+    },
+    "propeller_relevance": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Ocean centrality 'primary_end_market'; maps to taxonomy categories ['ocean_sensing'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
+     "evidence_ids": [
+      "ev_dc0b6bf9650b6453",
+      "ev_3ce5a1bbc5071055",
+      "ev_b37bf27ee343cf67",
+      "ev_d05a7a8a5014d180",
+      "ev_51e7ca45b30891eb"
+     ],
+     "analyst_override": false
+    },
+    "technical_evidence": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
+     "evidence_ids": [
+      "ev_dc0b6bf9650b6453",
+      "ev_c7da2ad57e58dc3d",
+      "ev_fdebf85dea8fcce0"
+     ],
+     "analyst_override": false
+    },
+    "timing": {
+     "points": 2,
+     "max": 2,
+     "rationale": "Most recent evidence 2026-04-09 (~4 months old).",
+     "evidence_ids": [
+      "ev_c7da2ad57e58dc3d"
+     ],
+     "analyst_override": false
+    },
+    "venture_potential": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
+     "evidence_ids": [
+      "ev_dc0b6bf9650b6453",
+      "ev_3ce5a1bbc5071055",
+      "ev_b37bf27ee343cf67",
+      "ev_d05a7a8a5014d180",
+      "ev_51e7ca45b30891eb",
+      "ev_c7da2ad57e58dc3d",
+      "ev_001f7710c37d0e32",
+      "ev_223125e0c775ffe2",
+      "ev_fdebf85dea8fcce0",
+      "ev_b71383db6a1af2c1"
+     ],
+     "analyst_override": false
+    }
+   },
+   "priority_total": 14,
+   "priority_max": 17,
+   "evidence_count": 10,
+   "date_first_seen": "2026-08-21"
+  },
+  {
+   "candidate_id": "blue-ocean-gear",
+   "name": "Blue Ocean Gear Inc.",
+   "candidate_type": "company",
+   "institution": null,
+   "company": "Blue Ocean Gear Inc.",
+   "geography": "Redwood City, CA",
+   "website": "https://www.blueoceangear.com",
+   "current_stage": "pre_seed",
+   "company_formed": 1,
+   "ocean_centrality": "central_mechanism",
+   "sourcing_signal": "emerging",
+   "primary_category": "blue_food",
+   "categories": [
+    "blue_food",
+    "offshore_energy"
+   ],
+   "people": [
+    {
+     "name": "Kortney   Opshaug",
+     "role": "Principal Investigator",
+     "role_type": "founder",
+     "affiliation": "Blue Ocean Gear Inc."
+    }
+   ],
+   "flags": [],
+   "analyst_views": [
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Current activity: latest signal 2025-07-30 (~13 months old). Against: none",
+     "evidence_ids": [],
+     "author": "analyst"
+    }
+   ],
+   "priority_components": {
+    "commercialization_signal": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Real customer relationship (pilot, contract, offtake, or revenue).",
+     "evidence_ids": [
+      "ev_7a74f4f059157b98",
+      "ev_445594b900260b16",
+      "ev_2e21f6781d23f669"
+     ],
+     "analyst_override": false
+    },
+    "differentiated_sourcing": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Emerging: company exists with limited visibility.",
+     "evidence_ids": [],
+     "analyst_override": false
+    },
+    "propeller_relevance": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Ocean centrality 'central_mechanism'; maps to taxonomy categories ['blue_food', 'offshore_energy'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
+     "evidence_ids": [
+      "ev_155f87f4912ffd1f",
+      "ev_d6e4a5860223331d",
+      "ev_827e8597590d071f",
+      "ev_1f41b85b1f46af95",
+      "ev_a22c37c108ec4124"
+     ],
+     "analyst_override": false
+    },
+    "technical_evidence": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
+     "evidence_ids": [
+      "ev_155f87f4912ffd1f"
+     ],
+     "analyst_override": false
+    },
+    "timing": {
+     "points": 1,
+     "max": 2,
+     "rationale": "Most recent evidence 2025-07-30 (~13 months old).",
+     "evidence_ids": [
+      "ev_7a74f4f059157b98"
+     ],
+     "analyst_override": false
+    },
+    "venture_potential": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
+     "evidence_ids": [
+      "ev_155f87f4912ffd1f",
+      "ev_d6e4a5860223331d",
+      "ev_827e8597590d071f",
+      "ev_1f41b85b1f46af95",
+      "ev_a22c37c108ec4124",
+      "ev_7b6d31b8f2d79a9c",
+      "ev_7a74f4f059157b98",
+      "ev_445594b900260b16",
+      "ev_2e21f6781d23f669"
+     ],
+     "analyst_override": false
+    }
+   },
+   "priority_total": 14,
+   "priority_max": 17,
+   "evidence_count": 9,
+   "date_first_seen": "2026-08-21"
+  },
+  {
+   "candidate_id": "cd3-general-benefit",
+   "name": "CD3, General Benefit Corporation",
+   "candidate_type": "company",
+   "institution": null,
+   "company": "CD3, General Benefit Corporation",
+   "geography": "Saint Paul, MN",
+   "website": null,
+   "current_stage": "pre_seed",
+   "company_formed": 1,
+   "ocean_centrality": "primary_end_market",
+   "sourcing_signal": "emerging",
+   "primary_category": "ocean_sensing",
+   "categories": [
+    "blue_food",
+    "ocean_sensing"
+   ],
+   "people": [
+    {
+     "name": "Edgar  Rudberg",
+     "role": "Principal Investigator",
+     "role_type": "founder",
+     "affiliation": "CD3, General Benefit Corporation"
+    },
+    {
+     "name": "Cody Youngbull",
+     "role": "Principal Investigator",
+     "role_type": "founder",
+     "affiliation": "CD3, General Benefit Corporation"
+    }
+   ],
+   "flags": [],
+   "analyst_views": [
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 2/3 with ocean centrality 'primary_end_market'. Current activity: latest signal 2026-08-18 (~0 months old). Against: none",
+     "evidence_ids": [],
+     "author": "analyst"
+    }
+   ],
+   "priority_components": {
+    "commercialization_signal": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Real customer relationship (pilot, contract, offtake, or revenue).",
+     "evidence_ids": [
+      "ev_bd2ff8977ee056f8",
+      "ev_fed67d27905a03d7",
+      "ev_9ad02e7adc0e7225",
+      "ev_8078d873fd2f1d97",
+      "ev_38c2c9cd383c347d",
+      "ev_800d2058180a87aa",
+      "ev_bc73274652314d63",
+      "ev_3e552d1b3eb02bed",
+      "ev_22ea6367a3629169",
+      "ev_6ac0c5c4ad95dd70",
+      "ev_ec1a3f86b48c64f5",
+      "ev_39a250d9d0ce289a"
+     ],
+     "analyst_override": false
+    },
+    "differentiated_sourcing": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Emerging: company exists with limited visibility.",
+     "evidence_ids": [],
+     "analyst_override": false
+    },
+    "propeller_relevance": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Ocean centrality 'primary_end_market'; maps to taxonomy categories ['blue_food', 'ocean_sensing'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
+     "evidence_ids": [
+      "ev_d29c2d3c1cf88ea7",
+      "ev_9f986ba54da17881",
+      "ev_3345e9fec90ac2d0",
+      "ev_c92fe7544d40c16f",
+      "ev_bd2ff8977ee056f8"
+     ],
+     "analyst_override": false
+    },
+    "technical_evidence": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
+     "evidence_ids": [
+      "ev_d29c2d3c1cf88ea7",
+      "ev_3345e9fec90ac2d0"
+     ],
+     "analyst_override": false
+    },
+    "timing": {
+     "points": 2,
+     "max": 2,
+     "rationale": "Most recent evidence 2026-08-18 (~0 months old).",
+     "evidence_ids": [
+      "ev_bd2ff8977ee056f8"
+     ],
+     "analyst_override": false
+    },
+    "venture_potential": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
+     "evidence_ids": [
+      "ev_d29c2d3c1cf88ea7",
+      "ev_9f986ba54da17881",
+      "ev_3345e9fec90ac2d0",
+      "ev_c92fe7544d40c16f",
+      "ev_bd2ff8977ee056f8",
+      "ev_fed67d27905a03d7",
+      "ev_9ad02e7adc0e7225",
+      "ev_8078d873fd2f1d97",
+      "ev_38c2c9cd383c347d",
+      "ev_800d2058180a87aa",
+      "ev_bc73274652314d63",
+      "ev_3e552d1b3eb02bed"
+     ],
+     "analyst_override": false
+    }
+   },
+   "priority_total": 14,
+   "priority_max": 17,
+   "evidence_count": 23,
+   "date_first_seen": "2026-08-21"
+  },
+  {
+   "candidate_id": "cultured-abalone-farm-llc-the",
+   "name": "Cultured Abalone Farm LLC, The",
+   "candidate_type": "company",
+   "institution": null,
+   "company": "Cultured Abalone Farm LLC, The",
+   "geography": "Goieta, CA",
+   "website": "www.culturedabalone.com",
+   "current_stage": "pre_seed",
+   "company_formed": 1,
+   "ocean_centrality": "central_mechanism",
+   "sourcing_signal": "emerging",
+   "primary_category": "blue_food",
+   "categories": [
+    "blue_food",
+    "marine_carbon"
+   ],
+   "people": [
+    {
+     "name": "Daniel Swezey",
+     "role": "Principal Investigator",
+     "role_type": "founder",
+     "affiliation": "Cultured Abalone Farm LLC, The"
+    }
+   ],
+   "flags": [],
+   "analyst_views": [
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_b'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Against: Latest signal 2023-09-01 (~36 months old) is outside the 24-month window.",
+     "evidence_ids": [],
+     "author": "analyst"
+    }
+   ],
+   "priority_components": {
+    "commercialization_signal": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Real customer relationship (pilot, contract, offtake, or revenue).",
+     "evidence_ids": [
+      "ev_2bf40852ec768f7b",
+      "ev_3eaed2c9bd540027",
+      "ev_a73e8e062a02634d"
+     ],
+     "analyst_override": false
+    },
+    "differentiated_sourcing": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Emerging: company exists with limited visibility.",
+     "evidence_ids": [],
+     "analyst_override": false
+    },
+    "propeller_relevance": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Ocean centrality 'central_mechanism'; maps to taxonomy categories ['blue_food', 'marine_carbon'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
+     "evidence_ids": [
+      "ev_abca4fdf0ee90573",
+      "ev_00b46304898d8bbe",
+      "ev_2bf40852ec768f7b",
+      "ev_3eaed2c9bd540027",
+      "ev_a73e8e062a02634d"
+     ],
+     "analyst_override": false
+    },
+    "technical_evidence": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
+     "evidence_ids": [
+      "ev_abca4fdf0ee90573"
+     ],
+     "analyst_override": false
+    },
+    "timing": {
+     "points": 1,
+     "max": 2,
+     "rationale": "Most recent evidence 2023-09-01 (~36 months old).",
+     "evidence_ids": [
+      "ev_2bf40852ec768f7b"
+     ],
+     "analyst_override": false
+    },
+    "venture_potential": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
+     "evidence_ids": [
+      "ev_abca4fdf0ee90573",
+      "ev_00b46304898d8bbe",
+      "ev_2bf40852ec768f7b",
+      "ev_3eaed2c9bd540027",
+      "ev_a73e8e062a02634d"
+     ],
+     "analyst_override": false
+    }
+   },
+   "priority_total": 14,
+   "priority_max": 17,
+   "evidence_count": 5,
+   "date_first_seen": "2026-08-21"
+  },
+  {
+   "candidate_id": "fastwatt",
+   "name": "FASTWATT LLC",
+   "candidate_type": "company",
+   "institution": null,
+   "company": "FASTWATT LLC",
+   "geography": "CliftonPark, NY",
+   "website": "https://www.fastwatt.com",
+   "current_stage": "pre_seed",
+   "company_formed": 1,
+   "ocean_centrality": "central_mechanism",
+   "sourcing_signal": "emerging",
+   "primary_category": "offshore_energy",
+   "categories": [
+    "offshore_energy"
+   ],
+   "people": [
+    {
+     "name": "Ravisekhar Raju",
+     "role": "Principal Investigator",
+     "role_type": "founder",
+     "affiliation": "FASTWATT LLC"
+    }
+   ],
+   "flags": [],
+   "analyst_views": [
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_b'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Against: Latest signal 2024-07-22 (~25 months old) is outside the 24-month window.",
+     "evidence_ids": [],
+     "author": "analyst"
+    }
+   ],
+   "priority_components": {
+    "commercialization_signal": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Real customer relationship (pilot, contract, offtake, or revenue).",
+     "evidence_ids": [
+      "ev_1802e3ad27f18f6e",
+      "ev_c556bbba8b0c7c90",
+      "ev_659a67ac4955376d"
+     ],
+     "analyst_override": false
+    },
+    "differentiated_sourcing": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Emerging: company exists with limited visibility.",
+     "evidence_ids": [],
+     "analyst_override": false
+    },
+    "propeller_relevance": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Ocean centrality 'central_mechanism'; maps to taxonomy categories ['offshore_energy'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
+     "evidence_ids": [
+      "ev_ca3a31384eca52d4",
+      "ev_c3ad24bbf4181a6b",
+      "ev_d0bca8d7ea9f7cf2",
+      "ev_db39c1de0ae9f322",
+      "ev_1802e3ad27f18f6e"
+     ],
+     "analyst_override": false
+    },
+    "technical_evidence": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
+     "evidence_ids": [
+      "ev_ca3a31384eca52d4",
+      "ev_db39c1de0ae9f322"
+     ],
+     "analyst_override": false
+    },
+    "timing": {
+     "points": 1,
+     "max": 2,
+     "rationale": "Most recent evidence 2024-07-22 (~25 months old).",
+     "evidence_ids": [
+      "ev_d0bca8d7ea9f7cf2"
+     ],
+     "analyst_override": false
+    },
+    "venture_potential": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
+     "evidence_ids": [
+      "ev_ca3a31384eca52d4",
+      "ev_c3ad24bbf4181a6b",
+      "ev_d0bca8d7ea9f7cf2",
+      "ev_db39c1de0ae9f322",
+      "ev_1802e3ad27f18f6e",
+      "ev_c556bbba8b0c7c90",
+      "ev_659a67ac4955376d"
+     ],
+     "analyst_override": false
+    }
+   },
+   "priority_total": 14,
+   "priority_max": 17,
+   "evidence_count": 7,
+   "date_first_seen": "2026-08-21"
+  },
+  {
+   "candidate_id": "genex-systems",
+   "name": "GENEX SYSTEMS, LLC",
+   "candidate_type": "company",
+   "institution": null,
+   "company": "GENEX SYSTEMS, LLC",
+   "geography": "Newport News, VA",
+   "website": "http://www.genexsystems.com",
+   "current_stage": "pre_seed",
+   "company_formed": 1,
+   "ocean_centrality": "primary_end_market",
+   "sourcing_signal": "emerging",
+   "primary_category": "ocean_sensing",
+   "categories": [
+    "ocean_sensing"
+   ],
+   "people": [
+    {
+     "name": "Chao Huang",
+     "role": "Principal Investigator",
+     "role_type": "founder",
+     "affiliation": "GENEX SYSTEMS, LLC"
+    }
+   ],
+   "flags": [
+    {
+     "flag": "BEYOND_STAGE",
+     "rationale": "Cumulative federal awards $52,003,583 (largest $8,217,941) indicate a company operating well above Propeller's stated $500K-$3M pre-seed to Series A model."
+    }
+   ],
+   "analyst_views": [
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_c'. For: none Against: Outside early-stage scope: BEYOND_STAGE.",
+     "evidence_ids": [],
+     "author": "analyst"
+    }
+   ],
+   "priority_components": {
+    "commercialization_signal": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Real customer relationship (pilot, contract, offtake, or revenue).",
+     "evidence_ids": [
+      "ev_ac76bc389e177022",
+      "ev_abe70eee57bcb066",
+      "ev_06df02576354c2da",
+      "ev_aaa291664d9080e9",
+      "ev_b510bd5840326a83",
+      "ev_883da9addb651d39",
+      "ev_5144c0ad069a13e2",
+      "ev_d3b392d98fe8153c",
+      "ev_cb046f8e6cbf4154",
+      "ev_089cf05d41515b4d",
+      "ev_8f4a61353e9b00b4",
+      "ev_78cd4439cca2ff7a"
+     ],
+     "analyst_override": false
+    },
+    "differentiated_sourcing": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Emerging: company exists with limited visibility.",
+     "evidence_ids": [],
+     "analyst_override": false
+    },
+    "propeller_relevance": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Ocean centrality 'primary_end_market'; maps to taxonomy categories ['ocean_sensing'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
+     "evidence_ids": [
+      "ev_23f51ed2a8694a6a",
+      "ev_6812cb3a033737b2",
+      "ev_ac76bc389e177022",
+      "ev_abe70eee57bcb066",
+      "ev_06df02576354c2da"
+     ],
+     "analyst_override": false
+    },
+    "technical_evidence": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
+     "evidence_ids": [
+      "ev_23f51ed2a8694a6a",
+      "ev_539aa49090a912e2",
+      "ev_7ef1e50d802d4015",
+      "ev_dc0e53278ab74a18",
+      "ev_4dae90c1cc28b8e9",
+      "ev_fe87597300241439",
+      "ev_bfae66b9c1bdfa6d",
+      "ev_9778baaa7866eec8",
+      "ev_65bcf48fa74e37d7",
+      "ev_f63ce48ccbd6d74c",
+      "ev_9e33ad52f7963610",
+      "ev_a47e6a0526668ea2"
+     ],
+     "analyst_override": false
+    },
+    "timing": {
+     "points": 2,
+     "max": 2,
+     "rationale": "Most recent evidence 2026-06-16 (~2 months old).",
+     "evidence_ids": [
+      "ev_ac76bc389e177022"
+     ],
+     "analyst_override": false
+    },
+    "venture_potential": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
+     "evidence_ids": [
+      "ev_23f51ed2a8694a6a",
+      "ev_6812cb3a033737b2",
+      "ev_ac76bc389e177022",
+      "ev_abe70eee57bcb066",
+      "ev_06df02576354c2da",
+      "ev_539aa49090a912e2",
+      "ev_aaa291664d9080e9",
+      "ev_b510bd5840326a83",
+      "ev_883da9addb651d39",
+      "ev_7ef1e50d802d4015",
+      "ev_5144c0ad069a13e2",
+      "ev_d3b392d98fe8153c"
+     ],
+     "analyst_override": false
+    }
+   },
+   "priority_total": 14,
+   "priority_max": 17,
+   "evidence_count": 27,
    "date_first_seen": "2026-08-21"
   },
   {
@@ -761,6 +2810,12 @@
      "statement": "If every deployment requires a bespoke grant-funded project, this is an engineering-services business with a product attached, and Natrx's $3.5M-funded head start in the same niche makes that position harder.",
      "evidence_ids": [],
      "author": "analyst"
+    },
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_a'. For: Technical evidence 2/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Current activity: latest signal 2025-09-15 (~11 months old). Against: none",
+     "evidence_ids": [],
+     "author": "analyst"
     }
    ],
    "priority_components": {
@@ -770,7 +2825,9 @@
      "rationale": "Commercialization funding won partly on commercial merit.",
      "evidence_ids": [
       "ev_e7c411949bab6e71",
-      "ev_4711d838c7fc534d"
+      "ev_4711d838c7fc534d",
+      "ev_ed2f8013fef13366",
+      "ev_0ab86a96fa116dba"
      ],
      "analyst_override": false
     },
@@ -787,1744 +2844,104 @@
      "rationale": "Ocean centrality 'central_mechanism'; maps to taxonomy categories ['blue_food', 'coastal_adaptation', 'offshore_energy'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
      "evidence_ids": [
       "ev_e7c411949bab6e71",
-      "ev_4711d838c7fc534d"
+      "ev_4711d838c7fc534d",
+      "ev_ed2f8013fef13366",
+      "ev_0ab86a96fa116dba"
      ],
      "analyst_override": false
     },
     "technical_evidence": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
+     "evidence_ids": [
+      "ev_ed2f8013fef13366"
+     ],
+     "analyst_override": false
+    },
+    "timing": {
+     "points": 2,
+     "max": 2,
+     "rationale": "Most recent evidence 2025-09-15 (~11 months old).",
+     "evidence_ids": [
+      "ev_ed2f8013fef13366"
+     ],
+     "analyst_override": false
+    },
+    "venture_potential": {
      "points": 2,
      "max": 3,
-     "rationale": "Built and demonstrated (prototype, granted patent, or Phase I).",
+     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
      "evidence_ids": [
       "ev_e7c411949bab6e71",
-      "ev_4711d838c7fc534d"
-     ],
-     "analyst_override": false
-    },
-    "timing": {
-     "points": 2,
-     "max": 2,
-     "rationale": "Most recent evidence 2025-09-12 (~11 months old).",
-     "evidence_ids": [
-      "ev_e7c411949bab6e71"
-     ],
-     "analyst_override": false
-    },
-    "venture_potential": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
-     "evidence_ids": [
-      "ev_e7c411949bab6e71",
-      "ev_4711d838c7fc534d"
+      "ev_4711d838c7fc534d",
+      "ev_ed2f8013fef13366",
+      "ev_0ab86a96fa116dba"
      ],
      "analyst_override": false
     }
    },
-   "priority_total": 13,
-   "priority_max": 17,
-   "evidence_count": 2,
-   "date_first_seen": "2026-08-21"
-  },
-  {
-   "candidate_id": "nexuma",
-   "name": "NEXUMA L.L.C.",
-   "candidate_type": "company",
-   "institution": null,
-   "company": "NEXUMA L.L.C.",
-   "geography": "SUNNY ISLES BEACH, FL",
-   "website": null,
-   "current_stage": "pre_seed",
-   "company_formed": 1,
-   "ocean_centrality": "central_mechanism",
-   "sourcing_signal": "emerging",
-   "primary_category": "marine_materials",
-   "categories": [
-    "coastal_adaptation",
-    "marine_materials"
-   ],
-   "people": [
-    {
-     "name": "Alexander Suma",
-     "role": "Principal Investigator",
-     "role_type": "founder",
-     "affiliation": "NEXUMA L.L.C."
-    }
-   ],
-   "flags": [],
-   "analyst_views": [],
-   "priority_components": {
-    "commercialization_signal": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Commercialization funding won partly on commercial merit.",
-     "evidence_ids": [
-      "ev_0896581212521d4f"
-     ],
-     "analyst_override": false
-    },
-    "differentiated_sourcing": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Emerging: company exists with limited visibility.",
-     "evidence_ids": [],
-     "analyst_override": false
-    },
-    "propeller_relevance": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Ocean centrality 'central_mechanism'; maps to taxonomy categories ['coastal_adaptation', 'marine_materials'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
-     "evidence_ids": [
-      "ev_0896581212521d4f"
-     ],
-     "analyst_override": false
-    },
-    "technical_evidence": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Built and demonstrated (prototype, granted patent, or Phase I).",
-     "evidence_ids": [
-      "ev_0896581212521d4f"
-     ],
-     "analyst_override": false
-    },
-    "timing": {
-     "points": 2,
-     "max": 2,
-     "rationale": "Most recent evidence 2026-06-17 (~2 months old).",
-     "evidence_ids": [
-      "ev_0896581212521d4f"
-     ],
-     "analyst_override": false
-    },
-    "venture_potential": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
-     "evidence_ids": [
-      "ev_0896581212521d4f"
-     ],
-     "analyst_override": false
-    }
-   },
-   "priority_total": 13,
-   "priority_max": 17,
-   "evidence_count": 1,
-   "date_first_seen": "2026-08-21"
-  },
-  {
-   "candidate_id": "ocean-motion-technologies",
-   "name": "OCEAN MOTION TECHNOLOGIES INC",
-   "candidate_type": "company",
-   "institution": null,
-   "company": "OCEAN MOTION TECHNOLOGIES INC",
-   "geography": "SanDiego, CA",
-   "website": "https://www.oceanmotion.tech",
-   "current_stage": "pre_seed",
-   "company_formed": 1,
-   "ocean_centrality": "central_mechanism",
-   "sourcing_signal": "emerging",
-   "primary_category": "maritime_autonomy",
-   "categories": [
-    "blue_food",
-    "maritime_autonomy",
-    "ocean_sensing",
-    "offshore_energy"
-   ],
-   "people": [
-    {
-     "name": "Boyang Pan",
-     "role": "Principal Investigator",
-     "role_type": "founder",
-     "affiliation": "OCEAN MOTION TECHNOLOGIES INC"
-    }
-   ],
-   "flags": [
-    {
-     "flag": "REPEAT_SBIR_RECIPIENT",
-     "rationale": "7 lifetime SBIR/STTR awards (2020-2023): repeat SBIR recipient."
-    }
-   ],
-   "analyst_views": [],
-   "priority_components": {
-    "commercialization_signal": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Commercialization funding won partly on commercial merit.",
-     "evidence_ids": [
-      "ev_da4af14030902dd6",
-      "ev_7a9844e17a65960f",
-      "ev_90d65f69fb013255",
-      "ev_8112e9d6bf92327c",
-      "ev_faa838aedddb2620"
-     ],
-     "analyst_override": false
-    },
-    "differentiated_sourcing": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Emerging: company exists with limited visibility.",
-     "evidence_ids": [],
-     "analyst_override": false
-    },
-    "propeller_relevance": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Ocean centrality 'central_mechanism'; maps to taxonomy categories ['blue_food', 'maritime_autonomy', 'ocean_sensing', 'offshore_energy'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
-     "evidence_ids": [
-      "ev_da4af14030902dd6",
-      "ev_7a9844e17a65960f",
-      "ev_90d65f69fb013255",
-      "ev_8112e9d6bf92327c",
-      "ev_faa838aedddb2620"
-     ],
-     "analyst_override": false
-    },
-    "technical_evidence": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
-     "evidence_ids": [
-      "ev_7a9844e17a65960f",
-      "ev_90d65f69fb013255"
-     ],
-     "analyst_override": false
-    },
-    "timing": {
-     "points": 1,
-     "max": 2,
-     "rationale": "Most recent evidence 2023-08-23 (~36 months old).",
-     "evidence_ids": [
-      "ev_90d65f69fb013255"
-     ],
-     "analyst_override": false
-    },
-    "venture_potential": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
-     "evidence_ids": [
-      "ev_da4af14030902dd6",
-      "ev_7a9844e17a65960f",
-      "ev_90d65f69fb013255",
-      "ev_8112e9d6bf92327c",
-      "ev_faa838aedddb2620"
-     ],
-     "analyst_override": false
-    }
-   },
-   "priority_total": 13,
-   "priority_max": 17,
-   "evidence_count": 5,
-   "date_first_seen": "2026-08-21"
-  },
-  {
-   "candidate_id": "x-hab-3d",
-   "name": "X-HAB 3D, INC.",
-   "candidate_type": "company",
-   "institution": null,
-   "company": "X-HAB 3D, INC.",
-   "geography": "State College, PA",
-   "website": "https://www.xhab3d.com",
-   "current_stage": "seed",
-   "company_formed": 1,
-   "ocean_centrality": "central_mechanism",
-   "sourcing_signal": "emerging",
-   "primary_category": "coastal_adaptation",
-   "categories": [
-    "coastal_adaptation"
-   ],
-   "people": [
-    {
-     "name": "Nate Watson",
-     "role": "Principal Investigator",
-     "role_type": "founder",
-     "affiliation": "X-HAB 3D, INC."
-    }
-   ],
-   "flags": [],
-   "analyst_views": [],
-   "priority_components": {
-    "commercialization_signal": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Commercialization funding won partly on commercial merit.",
-     "evidence_ids": [
-      "ev_d6cdfa1baf14a93e"
-     ],
-     "analyst_override": false
-    },
-    "differentiated_sourcing": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Emerging: company exists with limited visibility.",
-     "evidence_ids": [],
-     "analyst_override": false
-    },
-    "propeller_relevance": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Ocean centrality 'central_mechanism'; maps to taxonomy categories ['coastal_adaptation'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
-     "evidence_ids": [
-      "ev_d6cdfa1baf14a93e"
-     ],
-     "analyst_override": false
-    },
-    "technical_evidence": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
-     "evidence_ids": [
-      "ev_d6cdfa1baf14a93e"
-     ],
-     "analyst_override": false
-    },
-    "timing": {
-     "points": 1,
-     "max": 2,
-     "rationale": "Most recent evidence 2023-09-25 (~35 months old).",
-     "evidence_ids": [
-      "ev_d6cdfa1baf14a93e"
-     ],
-     "analyst_override": false
-    },
-    "venture_potential": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
-     "evidence_ids": [
-      "ev_d6cdfa1baf14a93e"
-     ],
-     "analyst_override": false
-    }
-   },
-   "priority_total": 13,
-   "priority_max": 17,
-   "evidence_count": 1,
-   "date_first_seen": "2026-08-21"
-  },
-  {
-   "candidate_id": "alchemr",
-   "name": "ALCHEMR, INC.",
-   "candidate_type": "company",
-   "institution": null,
-   "company": "ALCHEMR, INC.",
-   "geography": "BocaRaton, FL",
-   "website": "https://alchemr.com",
-   "current_stage": "pre_seed",
-   "company_formed": 1,
-   "ocean_centrality": "central_mechanism",
-   "sourcing_signal": "emerging",
-   "primary_category": "marine_materials",
-   "categories": [
-    "marine_materials",
-    "offshore_energy"
-   ],
-   "people": [
-    {
-     "name": "Gholamreza Mirshekari",
-     "role": "Principal Investigator",
-     "role_type": "founder",
-     "affiliation": "ALCHEMR, INC."
-    },
-    {
-     "name": "Julian Sculley",
-     "role": "Principal Investigator",
-     "role_type": "founder",
-     "affiliation": "ALCHEMR, INC."
-    }
-   ],
-   "flags": [],
-   "analyst_views": [],
-   "priority_components": {
-    "commercialization_signal": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Commercialization funding won partly on commercial merit.",
-     "evidence_ids": [
-      "ev_901e2bf2fa8b631b",
-      "ev_40d5ae36a4f93d1f"
-     ],
-     "analyst_override": false
-    },
-    "differentiated_sourcing": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Emerging: company exists with limited visibility.",
-     "evidence_ids": [],
-     "analyst_override": false
-    },
-    "propeller_relevance": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Ocean centrality 'central_mechanism'; maps to taxonomy categories ['marine_materials', 'offshore_energy'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
-     "evidence_ids": [
-      "ev_901e2bf2fa8b631b",
-      "ev_40d5ae36a4f93d1f"
-     ],
-     "analyst_override": false
-    },
-    "technical_evidence": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
-     "evidence_ids": [
-      "ev_901e2bf2fa8b631b"
-     ],
-     "analyst_override": false
-    },
-    "timing": {
-     "points": 0,
-     "max": 2,
-     "rationale": "Most recent evidence 2021-08-23 (~60 months old); possibly dormant.",
-     "evidence_ids": [
-      "ev_901e2bf2fa8b631b"
-     ],
-     "analyst_override": false
-    },
-    "venture_potential": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
-     "evidence_ids": [
-      "ev_901e2bf2fa8b631b",
-      "ev_40d5ae36a4f93d1f"
-     ],
-     "analyst_override": false
-    }
-   },
-   "priority_total": 12,
-   "priority_max": 17,
-   "evidence_count": 2,
-   "date_first_seen": "2026-08-21"
-  },
-  {
-   "candidate_id": "alchemy-coatings",
-   "name": "ALCHEMY COATINGS INC",
-   "candidate_type": "company",
-   "institution": null,
-   "company": "ALCHEMY COATINGS INC",
-   "geography": "EUGENE, OR",
-   "website": null,
-   "current_stage": "pre_seed",
-   "company_formed": 1,
-   "ocean_centrality": "strong_adjacency",
-   "sourcing_signal": "emerging",
-   "primary_category": "marine_materials",
-   "categories": [
-    "marine_materials"
-   ],
-   "people": [
-    {
-     "name": "Alexander Rosen",
-     "role": "Principal Investigator",
-     "role_type": "founder",
-     "affiliation": "ALCHEMY COATINGS INC"
-    }
-   ],
-   "flags": [],
-   "analyst_views": [],
-   "priority_components": {
-    "commercialization_signal": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Commercialization funding won partly on commercial merit.",
-     "evidence_ids": [
-      "ev_656960f4915c4421"
-     ],
-     "analyst_override": false
-    },
-    "differentiated_sourcing": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Solves a problem acute in ocean-exposed industries without marketing itself as ocean technology \u2014 the hidden-adjacency case.",
-     "evidence_ids": [],
-     "analyst_override": false
-    },
-    "propeller_relevance": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Ocean centrality 'strong_adjacency'; maps to taxonomy categories ['marine_materials'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
-     "evidence_ids": [
-      "ev_656960f4915c4421"
-     ],
-     "analyst_override": false
-    },
-    "technical_evidence": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Built and demonstrated (prototype, granted patent, or Phase I).",
-     "evidence_ids": [
-      "ev_656960f4915c4421"
-     ],
-     "analyst_override": false
-    },
-    "timing": {
-     "points": 2,
-     "max": 2,
-     "rationale": "Most recent evidence 2025-08-27 (~12 months old).",
-     "evidence_ids": [
-      "ev_656960f4915c4421"
-     ],
-     "analyst_override": false
-    },
-    "venture_potential": {
-     "points": 1,
-     "max": 3,
-     "rationale": "Plausible product, scale and market not yet demonstrated. [inferred]",
-     "evidence_ids": [
-      "ev_656960f4915c4421"
-     ],
-     "analyst_override": false
-    }
-   },
-   "priority_total": 12,
-   "priority_max": 17,
-   "evidence_count": 1,
-   "date_first_seen": "2026-08-21"
-  },
-  {
-   "candidate_id": "aroboticscompany",
-   "name": "AROBOTICSCOMPANY, INC",
-   "candidate_type": "company",
-   "institution": null,
-   "company": "AROBOTICSCOMPANY, INC",
-   "geography": "Ossining, NY",
-   "website": "http://arobotics.company",
-   "current_stage": "seed",
-   "company_formed": 1,
-   "ocean_centrality": "strong_adjacency",
-   "sourcing_signal": "emerging",
-   "primary_category": "marine_materials",
-   "categories": [
-    "marine_materials"
-   ],
-   "people": [
-    {
-     "name": "Akaash Kancharla",
-     "role": "Principal Investigator",
-     "role_type": "founder",
-     "affiliation": "AROBOTICSCOMPANY, INC"
-    }
-   ],
-   "flags": [
-    {
-     "flag": "REPEAT_SBIR_RECIPIENT",
-     "rationale": "10 lifetime SBIR/STTR awards (2023-2023): repeat SBIR recipient."
-    }
-   ],
-   "analyst_views": [],
-   "priority_components": {
-    "commercialization_signal": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Commercialization funding won partly on commercial merit.",
-     "evidence_ids": [
-      "ev_eafc248a48fc6b01"
-     ],
-     "analyst_override": false
-    },
-    "differentiated_sourcing": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Solves a problem acute in ocean-exposed industries without marketing itself as ocean technology \u2014 the hidden-adjacency case.",
-     "evidence_ids": [],
-     "analyst_override": false
-    },
-    "propeller_relevance": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Ocean centrality 'strong_adjacency'; maps to taxonomy categories ['marine_materials'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
-     "evidence_ids": [
-      "ev_eafc248a48fc6b01"
-     ],
-     "analyst_override": false
-    },
-    "technical_evidence": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
-     "evidence_ids": [
-      "ev_eafc248a48fc6b01"
-     ],
-     "analyst_override": false
-    },
-    "timing": {
-     "points": 0,
-     "max": 2,
-     "rationale": "Most recent evidence 2022-11-21 (~45 months old); possibly dormant.",
-     "evidence_ids": [
-      "ev_eafc248a48fc6b01"
-     ],
-     "analyst_override": false
-    },
-    "venture_potential": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
-     "evidence_ids": [
-      "ev_eafc248a48fc6b01"
-     ],
-     "analyst_override": false
-    }
-   },
-   "priority_total": 12,
-   "priority_max": 17,
-   "evidence_count": 1,
-   "date_first_seen": "2026-08-21"
-  },
-  {
-   "candidate_id": "artimus-robotics",
-   "name": "ARTIMUS ROBOTICS INC",
-   "candidate_type": "company",
-   "institution": null,
-   "company": "ARTIMUS ROBOTICS INC",
-   "geography": "Boulder, CO",
-   "website": "https://www.artimusrobotics.com",
-   "current_stage": "seed",
-   "company_formed": 1,
-   "ocean_centrality": "central_mechanism",
-   "sourcing_signal": "emerging",
-   "primary_category": "maritime_autonomy",
-   "categories": [
-    "maritime_autonomy"
-   ],
-   "people": [
-    {
-     "name": "Shane Mitchell",
-     "role": "Principal Investigator",
-     "role_type": "founder",
-     "affiliation": "ARTIMUS ROBOTICS INC"
-    }
-   ],
-   "flags": [
-    {
-     "flag": "REPEAT_SBIR_RECIPIENT",
-     "rationale": "8 lifetime SBIR/STTR awards (2020-2022): repeat SBIR recipient."
-    }
-   ],
-   "analyst_views": [],
-   "priority_components": {
-    "commercialization_signal": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Commercialization funding won partly on commercial merit.",
-     "evidence_ids": [
-      "ev_73898e328dd4a36b",
-      "ev_4600bf4c6dd44bd1"
-     ],
-     "analyst_override": false
-    },
-    "differentiated_sourcing": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Emerging: company exists with limited visibility.",
-     "evidence_ids": [],
-     "analyst_override": false
-    },
-    "propeller_relevance": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Ocean centrality 'central_mechanism'; maps to taxonomy categories ['maritime_autonomy'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
-     "evidence_ids": [
-      "ev_73898e328dd4a36b",
-      "ev_4600bf4c6dd44bd1"
-     ],
-     "analyst_override": false
-    },
-    "technical_evidence": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
-     "evidence_ids": [
-      "ev_4600bf4c6dd44bd1"
-     ],
-     "analyst_override": false
-    },
-    "timing": {
-     "points": 0,
-     "max": 2,
-     "rationale": "Most recent evidence 2022-08-10 (~48 months old); possibly dormant.",
-     "evidence_ids": [
-      "ev_73898e328dd4a36b",
-      "ev_4600bf4c6dd44bd1"
-     ],
-     "analyst_override": false
-    },
-    "venture_potential": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
-     "evidence_ids": [
-      "ev_73898e328dd4a36b",
-      "ev_4600bf4c6dd44bd1"
-     ],
-     "analyst_override": false
-    }
-   },
-   "priority_total": 12,
-   "priority_max": 17,
-   "evidence_count": 2,
-   "date_first_seen": "2026-08-21"
-  },
-  {
-   "candidate_id": "adirondack-analytics",
-   "name": "Adirondack Analytics",
-   "candidate_type": "company",
-   "institution": null,
-   "company": "Adirondack Analytics",
-   "geography": "Ava, NY",
-   "website": null,
-   "current_stage": "seed",
-   "company_formed": 1,
-   "ocean_centrality": "strong_adjacency",
-   "sourcing_signal": "emerging",
-   "primary_category": "marine_materials",
-   "categories": [
-    "marine_materials"
-   ],
-   "people": [
-    {
-     "name": "David H Rose",
-     "role": "Principal Investigator",
-     "role_type": "founder",
-     "affiliation": "Adirondack Analytics"
-    }
-   ],
-   "flags": [],
-   "analyst_views": [],
-   "priority_components": {
-    "commercialization_signal": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Commercialization funding won partly on commercial merit.",
-     "evidence_ids": [
-      "ev_f3c6c5579491585c"
-     ],
-     "analyst_override": false
-    },
-    "differentiated_sourcing": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Solves a problem acute in ocean-exposed industries without marketing itself as ocean technology \u2014 the hidden-adjacency case.",
-     "evidence_ids": [],
-     "analyst_override": false
-    },
-    "propeller_relevance": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Ocean centrality 'strong_adjacency'; maps to taxonomy categories ['marine_materials'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
-     "evidence_ids": [
-      "ev_f3c6c5579491585c"
-     ],
-     "analyst_override": false
-    },
-    "technical_evidence": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
-     "evidence_ids": [
-      "ev_f3c6c5579491585c"
-     ],
-     "analyst_override": false
-    },
-    "timing": {
-     "points": 0,
-     "max": 2,
-     "rationale": "Most recent evidence 2018-09-19 (~95 months old); possibly dormant.",
-     "evidence_ids": [
-      "ev_f3c6c5579491585c"
-     ],
-     "analyst_override": false
-    },
-    "venture_potential": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
-     "evidence_ids": [
-      "ev_f3c6c5579491585c"
-     ],
-     "analyst_override": false
-    }
-   },
-   "priority_total": 12,
-   "priority_max": 17,
-   "evidence_count": 1,
-   "date_first_seen": "2026-08-21"
-  },
-  {
-   "candidate_id": "ancatt",
-   "name": "AnCatt Inc.",
-   "candidate_type": "company",
-   "institution": null,
-   "company": "AnCatt Inc.",
-   "geography": "Newark, DE",
-   "website": "http://www.ancatt.com",
-   "current_stage": "pre_seed",
-   "company_formed": 1,
-   "ocean_centrality": "strong_adjacency",
-   "sourcing_signal": "emerging",
-   "primary_category": "marine_materials",
-   "categories": [
-    "marine_materials"
-   ],
-   "people": [
-    {
-     "name": "Jianguo Wang",
-     "role": "Principal Investigator",
-     "role_type": "founder",
-     "affiliation": "AnCatt Inc."
-    }
-   ],
-   "flags": [],
-   "analyst_views": [],
-   "priority_components": {
-    "commercialization_signal": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Commercialization funding won partly on commercial merit.",
-     "evidence_ids": [
-      "ev_a361eb35cdaa9e54",
-      "ev_eb8616518482c9d7"
-     ],
-     "analyst_override": false
-    },
-    "differentiated_sourcing": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Solves a problem acute in ocean-exposed industries without marketing itself as ocean technology \u2014 the hidden-adjacency case.",
-     "evidence_ids": [],
-     "analyst_override": false
-    },
-    "propeller_relevance": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Ocean centrality 'strong_adjacency'; maps to taxonomy categories ['marine_materials'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
-     "evidence_ids": [
-      "ev_a361eb35cdaa9e54",
-      "ev_eb8616518482c9d7"
-     ],
-     "analyst_override": false
-    },
-    "technical_evidence": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
-     "evidence_ids": [
-      "ev_a361eb35cdaa9e54"
-     ],
-     "analyst_override": false
-    },
-    "timing": {
-     "points": 0,
-     "max": 2,
-     "rationale": "Most recent evidence 2016-04-15 (~124 months old); possibly dormant.",
-     "evidence_ids": [
-      "ev_a361eb35cdaa9e54"
-     ],
-     "analyst_override": false
-    },
-    "venture_potential": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
-     "evidence_ids": [
-      "ev_a361eb35cdaa9e54",
-      "ev_eb8616518482c9d7"
-     ],
-     "analyst_override": false
-    }
-   },
-   "priority_total": 12,
-   "priority_max": 17,
-   "evidence_count": 2,
-   "date_first_seen": "2026-08-21"
-  },
-  {
-   "candidate_id": "aquagga",
-   "name": "Aquagga, Inc.",
-   "candidate_type": "company",
-   "institution": "Idaho National Laboratory",
-   "company": "Aquagga, Inc.",
-   "geography": "JUNEAU, AK",
-   "website": "https://www.aquagga.com",
-   "current_stage": "pre_seed",
-   "company_formed": 1,
-   "ocean_centrality": "strong_adjacency",
-   "sourcing_signal": "emerging",
-   "primary_category": "marine_materials",
-   "categories": [
-    "marine_materials"
-   ],
-   "people": [
-    {
-     "name": "Brian Pinkard",
-     "role": "Principal Investigator",
-     "role_type": "academic_and_founder",
-     "affiliation": "Aquagga, Inc."
-    }
-   ],
-   "flags": [
-    {
-     "flag": "REPEAT_SBIR_RECIPIENT",
-     "rationale": "8 lifetime SBIR/STTR awards (2021-2023): repeat SBIR recipient."
-    }
-   ],
-   "analyst_views": [],
-   "priority_components": {
-    "commercialization_signal": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Commercialization funding won partly on commercial merit.",
-     "evidence_ids": [
-      "ev_acf3e984a5a0af62",
-      "ev_07e9b60da899e63d"
-     ],
-     "analyst_override": false
-    },
-    "differentiated_sourcing": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Solves a problem acute in ocean-exposed industries without marketing itself as ocean technology \u2014 the hidden-adjacency case.",
-     "evidence_ids": [],
-     "analyst_override": false
-    },
-    "propeller_relevance": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Ocean centrality 'strong_adjacency'; maps to taxonomy categories ['marine_materials'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
-     "evidence_ids": [
-      "ev_acf3e984a5a0af62",
-      "ev_07e9b60da899e63d",
-      "ev_616ed78778fd2885"
-     ],
-     "analyst_override": false
-    },
-    "technical_evidence": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
-     "evidence_ids": [
-      "ev_acf3e984a5a0af62"
-     ],
-     "analyst_override": false
-    },
-    "timing": {
-     "points": 0,
-     "max": 2,
-     "rationale": "Most recent evidence 2023-05-01 (~40 months old); possibly dormant.",
-     "evidence_ids": [
-      "ev_acf3e984a5a0af62"
-     ],
-     "analyst_override": false
-    },
-    "venture_potential": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
-     "evidence_ids": [
-      "ev_acf3e984a5a0af62",
-      "ev_07e9b60da899e63d",
-      "ev_616ed78778fd2885"
-     ],
-     "analyst_override": false
-    }
-   },
-   "priority_total": 12,
-   "priority_max": 17,
-   "evidence_count": 3,
-   "date_first_seen": "2026-08-21"
-  },
-  {
-   "candidate_id": "blue-ocean-gear",
-   "name": "Blue Ocean Gear Inc.",
-   "candidate_type": "company",
-   "institution": null,
-   "company": "Blue Ocean Gear Inc.",
-   "geography": "Redwood City, CA",
-   "website": "https://www.blueoceangear.com",
-   "current_stage": "pre_seed",
-   "company_formed": 1,
-   "ocean_centrality": "central_mechanism",
-   "sourcing_signal": "emerging",
-   "primary_category": "blue_food",
-   "categories": [
-    "blue_food",
-    "offshore_energy"
-   ],
-   "people": [
-    {
-     "name": "Kortney   Opshaug",
-     "role": "Principal Investigator",
-     "role_type": "founder",
-     "affiliation": "Blue Ocean Gear Inc."
-    }
-   ],
-   "flags": [],
-   "analyst_views": [],
-   "priority_components": {
-    "commercialization_signal": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Commercialization funding won partly on commercial merit.",
-     "evidence_ids": [
-      "ev_155f87f4912ffd1f",
-      "ev_d6e4a5860223331d"
-     ],
-     "analyst_override": false
-    },
-    "differentiated_sourcing": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Emerging: company exists with limited visibility.",
-     "evidence_ids": [],
-     "analyst_override": false
-    },
-    "propeller_relevance": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Ocean centrality 'central_mechanism'; maps to taxonomy categories ['blue_food', 'offshore_energy'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
-     "evidence_ids": [
-      "ev_155f87f4912ffd1f",
-      "ev_d6e4a5860223331d"
-     ],
-     "analyst_override": false
-    },
-    "technical_evidence": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
-     "evidence_ids": [
-      "ev_155f87f4912ffd1f"
-     ],
-     "analyst_override": false
-    },
-    "timing": {
-     "points": 0,
-     "max": 2,
-     "rationale": "Most recent evidence 2023-08-01 (~37 months old); possibly dormant.",
-     "evidence_ids": [
-      "ev_155f87f4912ffd1f"
-     ],
-     "analyst_override": false
-    },
-    "venture_potential": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
-     "evidence_ids": [
-      "ev_155f87f4912ffd1f",
-      "ev_d6e4a5860223331d"
-     ],
-     "analyst_override": false
-    }
-   },
-   "priority_total": 12,
-   "priority_max": 17,
-   "evidence_count": 2,
-   "date_first_seen": "2026-08-21"
-  },
-  {
-   "candidate_id": "cactus-materials",
-   "name": "CACTUS MATERIALS, INC.",
-   "candidate_type": "company",
-   "institution": "Arizona State University",
-   "company": "CACTUS MATERIALS, INC.",
-   "geography": "Chandler, AZ",
-   "website": "http://www.cactusmaterials.com",
-   "current_stage": "seed",
-   "company_formed": 1,
-   "ocean_centrality": "strong_adjacency",
-   "sourcing_signal": "emerging",
-   "primary_category": "marine_materials",
-   "categories": [
-    "marine_materials"
-   ],
-   "people": [
-    {
-     "name": "Mohammed Rafiqul Islam",
-     "role": "Principal Investigator",
-     "role_type": "academic_and_founder",
-     "affiliation": "CACTUS MATERIALS, INC."
-    }
-   ],
-   "flags": [
-    {
-     "flag": "REPEAT_SBIR_RECIPIENT",
-     "rationale": "14 lifetime SBIR/STTR awards (2018-2023): repeat SBIR recipient."
-    }
-   ],
-   "analyst_views": [],
-   "priority_components": {
-    "commercialization_signal": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Commercialization funding won partly on commercial merit.",
-     "evidence_ids": [
-      "ev_578c9739e4454323"
-     ],
-     "analyst_override": false
-    },
-    "differentiated_sourcing": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Solves a problem acute in ocean-exposed industries without marketing itself as ocean technology \u2014 the hidden-adjacency case.",
-     "evidence_ids": [],
-     "analyst_override": false
-    },
-    "propeller_relevance": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Ocean centrality 'strong_adjacency'; maps to taxonomy categories ['marine_materials'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
-     "evidence_ids": [
-      "ev_578c9739e4454323",
-      "ev_aed12983fd6945b0"
-     ],
-     "analyst_override": false
-    },
-    "technical_evidence": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
-     "evidence_ids": [
-      "ev_578c9739e4454323"
-     ],
-     "analyst_override": false
-    },
-    "timing": {
-     "points": 0,
-     "max": 2,
-     "rationale": "Most recent evidence 2021-01-15 (~67 months old); possibly dormant.",
-     "evidence_ids": [
-      "ev_578c9739e4454323",
-      "ev_aed12983fd6945b0"
-     ],
-     "analyst_override": false
-    },
-    "venture_potential": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
-     "evidence_ids": [
-      "ev_578c9739e4454323",
-      "ev_aed12983fd6945b0"
-     ],
-     "analyst_override": false
-    }
-   },
-   "priority_total": 12,
-   "priority_max": 17,
-   "evidence_count": 2,
-   "date_first_seen": "2026-08-21"
-  },
-  {
-   "candidate_id": "coastaloceanvision",
-   "name": "COASTALOCEANVISION, INC",
-   "candidate_type": "company",
-   "institution": null,
-   "company": "COASTALOCEANVISION, INC",
-   "geography": "North Falmouth, MA",
-   "website": "http://www.coastaloceanvision.com",
-   "current_stage": "pre_seed",
-   "company_formed": 1,
-   "ocean_centrality": "central_mechanism",
-   "sourcing_signal": "emerging",
-   "primary_category": "blue_food",
-   "categories": [
-    "blue_food",
-    "coastal_adaptation"
-   ],
-   "people": [
-    {
-     "name": "Scott Gallager",
-     "role": "Principal Investigator",
-     "role_type": "founder",
-     "affiliation": "COASTALOCEANVISION, INC"
-    }
-   ],
-   "flags": [
-    {
-     "flag": "REPEAT_SBIR_RECIPIENT",
-     "rationale": "7 lifetime SBIR/STTR awards (2018-2023): repeat SBIR recipient."
-    }
-   ],
-   "analyst_views": [],
-   "priority_components": {
-    "commercialization_signal": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Commercialization funding won partly on commercial merit.",
-     "evidence_ids": [
-      "ev_20207ebd27e81278",
-      "ev_502f144a60efe65e",
-      "ev_a460672dc0d8aefa",
-      "ev_29a9d2536c5fb211",
-      "ev_bed836e6e7623feb"
-     ],
-     "analyst_override": false
-    },
-    "differentiated_sourcing": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Emerging: company exists with limited visibility.",
-     "evidence_ids": [],
-     "analyst_override": false
-    },
-    "propeller_relevance": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Ocean centrality 'central_mechanism'; maps to taxonomy categories ['blue_food', 'coastal_adaptation'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
-     "evidence_ids": [
-      "ev_20207ebd27e81278",
-      "ev_502f144a60efe65e",
-      "ev_a460672dc0d8aefa",
-      "ev_29a9d2536c5fb211",
-      "ev_bed836e6e7623feb"
-     ],
-     "analyst_override": false
-    },
-    "technical_evidence": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
-     "evidence_ids": [
-      "ev_20207ebd27e81278",
-      "ev_a460672dc0d8aefa"
-     ],
-     "analyst_override": false
-    },
-    "timing": {
-     "points": 0,
-     "max": 2,
-     "rationale": "Most recent evidence 2023-08-01 (~37 months old); possibly dormant.",
-     "evidence_ids": [
-      "ev_20207ebd27e81278"
-     ],
-     "analyst_override": false
-    },
-    "venture_potential": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
-     "evidence_ids": [
-      "ev_20207ebd27e81278",
-      "ev_502f144a60efe65e",
-      "ev_a460672dc0d8aefa",
-      "ev_29a9d2536c5fb211",
-      "ev_bed836e6e7623feb"
-     ],
-     "analyst_override": false
-    }
-   },
-   "priority_total": 12,
-   "priority_max": 17,
-   "evidence_count": 5,
-   "date_first_seen": "2026-08-21"
-  },
-  {
-   "candidate_id": "corrosion-prognostics",
-   "name": "Corrosion Prognostics, LLC",
-   "candidate_type": "company",
-   "institution": null,
-   "company": "Corrosion Prognostics, LLC",
-   "geography": "Leesburg, VA",
-   "website": null,
-   "current_stage": "pre_seed",
-   "company_formed": 1,
-   "ocean_centrality": "strong_adjacency",
-   "sourcing_signal": "emerging",
-   "primary_category": "marine_materials",
-   "categories": [
-    "marine_materials"
-   ],
-   "people": [
-    {
-     "name": "Antony Roger Trueman",
-     "role": "Principal Investigator",
-     "role_type": "founder",
-     "affiliation": "Corrosion Prognostics, LLC"
-    },
-    {
-     "name": "Antony Trueman",
-     "role": "Principal Investigator",
-     "role_type": "founder",
-     "affiliation": "Corrosion Prognostics, LLC"
-    }
-   ],
-   "flags": [],
-   "analyst_views": [],
-   "priority_components": {
-    "commercialization_signal": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Commercialization funding won partly on commercial merit.",
-     "evidence_ids": [
-      "ev_8f732c84e367768e",
-      "ev_6c20f96697c142d2"
-     ],
-     "analyst_override": false
-    },
-    "differentiated_sourcing": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Solves a problem acute in ocean-exposed industries without marketing itself as ocean technology \u2014 the hidden-adjacency case.",
-     "evidence_ids": [],
-     "analyst_override": false
-    },
-    "propeller_relevance": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Ocean centrality 'strong_adjacency'; maps to taxonomy categories ['marine_materials'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
-     "evidence_ids": [
-      "ev_8f732c84e367768e",
-      "ev_6c20f96697c142d2"
-     ],
-     "analyst_override": false
-    },
-    "technical_evidence": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
-     "evidence_ids": [
-      "ev_8f732c84e367768e"
-     ],
-     "analyst_override": false
-    },
-    "timing": {
-     "points": 0,
-     "max": 2,
-     "rationale": "Most recent evidence 2018-06-13 (~98 months old); possibly dormant.",
-     "evidence_ids": [
-      "ev_8f732c84e367768e"
-     ],
-     "analyst_override": false
-    },
-    "venture_potential": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
-     "evidence_ids": [
-      "ev_8f732c84e367768e",
-      "ev_6c20f96697c142d2"
-     ],
-     "analyst_override": false
-    }
-   },
-   "priority_total": 12,
-   "priority_max": 17,
-   "evidence_count": 2,
-   "date_first_seen": "2026-08-21"
-  },
-  {
-   "candidate_id": "cultured-abalone-farm-llc-the",
-   "name": "Cultured Abalone Farm LLC, The",
-   "candidate_type": "company",
-   "institution": null,
-   "company": "Cultured Abalone Farm LLC, The",
-   "geography": "Goieta, CA",
-   "website": "www.culturedabalone.com",
-   "current_stage": "pre_seed",
-   "company_formed": 1,
-   "ocean_centrality": "central_mechanism",
-   "sourcing_signal": "emerging",
-   "primary_category": "blue_food",
-   "categories": [
-    "blue_food",
-    "marine_carbon"
-   ],
-   "people": [
-    {
-     "name": "Daniel Swezey",
-     "role": "Principal Investigator",
-     "role_type": "founder",
-     "affiliation": "Cultured Abalone Farm LLC, The"
-    }
-   ],
-   "flags": [],
-   "analyst_views": [],
-   "priority_components": {
-    "commercialization_signal": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Commercialization funding won partly on commercial merit.",
-     "evidence_ids": [
-      "ev_abca4fdf0ee90573",
-      "ev_00b46304898d8bbe"
-     ],
-     "analyst_override": false
-    },
-    "differentiated_sourcing": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Emerging: company exists with limited visibility.",
-     "evidence_ids": [],
-     "analyst_override": false
-    },
-    "propeller_relevance": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Ocean centrality 'central_mechanism'; maps to taxonomy categories ['blue_food', 'marine_carbon'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
-     "evidence_ids": [
-      "ev_abca4fdf0ee90573",
-      "ev_00b46304898d8bbe"
-     ],
-     "analyst_override": false
-    },
-    "technical_evidence": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
-     "evidence_ids": [
-      "ev_abca4fdf0ee90573"
-     ],
-     "analyst_override": false
-    },
-    "timing": {
-     "points": 0,
-     "max": 2,
-     "rationale": "Most recent evidence 2016-07-19 (~121 months old); possibly dormant.",
-     "evidence_ids": [
-      "ev_abca4fdf0ee90573"
-     ],
-     "analyst_override": false
-    },
-    "venture_potential": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
-     "evidence_ids": [
-      "ev_abca4fdf0ee90573",
-      "ev_00b46304898d8bbe"
-     ],
-     "analyst_override": false
-    }
-   },
-   "priority_total": 12,
-   "priority_max": 17,
-   "evidence_count": 2,
-   "date_first_seen": "2026-08-21"
-  },
-  {
-   "candidate_id": "dynamic-dimension-technologies",
-   "name": "DYNAMIC DIMENSION TECHNOLOGIES, LLC",
-   "candidate_type": "company",
-   "institution": "Regents of the University of Minnesota",
-   "company": "DYNAMIC DIMENSION TECHNOLOGIES, LLC",
-   "geography": "Westminster, MD",
-   "website": "http://www.dynamicdimensiontechnologies.com",
-   "current_stage": "pre_seed",
-   "company_formed": 1,
-   "ocean_centrality": "strong_adjacency",
-   "sourcing_signal": "emerging",
-   "primary_category": "ocean_sensing",
-   "categories": [
-    "ocean_sensing"
-   ],
-   "people": [
-    {
-     "name": "Karl Leodler",
-     "role": "Principal Investigator",
-     "role_type": "founder",
-     "affiliation": "DYNAMIC DIMENSION TECHNOLOGIES, LLC"
-    },
-    {
-     "name": "Karl Leodler Karl Leodler",
-     "role": "Principal Investigator",
-     "role_type": "academic_and_founder",
-     "affiliation": "DYNAMIC DIMENSION TECHNOLOGIES, LLC"
-    }
-   ],
-   "flags": [
-    {
-     "flag": "REPEAT_SBIR_RECIPIENT",
-     "rationale": "8 lifetime SBIR/STTR awards (2016-2022): repeat SBIR recipient."
-    }
-   ],
-   "analyst_views": [],
-   "priority_components": {
-    "commercialization_signal": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Commercialization funding won partly on commercial merit.",
-     "evidence_ids": [
-      "ev_34d5159461a70ff9",
-      "ev_6c4242504f16e32b",
-      "ev_7f04b0c2d9cf2e3e"
-     ],
-     "analyst_override": false
-    },
-    "differentiated_sourcing": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Solves a problem acute in ocean-exposed industries without marketing itself as ocean technology \u2014 the hidden-adjacency case.",
-     "evidence_ids": [],
-     "analyst_override": false
-    },
-    "propeller_relevance": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Ocean centrality 'strong_adjacency'; maps to taxonomy categories ['ocean_sensing'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
-     "evidence_ids": [
-      "ev_34d5159461a70ff9",
-      "ev_6c4242504f16e32b",
-      "ev_4f06677e532c2257",
-      "ev_7f04b0c2d9cf2e3e"
-     ],
-     "analyst_override": false
-    },
-    "technical_evidence": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
-     "evidence_ids": [
-      "ev_34d5159461a70ff9"
-     ],
-     "analyst_override": false
-    },
-    "timing": {
-     "points": 0,
-     "max": 2,
-     "rationale": "Most recent evidence 2022-01-31 (~55 months old); possibly dormant.",
-     "evidence_ids": [
-      "ev_34d5159461a70ff9"
-     ],
-     "analyst_override": false
-    },
-    "venture_potential": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
-     "evidence_ids": [
-      "ev_34d5159461a70ff9",
-      "ev_6c4242504f16e32b",
-      "ev_4f06677e532c2257",
-      "ev_7f04b0c2d9cf2e3e"
-     ],
-     "analyst_override": false
-    }
-   },
-   "priority_total": 12,
+   "priority_total": 14,
    "priority_max": 17,
    "evidence_count": 4,
    "date_first_seen": "2026-08-21"
   },
   {
-   "candidate_id": "fastwatt",
-   "name": "FASTWATT LLC",
+   "candidate_id": "interphase-materials",
+   "name": "Interphase Materials, Inc.",
    "candidate_type": "company",
-   "institution": null,
-   "company": "FASTWATT LLC",
-   "geography": "CliftonPark, NY",
-   "website": "https://www.fastwatt.com",
+   "institution": "Virginia Tech Applied Research Corporation",
+   "company": "Interphase Materials, Inc.",
+   "geography": "Pittsburgh, PA",
+   "website": "http://interphasematerials.com",
    "current_stage": "pre_seed",
    "company_formed": 1,
-   "ocean_centrality": "central_mechanism",
-   "sourcing_signal": "emerging",
-   "primary_category": "offshore_energy",
-   "categories": [
-    "offshore_energy"
-   ],
-   "people": [
-    {
-     "name": "Ravisekhar Raju",
-     "role": "Principal Investigator",
-     "role_type": "founder",
-     "affiliation": "FASTWATT LLC"
-    }
-   ],
-   "flags": [],
-   "analyst_views": [],
-   "priority_components": {
-    "commercialization_signal": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Commercialization funding won partly on commercial merit.",
-     "evidence_ids": [
-      "ev_ca3a31384eca52d4",
-      "ev_c3ad24bbf4181a6b"
-     ],
-     "analyst_override": false
-    },
-    "differentiated_sourcing": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Emerging: company exists with limited visibility.",
-     "evidence_ids": [],
-     "analyst_override": false
-    },
-    "propeller_relevance": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Ocean centrality 'central_mechanism'; maps to taxonomy categories ['offshore_energy'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
-     "evidence_ids": [
-      "ev_ca3a31384eca52d4",
-      "ev_c3ad24bbf4181a6b"
-     ],
-     "analyst_override": false
-    },
-    "technical_evidence": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
-     "evidence_ids": [
-      "ev_ca3a31384eca52d4"
-     ],
-     "analyst_override": false
-    },
-    "timing": {
-     "points": 0,
-     "max": 2,
-     "rationale": "Most recent evidence 2021-08-23 (~60 months old); possibly dormant.",
-     "evidence_ids": [
-      "ev_ca3a31384eca52d4"
-     ],
-     "analyst_override": false
-    },
-    "venture_potential": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
-     "evidence_ids": [
-      "ev_ca3a31384eca52d4",
-      "ev_c3ad24bbf4181a6b"
-     ],
-     "analyst_override": false
-    }
-   },
-   "priority_total": 12,
-   "priority_max": 17,
-   "evidence_count": 2,
-   "date_first_seen": "2026-08-21"
-  },
-  {
-   "candidate_id": "flora-coatings",
-   "name": "FLORA COATINGS INC",
-   "candidate_type": "company",
-   "institution": null,
-   "company": "FLORA COATINGS INC",
-   "geography": "PHOENIX, AZ",
-   "website": "www.floracoating.com",
-   "current_stage": "pre_seed",
-   "company_formed": 1,
-   "ocean_centrality": "strong_adjacency",
+   "ocean_centrality": "primary_end_market",
    "sourcing_signal": "emerging",
    "primary_category": "marine_materials",
    "categories": [
-    "marine_materials"
-   ],
-   "people": [
-    {
-     "name": "ANUPAMA CHATURVEDI",
-     "role": "Principal Investigator",
-     "role_type": "founder",
-     "affiliation": "FLORA COATINGS INC"
-    }
-   ],
-   "flags": [],
-   "analyst_views": [],
-   "priority_components": {
-    "commercialization_signal": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Commercialization funding won partly on commercial merit.",
-     "evidence_ids": [
-      "ev_4ef4e6165a3d7bfd",
-      "ev_043f7583105e2901"
-     ],
-     "analyst_override": false
-    },
-    "differentiated_sourcing": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Solves a problem acute in ocean-exposed industries without marketing itself as ocean technology \u2014 the hidden-adjacency case.",
-     "evidence_ids": [],
-     "analyst_override": false
-    },
-    "propeller_relevance": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Ocean centrality 'strong_adjacency'; maps to taxonomy categories ['marine_materials'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
-     "evidence_ids": [
-      "ev_4ef4e6165a3d7bfd",
-      "ev_043f7583105e2901"
-     ],
-     "analyst_override": false
-    },
-    "technical_evidence": {
-     "points": 3,
-     "max": 3,
-     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
-     "evidence_ids": [
-      "ev_4ef4e6165a3d7bfd"
-     ],
-     "analyst_override": false
-    },
-    "timing": {
-     "points": 0,
-     "max": 2,
-     "rationale": "Most recent evidence 2018-08-15 (~96 months old); possibly dormant.",
-     "evidence_ids": [
-      "ev_4ef4e6165a3d7bfd"
-     ],
-     "analyst_override": false
-    },
-    "venture_potential": {
-     "points": 2,
-     "max": 3,
-     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
-     "evidence_ids": [
-      "ev_4ef4e6165a3d7bfd",
-      "ev_043f7583105e2901"
-     ],
-     "analyst_override": false
-    }
-   },
-   "priority_total": 12,
-   "priority_max": 17,
-   "evidence_count": 2,
-   "date_first_seen": "2026-08-21"
-  },
-  {
-   "candidate_id": "frontline-biotechnologies",
-   "name": "FRONTLINE BIOTECHNOLOGIES INC.",
-   "candidate_type": "company",
-   "institution": null,
-   "company": "FRONTLINE BIOTECHNOLOGIES INC.",
-   "geography": "Falcon Heights, MN",
-   "website": "https://www.purebiox.com",
-   "current_stage": "pre_seed",
-   "company_formed": 1,
-   "ocean_centrality": "central_mechanism",
-   "sourcing_signal": "emerging",
-   "primary_category": "ocean_sensing",
-   "categories": [
-    "blue_food",
+    "marine_materials",
     "ocean_sensing"
    ],
    "people": [
     {
-     "name": "Kyle King",
+     "name": "Noah Snyder",
      "role": "Principal Investigator",
      "role_type": "founder",
-     "affiliation": "FRONTLINE BIOTECHNOLOGIES INC."
+     "affiliation": "Interphase Materials, Inc."
     },
     {
-     "name": "Hamada Aboubakr",
+     "name": "Kasey Catt",
      "role": "Principal Investigator",
      "role_type": "founder",
-     "affiliation": "FRONTLINE BIOTECHNOLOGIES INC."
+     "affiliation": "Interphase Materials, Inc."
     }
    ],
-   "flags": [],
-   "analyst_views": [],
+   "flags": [
+    {
+     "flag": "REPEAT_SBIR_RECIPIENT",
+     "rationale": "7 lifetime SBIR/STTR awards (2016-2023): repeat SBIR recipient."
+    }
+   ],
+   "analyst_views": [
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 2/3 with ocean centrality 'primary_end_market'. Current activity: latest signal 2025-09-08 (~11 months old). Against: none",
+     "evidence_ids": [],
+     "author": "analyst"
+    }
+   ],
    "priority_components": {
     "commercialization_signal": {
-     "points": 2,
+     "points": 3,
      "max": 3,
-     "rationale": "Commercialization funding won partly on commercial merit.",
+     "rationale": "Real customer relationship (pilot, contract, offtake, or revenue).",
      "evidence_ids": [
-      "ev_c296c5f968bc2a5f",
-      "ev_1abf2cb3ecb4dc0e"
+      "ev_94e5c1bd8466bf04",
+      "ev_caccd1732d428234",
+      "ev_9a083b6d4d123485",
+      "ev_d16123e2fbe596ba",
+      "ev_2b0071f815409d6a"
      ],
      "analyst_override": false
     },
@@ -2536,12 +2953,15 @@
      "analyst_override": false
     },
     "propeller_relevance": {
-     "points": 3,
+     "points": 2,
      "max": 3,
-     "rationale": "Ocean centrality 'central_mechanism'; maps to taxonomy categories ['blue_food', 'ocean_sensing'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
+     "rationale": "Ocean centrality 'primary_end_market'; maps to taxonomy categories ['marine_materials', 'ocean_sensing'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
      "evidence_ids": [
-      "ev_c296c5f968bc2a5f",
-      "ev_1abf2cb3ecb4dc0e"
+      "ev_a21503a496558e13",
+      "ev_ed0d5d9ac9c83d32",
+      "ev_ff9951e809baa793",
+      "ev_2093db71e4c3a43e",
+      "ev_b3ec44925f5b9ef1"
      ],
      "analyst_override": false
     },
@@ -2550,16 +2970,19 @@
      "max": 3,
      "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
      "evidence_ids": [
-      "ev_c296c5f968bc2a5f"
+      "ev_ff9951e809baa793",
+      "ev_991c62a46f12c633",
+      "ev_079df9d8e11e43b7",
+      "ev_94a75d2bd8701417"
      ],
      "analyst_override": false
     },
     "timing": {
-     "points": 0,
+     "points": 2,
      "max": 2,
-     "rationale": "Most recent evidence 2022-08-28 (~48 months old); possibly dormant.",
+     "rationale": "Most recent evidence 2025-09-08 (~11 months old).",
      "evidence_ids": [
-      "ev_c296c5f968bc2a5f"
+      "ev_94e5c1bd8466bf04"
      ],
      "analyst_override": false
     },
@@ -2568,15 +2991,278 @@
      "max": 3,
      "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
      "evidence_ids": [
-      "ev_c296c5f968bc2a5f",
-      "ev_1abf2cb3ecb4dc0e"
+      "ev_a21503a496558e13",
+      "ev_ed0d5d9ac9c83d32",
+      "ev_ff9951e809baa793",
+      "ev_2093db71e4c3a43e",
+      "ev_b3ec44925f5b9ef1",
+      "ev_2c52a3332c3b292a",
+      "ev_991c62a46f12c633",
+      "ev_94e5c1bd8466bf04",
+      "ev_caccd1732d428234",
+      "ev_bdad50c9fb988a80",
+      "ev_45f01b390b538d06",
+      "ev_9a083b6d4d123485"
      ],
      "analyst_override": false
     }
    },
-   "priority_total": 12,
+   "priority_total": 14,
    "priority_max": 17,
-   "evidence_count": 2,
+   "evidence_count": 17,
+   "date_first_seen": "2026-08-21"
+  },
+  {
+   "candidate_id": "jpanalytics",
+   "name": "JPANALYTICS LLC",
+   "candidate_type": "company",
+   "institution": null,
+   "company": "JPANALYTICS LLC",
+   "geography": "Falmouth, MA",
+   "website": "https://www.jpanalytics.com",
+   "current_stage": "pre_seed",
+   "company_formed": 1,
+   "ocean_centrality": "primary_end_market",
+   "sourcing_signal": "emerging",
+   "primary_category": "ocean_sensing",
+   "categories": [
+    "ocean_sensing"
+   ],
+   "people": [
+    {
+     "name": "James Preisig",
+     "role": "Principal Investigator",
+     "role_type": "founder",
+     "affiliation": "JPANALYTICS LLC"
+    },
+    {
+     "name": "Dr. James Preisig",
+     "role": "Principal Investigator",
+     "role_type": "founder",
+     "affiliation": "JPANALYTICS LLC"
+    }
+   ],
+   "flags": [
+    {
+     "flag": "BEYOND_STAGE",
+     "rationale": "Cumulative federal awards $10,592,936 (largest $1,970,121) indicate a company operating well above Propeller's stated $500K-$3M pre-seed to Series A model."
+    },
+    {
+     "flag": "REPEAT_SBIR_RECIPIENT",
+     "rationale": "9 lifetime SBIR/STTR awards (2016-2023): repeat SBIR recipient."
+    }
+   ],
+   "analyst_views": [
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_c'. For: none Against: Outside early-stage scope: BEYOND_STAGE.",
+     "evidence_ids": [],
+     "author": "analyst"
+    }
+   ],
+   "priority_components": {
+    "commercialization_signal": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Real customer relationship (pilot, contract, offtake, or revenue).",
+     "evidence_ids": [
+      "ev_6a05fc0481e343ec",
+      "ev_02391b9a0fd65568",
+      "ev_d3c83dcbb5695ea6",
+      "ev_1fbad5d0d6092422",
+      "ev_9e7bb11058febdec",
+      "ev_37074aa52dcdb9ba"
+     ],
+     "analyst_override": false
+    },
+    "differentiated_sourcing": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Emerging: company exists with limited visibility.",
+     "evidence_ids": [],
+     "analyst_override": false
+    },
+    "propeller_relevance": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Ocean centrality 'primary_end_market'; maps to taxonomy categories ['ocean_sensing'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
+     "evidence_ids": [
+      "ev_93ba07385f535a10",
+      "ev_030629637f5cb313",
+      "ev_ad0bb7ece01067b1",
+      "ev_307c40e8f8f3c27f",
+      "ev_054e9f6080ae213e"
+     ],
+     "analyst_override": false
+    },
+    "technical_evidence": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
+     "evidence_ids": [
+      "ev_030629637f5cb313",
+      "ev_307c40e8f8f3c27f",
+      "ev_dfab6066cb51b291",
+      "ev_2ca23045155a61b1",
+      "ev_d2f5e40c75920d80",
+      "ev_c4d0e5ad0a06d5d9"
+     ],
+     "analyst_override": false
+    },
+    "timing": {
+     "points": 2,
+     "max": 2,
+     "rationale": "Most recent evidence 2026-04-07 (~4 months old).",
+     "evidence_ids": [
+      "ev_dfab6066cb51b291"
+     ],
+     "analyst_override": false
+    },
+    "venture_potential": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
+     "evidence_ids": [
+      "ev_93ba07385f535a10",
+      "ev_030629637f5cb313",
+      "ev_ad0bb7ece01067b1",
+      "ev_307c40e8f8f3c27f",
+      "ev_054e9f6080ae213e",
+      "ev_e6809104f6594530",
+      "ev_dfab6066cb51b291",
+      "ev_7c2f90b2f7207243",
+      "ev_6a05fc0481e343ec",
+      "ev_02391b9a0fd65568",
+      "ev_096c614bcb78c972",
+      "ev_275b0b2cbf352b15"
+     ],
+     "analyst_override": false
+    }
+   },
+   "priority_total": 14,
+   "priority_max": 17,
+   "evidence_count": 20,
+   "date_first_seen": "2026-08-21"
+  },
+  {
+   "candidate_id": "meld-manufacturing",
+   "name": "MELD MANUFACTURING CORPORATION",
+   "candidate_type": "company",
+   "institution": null,
+   "company": "MELD MANUFACTURING CORPORATION",
+   "geography": "Christiansburg, VA",
+   "website": "https://www.meldmanufacturing.com",
+   "current_stage": "seed",
+   "company_formed": 1,
+   "ocean_centrality": "primary_end_market",
+   "sourcing_signal": "emerging",
+   "primary_category": "maritime_software",
+   "categories": [
+    "maritime_software"
+   ],
+   "people": [
+    {
+     "name": "Nanci Hardwick",
+     "role": "Principal Investigator",
+     "role_type": "founder",
+     "affiliation": "MELD MANUFACTURING CORPORATION"
+    }
+   ],
+   "flags": [
+    {
+     "flag": "BEYOND_STAGE",
+     "rationale": "Cumulative federal awards $11,252,472 (largest $4,661,371) indicate a company operating well above Propeller's stated $500K-$3M pre-seed to Series A model."
+    }
+   ],
+   "analyst_views": [
+    {
+     "type": "inferred",
+     "statement": "Queue 'tier_c'. For: none Against: Outside early-stage scope: BEYOND_STAGE.",
+     "evidence_ids": [],
+     "author": "analyst"
+    }
+   ],
+   "priority_components": {
+    "commercialization_signal": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Real customer relationship (pilot, contract, offtake, or revenue).",
+     "evidence_ids": [
+      "ev_5005d5b74896dab7",
+      "ev_28712bf6e33a30fb",
+      "ev_125083fa63e96421",
+      "ev_0e134625628cddf3",
+      "ev_4f984f5dea9ae276",
+      "ev_5ff5459797d9ac5d"
+     ],
+     "analyst_override": false
+    },
+    "differentiated_sourcing": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Emerging: company exists with limited visibility.",
+     "evidence_ids": [],
+     "analyst_override": false
+    },
+    "propeller_relevance": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Ocean centrality 'primary_end_market'; maps to taxonomy categories ['maritime_software'], all inside Propeller's publicly stated themes. Measures fit with PUBLIC statements only \u2014 no claim about their pipeline.",
+     "evidence_ids": [
+      "ev_c28d4f920887e85c",
+      "ev_e8f7188869b6fcc2",
+      "ev_5005d5b74896dab7",
+      "ev_28712bf6e33a30fb",
+      "ev_bfb058d3861be0f8"
+     ],
+     "analyst_override": false
+    },
+    "technical_evidence": {
+     "points": 3,
+     "max": 3,
+     "rationale": "Validated beyond the lab (Phase II, field trial, or executed license).",
+     "evidence_ids": [
+      "ev_c28d4f920887e85c",
+      "ev_bfb058d3861be0f8",
+      "ev_4be66ea276b8755b",
+      "ev_e8cf58596b0270a2",
+      "ev_4e9a011d91552f80"
+     ],
+     "analyst_override": false
+    },
+    "timing": {
+     "points": 2,
+     "max": 2,
+     "rationale": "Most recent evidence 2025-12-29 (~8 months old).",
+     "evidence_ids": [
+      "ev_5005d5b74896dab7"
+     ],
+     "analyst_override": false
+    },
+    "venture_potential": {
+     "points": 2,
+     "max": 3,
+     "rationale": "Repeatable product shape with meaningful validation funding or IP. [inferred]",
+     "evidence_ids": [
+      "ev_c28d4f920887e85c",
+      "ev_e8f7188869b6fcc2",
+      "ev_5005d5b74896dab7",
+      "ev_28712bf6e33a30fb",
+      "ev_bfb058d3861be0f8",
+      "ev_4be66ea276b8755b",
+      "ev_125083fa63e96421",
+      "ev_e8cf58596b0270a2",
+      "ev_4e9a011d91552f80",
+      "ev_0e134625628cddf3",
+      "ev_4f984f5dea9ae276",
+      "ev_5ff5459797d9ac5d"
+     ],
+     "analyst_override": false
+    }
+   },
+   "priority_total": 14,
+   "priority_max": 17,
+   "evidence_count": 12,
    "date_first_seen": "2026-08-21"
   }
  ]
