@@ -417,7 +417,9 @@ README.md                               Phase 2 status, architecture, reproducti
 
 ## 19. Git commit hash
 
-Recorded at commit time in the section below.
+**`8a7b4dc4e4c47e9acbb03ff76cb998a74c66a9aa`** (short: `8a7b4dc`) — "Phase 2: reproducible sourcing pipeline over 211k source records".
+
+Preceded by `b8dccfc` and `c077851` (Phase 1). Repository remains independent of the home-directory repo.
 
 ---
 
