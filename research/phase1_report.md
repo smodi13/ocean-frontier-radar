@@ -299,7 +299,9 @@ Phase 1 was research, not software, but two harvest utilities were written and a
 
 ## 15. Git commit hash
 
-See section below — recorded at commit time.
+**`c0778514936923ed1ce771b09f07793c10a2864e`** (short: `c077851`) — "Phase 1: research foundation for ocean venture sourcing", 14 files, 2,272 insertions.
+
+Repository is independent: `git rev-parse --show-toplevel` returns `.../ocean-frontier-radar`, not the home directory (which is a separate repo).
 
 ---
 
