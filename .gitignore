@@ -1,0 +1,36 @@
+# Raw research harvests — regenerate with src/harvest/*.py, do not commit
+data/
+*.json.gz
+
+# Secrets and environment
+.env
+.env.*
+*.key
+credentials*
+secrets*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Node (Phase 3)
+node_modules/
+.next/
+out/
+.vercel/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Scratch
+scratch/
+tmp/
+*.tmp
