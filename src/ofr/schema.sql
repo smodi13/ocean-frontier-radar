@@ -32,6 +32,10 @@ CREATE TABLE IF NOT EXISTS candidates (
     company_formed   INTEGER,            -- 1 | 0 | NULL(unknown)
     ocean_centrality TEXT,               -- central_mechanism | primary_end_market | strong_adjacency | incidental
     sourcing_signal  TEXT,               -- obvious | emerging | pre_company | hidden_adjacency
+    -- Phase 2.5: recency must describe the CANDIDATE, never our retrieval.
+    -- Derived as MAX(evidence.evidence_date); never from source.accessed_at.
+    candidate_latest_signal_date TEXT,
+    queue            TEXT,               -- tier_a | tier_b | tier_c | frontier
     date_first_seen  TEXT NOT NULL,
     date_last_updated TEXT NOT NULL,
     CHECK (candidate_type IN ('company','research_project','spinout','lab_program')),
@@ -39,7 +43,8 @@ CREATE TABLE IF NOT EXISTS candidates (
            ('central_mechanism','primary_end_market','strong_adjacency','incidental')),
     CHECK (sourcing_signal IS NULL OR sourcing_signal IN
            ('obvious','emerging','pre_company','hidden_adjacency')),
-    CHECK (company_formed IS NULL OR company_formed IN (0,1))
+    CHECK (company_formed IS NULL OR company_formed IN (0,1)),
+    CHECK (queue IS NULL OR queue IN ('tier_a','tier_b','tier_c','frontier'))
 );
 
 -- ----------------------------------------------------------------- people

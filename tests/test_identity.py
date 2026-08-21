@@ -46,3 +46,38 @@ def test_dotted_legal_acronyms_normalize():
     assert db.normalize_name("NEXUMA L.L.C.") == "nexuma"
     assert db.candidate_id("NEXUMA L.L.C.") == db.candidate_id("Nexuma LLC")
     assert db.candidate_id("American Ecotech L.C.") == db.candidate_id("American Ecotech LC")
+
+
+def test_latest_signal_date_uses_event_dates_not_retrieval_dates(tmp_path):
+    """Phase 2.5 regression: `timing` previously tracked when OUR source was
+    accessed rather than when anything happened to the candidate."""
+    from ofr import freshness
+    c = db.connect(tmp_path / "f.db")
+    db.init_db(c)
+    db.upsert_source(c, source_id="s1", url="u", title="t", publisher="p",
+                     source_type="federal_award", source_quality="tier1",
+                     publication_date="2026-08-21", accessed_at="2026-08-21")
+    db.upsert_candidate(c, cid="x", name="X", candidate_type="company")
+    db.add_evidence(c, candidate_id="x", source_id="s1", evidence_type="sbir_phase_i",
+                    observed_claim="old award", evidence_date="2021-03-01")
+    c.commit()
+    # accessed_at is today; the only real signal is 2021.
+    assert freshness.latest_signal_date(c, "x") == "2021-03-01"
+    freshness.refresh_all(c, verbose=False)
+    got = c.execute("SELECT candidate_latest_signal_date d FROM candidates "
+                    "WHERE candidate_id='x'").fetchone()["d"]
+    assert got == "2021-03-01"
+
+
+def test_undated_evidence_yields_null_not_a_guessed_date(tmp_path):
+    from ofr import freshness
+    c = db.connect(tmp_path / "g.db")
+    db.init_db(c)
+    db.upsert_source(c, source_id="s1", url="u", title="t", publisher="p",
+                     source_type="press_release", source_quality="tier2",
+                     publication_date=None, accessed_at="2026-08-21")
+    db.upsert_candidate(c, cid="y", name="Y", candidate_type="company")
+    db.add_evidence(c, candidate_id="y", source_id="s1", evidence_type="patent_granted",
+                    observed_claim="a patent", evidence_date=None)
+    c.commit()
+    assert freshness.latest_signal_date(c, "y") is None

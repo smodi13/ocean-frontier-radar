@@ -112,8 +112,20 @@ def connect(path: os.PathLike | str | None = None) -> sqlite3.Connection:
     return conn
 
 
+# Columns added after the first databases were created. CREATE TABLE IF NOT
+# EXISTS will not add them to an existing file, so they are applied explicitly.
+_MIGRATIONS = [
+    ("candidates", "candidate_latest_signal_date", "TEXT"),
+    ("candidates", "queue", "TEXT"),
+]
+
+
 def init_db(conn: sqlite3.Connection) -> None:
     conn.executescript(SCHEMA.read_text())
+    for table, column, coltype in _MIGRATIONS:
+        cols = {r[1] for r in conn.execute(f"PRAGMA table_info({table})")}
+        if column not in cols:
+            conn.execute(f"ALTER TABLE {table} ADD COLUMN {column} {coltype}")
     conn.commit()
 
 
