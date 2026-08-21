@@ -1,0 +1,526 @@
+{
+ "meta": {
+  "generated_at": "2026-08-21T13:24:24",
+  "caveat": "Evidence that budgets and buying behaviour exist. NOT market size."
+ },
+ "themes": {
+  "maritime_autonomy": {
+   "theme": "maritime_autonomy",
+   "n_contracts": 87,
+   "total_observed_usd": 244757930.51,
+   "median_contract_usd": 441332.5,
+   "max_contract_usd": 41620236.37,
+   "top_buyers": [
+    [
+     "Department of the Navy",
+     34
+    ],
+    [
+     "Defense Logistics Agency",
+     27
+    ],
+    [
+     "National Oceanic and Atmospheric Administration",
+     9
+    ],
+    [
+     "U.S. Geological Survey",
+     5
+    ],
+    [
+     "Department of the Army",
+     4
+    ]
+   ],
+   "top_suppliers": [
+    [
+     "W S DARLEY & CO",
+     24
+    ],
+    [
+     "UNIVERSITY OF TEXAS AT AUSTIN",
+     7
+    ],
+    [
+     "WOODS HOLE OCEANOGRAPHIC INSTITUTION",
+     5
+    ],
+    [
+     "HII UNMANNED SYSTEMS, INC",
+     4
+    ],
+    [
+     "ATLANTIC DIVING SUPPLY, INC.",
+     3
+    ]
+   ],
+   "repeat_suppliers": [
+    [
+     "W S DARLEY & CO",
+     24
+    ],
+    [
+     "UNIVERSITY OF TEXAS AT AUSTIN",
+     7
+    ],
+    [
+     "WOODS HOLE OCEANOGRAPHIC INSTITUTION",
+     5
+    ],
+    [
+     "HII UNMANNED SYSTEMS, INC",
+     4
+    ],
+    [
+     "ATLANTIC DIVING SUPPLY, INC.",
+     3
+    ]
+   ],
+   "years_active": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+   ],
+   "recurring": true,
+   "caveat": "Observed contract sample from keyword search. Evidence that a budget and buying behaviour exist. NOT a market size estimate."
+  },
+  "ocean_sensing": {
+   "theme": "ocean_sensing",
+   "n_contracts": 56,
+   "total_observed_usd": 256369846.8,
+   "median_contract_usd": 4689843.46,
+   "max_contract_usd": 12039839.68,
+   "top_buyers": [
+    [
+     "National Oceanic and Atmospheric Administration",
+     46
+    ],
+    [
+     "Department of the Navy",
+     4
+    ],
+    [
+     "Defense Contract Management Agency",
+     2
+    ],
+    [
+     "Department of the Army",
+     2
+    ],
+    [
+     "Defense Logistics Agency",
+     1
+    ]
+   ],
+   "top_suppliers": [
+    [
+     "OCEAN SURVEYS, INC.",
+     9
+    ],
+    [
+     "ETRAC, A WOOLPERT COMPANY",
+     7
+    ],
+    [
+     "TERRASOND LIMITED",
+     6
+    ],
+    [
+     "LEIDOS, INC.",
+     5
+    ],
+    [
+     "DAVID EVANS AND ASSOCIATES, INC",
+     5
+    ]
+   ],
+   "repeat_suppliers": [
+    [
+     "OCEAN SURVEYS, INC.",
+     9
+    ],
+    [
+     "ETRAC, A WOOLPERT COMPANY",
+     7
+    ],
+    [
+     "TERRASOND LIMITED",
+     6
+    ],
+    [
+     "LEIDOS, INC.",
+     5
+    ],
+    [
+     "DAVID EVANS AND ASSOCIATES, INC",
+     5
+    ]
+   ],
+   "years_active": [
+    "2009",
+    "2012",
+    "2016",
+    "2017",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+   ],
+   "recurring": true,
+   "caveat": "Observed contract sample from keyword search. Evidence that a budget and buying behaviour exist. NOT a market size estimate."
+  },
+  "marine_materials": {
+   "theme": "marine_materials",
+   "n_contracts": 66,
+   "total_observed_usd": 107002958.38,
+   "median_contract_usd": 1364968.0,
+   "max_contract_usd": 6195000.0,
+   "top_buyers": [
+    [
+     "Department of the Air Force",
+     23
+    ],
+    [
+     "Department of the Navy",
+     22
+    ],
+    [
+     "Department of the Army",
+     13
+    ],
+    [
+     "Defense Contract Management Agency",
+     2
+    ],
+    [
+     "National Oceanic and Atmospheric Administration",
+     2
+    ]
+   ],
+   "top_suppliers": [
+    [
+     "CORRPRO COMPANIES, INC.",
+     10
+    ],
+    [
+     "POND & COMPANY",
+     7
+    ],
+    [
+     "EXCET, LLC",
+     3
+    ],
+    [
+     "FLORIDA INSTITUTE OF TECHNOLOGY INC",
+     3
+    ],
+    [
+     "VISION POINT SYSTEMS, INC.",
+     2
+    ]
+   ],
+   "repeat_suppliers": [
+    [
+     "CORRPRO COMPANIES, INC.",
+     10
+    ],
+    [
+     "POND & COMPANY",
+     7
+    ],
+    [
+     "EXCET, LLC",
+     3
+    ],
+    [
+     "FLORIDA INSTITUTE OF TECHNOLOGY INC",
+     3
+    ],
+    [
+     "VISION POINT SYSTEMS, INC.",
+     2
+    ]
+   ],
+   "years_active": [
+    "2011",
+    "2014",
+    "2015",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+   ],
+   "recurring": true,
+   "caveat": "Observed contract sample from keyword search. Evidence that a budget and buying behaviour exist. NOT a market size estimate."
+  },
+  "offshore_energy": {
+   "theme": "offshore_energy",
+   "n_contracts": 18,
+   "total_observed_usd": 30204913.61,
+   "median_contract_usd": 1228152.0,
+   "max_contract_usd": 6648986.26,
+   "top_buyers": [
+    [
+     "Department of the Navy",
+     11
+    ],
+    [
+     "Office of the Secretary",
+     4
+    ],
+    [
+     "Department of Energy",
+     2
+    ],
+    [
+     "Defense Logistics Agency",
+     1
+    ]
+   ],
+   "top_suppliers": [
+    [
+     "UNIVERSITY OF WASHINGTON",
+     6
+    ],
+    [
+     "PROFESSIONAL AND SCIENTIFIC ASSOCIATES, INC.",
+     4
+    ],
+    [
+     "MDF TECHNOLOGIES INC",
+     2
+    ],
+    [
+     "MAKAI OCEAN ENGINEERING INC",
+     1
+    ],
+    [
+     "OCEANETICS INC",
+     1
+    ]
+   ],
+   "repeat_suppliers": [
+    [
+     "UNIVERSITY OF WASHINGTON",
+     6
+    ],
+    [
+     "PROFESSIONAL AND SCIENTIFIC ASSOCIATES, INC.",
+     4
+    ],
+    [
+     "MDF TECHNOLOGIES INC",
+     2
+    ]
+   ],
+   "years_active": [
+    "2016",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "recurring": true,
+   "caveat": "Observed contract sample from keyword search. Evidence that a budget and buying behaviour exist. NOT a market size estimate."
+  },
+  "coastal_adaptation": {
+   "theme": "coastal_adaptation",
+   "n_contracts": 28,
+   "total_observed_usd": 60998458.98,
+   "median_contract_usd": 573300.0,
+   "max_contract_usd": 20364441.2,
+   "top_buyers": [
+    [
+     "Department of the Army",
+     10
+    ],
+    [
+     "Department of the Navy",
+     6
+    ],
+    [
+     "Department of the Air Force",
+     3
+    ],
+    [
+     "National Park Service",
+     3
+    ],
+    [
+     "National Oceanic and Atmospheric Administration",
+     2
+    ]
+   ],
+   "top_suppliers": [
+    [
+     "SWIFT RIVER VERSAR JV",
+     3
+    ],
+    [
+     "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",
+     2
+    ],
+    [
+     "WOOLPERT, INC.",
+     1
+    ],
+    [
+     "DEWBERRY ENGINEERS INC.",
+     1
+    ],
+    [
+     "JACOBS ENGINEERING GROUP INC.",
+     1
+    ]
+   ],
+   "repeat_suppliers": [
+    [
+     "SWIFT RIVER VERSAR JV",
+     3
+    ],
+    [
+     "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",
+     2
+    ]
+   ],
+   "years_active": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+   ],
+   "recurring": true,
+   "caveat": "Observed contract sample from keyword search. Evidence that a budget and buying behaviour exist. NOT a market size estimate."
+  },
+  "blue_food": {
+   "theme": "blue_food",
+   "n_contracts": 50,
+   "total_observed_usd": 32762901.34,
+   "median_contract_usd": 200000.0,
+   "max_contract_usd": 4820538.28,
+   "top_buyers": [
+    [
+     "Agricultural Research Service",
+     19
+    ],
+    [
+     "National Oceanic and Atmospheric Administration",
+     17
+    ],
+    [
+     "Bureau of Reclamation",
+     3
+    ],
+    [
+     "U.S. Fish and Wildlife Service",
+     2
+    ],
+    [
+     "Animal and Plant Health Inspection Service",
+     2
+    ]
+   ],
+   "top_suppliers": [
+    [
+     "CENTER FOR AQUACULTURE TECHNOLOGIES, INC.",
+     8
+    ],
+    [
+     "SALTWATER INC.",
+     5
+    ],
+    [
+     "THE JOHNSON-MCADAMS FIRM, P.A.",
+     2
+    ],
+    [
+     "CASE CONSULTANTS INTERNATIONAL LLC",
+     2
+    ],
+    [
+     "AAECON GENERAL CONTRACTING LLC",
+     1
+    ]
+   ],
+   "repeat_suppliers": [
+    [
+     "CENTER FOR AQUACULTURE TECHNOLOGIES, INC.",
+     8
+    ],
+    [
+     "SALTWATER INC.",
+     5
+    ],
+    [
+     "THE JOHNSON-MCADAMS FIRM, P.A.",
+     2
+    ],
+    [
+     "CASE CONSULTANTS INTERNATIONAL LLC",
+     2
+    ]
+   ],
+   "years_active": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+   ],
+   "recurring": true,
+   "caveat": "Observed contract sample from keyword search. Evidence that a budget and buying behaviour exist. NOT a market size estimate."
+  },
+  "marine_carbon": {
+   "theme": "marine_carbon",
+   "n_contracts": 1,
+   "total_observed_usd": 58350.0,
+   "median_contract_usd": 58350.0,
+   "max_contract_usd": 58350.0,
+   "top_buyers": [
+    [
+     "National Oceanic and Atmospheric Administration",
+     1
+    ]
+   ],
+   "top_suppliers": [
+    [
+     "SUNBURST SENSORS, LLC",
+     1
+    ]
+   ],
+   "repeat_suppliers": [],
+   "years_active": [
+    "2024"
+   ],
+   "recurring": false,
+   "caveat": "Observed contract sample from keyword search. Evidence that a budget and buying behaviour exist. NOT a market size estimate."
+  }
+ }
+}

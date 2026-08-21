@@ -1,0 +1,58 @@
+# Analyst interpretation — Ocean Frontier Radar
+#
+# STRUCTURALLY SEPARATE FROM EVIDENCE. Nothing here is a fact about the world;
+# it is our reading of facts stored in the `evidence` table.
+#
+# view_type vocabulary:
+#   observed                 - restates what evidence shows (REQUIRES evidence_ids)
+#   inferred                 - our interpretation
+#   unknown                  - identified gap requiring primary diligence
+#   what_must_be_true        - the load-bearing assumption
+#   technical_kill_question  - the finding that would end it technically
+#   commercial_kill_question - the finding that would end it commercially
+
+views:
+
+  3newable:
+    - {type: inferred, statement: "Attacks BOTH gating constraints on persistent ocean sensing at once - power and biofouling - which is unusual. Most companies address one and inherit the other."}
+    - {type: inferred, statement: "The retrofit framing (a module for existing sensors) is commercially smarter than a new sensor platform: it sells into an installed base rather than displacing it."}
+    - {type: inferred, statement: "Publicly reported output of 0.91 W average against an expected 7-8 W time-averaged annual yield is roughly an order of magnitude below target. This may reflect deployment conditions or an unresolved conversion problem; the gap is the central technical question."}
+    - {type: unknown, statement: "No public evidence of a paying customer, unit price, or manufacturing plan. OOI is a co-development partner, not necessarily a purchaser."}
+    - {type: unknown, statement: "No public evidence of equity financing, team size beyond the CEO, or IP position."}
+    - {type: what_must_be_true, statement: "A wave energy converter small enough to sit on a buoy must deliver enough average power, reliably enough, to beat simply oversizing the battery and servicing it on the existing ship schedule."}
+    - {type: technical_kill_question, statement: "Is the 0.91 W measured output a site/sea-state artefact or a fundamental limit of the rack-and-pinion tilt conversion? If the latter, the UV duty cycle needed to prevent fouling may never be sustainable on harvested power alone."}
+    - {type: commercial_kill_question, statement: "Ocean observing budgets are largely federal and grant-funded. If the buyer is only NSF/NOAA programme budgets, this is a small, slow market regardless of how well the technology works - and current federal funding uncertainty is acknowledged by the CEO."}
+
+  armada-marine-robotics:
+    - {type: inferred, statement: "Reducing an underwater vehicle to a single actuator attacks cost at the component level rather than competing on vehicle integration - a supplier position beneath the AUV market rather than inside it."}
+    - {type: inferred, statement: "Backing from BlueSwell, NOAA and DoD sources alongside a WHOI licence suggests validation from several independent technical reviewers, which is meaningful for a team of this size."}
+    - {type: unknown, statement: "No public evidence of a paying customer, unit volume, or whether the business model is vehicle manufacture or component licensing to OEMs. This distinction determines the entire venture case."}
+    - {type: unknown, statement: "No public performance data - no disclosed control authority, sea-state envelope, or efficiency comparison against conventional multi-actuator designs."}
+    - {type: what_must_be_true, statement: "Vehicle cost, not support-ship and launch-and-recovery cost, must be the binding constraint on how many UUVs a customer deploys."}
+    - {type: technical_kill_question, statement: "Does single-motor asymmetric propulsion retain adequate control authority in realistic currents and sea states? Eliminating actuators is elegant in benign conditions; degradation in demanding conditions would remove the value exactly where cheap attritable vehicles matter most."}
+    - {type: commercial_kill_question, statement: "Public procurement records show buyers paying $1.68M-$1.99M per AUV, but the dominant lifetime cost in ocean operations is frequently the support vessel. If so, a cheaper propulsion module does not change the customer's economics and the addressable value is far smaller than vehicle price implies."}
+
+  juice-robotics:
+    - {type: inferred, statement: "Tethering an underwater vehicle to an aerial platform sidesteps the underwater bandwidth constraint rather than trying to beat it - a genuinely different architectural answer to the same problem Sea-Gal attacks acoustically."}
+    - {type: unknown, statement: "Three of the four licensed URI technologies are not publicly named, so the IP position cannot be assessed from public sources."}
+    - {type: unknown, statement: "Round size and valuation undisclosed; no public evidence of a customer or of High Dive being demonstrated at sea rather than in tank testing."}
+    - {type: what_must_be_true, statement: "An ultra-light fibre tether must survive wind, wave and current loading in operational conditions without becoming the failure mode it was meant to eliminate."}
+    - {type: technical_kill_question, statement: "What is the real operational envelope - sea state, current, depth, endurance - for an air-to-water fibre tether, and does it cover the conditions customers actually work in?"}
+    - {type: commercial_kill_question, statement: "With a defence-heavy market and a small team, does the company sell hardware or drift into selling survey services? The services path is available immediately and would cap the venture outcome."}
+
+  grow-oyster-reefs:
+    - {type: inferred, statement: "The innovation is the manufacturing method - 3D-printed metal moulds compatible with standard concrete block machinery - not the reef structure. That is what converts a restoration project into a product with unit economics."}
+    - {type: unknown, statement: "No public evidence of who purchases at scale: restoration grant programmes (project revenue) or coastal developers and infrastructure owners (product revenue)."}
+    - {type: what_must_be_true, statement: "Reef substrate must be bought as a specified product by parties with recurring budgets, not funded case by case out of restoration grants."}
+    - {type: commercial_kill_question, statement: "If every deployment requires a bespoke grant-funded project, this is an engineering-services business with a product attached, and Natrx's $3.5M-funded head start in the same niche makes that position harder."}
+
+  natrx:
+    - {type: inferred, statement: "Having raised $3.5M and deployed across roughly two dozen projects, Natrx is materially ahead of the other coastal-adaptation candidates here and is likely past the stage this system is designed to surface."}
+    - {type: inferred, statement: "Its existence sets the competitive bar for every other nature-based coastal protection candidate in this universe, including Grow Oyster Reefs and Reef Arches."}
+    - {type: unknown, statement: "Revenue model and whether deployments are recurring product sales or one-off funded projects."}
+
+  lumishield-technologies:
+    - {type: inferred, statement: "Aqueous aluminium electroplating targeting hexavalent chromium replacement is a genuinely hard electrochemistry problem with a regulatory tailwind, and would interest a generalist deep-tech or advanced-materials investor."}
+    - {type: inferred, statement: "Ocean relevance is real but not central: marine corrosion is one application among aerospace, defence and general industrial plating. The ocean is neither the mechanism, the operating environment, nor the primary customer context."}
+    - {type: unknown, statement: "No public evidence of marine-specific qualification, marine customers, or seawater-immersion performance data."}
+    - {type: what_must_be_true, statement: "For this to be a Propeller candidate rather than a generalist materials candidate, marine and offshore assets would have to be a deliberate primary market, not an incidental one."}

@@ -1,0 +1,236 @@
+# Manually researched candidates — Ocean Frontier Radar
+#
+# These come from university licensing announcements, accelerator pages and
+# agency program pages. They are NOT machine-retrievable at acceptable
+# reliability (see research/data_sources.md: WHOI tech transfer moved behind an
+# intranet; ARPA-E returns 403 to automated requests), so they are curated by
+# hand with full provenance and ingested through the same schema as everything
+# else.
+#
+# Every claim below is quoted or paraphrased from the cited source. Nothing is
+# inferred here — interpretation lives in analyst_views, not in this file.
+# extraction_method for all of these is `human_read`.
+
+candidates:
+
+  - name: ARMADA Marine Robotics
+    candidate_type: spinout
+    institution: Woods Hole Oceanographic Institution
+    company: ARMADA Marine Robotics
+    geography: Massachusetts, USA
+    website: https://www.armadamarinerobotics.com/
+    current_stage: pre_seed
+    company_formed: true
+    categories: [maritime_autonomy]
+    ocean_centrality: central_mechanism
+    sourcing_signal: pre_company
+    people:
+      - {name: Robin Littlefield, role: Co-founder, role_type: academic_and_founder, affiliation: WHOI}
+      - {name: Jeff Kaeli, role: Co-founder, role_type: academic_and_founder, affiliation: WHOI}
+    sources:
+      - id: whoi-armada-release
+        url: https://www.whoi.edu/press-room/news-release/armada
+        title: WHOI licenses ocean technology to ARMADA Marine Robotics
+        publisher: Woods Hole Oceanographic Institution
+        source_type: press_release
+        source_quality: tier1
+        publication_date: '2025-01-01'
+      - id: oceannews-armada-nsf
+        url: https://oceannews.com/news/science-technology/armada-marine-robotics-wins-nsf-contract/
+        title: ARMADA Marine Robotics Wins NSF Contract
+        publisher: Ocean News & Technology
+        source_type: trade_press
+        source_quality: tier2
+        publication_date: null
+    evidence:
+      - {type: exclusive_license, source: whoi-armada-release, date: '2025-01-01',
+         claim: "WHOI executed two exclusive license agreements with ARMADA Marine Robotics, a WHOI spin-off co-founded by WHOI engineers Robin Littlefield and Jeff Kaeli."}
+      - {type: patent_granted, source: whoi-armada-release, date: null,
+         claim: "Exclusive rights to Asymmetric Propulsion, US Patent No. 9,873,499."}
+      - {type: patent_granted, source: whoi-armada-release, date: null,
+         claim: "Exclusive rights to Rotational Feedback Control, US Patent No. 11,990,857."}
+      - {type: sttr_phase_i, source: oceannews-armada-nsf, date: null, amount: 255821,
+         claim: "NSF STTR Phase I contract of $255,821 to develop Asymmetric Propulsion in collaboration with WHOI."}
+      - {type: technical_claim, source: whoi-armada-release, date: null,
+         claim: "Asymmetric Propulsion provides both propulsion and low-speed maneuvering using a single electric motor, eliminating fins and additional motors, reducing weight, drag, complexity and cost."}
+
+  - name: Juice Robotics
+    candidate_type: spinout
+    institution: University of Rhode Island
+    company: Juice Robotics
+    geography: Rhode Island, USA
+    current_stage: seed
+    company_formed: true
+    categories: [maritime_autonomy, ocean_sensing]
+    ocean_centrality: central_mechanism
+    sourcing_signal: emerging
+    people:
+      - {name: Matthew Jewell, role: CTO, role_type: founder, affiliation: URI alumnus}
+      - {name: Brennan Phillips, role: CSO, role_type: academic_and_founder, affiliation: University of Rhode Island}
+      - {name: Stephen Piper, role: CEO, role_type: operator, affiliation: Juice Robotics}
+    sources:
+      - id: uri-juice-robotics
+        url: https://www.uri.edu/news/2026/07/uri-ocean-technology-spinout-juice-robotics-secures-investment-from-rogue-island-ventures-and-licenses-four-uri-technologies/
+        title: URI ocean technology spinout Juice Robotics secures investment and licenses four URI technologies
+        publisher: University of Rhode Island
+        source_type: university_news
+        source_quality: tier1
+        publication_date: '2026-07-01'
+    evidence:
+      - {type: license_executed, source: uri-juice-robotics, date: '2026-07-01',
+         claim: "Juice Robotics licensed four URI-developed technologies."}
+      - {type: venture_financing, source: uri-juice-robotics, date: '2026-07-01',
+         claim: "Secured investment from Rogue Island Ventures; amount not disclosed."}
+      - {type: technical_claim, source: uri-juice-robotics, date: '2026-07-01',
+         claim: "High Dive is a platform connecting aerial and underwater systems through an ultra-light fiber-optic tether, enabling real-time communications, sensing and control."}
+      - {type: accelerator_participation, source: uri-juice-robotics, date: '2026-07-01',
+         claim: "Operated from the Ocean Technology Center pilot incubator at URI's Bay Campus for two years."}
+
+  - name: Hybrid Reefs
+    candidate_type: spinout
+    institution: Scripps Institution of Oceanography, UC San Diego
+    company: Hybrid Reefs
+    geography: California, USA
+    current_stage: pre_seed
+    company_formed: true
+    categories: [marine_materials, coastal_adaptation]
+    ocean_centrality: central_mechanism
+    sourcing_signal: emerging
+    people:
+      - {name: Daniel Wangpraseurt, role: Founder, role_type: academic_and_founder, affiliation: Scripps Institution of Oceanography}
+      - {name: Samapti Kundu, role: CTO, role_type: academic_and_founder, affiliation: UC San Diego}
+    sources:
+      - id: ucsd-chancellors-2026
+        url: https://today.ucsd.edu/story/2026-chancellors-innovation-awards-finalists
+        title: "Next-Generation Innovators: Meet the 2026 Chancellor's Innovation Awards Finalists"
+        publisher: UC San Diego
+        source_type: university_news
+        source_quality: tier1
+        publication_date: '2026-03-30'
+      - id: startblue-impact
+        url: https://startblue.ucsd.edu/impact/
+        title: StartBlue Ocean Enterprise Accelerator — Impact
+        publisher: UC San Diego StartBlue
+        source_type: accelerator_page
+        source_quality: tier2
+        publication_date: null
+    evidence:
+      - {type: technical_claim, source: ucsd-chancellors-2026, date: '2026-03-30',
+         claim: "Patent-pending platform of nature-inspired biomaterials: CoralGuard (antifouling coating suppressing algal overgrowth), Snap-X (coral larvae settlement), Symbion (bleaching mitigation under heat stress)."}
+      - {type: non_dilutive_prize, source: ucsd-chancellors-2026, date: '2026-03-30',
+         claim: "Named a finalist for Startup of the Year in the 2026 UC San Diego Chancellor's Innovation Awards."}
+      - {type: accelerator_participation, source: startblue-impact, date: null,
+         claim: "StartBlue Ocean Enterprise Accelerator Cohort 1 participant; featured at the UN Ocean Conference."}
+
+  - name: atdepth MRV
+    candidate_type: spinout
+    institution: Massachusetts Institute of Technology
+    company: atdepth MRV
+    geography: Cambridge, Massachusetts, USA
+    current_stage: seed
+    company_formed: true
+    categories: [ocean_sensing, marine_carbon]
+    ocean_centrality: central_mechanism
+    sourcing_signal: emerging
+    people:
+      - {name: Carlos Munoz-Royo, role: CEO, role_type: academic_and_founder, affiliation: atdepth MRV}
+    sources:
+      - id: arpae-atdepth
+        url: https://arpa-e.energy.gov/programs-and-initiatives/search-all-projects/scalable-integrated-real-time-gpu-based-modeling-system-enable-mrv-mcdr
+        title: A Scalable, Integrated, Real-Time, GPU-Based Modeling System to Enable MRV for mCDR
+        publisher: ARPA-E, US Department of Energy
+        source_type: federal_award
+        source_quality: tier1
+        publication_date: null
+      - id: doe-seaco2-36m
+        url: https://www.energy.gov/articles/doe-announces-36-million-advance-marine-carbon-dioxide-removal-techniques-and-slash
+        title: DOE Announces $36 Million To Advance Marine Carbon Dioxide Removal Techniques
+        publisher: US Department of Energy
+        source_type: press_release
+        source_quality: tier1
+        publication_date: null
+    evidence:
+      - {type: commercialization_grant, source: arpae-atdepth, date: null, amount: 2524964,
+         claim: "ARPA-E SEA-CO2 award of $2,524,964 for a scalable, integrated, real-time GPU-based modeling system to enable MRV for marine carbon dioxide removal."}
+      - {type: technical_claim, source: arpae-atdepth, date: null,
+         claim: "GPU-based ocean modeling system unlocking multi-scale modeling from global oceans down to metre scale with real-time performance."}
+      - {type: industry_partnership, source: doe-seaco2-36m, date: null,
+         claim: "One of 11 projects sharing $36 million under the ARPA-E SEA-CO2 program."}
+
+  # ---- Added in Phase 2 after the pipeline surfaced these from SBIR bulk data ----
+
+  - name: 3newable LLC
+    candidate_type: company
+    institution: Ocean Observatories Initiative (WHOI) — collaboration
+    company: 3newable LLC
+    geography: Portola Valley, California, USA
+    website: https://3newable.com/
+    current_stage: seed
+    company_formed: true
+    categories: [ocean_sensing, marine_materials, offshore_energy]
+    ocean_centrality: central_mechanism
+    sourcing_signal: emerging
+    people:
+      - {name: Julie Fouquet, role: CEO, role_type: founder, affiliation: 3newable LLC}
+    sources:
+      - id: ooi-3newable-2025
+        url: https://oceanobservatories.org/2025/12/wave-power-and-uv-beams-ooi-and-3newable-advance-wave-powered-ocean-observing/
+        title: Wave Power and UV Beams — OOI and 3newable Advance Wave-Powered Ocean Observing
+        publisher: Ocean Observatories Initiative
+        source_type: press_release
+        source_quality: tier1
+        publication_date: '2025-12-04'
+      - id: teamer-3newable
+        url: https://teamer-us.org/report/3newable-llc-initial-testing-of-wave-energy-powered-uv-c-led-anti-biofouling-system/
+        title: "3newable LLC: Initial testing of wave energy powered UV-C LED anti-biofouling system"
+        publisher: TEAMER (DOE Hydropower and Hydrokinetic Office / Pacific Ocean Energy Trust)
+        source_type: federal_award
+        source_quality: tier1
+        publication_date: null
+    evidence:
+      - {type: field_trial, source: ooi-3newable-2025, date: '2023-10-01',
+         claim: "First field deployment of the wave energy converter on OOI's Coastal Endurance Array (autumn 2023)."}
+      - {type: field_trial, source: ooi-3newable-2025, date: '2025-04-01',
+         claim: "Second field deployment at OOI Coastal Endurance Array buoy CE04 (spring 2025)."}
+      - {type: independent_validation, source: teamer-3newable, date: null,
+         claim: "Independent testing at PNNL Marine and Coastal Research Laboratory under the DOE-sponsored TEAMER RFTS 2 program, producing imagery, quantitative biofouling mass measurements and SEM analysis."}
+      - {type: industry_partnership, source: ooi-3newable-2025, date: '2025-12-04',
+         claim: "Co-developing the buoy-mounted WEC and UV-C LED module with the Ocean Observatories Initiative at WHOI; OOI Endurance Array co-PI Jonathan Fram named as collaborator."}
+      - {type: technical_milestone, source: ooi-3newable-2025, date: '2025-12-04',
+         claim: "Reported performance: laboratory capacity up to 50 watts; expected real-world yield 7-8 watts time-averaged annually; most recent deployment produced 0.91 watts average over 1.5 weeks with a 2.4 watt peak over a 5-minute interval."}
+      - {type: technical_claim, source: ooi-3newable-2025, date: '2025-12-04',
+         claim: "WEC converts buoy tilting motion into rotational power via a rack-and-pinion mechanism; UV illuminator targets biofouling on salinity sensor conductivity cells and is designed to retrofit existing sensors."}
+
+  - name: Natrx, Inc.
+    candidate_type: company
+    institution: null
+    company: Natrx, Inc.
+    geography: Raleigh, North Carolina, USA
+    website: https://natrx.io/
+    current_stage: series_a
+    company_formed: true
+    categories: [coastal_adaptation, marine_materials]
+    ocean_centrality: central_mechanism
+    sourcing_signal: obvious
+    people:
+      - {name: Not disclosed in reviewed sources, role: null, role_type: null, affiliation: Natrx}
+    sources:
+      - id: businessnc-natrx
+        url: https://businessnc.com/nc-trend-beneficial-blockers-raleigh-based-natrx-uses-a-3d-printing-solution-to-soil-erosion/
+        title: "NC trend: Raleigh-based Natrx uses a 3D printing solution to soil erosion"
+        publisher: Business North Carolina
+        source_type: trade_press
+        source_quality: tier2
+        publication_date: null
+      - id: coastalreview-natrx
+        url: https://coastalreview.org/2023/09/partnership-to-deploy-new-artificial-reef-in-pamlico-waters/
+        title: Partnership to deploy new artificial reef in Pamlico waters
+        publisher: Coastal Review
+        source_type: trade_press
+        source_quality: tier2
+        publication_date: '2023-09-01'
+    evidence:
+      - {type: venture_financing, source: businessnc-natrx, date: null, amount: 3500000,
+         claim: "Raised $3.5 million from investors including Ponderosa Ventures to open production facilities; earlier $280,000 RISE coastal resilience loan (2020)."}
+      - {type: pilot_deployment, source: coastalreview-natrx, date: '2023-09-01',
+         claim: "ExoForms 3D-printed concrete reef structures deployed across roughly two dozen projects from Chesapeake Bay to the Gulf of Mexico, including a 15-acre reef site near the mouth of the Pamlico River."}

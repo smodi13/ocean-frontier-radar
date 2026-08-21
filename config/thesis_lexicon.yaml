@@ -1,0 +1,395 @@
+# Ocean Frontier Radar — Thesis Search Lexicon
+# Phase 2. Derived from research/ocean_taxonomy.md.
+#
+# DESIGN PRINCIPLE
+# ----------------
+# Phase 1 found that the strongest Propeller-relevant candidates often do not
+# describe themselves with ocean vocabulary. Allium Engineering sells rebar.
+# Iowa State holds a $5M award on microbial anticorrosion coatings and sits in
+# a landlocked state. Searching "ocean startup" would miss both.
+#
+# So retrieval is organised by TECHNICAL PROBLEM, not by sector label.
+#
+# Each concept group has:
+#   direct_terms      - names the problem itself; strongest signal
+#   enabling_terms    - technologies/approaches that address the problem
+#   ocean_context     - marine framing, used to boost and to set centrality
+#   requires_ocean_context - if false, the technical problem is inherently
+#                       marine-relevant enough to admit a record with no ocean
+#                       vocabulary at all. This is the Iowa State clause.
+#   exclusions        - terms that indicate a different domain entirely
+#                       (overwhelmingly biomedical, which dominated Phase 1
+#                       false positives at ~72-80%)
+#   rationale         - why this concept exists, tied to Phase 1 evidence
+
+version: 2
+generated_for_phase: 2
+
+# Applied to every group. Phase 1 measured 20-28% keyword precision; the
+# dominant failure was biomedical text matching "vessel", "acoustic", "marine"
+# (as a surname/brand) and "harmful algal" (incidental abstract mentions).
+global_exclusions:
+  - blood vessel
+  - tumor
+  - tumour
+  - cancer
+  - oncology
+  - patient
+  - clinical trial
+  - therapeutic
+  - drug delivery
+  - vaccine
+  - antibody
+  - neural implant
+  - alzheimer
+  - cardiac
+  - coronary
+  - prosthesis
+  - dental
+  - in vivo
+  - bioartificial
+  - immunotherapy
+  - stroke
+
+ocean_context_terms: &ocean_context
+  - ocean
+  - marine
+  - offshore
+  - subsea
+  - undersea
+  - underwater
+  - seawater
+  - saltwater
+  - coastal
+  - shoreline
+  - estuary
+  - maritime
+  - naval
+  - shipboard
+  - vessel hull
+  - seafloor
+  - seabed
+  - tidal
+  - aquaculture
+  - fisheries
+  - port
+  - harbor
+  - harbour
+
+categories:
+
+  maritime_autonomy:
+    label: Maritime Autonomy & Robotics
+    taxonomy_ref: 1
+    rationale: >
+      Propeller holds four disclosed companies here (Orpheus, VATN, Fleet
+      Robotics, Navier). The binding cost in offshore work is crewed vessel and
+      diver time, so autonomy that removes people from the water is the core
+      thesis. Retrieval targets navigation, manipulation and docking problems
+      rather than the word "robot".
+    requires_ocean_context: false
+    direct_terms:
+      - autonomous underwater vehicle
+      - unmanned underwater vehicle
+      - uncrewed surface vessel
+      - autonomous surface vessel
+      - remotely operated vehicle
+      - underwater robot
+      - underwater vehicle
+      - subsea robotics
+      - underwater manipulation
+      - launch and recovery
+      - underwater docking
+      - subsea intervention
+      - hull cleaning robot
+    enabling_terms:
+      - inertial navigation
+      - dead reckoning
+      - terrain relative navigation
+      - station keeping
+      - dynamic positioning
+      - acoustic positioning
+      - doppler velocity log
+      - autonomy stack
+      - pressure housing
+      - wet mate connector
+      - underwater connector
+      - thruster
+      - buoyancy control
+    ocean_context: *ocean_context
+    exclusions:
+      - surgical robot
+      - warehouse robot
+      - lunar
+      - martian
+
+  ocean_sensing:
+    label: Ocean Sensing, Data & Intelligence
+    taxonomy_ref: 2
+    rationale: >
+      Propeller states that "almost every ocean market is under-resourced with
+      information to make decisions". Aquatic Labs, Hum.ai and Indeximate all
+      sit here. Underwater communications and persistent power are the two
+      bottlenecks that gate everything else, so both are retrieved explicitly.
+    requires_ocean_context: false
+    direct_terms:
+      - underwater acoustic communication
+      - acoustic modem
+      - hydrophone
+      - passive acoustic monitoring
+      - ocean observing
+      - ocean sensing
+      - bathymetry
+      - hydrographic survey
+      - environmental dna
+      - eDNA
+      - ocean glider
+      - profiling float
+      - moored buoy
+      - sonar
+      - subsea cable monitoring
+      - distributed acoustic sensing
+    enabling_terms:
+      - sensor drift
+      - in situ sensor
+      - remote sensing water
+      - satellite derived bathymetry
+      - acoustic telemetry
+      - energy harvesting sensor
+      - persistent power
+      - measurement reporting verification
+    ocean_context: *ocean_context
+    exclusions:
+      - ultrasound imaging
+      - medical imaging
+      - seismic exploration oil reservoir
+
+  offshore_energy:
+    label: Offshore Energy, Power & Subsea Infrastructure
+    taxonomy_ref: 3
+    rationale: >
+      Aikido, Blue Energy, Indeximate and Vema sit here. Propeller's July 2026
+      ocean-compute post names the hard problems directly - subsea interconnect
+      and cabling, corrosion in saltwater, and heat discharge regulation - so
+      those are retrieved as first-class terms rather than as offshore wind
+      generally.
+    requires_ocean_context: false
+    direct_terms:
+      - floating offshore wind
+      - offshore wind
+      - subsea cable
+      - submarine cable
+      - subsea power
+      - wet mate connector
+      - offshore platform
+      - marine energy
+      - wave energy converter
+      - tidal turbine
+      - tidal energy
+      - offshore substation
+      - mooring line
+      - underwater data center
+      - subsea data center
+    enabling_terms:
+      - cable fatigue
+      - dynamic cable
+      - installation vessel
+      - jacket foundation
+      - monopile
+      - thermal management immersion
+      - immersion cooling
+      - power transmission loss
+    ocean_context: *ocean_context
+    exclusions:
+      - rooftop solar
+      - onshore wind farm siting
+
+  marine_carbon:
+    label: Marine Carbon & Ocean Chemistry
+    taxonomy_ref: 4
+    rationale: >
+      Propeller's densest theme - Ebb, Calcarea, CarbonRun, pHathom, Banyu,
+      Rewind. Because it is also the best-covered corner of ocean venture, the
+      differentiated slice is measurement and verification rather than capture,
+      which is reflected in the MRV terms here.
+    requires_ocean_context: true
+    direct_terms:
+      - ocean alkalinity enhancement
+      - marine carbon dioxide removal
+      - direct ocean capture
+      - ocean carbon removal
+      - carbon mineralization
+      - carbonate chemistry
+      - ocean acidification
+      - blue carbon
+      - carbon flux ocean
+    enabling_terms:
+      - electrochemical carbon capture
+      - alkalinity
+      - bicarbonate
+      - measurement reporting verification
+      - MRV
+      - carbon accounting model
+      - mesocosm
+    ocean_context: *ocean_context
+    exclusions:
+      - direct air capture only
+      - forestry offset
+
+  marine_materials:
+    label: Marine Materials, Corrosion & Coastal Infrastructure
+    taxonomy_ref: 5
+    rationale: >
+      THE HIDDEN-ADJACENCY CATEGORY. Corrosion costs the US over half a trillion
+      dollars a year and marine assets are the most exposed asset class, yet
+      this work lives in materials science and civil engineering departments
+      that never say "ocean". Allium Engineering proves Propeller buys it and
+      their Aug 2026 post names hull coatings, lubricants and buoyancy foams.
+      requires_ocean_context is deliberately FALSE here - this is the clause
+      that surfaces Iowa State's BioShield CP.
+    requires_ocean_context: false
+    direct_terms:
+      - corrosion
+      - anticorrosion
+      - anti-corrosion
+      - biofouling
+      - antifouling
+      - marine coating
+      - cathodic protection
+      - chloride ingress
+      - saltwater intrusion
+      - reinforcement corrosion
+      - microbially influenced corrosion
+      - fouling release
+    enabling_terms:
+      - protective coating
+      - stainless clad
+      - epoxy coating
+      - corrosion inhibitor
+      - corrosion monitoring
+      - galvanic
+      - composite durability
+      - buoyancy foam
+      - concrete durability
+      - self healing concrete
+    ocean_context: *ocean_context
+    exclusions:
+      - dental corrosion
+      - tooth
+      - implant corrosion
+      # Non-marine industrial settings that otherwise match on "corrosion" alone
+      - nuclear reactor
+      - reactor coolant
+      - aircraft fuselage
+      - spacecraft
+      - pavement
+      - roadway
+      - building repainting
+      - drinking water distribution
+
+  coastal_adaptation:
+    label: Coastal Adaptation & Climate Risk
+    taxonomy_ref: 6
+    rationale: >
+      Propeller's most recent thesis post (13 Aug 2026) argues warming has
+      outrun mitigation and coastal industries need adaptation now. One
+      disclosed stealth company is in coastal adaptation. This category carries
+      the highest density of consultancy-shaped businesses, so retrieval is
+      broad but the flags in prioritisation are harsh.
+    requires_ocean_context: true
+    direct_terms:
+      - storm surge
+      - coastal resilience
+      - coastal protection
+      - shoreline erosion
+      - living shoreline
+      - sea level rise
+      - coastal flooding
+      - marine heatwave
+      - harmful algal bloom
+      - reef restoration
+      - artificial reef
+      - seawall
+      - nature based coastal
+    enabling_terms:
+      - flood risk model
+      - inundation model
+      - wave attenuation
+      - sediment transport
+      - parametric insurance
+      - catastrophe model
+    ocean_context: *ocean_context
+    exclusions:
+      - riverine flooding inland only
+      - wildfire
+
+  blue_food:
+    label: Blue Food, Aquaculture & Marine Biology
+    taxonomy_ref: 7
+    rationale: >
+      Propeller's Organics theme, and its thinnest named area - one disclosed
+      company (Circle Seafoods) plus two stealth companies in seafood
+      traceability and processing. Aquaculture is the fastest growing US food
+      production segment but runs on thin margins with severe biological risk.
+    requires_ocean_context: true
+    direct_terms:
+      - aquaculture
+      - mariculture
+      - shellfish
+      - oyster
+      - finfish
+      - salmon farming
+      - seaweed
+      - kelp
+      - macroalgae
+      - microalgae
+      - fish disease
+      - aquafeed
+      - hatchery
+      - seafood traceability
+      - cultivated seafood
+      - marine natural product
+    enabling_terms:
+      - recirculating aquaculture
+      - off flavor
+      - biosecurity
+      - species identification genomics
+      - feed conversion
+      - net pen
+    ocean_context: *ocean_context
+    exclusions:
+      - poultry
+      - cattle
+      - swine
+
+  maritime_software:
+    label: Industrial & Maritime Software / Applied AI
+    taxonomy_ref: 8
+    rationale: >
+      Nexxa.ai and Hum.ai sit here. This is also where the "ocean is incidental"
+      failure mode lives, so requires_ocean_context is TRUE - a generic AI tool
+      must show maritime framing to be retrieved at all, and the AI_WRAPPER flag
+      is applied aggressively downstream.
+    requires_ocean_context: true
+    direct_terms:
+      - vessel routing
+      - voyage optimization
+      - weather routing
+      - port operations
+      - maritime domain awareness
+      - hull performance
+      - ship performance monitoring
+      - marine insurance analytics
+      - shipyard
+      - terminal operations
+    enabling_terms:
+      - predictive maintenance
+      - digital twin
+      - industrial automation legacy
+      - computer vision inspection
+      - fleet management
+    ocean_context: *ocean_context
+    exclusions:
+      - airline
+      - trucking only
+      - rail only

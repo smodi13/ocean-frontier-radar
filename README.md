@@ -1,8 +1,8 @@
 # Ocean Frontier Radar
 
-> ## 🚧 Work in progress — Phase 1 (research) complete, Phase 2 not started
+> ## 🚧 Work in progress — Phase 2 (sourcing pipeline) complete, Phase 3 not started
 >
-> This repository currently contains **research only**. There is no application, no deployment, and no product. Nothing here should be read as an investment recommendation.
+> This repository contains **research and a working sourcing pipeline**. There is no public application, no deployment, and no investment memo. Nothing here should be read as an investment recommendation.
 
 ---
 
@@ -33,12 +33,16 @@ That choice is grounded in something Propeller says about its own portfolio: man
 
 | Phase | Status |
 |---|---|
-| **Phase 1 — Research foundation** | ✅ Complete, awaiting review |
-| Phase 2 — Ingestion pipeline + database | ⬜ Not started |
-| Phase 3 — Diligence interface | ⬜ Not started |
-| Phase 4 — Deep-dive investment analysis | ⬜ Not started |
+| **Phase 1 — Research foundation** | ✅ Complete |
+| **Phase 2 — Sourcing pipeline + database** | ✅ Complete, awaiting review |
+| Phase 3 — Deep diligence on one candidate | ⬜ Not started |
+| Phase 4 — Public interface | ⬜ Not started |
 
 **Phase 1 produced:** a sourced dossier on Propeller's public strategy; a working taxonomy; a mapped sourcing universe; an empirically tested data-source assessment; an evidence model; a prioritization framework; and **28 real, source-backed candidate opportunities**.
+
+**Phase 2 produced:** a reproducible ingestion pipeline across five sources; a 13-table SQLite evidence store; a problem-first search lexicon; a two-stage retrieval/classification engine; conservative entity resolution; a six-dimension sourcing-priority score; **562 candidates (198 qualified) from 211,361 source records**; and 59 offline tests.
+
+Phase 2 closed the Phase 1 blocker: SBIR.gov's *API* returns HTTP 403, but SBIR.gov publishes the complete award dataset as an official public download. Ingesting it brought in **ten agencies** — including the Navy and NOAA candidates Phase 1 was blind to. Three of the final top five come from sources Phase 1 could not reach.
 
 ## Methodology principles
 
@@ -61,32 +65,51 @@ Nothing in this repository claims any knowledge of Propeller's internal pipeline
 ```
 ocean-frontier-radar/
 ├── README.md
+├── config/
+│   ├── thesis_lexicon.yaml          Problem-first search vocabulary, 8 concept groups
+│   ├── curated_candidates.yaml      Hand-verified candidates with full provenance
+│   └── analyst_views.yaml           Analyst interpretation (kept apart from evidence)
 ├── research/
 │   ├── propeller_thesis.md          Firm dossier — themes, portfolio map, process, sourcing
-│   ├── ocean_taxonomy.md            8 categories + ocean-centrality axis + search vocabulary
+│   ├── ocean_taxonomy.md            8 categories + ocean-centrality axis
 │   ├── sourcing_universe.md         Institutions, funders, programs, conferences
 │   ├── data_sources.md              Empirical access testing — what works, what is blocked
-│   ├── evidence_model.md            Entity/schema design for candidates and evidence
+│   ├── evidence_model.md            Entity/schema design
 │   ├── prioritization_framework.md  Sourcing-priority scoring (not investment scoring)
-│   ├── initial_leads.csv            28 candidates, machine-readable
-│   ├── initial_leads.md             Narrative + 5 research cards + deep-dive recommendation
-│   └── phase1_report.md             Decision-gate summary
-├── sources/
-│   └── source_registry.csv          20 data sources with tested access status
-└── src/
-    └── harvest/                     Small research utilities used to gather Phase 1 data
+│   ├── initial_leads.csv / .md      Phase 1's 28 hand-built candidates
+│   ├── phase1_report.md             Phase 1 decision gate
+│   └── phase2_report.md             Phase 2 decision gate
+├── src/ofr/
+│   ├── schema.sql                   13 tables; facts and interpretation kept separate
+│   ├── db.py  lexicon.py  entity.py  prioritize.py  export.py  pipeline.py
+│   └── ingestion/                   sbir · nsf · usaspending · openalex · curated · views
+├── outputs/                         Generated JSON — regenerate, do not edit
+├── sources/source_registry.csv      20 data sources with tested access status
+└── tests/                           59 offline tests
 ```
 
-## Reproducing the Phase 1 data
-
-The harvest scripts in `src/harvest/` query public APIs with no authentication:
+## Running the pipeline
 
 ```bash
-python3 src/harvest/nsf_sbir_harvest.py    # NSF SBIR/STTR ocean-vocabulary awards
-python3 src/harvest/nsf_translation_harvest.py  # NSF I-Corps / PFI / Convergence Accelerator
+# one-time: download the official SBIR bulk award dataset (~351MB, with abstracts)
+mkdir -p data/raw
+curl -L -o data/raw/sbir_award_data.csv \
+  https://data.www.sbir.gov/awarddatapublic/award_data.csv
+
+python3 src/ofr/pipeline.py --full     # ingest everything, resolve, score, export
+python3 src/ofr/pipeline.py --score    # re-resolve, re-score and re-export only
+python3 -m pytest tests -q             # 59 tests, no network required
 ```
 
-Both write JSON to `data/` (gitignored — raw harvests are not committed). They shell out to `curl` deliberately; see `research/data_sources.md` §12.
+`data/` is gitignored — the raw CSV and the SQLite database both regenerate. `outputs/*.json` are committed as derived views.
+
+Ingestion shells out to `curl` deliberately: local TLS interception breaks Python's certificate verification, and disabling verification would be the wrong fix. See `research/data_sources.md` §12.
+
+## How the pipeline avoids keyword sourcing
+
+Phase 1 found that the strongest Propeller-relevant candidates often do not describe themselves as ocean companies. Allium Engineering sells rebar; Iowa State holds a $5M award on microbial anticorrosion coatings in a landlocked state.
+
+So retrieval is organised by **technical problem**, not sector label, and each concept group carries a `requires_ocean_context` flag. Where the underlying problem is inherently marine-relevant — corrosion, biofouling, underwater acoustics — a record is retrieved **with no ocean vocabulary at all**. Every candidate then carries an `ocean_centrality` tag (`central_mechanism` · `primary_end_market` · `strong_adjacency` · `incidental`) that guards both failure modes: missing the landlocked corrosion lab, and forcing a generic AI company into an ocean thesis.
 
 ## Planned later phases
 
