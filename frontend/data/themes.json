@@ -1,0 +1,445 @@
+[
+ {
+  "candidateCount": 183,
+  "commercialBottlenecks": [
+   "Commodity pricing pressure",
+   "Conservative specification regimes and standards bodies",
+   "Incumbent chemical majors"
+  ],
+  "examples": [
+   {
+    "id": "oli-systems",
+    "institution": null,
+    "name": "OLI SYSTEMS INC",
+    "queue": "tier_a"
+   },
+   {
+    "id": "3newable",
+    "institution": "Ocean Observatories Initiative (WHOI) \u2014 collaboration",
+    "name": "3newable LLC",
+    "queue": "tier_a"
+   },
+   {
+    "id": "aquagga",
+    "institution": "Idaho National Laboratory",
+    "name": "AQUAGGA, INC.",
+    "queue": "tier_a"
+   },
+   {
+    "id": "interphase-materials",
+    "institution": "Virginia Tech Applied Research Corporation",
+    "name": "Interphase Materials, Inc.",
+    "queue": "tier_a"
+   }
+  ],
+  "frontierCount": 12,
+  "id": "marine_materials",
+  "label": "Marine Materials, Corrosion & Coastal Infrastructure",
+  "note": "This is the hidden-adjacency category. The work lives in materials science and civil engineering departments that never use ocean vocabulary, which is why the sourcing lexicon retrieves it by technical problem rather than by sector label.",
+  "problem": "Seawater destroys things. Corrosion costs the United States over half a trillion dollars a year, biofouling drives ship fuel consumption and sensor failure, and coastal infrastructure faces saltwater intrusion and rising wave loading.",
+  "propellerAdjacency": [
+   {
+    "company": "Allium Engineering",
+    "note": "Stainless-clad rebar for coastal and marine concrete"
+   }
+  ],
+  "technicalBottlenecks": [
+   "Antifouling without biocides, as copper chemistry faces regulatory pressure",
+   "Coating adhesion and lifetime under permanent immersion",
+   "Multi-year field-exposure qualification cycles"
+  ],
+  "technologies": [
+   "Corrosion-resistant reinforcement and coatings",
+   "Biocide-free antifouling",
+   "Cathodic protection and corrosion monitoring",
+   "Coastal soil stabilisation and nature-based protection"
+  ]
+ },
+ {
+  "candidateCount": 126,
+  "commercialBottlenecks": [
+   "Producer capital constraints and low willingness to pay",
+   "Fragmented, often family-owned buyers",
+   "Long biological cycles that slow sales"
+  ],
+  "examples": [
+   {
+    "id": "blue-ocean-gear",
+    "institution": null,
+    "name": "Blue Ocean Gear Inc.",
+    "queue": "tier_a"
+   },
+   {
+    "id": "grow-oyster-reefs",
+    "institution": null,
+    "name": "GROW OYSTER REEFS, LLC",
+    "queue": "tier_a"
+   },
+   {
+    "id": "safetyspect",
+    "institution": null,
+    "name": "SAFETYSPECT INC",
+    "queue": "tier_a"
+   },
+   {
+    "id": "live-advantage-bait",
+    "institution": null,
+    "name": "LIVE ADVANTAGE BAIT, LLC",
+    "queue": "tier_a"
+   }
+  ],
+  "frontierCount": 8,
+  "id": "blue_food",
+  "label": "Blue Food, Aquaculture & Marine Biology",
+  "note": null,
+  "problem": "Aquaculture is the fastest-growing segment of US food production but runs on thin margins with severe biological risk and remarkably little digital instrumentation.",
+  "propellerAdjacency": [
+   {
+    "company": "Circle Seafoods",
+    "note": "Ocean-going blast-freezing barges for Alaskan salmon"
+   }
+  ],
+  "technicalBottlenecks": [
+   "Disease detection at farm scale",
+   "Feed conversion and alternative feed ingredients",
+   "Machine vision in turbid water"
+  ],
+  "technologies": [
+   "Disease detection and biosecurity",
+   "Feed and alternative inputs",
+   "Monitoring in turbid water",
+   "Seafood traceability and species identification"
+  ]
+ },
+ {
+  "candidateCount": 105,
+  "commercialBottlenecks": [
+   "Government procurement cycles",
+   "Pull toward selling survey-days rather than hardware",
+   "Certification and class approval for uncrewed operation"
+  ],
+  "examples": [
+   {
+    "id": "armada-marine-robotics",
+    "institution": "Woods Hole Oceanographic Institution",
+    "name": "ARMADA Marine Robotics",
+    "queue": "tier_a"
+   },
+   {
+    "id": "certus-core",
+    "institution": "Institute of Applied Engineering - University of South Florida",
+    "name": "Certus Core, Inc.",
+    "queue": "tier_a"
+   },
+   {
+    "id": "juice-robotics",
+    "institution": "University of Rhode Island",
+    "name": "Juice Robotics",
+    "queue": "tier_a"
+   },
+   {
+    "id": "jaia-robotics",
+    "institution": null,
+    "name": "Jaia Robotics, Inc.",
+    "queue": "tier_a"
+   }
+  ],
+  "frontierCount": 2,
+  "id": "maritime_autonomy",
+  "label": "Maritime Autonomy & Robotics",
+  "note": null,
+  "problem": "Anything done in or on the water requires a crewed vessel, a diver, or a tethered ROV with a support ship behind it. Support day-rates dominate the cost of almost every offshore activity.",
+  "propellerAdjacency": [
+   {
+    "company": "Orpheus Ocean",
+    "note": "Low-cost full-ocean-depth AUVs; incubated at WHOI"
+   },
+   {
+    "company": "VATN Systems",
+    "note": "Low-cost modular mixed-mission AUVs"
+   },
+   {
+    "company": "Navier",
+    "note": "Electric hydrofoiling surface vessels"
+   }
+  ],
+  "technicalBottlenecks": [
+   "Positioning and navigation without GPS",
+   "Underwater communications bandwidth",
+   "Energy density and endurance",
+   "Autonomous launch and recovery, often the real cost driver rather than the vehicle"
+  ],
+  "technologies": [
+   "Autonomous and uncrewed underwater vehicles",
+   "Underwater navigation without GPS; inertial and acoustic positioning",
+   "Launch, recovery and docking",
+   "Payload deployment and manipulation"
+  ]
+ },
+ {
+  "candidateCount": 73,
+  "commercialBottlenecks": [
+   "Buyers are frequently grant-funded science budgets rather than commercial P&Ls",
+   "Ambiguity between being an instrument vendor and a data business",
+   "Federal buyers often procure survey outcomes rather than hardware"
+  ],
+  "examples": [
+   {
+    "id": "dynamic-dimension-technologies",
+    "institution": "Regents of the University of Minnesota",
+    "name": "DYNAMIC DIMENSION TECHNOLOGIES, LLC",
+    "queue": "tier_a"
+   },
+   {
+    "id": "bionet-sonar",
+    "institution": null,
+    "name": "BioNet Sonar",
+    "queue": "tier_a"
+   },
+   {
+    "id": "cd3-general-benefit",
+    "institution": null,
+    "name": "CD3, General Benefit Corporation",
+    "queue": "tier_a"
+   },
+   {
+    "id": "tcarta-marine",
+    "institution": null,
+    "name": "TCARTA MARINE LLC",
+    "queue": "tier_a"
+   }
+  ],
+  "frontierCount": 4,
+  "id": "ocean_sensing",
+  "label": "Ocean Sensing, Data & Intelligence",
+  "note": null,
+  "problem": "Propeller's own framing is the sharpest statement of it: almost every ocean market is under-resourced with information to make decisions or measure appropriately. Nearly half of US waters are unmapped to modern standards.",
+  "propellerAdjacency": [
+   {
+    "company": "Aquatic Labs",
+    "note": "Real-time ocean sensing and mCDR MRV"
+   },
+   {
+    "company": "Hum.ai",
+    "note": "Earth-observation foundation models"
+   },
+   {
+    "company": "Indeximate",
+    "note": "Subsea cable monitoring"
+   }
+  ],
+  "technicalBottlenecks": [
+   "Sensor drift and calibration over long deployments",
+   "Biofouling of optical and electrochemical sensors, a first-order failure mode",
+   "Persistent power for autonomous platforms",
+   "Turning sparse point measurements into defensible area-wide estimates"
+  ],
+  "technologies": [
+   "In-situ sensors and moored platforms",
+   "Underwater acoustic communications and hydrophone arrays",
+   "Environmental DNA sampling",
+   "Satellite-derived bathymetry and remote sensing",
+   "Measurement, reporting and verification for marine carbon"
+  ]
+ },
+ {
+  "candidateCount": 48,
+  "commercialBottlenecks": [
+   "Extreme capital intensity",
+   "Permitting timelines measured in years",
+   "Utility procurement conservatism"
+  ],
+  "examples": [
+   {
+    "id": "persimia",
+    "institution": null,
+    "name": "PERSIMIA LLC",
+    "queue": "tier_a"
+   },
+   {
+    "id": "hydrokinetx",
+    "institution": null,
+    "name": "HYDROKINETX CORPORATION",
+    "queue": "tier_a"
+   },
+   {
+    "id": "sitkana",
+    "institution": null,
+    "name": "SITKANA INC",
+    "queue": "tier_a"
+   },
+   {
+    "id": "a-cost-effective-and-scalable-tidal-current-energy-harvestin",
+    "institution": "University of Maryland Baltimore County",
+    "name": "A Cost-Effective and Scalable Tidal Current Energy Harvesting System",
+    "queue": "frontier"
+   }
+  ],
+  "frontierCount": 3,
+  "id": "offshore_energy",
+  "label": "Offshore Energy, Power & Subsea Infrastructure",
+  "note": null,
+  "problem": "Offshore energy is bottlenecked on installation, maintenance and interconnection cost rather than on generation physics.",
+  "propellerAdjacency": [
+   {
+    "company": "Aikido Technologies",
+    "note": "Floating offshore wind platforms and ocean datacentres"
+   },
+   {
+    "company": "Blue Energy",
+    "note": "Coastal submerged small modular reactors"
+   },
+   {
+    "company": "Vema Hydrogen",
+    "note": "Stimulated geologic hydrogen for maritime fuel"
+   }
+  ],
+  "technicalBottlenecks": [
+   "Installation vessel scarcity and cost",
+   "Connector and cable reliability at depth",
+   "Corrosion, fatigue and biofouling on 25-year assets",
+   "Thermal management for submerged compute"
+  ],
+  "technologies": [
+   "Floating offshore wind platforms and mooring",
+   "Subsea cables, connectors and power distribution",
+   "Marine and tidal energy",
+   "Offshore and submerged compute"
+  ]
+ },
+ {
+  "candidateCount": 23,
+  "commercialBottlenecks": [
+   "Buyers are frequently municipalities on grant cycles",
+   "High density of consultancy-shaped businesses rather than products"
+  ],
+  "examples": [
+   {
+    "id": "natrx",
+    "institution": null,
+    "name": "NATRX, INC.",
+    "queue": "tier_a"
+   },
+   {
+    "id": "x-hab-3d",
+    "institution": null,
+    "name": "X-HAB 3D, INC.",
+    "queue": "tier_a"
+   },
+   {
+    "id": "designer-ecosystems",
+    "institution": null,
+    "name": "DESIGNER ECOSYSTEMS LLC",
+    "queue": "tier_a"
+   },
+   {
+    "id": "reef-arches",
+    "institution": null,
+    "name": "REEF ARCHES, LLC",
+    "queue": "tier_a"
+   }
+  ],
+  "frontierCount": 1,
+  "id": "coastal_adaptation",
+  "label": "Coastal Adaptation & Climate Risk",
+  "note": null,
+  "problem": "Warming has outrun mitigation timelines and coastal industries need adaptation measures now, from storm-surge forecasting to shoreline protection.",
+  "propellerAdjacency": [
+   {
+    "company": "One disclosed stealth company",
+    "note": "Propeller's portfolio page discloses a stealth company in coastal adaptation"
+   }
+  ],
+  "technicalBottlenecks": [
+   "Forecast skill at actionable resolution and lead time",
+   "Validating nature-based structures against engineering standards",
+   "Durability of deployed structures"
+  ],
+  "technologies": [
+   "Storm surge and inundation forecasting",
+   "Living shorelines and engineered reef substrate",
+   "Submerged barriers and soil reinforcement"
+  ]
+ },
+ {
+  "candidateCount": 16,
+  "commercialBottlenecks": [
+   "Extremely conservative buyers and long pilot-to-contract cycles",
+   "Fragmented decision-making across owner, operator and charterer"
+  ],
+  "examples": [
+   {
+    "id": "translation-potential-of-a-multi-modal-sensor-fusion-platfor",
+    "institution": "University of Massachusetts Amherst",
+    "name": "Translation Potential of a Multi-Modal Sensor Fusion Platform that Provides Precision Drone Swarm Tracking",
+    "queue": "frontier"
+   }
+  ],
+  "frontierCount": 1,
+  "id": "maritime_software",
+  "label": "Industrial & Maritime Software / Applied AI",
+  "note": "This is where the \"ocean is incidental\" failure mode lives. The sourcing lexicon requires explicit marine framing for this category, and the classifier flags generic AI tooling rather than admitting it.",
+  "problem": "Maritime and heavy industry run on manual processes and decades-old software, with connectivity at sea only recently improving.",
+  "propellerAdjacency": [
+   {
+    "company": "Nexxa.ai",
+    "note": "Agentic AI for legacy heavy-industry software"
+   }
+  ],
+  "technicalBottlenecks": [
+   "Data access from legacy and air-gapped systems",
+   "Validating model output where errors are safety-critical"
+  ],
+  "technologies": [
+   "Vessel routing and voyage optimisation",
+   "Port and terminal operations",
+   "Predictive maintenance and inspection analytics"
+  ]
+ },
+ {
+  "candidateCount": 5,
+  "commercialBottlenecks": [
+   "Carbon price uncertainty and concentrated offtake",
+   "Registry methodology immaturity",
+   "Almost no observable federal procurement demand"
+  ],
+  "examples": [],
+  "frontierCount": 0,
+  "id": "marine_carbon",
+  "label": "Marine Carbon & Ocean Chemistry",
+  "note": null,
+  "problem": "The ocean already holds roughly sixty times the carbon of the atmosphere. Marine carbon removal aims to enhance that sink durably and measurably. The gating issues are cost per tonne and verification.",
+  "propellerAdjacency": [
+   {
+    "company": "Ebb Carbon",
+    "note": "Electrochemical ocean alkalinity enhancement"
+   },
+   {
+    "company": "Calcarea",
+    "note": "Onboard carbon capture and storage for shipping"
+   },
+   {
+    "company": "CarbonRun",
+    "note": "Riverine alkalinity enhancement"
+   },
+   {
+    "company": "pHathom",
+    "note": "Limestone capture and mineralisation"
+   },
+   {
+    "company": "Banyu Carbon",
+    "note": "Photochemical capture from seawater"
+   }
+  ],
+  "technicalBottlenecks": [
+   "Energy intensity per tonne",
+   "Verification of durable removal in a moving, mixing fluid",
+   "Ecological impact and permitting"
+  ],
+  "technologies": [
+   "Ocean alkalinity enhancement",
+   "Direct ocean capture and mineralisation",
+   "Carbon flux measurement and modelling"
+  ]
+ }
+]

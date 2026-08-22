@@ -92,16 +92,22 @@ def assess(conn, cid, asof: date | None = None) -> dict:
                  "strong_adjacency": 2, "incidental": 0}.get(centrality or "", 1)
 
     age = freshness.months_since(row["candidate_latest_signal_date"], asof)
+    def _age_phrase(months: float) -> str:
+        m = round(months)
+        if m < 1:
+            return "Signal less than a month old."
+        return f"Signal ~{m} month{'' if m == 1 else 's'} old."
+
     if age is None:
         rec, rec_why = 0, "No dated evidence."
     elif age <= 12:
-        rec, rec_why = 3, f"Signal ~{age:.0f} months old."
+        rec, rec_why = 3, _age_phrase(age)
     elif age <= 24:
-        rec, rec_why = 2, f"Signal ~{age:.0f} months old."
+        rec, rec_why = 2, _age_phrase(age)
     elif age <= 36:
-        rec, rec_why = 1, f"Signal ~{age:.0f} months old."
+        rec, rec_why = 1, _age_phrase(age)
     else:
-        rec, rec_why = 0, f"Signal ~{age:.0f} months old; likely dormant."
+        rec, rec_why = 0, _age_phrase(age) + " Likely dormant."
 
     return {
         "candidate_id": cid,

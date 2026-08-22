@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-08-21T16:55:32",
+  "generated_at": "2026-08-21T21:36:38",
   "phase": "2.5",
   "note": "Queues allocate analyst attention. Numeric component scores are DIAGNOSTIC METADATA only, never an investment ranking. Ordering within Tier A is analyst judgment.",
   "tier_criteria": {
@@ -130,7 +130,7 @@
     "recency": {
      "points": 3,
      "max": 3,
-     "why": "Signal ~0 months old."
+     "why": "Signal less than a month old."
     }
    },
    "frontier_total": 9,
@@ -176,7 +176,7 @@
     "recency": {
      "points": 3,
      "max": 3,
-     "why": "Signal ~1 months old."
+     "why": "Signal ~1 month old."
     }
    },
    "frontier_total": 9,
@@ -222,7 +222,7 @@
     "recency": {
      "points": 3,
      "max": 3,
-     "why": "Signal ~0 months old."
+     "why": "Signal less than a month old."
     }
    },
    "frontier_total": 9,
@@ -268,7 +268,7 @@
     "recency": {
      "points": 3,
      "max": 3,
-     "why": "Signal ~0 months old."
+     "why": "Signal less than a month old."
     }
    },
    "frontier_total": 9,
@@ -314,7 +314,7 @@
     "recency": {
      "points": 3,
      "max": 3,
-     "why": "Signal ~0 months old."
+     "why": "Signal less than a month old."
     }
    },
    "frontier_total": 9,
@@ -360,7 +360,7 @@
     "recency": {
      "points": 3,
      "max": 3,
-     "why": "Signal ~0 months old."
+     "why": "Signal less than a month old."
     }
    },
    "frontier_total": 9,
@@ -452,7 +452,7 @@
     "recency": {
      "points": 0,
      "max": 3,
-     "why": "Signal ~47 months old; likely dormant."
+     "why": "Signal ~47 months old. Likely dormant."
     }
    },
    "frontier_total": 8,
@@ -498,7 +498,7 @@
     "recency": {
      "points": 0,
      "max": 3,
-     "why": "Signal ~36 months old; likely dormant."
+     "why": "Signal ~36 months old. Likely dormant."
     }
    },
    "frontier_total": 8,
@@ -590,7 +590,7 @@
     "recency": {
      "points": 0,
      "max": 3,
-     "why": "Signal ~47 months old; likely dormant."
+     "why": "Signal ~47 months old. Likely dormant."
     }
    },
    "frontier_total": 8,
@@ -774,7 +774,7 @@
     "recency": {
      "points": 3,
      "max": 3,
-     "why": "Signal ~0 months old."
+     "why": "Signal less than a month old."
     }
    },
    "frontier_total": 8,
@@ -820,7 +820,7 @@
     "recency": {
      "points": 0,
      "max": 3,
-     "why": "Signal ~36 months old; likely dormant."
+     "why": "Signal ~36 months old. Likely dormant."
     }
    },
    "frontier_total": 7,
@@ -912,7 +912,7 @@
     "recency": {
      "points": 0,
      "max": 3,
-     "why": "Signal ~48 months old; likely dormant."
+     "why": "Signal ~48 months old. Likely dormant."
     }
    },
    "frontier_total": 7,
@@ -958,7 +958,7 @@
     "recency": {
      "points": 0,
      "max": 3,
-     "why": "Signal ~46 months old; likely dormant."
+     "why": "Signal ~46 months old. Likely dormant."
     }
    },
    "frontier_total": 6,
@@ -1004,7 +1004,7 @@
     "recency": {
      "points": 0,
      "max": 3,
-     "why": "Signal ~46 months old; likely dormant."
+     "why": "Signal ~46 months old. Likely dormant."
     }
    },
    "frontier_total": 6,
@@ -1096,7 +1096,7 @@
     "recency": {
      "points": 0,
      "max": 3,
-     "why": "Signal ~37 months old; likely dormant."
+     "why": "Signal ~37 months old. Likely dormant."
     }
    },
    "frontier_total": 5,
@@ -1142,7 +1142,7 @@
     "recency": {
      "points": 0,
      "max": 3,
-     "why": "Signal ~43 months old; likely dormant."
+     "why": "Signal ~43 months old. Likely dormant."
     }
    },
    "frontier_total": 5,
@@ -1188,7 +1188,7 @@
     "recency": {
      "points": 0,
      "max": 3,
-     "why": "Signal ~38 months old; likely dormant."
+     "why": "Signal ~38 months old. Likely dormant."
     }
    },
    "frontier_total": 5,
@@ -1234,7 +1234,7 @@
     "recency": {
      "points": 0,
      "max": 3,
-     "why": "Signal ~37 months old; likely dormant."
+     "why": "Signal ~37 months old. Likely dormant."
     }
    },
    "frontier_total": 5,
@@ -1280,7 +1280,7 @@
     "recency": {
      "points": 0,
      "max": 3,
-     "why": "Signal ~38 months old; likely dormant."
+     "why": "Signal ~38 months old. Likely dormant."
     }
    },
    "frontier_total": 5,
@@ -1326,7 +1326,7 @@
     "recency": {
      "points": 0,
      "max": 3,
-     "why": "Signal ~39 months old; likely dormant."
+     "why": "Signal ~39 months old. Likely dormant."
     }
    },
    "frontier_total": 5,
@@ -1372,7 +1372,7 @@
     "recency": {
      "points": 0,
      "max": 3,
-     "why": "Signal ~39 months old; likely dormant."
+     "why": "Signal ~39 months old. Likely dormant."
     }
    },
    "frontier_total": 5,
@@ -1418,7 +1418,7 @@
     "recency": {
      "points": 0,
      "max": 3,
-     "why": "Signal ~38 months old; likely dormant."
+     "why": "Signal ~38 months old. Likely dormant."
     }
    },
    "frontier_total": 5,

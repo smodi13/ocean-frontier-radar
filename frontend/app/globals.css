@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+
+body {
+  @apply bg-paper text-ink antialiased;
+  font-feature-settings: 'kern' 1, 'liga' 1, 'tnum' 1;
+}
+
+@layer components {
+  .wrap { @apply mx-auto w-full max-w-6xl px-5 sm:px-8; }
+  .wrap-narrow { @apply mx-auto w-full max-w-4xl px-5 sm:px-8; }
+
+  .card { @apply rounded-lg border border-paper-line bg-paper-card; }
+  .rule { @apply border-t border-paper-line; }
+
+  .eyebrow { @apply text-[11px] font-semibold uppercase tracking-[0.14em] text-sea; }
+  .h1 { @apply text-3xl font-semibold leading-[1.12] tracking-tight sm:text-5xl; }
+  .h2 { @apply text-2xl font-semibold tracking-tight sm:text-3xl; }
+  .h3 { @apply text-lg font-semibold tracking-tight; }
+  .lede { @apply text-lg leading-relaxed text-ink/75 sm:text-xl; }
+  .body { @apply text-[15px] leading-relaxed text-ink/80; }
+  .meta { @apply text-[13px] leading-relaxed text-ink/55; }
+  .mono { @apply font-mono text-[12px] tabular-nums; }
+
+  .chip {
+    @apply inline-flex items-center gap-1 rounded border px-1.5 py-0.5 text-[11px]
+           font-medium leading-none whitespace-nowrap;
+  }
+  .chip-neutral { @apply border-paper-line bg-paper text-ink/65; }
+  .chip-sea     { @apply border-sea/25 bg-sea-pale text-sea-deep; }
+  .chip-moss    { @apply border-moss/25 bg-moss-pale text-moss; }
+  .chip-rust    { @apply border-rust/25 bg-rust-pale text-rust; }
+
+  .stat-n { @apply font-mono text-2xl font-semibold tabular-nums tracking-tight sm:text-3xl; }
+  .stat-l { @apply mt-1 text-[12px] leading-snug text-ink/55; }
+
+  .link { @apply text-sea underline decoration-sea/30 underline-offset-2 hover:decoration-sea; }
+
+  /* Epistemic status blocks — the core evidence-discipline UI */
+  .epi { @apply rounded-md border-l-[3px] px-4 py-3; }
+  .epi-observed { @apply border-l-moss bg-moss-pale/50; }
+  .epi-inferred { @apply border-l-sea bg-sea-pale/50; }
+  .epi-unknown  { @apply border-l-rust bg-rust-pale/50; }
+}
+
+/* Focus visibility for keyboard users */
+a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible {
+  @apply outline-none ring-2 ring-sea/50 ring-offset-1 ring-offset-paper;
+}

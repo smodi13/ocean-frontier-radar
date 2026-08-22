@@ -1,0 +1,280 @@
+# ARMADA deep-dive narrative for the public site.
+# PROSE ONLY. Every figure is injected at export time from canonical artifacts
+# (evidence register, procurement audit, underwriting model). Placeholders use
+# {{token}} and are resolved by scripts/build_frontend_data.py, which fails if a
+# token is unknown. Content mirrors research/armada_investment_memo.md.
+
+recommendation:
+  verdict: HOLD — NEED MORE EVIDENCE
+  stance: hold
+  summary: >
+    Not a pass. The technology is credible, the founders are unusually
+    well-qualified, and a US Navy customer has twice put more money behind the
+    work — most recently in March 2026. But three things a venture investor must
+    know cannot be established from public information.
+  unresolved:
+    - title: EPADS commercialisation and IP rights
+      detail: >
+        ARMADA is a joint applicant with WHOI on the EPADS PCT, which is
+        materially stronger than a licence gap. The ownership split, field of
+        use and US national-phase status remain unconfirmed.
+    - title: Commercial customer validation
+      detail: >
+        Five years and roughly {{federal_total}} of federal funding have produced
+        no publicly evidenced commercial sale, pilot, LOI or named customer.
+    - title: Venture-scale market potential
+      detail: >
+        Narrow addressable procurement observed in our sample is about
+        {{narrow_annual}} per year. The scenario model's base case falls short of
+        its own reference threshold.
+  advance_if: >
+    EPADS pods are consumable per deployment AND ARMADA holds commercialisation
+    rights on the jointly filed EPADS IP.
+  pass_if: >
+    Pods are recovered and reused, no commercial customer conversation has
+    occurred in five years, and no OEM has evaluated the propulsion product.
+  no_invest_note: >
+    No INVEST recommendation is possible or offered on public information. This
+    is an outside-in view built entirely from public records.
+
+why_interesting:
+  - title: A repeat government customer that keeps deciding to continue
+    detail: >
+      On the Navy Phase II the government did not merely award — it exercised an
+      option in January 2025 and then incrementally funded a new contract line
+      item in March 2026. Three independent agencies also funded Phase I work
+      inside four months in late 2024.
+  - title: A quantified technical result on a real Navy vehicle
+    detail: >
+      Phase I validated hydrodynamic simulation against in-water testing on a
+      REMUS 600, establishing an A-size pod carrying a five-kilogram module at a
+      cost of no more than 25 percent of mission time and under 10 percent
+      parasitic drag. That is a specific, falsifiable result rather than a claim.
+  - title: A possible consumable
+    detail: >
+      EPADS pods appear to be left on the seafloor with the payload. If so this
+      is not a subsystem sold once per vehicle but a consumable with recurring
+      unit volume — the difference between an engineering business and a venture
+      business. It is one sentence from a founder, and it is inferred rather than
+      confirmed.
+
+product_lines:
+  - id: propulsion
+    name: Asymmetric Propulsion
+    what: >
+      Varying the speed of a single-bladed propeller within each revolution
+      produces both thrust and steering from one motor, removing fins and control
+      actuators. The patent protects the control method, not a propeller shape.
+    technical_maturity: Two granted patents, 2018 and 2019 conference papers, and a self-reported 3D steering test in September 2022.
+    key_limitation: >
+      No public quantitative performance data of any kind — no efficiency,
+      turning radius, power draw or acoustic signature — for the product ARMADA
+      says it is bringing to market.
+    commercial_validation: None publicly identified.
+    funding: NSF STTR Phase I, {{nsf_sttr}} (2020).
+    ip: US 9,873,499 and US 11,990,857 — owned by WHOI, exclusively licensed to ARMADA for underwater and marine surface vehicles.
+    open_question: >
+      Control authority from intra-revolution modulation should scale with
+      propeller RPM, which is weakest at exactly the low speeds the
+      station-keeping pitch depends on. This is inferred and unanswered.
+
+  - id: epads
+    name: EPADS — External Payload Delivery System
+    what: >
+      A fully external pod requiring no mechanical modification to the host
+      robot, commanded over the robot's native acoustic modem. A valve floods the
+      cavity so the payload becomes negatively buoyant and descends, at zero net
+      buoyancy change to the vehicle.
+    technical_maturity: >
+      Modelled, then dummy pods fabricated, then in-water tested on a REMUS 600,
+      with published thresholds met.
+    key_limitation: >
+      Live release at depth and placement accuracy remain part of Phase II work
+      and are not publicly proven.
+    commercial_validation: Navy-funded research and development. No production order or commercial sale is publicly evidenced.
+    funding: Navy SBIR Phase I {{navy_phase1}}, then Phase II {{navy_phase2_total}}.
+    ip: WO 2024/136933 — ARMADA and WHOI as joint applicants and joint assignees.
+    open_question: What placement accuracy is achievable, and at what depth and current?
+
+  - id: persistent_sensing
+    name: Persistent sensing
+    what: >
+      A concept combining propulsion and passive ballast to create an uncrewed
+      sensing platform that selectively rides ocean currents.
+    technical_maturity: NOAA Phase I research and development only, completed January 2025.
+    key_limitation: >
+      No public follow-on award, and it is not presented as a current product on
+      ARMADA's own technology page. It is a completed research effort, not a
+      product line.
+    commercial_validation: None.
+    funding: NOAA SBIR Phase I, {{noaa_phase1}}.
+    ip: No licence to WHOI's related passive ballast patent (US 10,640,188) is publicly announced.
+    open_question: Whether any follow-on work is planned.
+
+debates:
+  - id: component-or-engineering
+    title: Component company or engineering organisation?
+    subtitle: The central debate. Everything else is subordinate to it.
+    current_view: >
+      On public evidence ARMADA today is an engineering organisation — a
+      three-person team funded by sequential government development contracts —
+      that holds an option on becoming a component company. Nothing public shows
+      the option has been exercised.
+    bull:
+      - "{{federal_total}} of non-dilutive federal funding across four agencies in five years, with no equity given up."
+      - "The Navy exercised an option in January 2025 and incrementally funded a new CLIN in March 2026 — repeat customer decisions."
+      - "Two granted patents exclusively licensed, plus joint applicant status on the EPADS filing."
+      - "EPADS pods, if consumed per deployment, would be a genuinely recurring unit business."
+    bear:
+      - "Five years, zero commercial revenue, zero named commercial customer, zero public OEM relationship."
+      - "The largest bucket in observed UUV procurement is R&D — exactly where ARMADA earns. The company is well adapted to a market the venture case does not need."
+      - "Three publicly identified people. Manufacturing, qualification and enterprise sales capabilities are unevidenced."
+      - "The March 2026 CLIN funding extends the R&D model rather than diversifying from it."
+    unknown: >
+      Whether commercial development was attempted and failed, deliberately
+      deferred until Phase II completes, or never started. Public sources cannot
+      distinguish these and they imply very different companies.
+    upgrade: A named OEM in active evaluation, a first commercial purchase order, or confirmation that pods are consumable with a credible volume forecast.
+    downgrade: Confirmation that no commercial customer conversation has occurred in five years, or that the team intends to remain SBIR-funded.
+
+  - id: epads-ip
+    title: Does ARMADA control the EPADS IP commercially?
+    subtitle: Materially better than earlier phases concluded, and still unresolved.
+    current_view: >
+      ARMADA is a joint applicant and joint listed assignee with WHOI on
+      WO 2024/136933, with its CEO and Lead Engineer among the named inventors.
+      That is a real ownership interest, not a licence gap. The terms are
+      invisible and no US grant is evidenced.
+    bull:
+      - "Joint applicant and joint assignee status on the EPADS filing — a direct interest, not merely permission."
+      - "The claimed mechanism, a valve-flooded cavity, is distinct from WHOI's older vacuum-hold patents, consistent with new invention from the funded work."
+      - "Priority date of September 2022 sits inside the funded Navy programme."
+      - "Two propulsion patents are exclusively licensed with an announced field of use."
+    bear:
+      - "No US national-phase application from the PCT was located. A PCT publication confers no US exclusionary right by itself."
+      - "Ownership split, field of use, sublicensing and commercialisation rights between the co-applicants are entirely unknown."
+      - "No licence to WHOI's related payload-deployment or passive-ballast patents is publicly announced."
+      - "ARMADA's ability to sublicense the propulsion patents is unknown, which constrains a licensing model."
+    unknown: Essentially all commercial terms. Invisible from outside and cheap to resolve from inside.
+    upgrade: A filed or published US national-phase application, plus confirmation that ARMADA holds commercialisation rights with a broad field of use.
+    downgrade: No US filing and no plan to file, or WHOI holding effective control of commercialisation decisions.
+
+  - id: oem-adoption
+    title: Will an OEM replace a qualified propulsion architecture?
+    subtitle: The least-evidenced and most load-bearing assumption in the propulsion line.
+    current_view: Our current lean is sceptical, on the evidence available.
+    bull:
+      - "The underlying pain is real: every fin actuator is a pressure penetration, a failure mode and a drag source."
+      - "The economic argument is not component price but avoiding a second asset and a second vessel mobilisation."
+      - "Two granted patents and peer-reviewed conference publications give a credible technical foundation."
+      - "A self-reported 3D steering test passed in September 2022."
+    bear:
+      - "Changing propulsion invalidates vehicle qualification. The buyer of a UUV is buying a qualified system."
+      - "Every target OEM is also the party best able to build it in-house."
+      - "No public performance data at all for the product ARMADA says it is bringing to market."
+      - "Single-blade propulsion has prior art back to 1945; the concept space is not empty."
+    unknown: Whether any OEM has ever evaluated it; whether low-speed control authority is adequate; acoustic signature.
+    upgrade: A published or shared quantitative comparison against a finned baseline, or a named OEM evaluation.
+    downgrade: OEMs confirm propulsion is core in-house IP, or an independent expert judges low-speed control authority insufficient.
+
+  - id: market-scale
+    title: Can the observable market support a venture outcome?
+    subtitle: Not on the federal procurement visible in our sample.
+    current_view: >
+      The venture case requires markets we cannot see from public procurement
+      records.
+    bull:
+      - "The sample is demonstrably incomplete: large programmes of record and classified work use nomenclature our keywords miss."
+      - "The payload-deployment bucket is small partly because the capability does not exist yet — a market cannot be observed before the product."
+      - "Complete-platform procurement becomes addressable the moment an OEM designs the subsystem in."
+      - "Offshore wind operations and maintenance is a large non-government budget where the argument is worth a vessel day, and it is entirely absent from ARMADA's public activity."
+    bear:
+      - "Narrow addressable observed procurement is about {{narrow_annual}} per year; broad adjacency about {{broad_annual}}."
+      - "Thirteen years of data show no growth trend in the components and spares bucket."
+      - "The most frequent supplier in the sample is a distributor, consistent with a market that buys commodity hardware and complete systems."
+      - "The scenario model reaches only {{base_revenue}} at base, short of its {{threshold}} reference threshold, and only by assuming volumes with no public evidence."
+    unknown: Pod consumption economics; whether a commercial channel is being pursued at all; the size of allied and export demand.
+    upgrade: Evidence of a commercial offshore channel, or pod volumes credibly in the hundreds per year.
+    downgrade: Pods recovered rather than consumed, and no commercial channel in development.
+
+ip_section:
+  correction_note: >
+    Earlier phases of this project raised a possible EPADS rights gap, on the
+    assumption that EPADS rested on older WHOI-owned payload patents. Searching
+    the patent record by applicant rather than by inferred family produced a
+    different answer, and the earlier concern was overstated.
+  publicly_supported:
+    - "ARMADA is a named joint applicant and joint listed assignee on WO 2024/136933, the published EPADS PCT."
+    - "ARMADA's CEO and Lead Engineer are named inventors on that application, alongside a third inventor."
+    - "The claimed mechanism differs from WHOI's earlier vacuum-hold payload patents."
+    - "WHOI owns US 9,873,499 and US 11,990,857 and has exclusively licensed both to ARMADA for underwater and marine surface vehicles."
+  still_requires_diligence:
+    - "No US national-phase application from the PCT was located in the searched corpus."
+    - "The ownership split between the co-applicants is not public."
+    - "Field-of-use and commercialisation rights are not public."
+    - "Sublicensing rights, diligence milestones and termination conditions on the propulsion licences are not public."
+    - "No licence to WHOI's US 10,112,686, US 11,072,406 or US 10,640,188 is publicly announced."
+  disclaimer: >
+    This is a technical and commercial reading of public patent records. It is
+    not a legal opinion and not a freedom-to-operate assessment. Nothing here is
+    evidence that ARMADA lacks rights.
+
+primary_research:
+  questions:
+    - Are EPADS pods consumed per deployment, or recovered?
+    - What commercialisation rights does ARMADA hold around EPADS, and what is the US filing status?
+    - Has any UUV OEM evaluated or integrated the propulsion system?
+    - Is there a Phase III sponsor and a transition path?
+    - How is the company financed, and is the team full-time?
+  first_calls:
+    - who: ARMADA founders (Jeff Kaeli, Robin Littlefield)
+      why: >
+        Resolves the pod-consumability question and the EPADS rights position
+        directly. Both are binary and both gate the rest of the work.
+    - who: WHOI technology transfer
+      why: >
+        Establishes licence field of use, sublicensing rights, milestones, and
+        how jointly filed IP is allocated with a spinout.
+  sequencing_rationale: >
+    These two calls come first because they resolve binary, high-value questions
+    cheaply. A negative answer on IP or on pod economics ends the process before
+    any time is spent on broader market diligence.
+
+propeller_fit:
+  criteria:
+    - {criterion: Thematic fit, assessment: "Ocean Industrials. Propeller's stated theme names automation, robotics, surveying, inspection and dual-use applications."}
+    - {criterion: Stage, assessment: "Pre-seed on equity with no disclosed financing, alongside substantial non-dilutive federal funding."}
+    - {criterion: Check size, assessment: "Consistent with Propeller's publicly stated range of roughly $500K to $3M."}
+    - {criterion: Technical depth, assessment: "High. Granted patents, a joint MIT/WHOI PhD founder, peer-reviewed conference publications."}
+    - {criterion: Ocean centrality, assessment: "Central mechanism. The technology is meaningless outside a marine environment."}
+    - {criterion: Dual-use, assessment: "Squarely dual-use, an area Propeller has written about publicly."}
+    - {criterion: Portfolio adjacency, assessment: "Propeller's disclosed portfolio contains two AUV platform companies. Relative to a subsystem vendor these are complementary if they buy and awkward if they build. Labelled unclear, not competitive."}
+  sourcing_caveat: >
+    ARMADA is a WHOI spinout, and Propeller's founding partnership is with WHOI.
+    It is therefore highly likely to be visible within the broader ecosystem
+    around Propeller. This case is presented as a demonstration of outside-in
+    diligence rather than proprietary sourcing. No claim is made, in either
+    direction, about whether Propeller has already evaluated the company.
+
+research_journey:
+  stories:
+  - id: ip
+    title: The IP concern weakened
+    direction: strengthened_company
+    steps:
+      - "Outside-in research raised a possible EPADS rights gap: the January 2025 licence announcement named two propulsion patents and not the payload-deployment patents."
+      - "The assumption was that EPADS rested on WHOI's older vacuum-hold family."
+      - "Searching the patent record by applicant rather than by inferred family surfaced WO 2024/136933."
+      - "That application lists ARMADA and WHOI jointly, with ARMADA's founders among the inventors, and claims a different mechanism."
+      - "The concern was overstated. It narrowed to ownership terms and US filing status rather than the existence of rights."
+  - id: market
+    title: The market thesis weakened
+    direction: weakened_company
+    steps:
+      - "87 federal procurement contracts were already in the database and were expected to support the market case."
+      - "A contract-by-contract audit classified each one and removed two false comparables, including a design-build contract for a building."
+      - "Spending concentrated in R&D, prime integration and complete platforms."
+      - "The slice a subsystem vendor could win directly was far smaller than expected."
+      - "The market thesis weakened. The strongest bear argument in the memo came from data gathered expecting the opposite."
+  takeaway: >
+    Research changed the view in both directions. That is the point of doing it.

@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-08-21T16:49:24",
+  "generated_at": "2026-08-21T17:39:50",
   "n_candidates": 579,
   "priority_max": 17,
   "note": "Priority scores rank ANALYST ATTENTION, not investment quality. Totals are computed from components and are meaningless without them.",
@@ -84,6 +84,8 @@
    "candidate_id": "armada-marine-robotics",
    "name": "ARMADA Marine Robotics",
    "candidate_type": "spinout",
+   "queue": "tier_a",
+   "candidate_latest_signal_date": "2025-01-01",
    "institution": "Woods Hole Oceanographic Institution",
    "company": "ARMADA Marine Robotics",
    "geography": "Massachusetts, USA",
@@ -156,12 +158,6 @@
      "author": "analyst"
     },
     {
-     "type": "technical_kill_question",
-     "statement": "Does single-motor asymmetric propulsion retain adequate control authority in realistic currents and sea states? Eliminating actuators is elegant in benign conditions; degradation in demanding conditions would remove the value exactly where cheap attritable vehicles matter most.",
-     "evidence_ids": [],
-     "author": "analyst"
-    },
-    {
      "type": "commercial_kill_question",
      "statement": "Public procurement records show buyers paying $1.68M-$1.99M per AUV, but the dominant lifetime cost in ocean operations is frequently the support vessel. If so, a cheaper propulsion module does not change the customer's economics and the addressable value is far smaller than vehicle price implies.",
      "evidence_ids": [],
@@ -170,6 +166,54 @@
     {
      "type": "inferred",
      "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Current activity: latest signal 2025-01-01 (~20 months old). Against: none",
+     "evidence_ids": [],
+     "author": "analyst"
+    },
+    {
+     "type": "inferred",
+     "statement": "PHASE 2.5 CORRECTION. Verified federal awards total $2,972,287 across NSF, Navy, NOAA and OSD - not the $255,821 NSF STTR the Phase 2 report described. The Navy Phase II is $1,998,926 and its period of performance now runs to 2028-03-20.",
+     "evidence_ids": [],
+     "author": "analyst"
+    },
+    {
+     "type": "inferred",
+     "statement": "Three SBIR Phase I awards from three different agencies inside four months (Aug, Oct, Nov 2024) is meaningful validation: three independent technical review panels funded the company in one budget cycle. It is not revenue.",
+     "evidence_ids": [],
+     "author": "analyst"
+    },
+    {
+     "type": "inferred",
+     "statement": "This is not one technology. Propulsion (NSF/WHOI IP), EPADS payload deployment (Navy, the largest programme by value) and a persistent sensing constellation (NOAA) are three distinct product threads with different customers and different IP positions.",
+     "evidence_ids": [],
+     "author": "analyst"
+    },
+    {
+     "type": "unknown",
+     "statement": "The Jan 2025 WHOI licence announcement names US 9,873,499 and US 11,990,857 only. The EPADS work traces to US 10,112,686, also WHOI-assigned, which is not named. What rights ARMADA holds to the EPADS IP is unresolved from public sources.",
+     "evidence_ids": [],
+     "author": "analyst"
+    },
+    {
+     "type": "unknown",
+     "statement": "Licence terms are not public: field of use, sublicensing rights, diligence milestones and termination conditions are all unknown.",
+     "evidence_ids": [],
+     "author": "analyst"
+    },
+    {
+     "type": "unknown",
+     "statement": "No equity financing disclosed since a March 2025 accelerator round; no commercial (non-government) customer identified in any public source.",
+     "evidence_ids": [],
+     "author": "analyst"
+    },
+    {
+     "type": "technical_kill_question",
+     "statement": "Does single-motor asymmetric propulsion retain adequate control authority in realistic currents and sea states? Removing actuators is elegant in benign conditions; degradation where cheap attritable vehicles matter most would remove the value.",
+     "evidence_ids": [],
+     "author": "analyst"
+    },
+    {
+     "type": "commercial_kill_question",
+     "statement": "Is ARMADA a defence prime subcontractor or a venture-scale product company? Roughly two thirds of verified funding is DoD, and the Navy contract runs to 2028. A company optimised around SBIR sequencing can be a good business and still be a poor venture fit.",
      "evidence_ids": [],
      "author": "analyst"
     }
@@ -263,6 +307,8 @@
    "candidate_id": "aroboticscompany",
    "name": "AROBOTICSCOMPANY, INC",
    "candidate_type": "company",
+   "queue": "tier_c",
+   "candidate_latest_signal_date": "2026-04-10",
    "institution": null,
    "company": "AROBOTICSCOMPANY, INC",
    "geography": "Ossining, NY",
@@ -397,6 +443,8 @@
    "candidate_id": "certus-core",
    "name": "Certus Core, Inc.",
    "candidate_type": "company",
+   "queue": "tier_a",
+   "candidate_latest_signal_date": "2025-12-29",
    "institution": "Institute of Applied Engineering - University of South Florida",
    "company": "Certus Core, Inc.",
    "geography": "Tampa, FL",
@@ -422,7 +470,25 @@
    "analyst_views": [
     {
      "type": "inferred",
-     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Current activity: latest signal 2025-12-29 (~8 months old). Against: none",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 3/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Current activity: latest signal 2025-12-29 (~8 months old). Against: none",
+     "evidence_ids": [],
+     "author": "analyst"
+    },
+    {
+     "type": "inferred",
+     "statement": "PHASE 2.5 CORRECTION - ANALYST OVERRIDE OF MACHINE OUTPUT. The classifier places Certus Core in Tier A on maritime autonomy, but its SBIR.gov firm page shows 9 employees and $4.46M in awards dominated by a Semantic Knowledge Graph for US Air Force data, with further awards from SOCOM and the Missile Defense Agency. The AUV-swarming award is one thread in a defence data-platform business.",
+     "evidence_ids": [],
+     "author": "analyst"
+    },
+    {
+     "type": "inferred",
+     "statement": "Ocean centrality is overstated. Defence abstracts are written to hit many capability keywords, which trips the ocean-centrality logic more readily than it should. Excluded from the analyst shortlist despite its machine tier.",
+     "evidence_ids": [],
+     "author": "analyst"
+    },
+    {
+     "type": "unknown",
+     "statement": "Whether any maritime autonomy work continues beyond the single SOCOM AUV award.",
      "evidence_ids": [],
      "author": "analyst"
     }
@@ -507,6 +573,8 @@
    "candidate_id": "dynamic-dimension-technologies",
    "name": "DYNAMIC DIMENSION TECHNOLOGIES, LLC",
    "candidate_type": "company",
+   "queue": "tier_a",
+   "candidate_latest_signal_date": "2025-09-15",
    "institution": "Regents of the University of Minnesota",
    "company": "DYNAMIC DIMENSION TECHNOLOGIES, LLC",
    "geography": "Westminster, MD",
@@ -542,7 +610,7 @@
    "analyst_views": [
     {
      "type": "inferred",
-     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 2/3 with ocean centrality 'strong_adjacency'. Current activity: latest signal 2025-09-15 (~11 months old). Against: none",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 3/3. Propeller relevance 2/3 with ocean centrality 'strong_adjacency'. Current activity: latest signal 2025-09-15 (~11 months old). Against: none",
      "evidence_ids": [],
      "author": "analyst"
     }
@@ -629,6 +697,8 @@
    "candidate_id": "juice-robotics",
    "name": "Juice Robotics",
    "candidate_type": "spinout",
+   "queue": "tier_a",
+   "candidate_latest_signal_date": "2026-07-01",
    "institution": "University of Rhode Island",
    "company": "Juice Robotics",
    "geography": "Rhode Island, USA",
@@ -705,6 +775,12 @@
      "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Current activity: latest signal 2026-07-01 (~2 months old). Against: none",
      "evidence_ids": [],
      "author": "analyst"
+    },
+    {
+     "type": "inferred",
+     "statement": "PHASE 2.5 QUALIFICATION. USAspending shows no federal awards of any kind. Its entire evidence base is one university announcement plus an undisclosed VC round - a materially thinner and less independently corroborated profile than the rest of Tier A.",
+     "evidence_ids": [],
+     "author": "analyst"
     }
    ],
    "priority_components": {
@@ -779,6 +855,8 @@
    "candidate_id": "natrx",
    "name": "NATRX, INC.",
    "candidate_type": "company",
+   "queue": "tier_a",
+   "candidate_latest_signal_date": "2024-09-27",
    "institution": null,
    "company": "NATRX, INC.",
    "geography": "RALEIGH, NC",
@@ -818,6 +896,12 @@
    "analyst_views": [
     {
      "type": "inferred",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 3/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Current activity: latest signal 2024-09-27 (~23 months old). Against: none",
+     "evidence_ids": [],
+     "author": "analyst"
+    },
+    {
+     "type": "inferred",
      "statement": "Having raised $3.5M and deployed across roughly two dozen projects, Natrx is materially ahead of the other coastal-adaptation candidates here and is likely past the stage this system is designed to surface.",
      "evidence_ids": [],
      "author": "analyst"
@@ -831,12 +915,6 @@
     {
      "type": "unknown",
      "statement": "Revenue model and whether deployments are recurring product sales or one-off funded projects.",
-     "evidence_ids": [],
-     "author": "analyst"
-    },
-    {
-     "type": "inferred",
-     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 3/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Current activity: latest signal 2024-09-27 (~23 months old). Against: none",
      "evidence_ids": [],
      "author": "analyst"
     }
@@ -917,6 +995,8 @@
    "candidate_id": "oli-systems",
    "name": "OLI SYSTEMS INC",
    "candidate_type": "company",
+   "queue": "tier_a",
+   "candidate_latest_signal_date": "2026-05-23",
    "institution": null,
    "company": "OLI SYSTEMS INC",
    "geography": "Parsippany, NJ",
@@ -941,7 +1021,7 @@
    "analyst_views": [
     {
      "type": "inferred",
-     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 2/3 with ocean centrality 'strong_adjacency'. Current activity: latest signal 2026-05-23 (~3 months old). Against: none",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 3/3. Propeller relevance 2/3 with ocean centrality 'strong_adjacency'. Current activity: latest signal 2026-05-23 (~3 months old). Against: none",
      "evidence_ids": [],
      "author": "analyst"
     }
@@ -1034,6 +1114,8 @@
    "candidate_id": "oceancomm",
    "name": "OceanComm Incorporated",
    "candidate_type": "company",
+   "queue": "tier_c",
+   "candidate_latest_signal_date": "2025-11-19",
    "institution": null,
    "company": "OceanComm Incorporated",
    "geography": "Champaign, IL",
@@ -1155,6 +1237,8 @@
    "candidate_id": "simple-technology-solutions",
    "name": "SIMPLE TECHNOLOGY SOLUTIONS INC.",
    "candidate_type": "company",
+   "queue": "tier_c",
+   "candidate_latest_signal_date": "2026-08-05",
    "institution": null,
    "company": "SIMPLE TECHNOLOGY SOLUTIONS INC.",
    "geography": "Washington, DC",
@@ -1290,6 +1374,8 @@
    "candidate_id": "trac9",
    "name": "TRAC9, LLC",
    "candidate_type": "company",
+   "queue": "tier_c",
+   "candidate_latest_signal_date": "2026-04-23",
    "institution": null,
    "company": "TRAC9, LLC",
    "geography": "Huntsville, AL",
@@ -1418,6 +1504,8 @@
    "candidate_id": "x-hab-3d",
    "name": "X-HAB 3D, INC.",
    "candidate_type": "company",
+   "queue": "tier_a",
+   "candidate_latest_signal_date": "2025-09-29",
    "institution": null,
    "company": "X-HAB 3D, INC.",
    "geography": "State College, PA",
@@ -1442,7 +1530,13 @@
    "analyst_views": [
     {
      "type": "inferred",
-     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Current activity: latest signal 2025-09-29 (~11 months old). Against: none",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 3/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Current activity: latest signal 2025-09-29 (~11 months old). Against: none",
+     "evidence_ids": [],
+     "author": "analyst"
+    },
+    {
+     "type": "inferred",
+     "statement": "PHASE 2.5 QUALIFICATION. Seven awards totalling roughly $3.98M, but the portfolio is dominated by general construction and 3D printing for the Army, NASA and DOT. The DARPA artificial-reef work is one strand, so ocean centrality is weaker than the Phase 2 tier implied.",
      "evidence_ids": [],
      "author": "analyst"
     }
@@ -1526,6 +1620,8 @@
    "candidate_id": "3newable",
    "name": "3newable LLC",
    "candidate_type": "company",
+   "queue": "tier_a",
+   "candidate_latest_signal_date": "2025-12-04",
    "institution": "Ocean Observatories Initiative (WHOI) \u2014 collaboration",
    "company": "3newable LLC",
    "geography": "Portola Valley, California, USA",
@@ -1608,6 +1704,38 @@
     {
      "type": "inferred",
      "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Current activity: latest signal 2025-12-04 (~9 months old). Against: none",
+     "evidence_ids": [],
+     "author": "analyst"
+    },
+    {
+     "type": "inferred",
+     "statement": "PHASE 2.5 CORRECTION. Phase 2 characterised the 0.91 W result as roughly an order-of-magnitude shortfall against a 7-8 W target. OOI frames it as achieved 'even in relatively low-energy conditions', so it is a single measurement in benign sea states and is not directly comparable to an annual time-average. The honest statement is that reconciling the two is an open technical question, not that the technology underperformed.",
+     "evidence_ids": [],
+     "author": "analyst"
+    },
+    {
+     "type": "observed",
+     "statement": "All verified federal funding, $2,474,731, sits on a single DOE contract line (DE-SC0020921) whose period of performance ended 2025-11-15.",
+     "evidence_ids": [
+      "ev_3ecf05cb1b65fcf3"
+     ],
+     "author": "analyst"
+    },
+    {
+     "type": "unknown",
+     "statement": "No public evidence of federal funding beyond Nov 2025, of equity financing at any point, or of a paying customer. OOI is a co-development partner, not necessarily a purchaser.",
+     "evidence_ids": [],
+     "author": "analyst"
+    },
+    {
+     "type": "unknown",
+     "statement": "Whether the company is actively commercializing in 2026 cannot be established from public sources. The website is live with a 2025 copyright and the most recent third-party coverage is Dec 2025. Absence of evidence is not evidence of failure, but it is also not evidence of momentum.",
+     "evidence_ids": [],
+     "author": "analyst"
+    },
+    {
+     "type": "commercial_kill_question",
+     "statement": "Ocean observing budgets are largely federal and grant-funded. If the only buyer is NSF/NOAA programme money, the market is small and slow regardless of how well the technology works - and the CEO has publicly noted federal funding uncertainty.",
      "evidence_ids": [],
      "author": "analyst"
     }
@@ -1701,6 +1829,8 @@
    "candidate_id": "aquagga",
    "name": "AQUAGGA, INC.",
    "candidate_type": "company",
+   "queue": "tier_a",
+   "candidate_latest_signal_date": "2025-08-04",
    "institution": "Idaho National Laboratory",
    "company": "AQUAGGA, INC.",
    "geography": "TACOMA, WA",
@@ -1730,7 +1860,7 @@
    "analyst_views": [
     {
      "type": "inferred",
-     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 2/3 with ocean centrality 'strong_adjacency'. Current activity: latest signal 2025-08-04 (~13 months old). Against: none",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 3/3. Propeller relevance 2/3 with ocean centrality 'strong_adjacency'. Current activity: latest signal 2025-08-04 (~13 months old). Against: none",
      "evidence_ids": [],
      "author": "analyst"
     }
@@ -1823,6 +1953,8 @@
    "candidate_id": "artimus-robotics",
    "name": "ARTIMUS ROBOTICS INC",
    "candidate_type": "company",
+   "queue": "tier_b",
+   "candidate_latest_signal_date": "2024-07-15",
    "institution": null,
    "company": "ARTIMUS ROBOTICS INC",
    "geography": "Boulder, CO",
@@ -1852,7 +1984,7 @@
    "analyst_views": [
     {
      "type": "inferred",
-     "statement": "Queue 'tier_b'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Against: Latest signal 2024-07-15 (~25 months old) is outside the 24-month window.",
+     "statement": "Queue 'tier_b'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 3/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Against: Latest signal 2024-07-15 (~25 months old) is outside the 24-month window.",
      "evidence_ids": [],
      "author": "analyst"
     }
@@ -1941,6 +2073,8 @@
    "candidate_id": "big-metal-additive",
    "name": "BIG METAL ADDITIVE LLC",
    "candidate_type": "company",
+   "queue": "tier_c",
+   "candidate_latest_signal_date": "2026-04-10",
    "institution": null,
    "company": "BIG METAL ADDITIVE LLC",
    "geography": "Denver, CO",
@@ -2069,6 +2203,8 @@
    "candidate_id": "bionet-sonar",
    "name": "BioNet Sonar",
    "candidate_type": "company",
+   "queue": "tier_a",
+   "candidate_latest_signal_date": "2026-04-09",
    "institution": null,
    "company": "BioNet Sonar",
    "geography": "Newton, MA",
@@ -2104,7 +2240,7 @@
    "analyst_views": [
     {
      "type": "inferred",
-     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 2/3 with ocean centrality 'primary_end_market'. Current activity: latest signal 2026-04-09 (~4 months old). Against: none",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 3/3. Propeller relevance 2/3 with ocean centrality 'primary_end_market'. Current activity: latest signal 2026-04-09 (~4 months old). Against: none",
      "evidence_ids": [],
      "author": "analyst"
     }
@@ -2188,6 +2324,8 @@
    "candidate_id": "blue-ocean-gear",
    "name": "Blue Ocean Gear Inc.",
    "candidate_type": "company",
+   "queue": "tier_a",
+   "candidate_latest_signal_date": "2025-07-30",
    "institution": null,
    "company": "Blue Ocean Gear Inc.",
    "geography": "Redwood City, CA",
@@ -2213,7 +2351,7 @@
    "analyst_views": [
     {
      "type": "inferred",
-     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Current activity: latest signal 2025-07-30 (~13 months old). Against: none",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 3/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Current activity: latest signal 2025-07-30 (~13 months old). Against: none",
      "evidence_ids": [],
      "author": "analyst"
     }
@@ -2295,6 +2433,8 @@
    "candidate_id": "cd3-general-benefit",
    "name": "CD3, General Benefit Corporation",
    "candidate_type": "company",
+   "queue": "tier_a",
+   "candidate_latest_signal_date": "2026-08-18",
    "institution": null,
    "company": "CD3, General Benefit Corporation",
    "geography": "Saint Paul, MN",
@@ -2326,7 +2466,7 @@
    "analyst_views": [
     {
      "type": "inferred",
-     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 2/3 with ocean centrality 'primary_end_market'. Current activity: latest signal 2026-08-18 (~0 months old). Against: none",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 3/3. Propeller relevance 2/3 with ocean centrality 'primary_end_market'. Current activity: latest signal 2026-08-18 (~0 months old). Against: none",
      "evidence_ids": [],
      "author": "analyst"
     }
@@ -2421,6 +2561,8 @@
    "candidate_id": "cultured-abalone-farm-llc-the",
    "name": "Cultured Abalone Farm LLC, The",
    "candidate_type": "company",
+   "queue": "tier_b",
+   "candidate_latest_signal_date": "2023-09-01",
    "institution": null,
    "company": "Cultured Abalone Farm LLC, The",
    "geography": "Goieta, CA",
@@ -2446,7 +2588,7 @@
    "analyst_views": [
     {
      "type": "inferred",
-     "statement": "Queue 'tier_b'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Against: Latest signal 2023-09-01 (~36 months old) is outside the 24-month window.",
+     "statement": "Queue 'tier_b'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 3/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Against: Latest signal 2023-09-01 (~36 months old) is outside the 24-month window.",
      "evidence_ids": [],
      "author": "analyst"
     }
@@ -2524,6 +2666,8 @@
    "candidate_id": "fastwatt",
    "name": "FASTWATT LLC",
    "candidate_type": "company",
+   "queue": "tier_b",
+   "candidate_latest_signal_date": "2024-07-22",
    "institution": null,
    "company": "FASTWATT LLC",
    "geography": "CliftonPark, NY",
@@ -2548,7 +2692,7 @@
    "analyst_views": [
     {
      "type": "inferred",
-     "statement": "Queue 'tier_b'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Against: Latest signal 2024-07-22 (~25 months old) is outside the 24-month window.",
+     "statement": "Queue 'tier_b'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 3/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Against: Latest signal 2024-07-22 (~25 months old) is outside the 24-month window.",
      "evidence_ids": [],
      "author": "analyst"
     }
@@ -2629,6 +2773,8 @@
    "candidate_id": "genex-systems",
    "name": "GENEX SYSTEMS, LLC",
    "candidate_type": "company",
+   "queue": "tier_c",
+   "candidate_latest_signal_date": "2026-06-16",
    "institution": null,
    "company": "GENEX SYSTEMS, LLC",
    "geography": "Newport News, VA",
@@ -2763,6 +2909,8 @@
    "candidate_id": "grow-oyster-reefs",
    "name": "GROW OYSTER REEFS, LLC",
    "candidate_type": "company",
+   "queue": "tier_a",
+   "candidate_latest_signal_date": "2025-09-15",
    "institution": null,
    "company": "GROW OYSTER REEFS, LLC",
    "geography": "CHARLOTTESVILLE, VA",
@@ -2789,6 +2937,12 @@
    "analyst_views": [
     {
      "type": "inferred",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Current activity: latest signal 2025-09-15 (~11 months old). Against: none",
+     "evidence_ids": [],
+     "author": "analyst"
+    },
+    {
+     "type": "inferred",
      "statement": "The innovation is the manufacturing method - 3D-printed metal moulds compatible with standard concrete block machinery - not the reef structure. That is what converts a restoration project into a product with unit economics.",
      "evidence_ids": [],
      "author": "analyst"
@@ -2808,12 +2962,6 @@
     {
      "type": "commercial_kill_question",
      "statement": "If every deployment requires a bespoke grant-funded project, this is an engineering-services business with a product attached, and Natrx's $3.5M-funded head start in the same niche makes that position harder.",
-     "evidence_ids": [],
-     "author": "analyst"
-    },
-    {
-     "type": "inferred",
-     "statement": "Queue 'tier_a'. For: Technical evidence 2/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 3/3 with ocean centrality 'central_mechanism'. Current activity: latest signal 2025-09-15 (~11 months old). Against: none",
      "evidence_ids": [],
      "author": "analyst"
     }
@@ -2890,6 +3038,8 @@
    "candidate_id": "interphase-materials",
    "name": "Interphase Materials, Inc.",
    "candidate_type": "company",
+   "queue": "tier_a",
+   "candidate_latest_signal_date": "2025-09-08",
    "institution": "Virginia Tech Applied Research Corporation",
    "company": "Interphase Materials, Inc.",
    "geography": "Pittsburgh, PA",
@@ -2926,7 +3076,7 @@
    "analyst_views": [
     {
      "type": "inferred",
-     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 2/3. Propeller relevance 2/3 with ocean centrality 'primary_end_market'. Current activity: latest signal 2025-09-08 (~11 months old). Against: none",
+     "statement": "Queue 'tier_a'. For: Technical evidence 3/3: built, demonstrated, patented or Phase I+. Commercialization evidence 3/3. Propeller relevance 2/3 with ocean centrality 'primary_end_market'. Current activity: latest signal 2025-09-08 (~11 months old). Against: none",
      "evidence_ids": [],
      "author": "analyst"
     }
@@ -3016,6 +3166,8 @@
    "candidate_id": "jpanalytics",
    "name": "JPANALYTICS LLC",
    "candidate_type": "company",
+   "queue": "tier_c",
+   "candidate_latest_signal_date": "2026-04-07",
    "institution": null,
    "company": "JPANALYTICS LLC",
    "geography": "Falmouth, MA",
@@ -3148,6 +3300,8 @@
    "candidate_id": "meld-manufacturing",
    "name": "MELD MANUFACTURING CORPORATION",
    "candidate_type": "company",
+   "queue": "tier_c",
+   "candidate_latest_signal_date": "2025-12-29",
    "institution": null,
    "company": "MELD MANUFACTURING CORPORATION",
    "geography": "Christiansburg, VA",

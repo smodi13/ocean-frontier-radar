@@ -66,6 +66,11 @@ def build(conn) -> dict:
 
         candidates.append({
             "candidate_id": cid, "name": r["name"], "candidate_type": r["candidate_type"],
+            # Added in Phase 4: these columns exist in the database from Phase 2.5
+            # but this export predated them, so the queue assignment and derived
+            # recency were never reaching downstream consumers.
+            "queue": r["queue"],
+            "candidate_latest_signal_date": r["candidate_latest_signal_date"],
             "institution": r["institution"], "company": r["company"],
             "geography": r["geography"], "website": r["website"],
             "current_stage": r["current_stage"], "company_formed": r["company_formed"],

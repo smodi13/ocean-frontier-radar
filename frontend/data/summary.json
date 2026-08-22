@@ -1,0 +1,27 @@
+{
+ "actionableUniverse": 134,
+ "candidates": 579,
+ "candidatesWithEvidence": 579,
+ "categories": 8,
+ "categoryCounts": {
+  "blue_food": 126,
+  "coastal_adaptation": 23,
+  "marine_carbon": 5,
+  "marine_materials": 183,
+  "maritime_autonomy": 105,
+  "maritime_software": 16,
+  "ocean_sensing": 73,
+  "offshore_energy": 48
+ },
+ "frontier": 31,
+ "generatedAt": "2026-08-21T17:39:50",
+ "institutions": 106,
+ "preCompanyShareOfActionable": 0.231,
+ "procurementContracts": 87,
+ "procurementObserved": 244757930.51,
+ "recordsEvaluated": 215582,
+ "themes": 8,
+ "tierA": 38,
+ "tierB": 65,
+ "tierC": 445
+}
