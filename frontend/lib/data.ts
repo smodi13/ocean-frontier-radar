@@ -30,40 +30,9 @@ export function detailIds(): string[] {
   return candidates.filter((c) => c.queue === 'tier_a' || c.queue === 'frontier').map((c) => c.id);
 }
 
-export const CATEGORY_LABEL: Record<string, string> = Object.fromEntries(
-  themes.map((t) => [t.id, t.label]),
-);
-export const QUEUE_LABEL: Record<string, string> = {
-  tier_a: 'Tier A — Diligence now',
-  tier_b: 'Tier B — Research queue',
-  tier_c: 'Tier C — Watch',
-  frontier: 'Frontier — Pre-company',
-};
-export const CENTRALITY_LABEL: Record<string, string> = {
-  central_mechanism: 'Central — mechanism',
-  primary_end_market: 'Primary end market',
-  strong_adjacency: 'Strong adjacency',
-  incidental: 'Incidental',
-};
-export const SIGNAL_LABEL: Record<string, string> = {
-  icorps: 'NSF I-Corps',
-  commercialization_grant: 'Commercialization grant',
-  exclusive_license: 'Exclusive licence',
-  license_executed: 'Licence executed',
-  spinout_announced: 'Spinout announced',
-  accelerator_participation: 'Accelerator',
-  research_grant: 'Research grant',
-};
-
-export function fmtMoney(n: number | null | undefined): string {
-  if (n === null || n === undefined) return '—';
-  if (Math.abs(n) >= 1_000_000) return `$${(n / 1_000_000).toFixed(2)}M`;
-  if (Math.abs(n) >= 1_000) return `$${(n / 1_000).toFixed(0)}K`;
-  return `$${n.toLocaleString()}`;
-}
-export function fmtNum(n: number): string {
-  return n.toLocaleString();
-}
-export function evidenceTypeLabel(t: string): string {
-  return t.replace(/_/g, ' ').replace(/\b\w/g, (m) => m.toUpperCase());
-}
+// Label maps and formatters live in lib/labels.ts so client components can
+// import them without pulling candidateDetail.json into the browser bundle.
+export {
+  CATEGORY_LABEL, CENTRALITY_LABEL, QUEUE_LABEL, SIGNAL_LABEL,
+  evidenceTypeLabel, fmtMoney, fmtNum,
+} from './labels';

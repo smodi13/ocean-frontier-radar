@@ -1,8 +1,13 @@
 import Link from 'next/link';
-import { Callout, Chip, PageHeader, Section, Stat } from '@/components/Primitives';
+import { Callout, PageHeader, Section, Stat } from '@/components/Primitives';
 import { ProcurementBuckets } from '@/components/Procurement';
 import ScenarioModel from '@/components/ScenarioModel';
-import { armada, evidenceRegister, fmtMoney, fmtNum } from '@/lib/data';
+import { RecommendationCard } from '@/components/Recommendation';
+import { DebateCard } from '@/components/DebateCard';
+import { ViewChangedStory } from '@/components/ViewChanged';
+import { RevealStagger } from '@/components/motion/Reveal';
+import { Counter } from '@/components/motion/Counter';
+import { armada, evidenceRegister, fmtMoney } from '@/lib/data';
 
 export const metadata = { title: 'ARMADA Marine Robotics · Outside-In Diligence' };
 
@@ -23,51 +28,27 @@ export default function DeepDivePage() {
       />
 
       {/* ── Recommendation ─────────────────────────────────────────── */}
-      <Section>
-        <div className="card overflow-hidden">
-          <div className="border-b border-paper-line bg-rust-pale/50 px-6 py-5 sm:px-8">
-            <p className="eyebrow text-rust">Recommendation</p>
-            <p className="mt-1 text-2xl font-semibold tracking-tight text-rust sm:text-3xl">
-              {a.recommendation.verdict}
-            </p>
-          </div>
-          <div className="px-6 py-6 sm:px-8">
-            <p className="body max-w-prose">{a.recommendation.summary}</p>
-            <h3 className="h3 mt-6 mb-3 text-[14px]">Three questions public information cannot answer</h3>
-            <ol className="grid gap-3 lg:grid-cols-3">
-              {a.recommendation.unresolved.map((u: any, i: number) => (
-                <li key={u.title} className="rounded border border-paper-line bg-paper p-4">
-                  <div className="mono text-rust">{String(i + 1).padStart(2, '0')}</div>
-                  <div className="mt-1 text-[14px] font-semibold">{u.title}</div>
-                  <p className="meta mt-1.5">{u.detail}</p>
-                </li>
-              ))}
-            </ol>
-            <div className="mt-6 grid gap-3 sm:grid-cols-2">
-              <div className="rounded-md border-l-[3px] border-l-moss bg-moss-pale/40 px-4 py-3">
-                <p className="text-[12px] font-semibold uppercase tracking-wider text-moss">Advance if</p>
-                <p className="body mt-1 text-[14px]">{a.recommendation.advance_if}</p>
-              </div>
-              <div className="rounded-md border-l-[3px] border-l-rust bg-rust-pale/40 px-4 py-3">
-                <p className="text-[12px] font-semibold uppercase tracking-wider text-rust">Pass if</p>
-                <p className="body mt-1 text-[14px]">{a.recommendation.pass_if}</p>
-              </div>
-            </div>
-            <p className="meta mt-5 max-w-prose">{a.recommendation.no_invest_note}</p>
-          </div>
-        </div>
+      <Section reveal={false}>
+        <RecommendationCard
+          verdict={a.recommendation.verdict}
+          summary={a.recommendation.summary}
+          unresolved={a.recommendation.unresolved}
+          advanceIf={a.recommendation.advance_if}
+          passIf={a.recommendation.pass_if}
+          noInvestNote={a.recommendation.no_invest_note}
+        />
       </Section>
 
       {/* ── Why interesting ────────────────────────────────────────── */}
       <Section title="Why this is interesting" className="pt-0">
-        <div className="grid gap-3 lg:grid-cols-3">
+        <RevealStagger className="grid gap-3 lg:grid-cols-3" step={80}>
           {a.whyInteresting.map((w: any) => (
             <div key={w.title} className="card p-5">
               <h3 className="h3 text-[14px]">{w.title}</h3>
               <p className="body mt-2 text-[14px]">{w.detail}</p>
             </div>
           ))}
-        </div>
+        </RevealStagger>
       </Section>
 
       {/* ── Product lines ──────────────────────────────────────────── */}
@@ -111,51 +92,7 @@ export default function DeepDivePage() {
         </p>
         <div className="space-y-4">
           {a.debates.map((d: any, i: number) => (
-            <article key={d.id} className="card p-5 sm:p-7">
-              <div className="flex items-baseline gap-3">
-                <span className="mono text-sea">{String(i + 1).padStart(2, '0')}</span>
-                <div>
-                  <h3 className="h2 text-[19px]">{d.title}</h3>
-                  {d.subtitle && <p className="meta mt-1">{d.subtitle}</p>}
-                </div>
-              </div>
-
-              <div className="mt-5 rounded-md border-l-[3px] border-l-ink/25 bg-paper px-4 py-3">
-                <p className="text-[12px] font-semibold uppercase tracking-wider text-ink/50">Current view</p>
-                <p className="body mt-1 text-[14px]">{d.current_view}</p>
-              </div>
-
-              <div className="mt-4 grid gap-3 lg:grid-cols-2">
-                <div className="rounded-md border-l-[3px] border-l-moss bg-moss-pale/40 px-4 py-3">
-                  <p className="text-[12px] font-semibold uppercase tracking-wider text-moss">Bull evidence</p>
-                  <ul className="mt-2 space-y-1.5">
-                    {d.bull.map((b: string, j: number) => <li key={j} className="body text-[13.5px]">{b}</li>)}
-                  </ul>
-                </div>
-                <div className="rounded-md border-l-[3px] border-l-rust bg-rust-pale/40 px-4 py-3">
-                  <p className="text-[12px] font-semibold uppercase tracking-wider text-rust">Bear evidence</p>
-                  <ul className="mt-2 space-y-1.5">
-                    {d.bear.map((b: string, j: number) => <li key={j} className="body text-[13.5px]">{b}</li>)}
-                  </ul>
-                </div>
-              </div>
-
-              <div className="mt-4 rounded-md border-l-[3px] border-l-sea bg-sea-pale/40 px-4 py-3">
-                <p className="text-[12px] font-semibold uppercase tracking-wider text-sea-deep">Unknown</p>
-                <p className="body mt-1 text-[14px]">{d.unknown}</p>
-              </div>
-
-              <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                <div>
-                  <p className="text-[11px] font-semibold uppercase tracking-wide text-ink/45">Would increase conviction</p>
-                  <p className="body mt-1 text-[13.5px]">{d.upgrade}</p>
-                </div>
-                <div>
-                  <p className="text-[11px] font-semibold uppercase tracking-wide text-ink/45">Would reduce conviction</p>
-                  <p className="body mt-1 text-[13.5px]">{d.downgrade}</p>
-                </div>
-              </div>
-            </article>
+            <DebateCard key={d.id} debate={d} index={i} />
           ))}
         </div>
       </Section>
@@ -195,7 +132,7 @@ export default function DeepDivePage() {
         </Callout>
 
         <div className="mt-6 grid gap-4 lg:grid-cols-5">
-          <div className="lg:col-span-3">
+          <div className="min-w-0 lg:col-span-3">
             <h3 className="h3 mb-3 text-[14px]">Verified federal awards</h3>
             <div className="card overflow-x-auto">
               <table className="w-full text-[13px]">
@@ -228,7 +165,7 @@ export default function DeepDivePage() {
             </div>
           </div>
 
-          <div className="lg:col-span-2">
+          <div className="min-w-0 lg:col-span-2">
             <h3 className="h3 mb-3 text-[14px]">Navy Phase II, reconciled</h3>
             <div className="card p-5">
               <p className="meta mb-3">Contract {gov.navyContractId}, from its transaction history.</p>
@@ -264,11 +201,11 @@ export default function DeepDivePage() {
         </p>
 
         <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-          <Stat value={fmtNum(proc.contracts)} label="Contracts audited" />
-          <Stat value={fmtMoney(proc.totalObserved)} label={`Observed value, ${proc.yearSpan.first}–${proc.yearSpan.last}`} />
-          <Stat value={fmtMoney(proc.narrow.annualised)} label="Narrow addressable, annualised"
+          <Stat value={<Counter value={proc.contracts} format="num" />} label="Contracts audited" />
+          <Stat value={<Counter value={proc.totalObserved} format="money" />} label={`Observed value, ${proc.yearSpan.first}–${proc.yearSpan.last}`} />
+          <Stat value={<Counter value={proc.narrow.annualised} format="money" />} label="Narrow addressable, annualised"
                 hint="Components/spares plus payload deployment — what a subsystem vendor could win directly" />
-          <Stat value={fmtMoney(proc.broad.annualised)} label="Broad adjacency, annualised"
+          <Stat value={<Counter value={proc.broad.annualised} format="money" />} label="Broad adjacency, annualised"
                 hint="Reachable only through OEMs or by expanding scope" />
         </div>
 
@@ -354,25 +291,11 @@ export default function DeepDivePage() {
       {/* ── Research journey ───────────────────────────────────────── */}
       <Section title="How the view changed" className="pt-0">
         <div className="grid gap-4 lg:grid-cols-2">
-          {a.researchJourney.stories.map((s: any) => (
-            <div key={s.id} className="card p-5">
-              <div className="flex items-center gap-2">
-                <Chip tone={s.direction === 'strengthened_company' ? 'moss' : 'rust'}>
-                  {s.direction === 'strengthened_company' ? 'View improved' : 'View weakened'}
-                </Chip>
-                <h3 className="h3 text-[15px]">{s.title}</h3>
-              </div>
-              <ol className="mt-4 space-y-2">
-                {s.steps.map((step: string, i: number) => (
-                  <li key={i} className="flex gap-3">
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-sea/50" aria-hidden />
-                    <span className="body text-[13.5px]">{step}</span>
-                  </li>
-                ))}
-              </ol>
-            </div>
+          {a.researchJourney.stories.map((story: any) => (
+            <ViewChangedStory key={story.id} story={story} />
           ))}
         </div>
+        <div className="mt-4" />
         <Callout tone="sea" title="The takeaway">{a.researchJourney.takeaway}</Callout>
       </Section>
 

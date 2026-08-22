@@ -25,9 +25,16 @@ body {
   .meta { @apply text-[13px] leading-relaxed text-ink/55; }
   .mono { @apply font-mono text-[12px] tabular-nums; }
 
+  /*
+   * `whitespace-nowrap` keeps a chip on one line, but the longest taxonomy
+   * labels ("Marine Materials, Corrosion & Coastal Infrastructure") are wider
+   * than a 320px phone, which pushed the whole page sideways. Capping the chip
+   * at its container and letting the longest ones wrap keeps the label intact
+   * and the page still.
+   */
   .chip {
-    @apply inline-flex items-center gap-1 rounded border px-1.5 py-0.5 text-[11px]
-           font-medium leading-none whitespace-nowrap;
+    @apply inline-flex max-w-full items-center gap-1 rounded border px-1.5 py-0.5
+           text-[11px] font-medium leading-tight;
   }
   .chip-neutral { @apply border-paper-line bg-paper text-ink/65; }
   .chip-sea     { @apply border-sea/25 bg-sea-pale text-sea-deep; }
@@ -49,4 +56,110 @@ body {
 /* Focus visibility for keyboard users */
 a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible {
   @apply outline-none ring-2 ring-sea/50 ring-offset-1 ring-offset-paper;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   Motion system
+   Every animation below is transform/opacity only and is disabled
+   wholesale by the prefers-reduced-motion block at the end.
+   ───────────────────────────────────────────────────────────── */
+
+@keyframes ofr-rise {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes ofr-contour-drift {
+  0%, 100% { transform: translateY(0) scaleX(1); }
+  50%      { transform: translateY(-6px) scaleX(1.012); }
+}
+@keyframes ofr-arc-sweep {
+  0%   { stroke-dashoffset: 0; opacity: 0.06; }
+  50%  { opacity: 0.24; }
+  100% { stroke-dashoffset: -120; opacity: 0.06; }
+}
+@keyframes ofr-ping {
+  0%   { r: 3.4; opacity: 0.55; }
+  70%  { r: 15;  opacity: 0; }
+  100% { r: 15;  opacity: 0; }
+}
+@keyframes ofr-core-ping {
+  0%   { r: 5;  opacity: 0.6; }
+  80%  { r: 58; opacity: 0; }
+  100% { r: 58; opacity: 0; }
+}
+
+/* Hero SVG system */
+.ofr-contour  { transform-origin: center; transform-box: fill-box;
+                animation: ofr-contour-drift 22s ease-in-out infinite; }
+.ofr-arc      { animation: ofr-arc-sweep 9s linear infinite; }
+.ofr-ping     { animation: ofr-ping 6.5s ease-out infinite; }
+.ofr-core-ping{ animation: ofr-core-ping 4.5s ease-out infinite; }
+
+/* Hero entrance sequence — content is present in the DOM immediately and
+   only its opacity/offset is animated, so nothing is gated on JS. */
+.ofr-enter { opacity: 0; animation: ofr-rise 620ms cubic-bezier(.22,.61,.36,1) forwards; }
+.ofr-d1 { animation-delay: 40ms; }
+.ofr-d2 { animation-delay: 130ms; }
+.ofr-d3 { animation-delay: 220ms; }
+.ofr-d4 { animation-delay: 310ms; }
+.ofr-d5 { animation-delay: 390ms; }
+.ofr-d6 { animation-delay: 470ms; }
+
+/* Route transition: a short fade on each newly rendered page shell. */
+@keyframes ofr-page-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.ofr-page { animation: ofr-page-in 260ms cubic-bezier(.22,.61,.36,1); }
+
+@layer components {
+  /* Layered surface used for hero and section grounds. */
+  .surface-grid {
+    background-image:
+      linear-gradient(to right, rgba(18,86,107,0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(18,86,107,0.045) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+
+  /* Tier A card: responds to hover AND keyboard focus. */
+  .card-interactive {
+    @apply transition-[transform,box-shadow,border-color] duration-200 ease-out;
+  }
+  .card-interactive:hover,
+  .card-interactive:focus-visible {
+    @apply -translate-y-0.5 border-sea/50;
+    box-shadow: 0 1px 2px rgba(11,22,34,.04), 0 8px 22px -12px rgba(11,22,34,.16);
+  }
+  .card-interactive:hover .arrow,
+  .card-interactive:focus-visible .arrow { transform: translateX(3px); }
+  .arrow { @apply inline-block transition-transform duration-200 ease-out; }
+
+  /* Evidence card: a much smaller lift; these are reference material. */
+  .card-evidence { @apply transition-[border-color,box-shadow] duration-200; }
+  .card-evidence:hover { @apply border-sea/30; box-shadow: 0 4px 14px -10px rgba(11,22,34,.18); }
+  .card-evidence:hover .ext { transform: translate(2px, -2px); }
+  .ext { @apply inline-block transition-transform duration-200; }
+
+  /* Nav active indicator. */
+  .nav-link { @apply relative rounded px-2.5 py-1.5 text-[13px] font-medium text-ink/70 transition-colors; }
+  .nav-link:hover { @apply bg-sea-pale text-sea-deep; }
+  .nav-link[data-active="true"] { @apply text-sea-deep; }
+  .nav-link[data-active="true"]::after {
+    content: ""; position: absolute; left: 10px; right: 10px; bottom: 2px;
+    height: 1.5px; background: currentColor; border-radius: 2px;
+    animation: ofr-rise 260ms cubic-bezier(.22,.61,.36,1);
+  }
+
+  /* Bars that draw from zero when their section enters view. */
+  .bar-fill { transition: width 900ms cubic-bezier(.22,.61,.36,1); }
+}
+
+/* ── Accessibility: honour the OS setting, globally and without exception ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .ofr-enter { opacity: 1; animation: none; }
+  .bar-fill  { transition: none; }
 }

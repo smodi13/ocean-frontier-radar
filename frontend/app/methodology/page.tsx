@@ -1,5 +1,6 @@
 import { Callout, PageHeader, Section, Stat } from '@/components/Primitives';
-import { fmtNum, summary } from '@/lib/data';
+import { Counter } from '@/components/motion/Counter';
+import { summary } from '@/lib/data';
 import {
   AI_DISCLOSURE, AI_DISCLOSURE_CAVEAT, AI_DISCLOSURE_POINTS,
   INDEPENDENCE_DISCLAIMER, REPO_URL,
@@ -102,10 +103,10 @@ export default function MethodologyPage() {
           honestly separate the middle of the distribution.
         </Callout>
         <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-          <Stat value={fmtNum(summary.tierA)} label="Tier A — diligence now" />
-          <Stat value={fmtNum(summary.tierB)} label="Tier B — research queue" />
-          <Stat value={fmtNum(summary.tierC)} label="Tier C — watch" />
-          <Stat value={fmtNum(summary.frontier)} label="Frontier — pre-company" />
+          <Stat value={<Counter value={summary.tierA} format="num" />} label="Tier A — diligence now" />
+          <Stat value={<Counter value={summary.tierB} format="num" />} label="Tier B — research queue" />
+          <Stat value={<Counter value={summary.tierC} format="num" />} label="Tier C — watch" />
+          <Stat value={<Counter value={summary.frontier} format="num" />} label="Frontier — pre-company" />
         </div>
       </Section>
 

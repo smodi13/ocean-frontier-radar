@@ -1,4 +1,7 @@
-import { fmtMoney } from '@/lib/data';
+'use client';
+
+import { fmtMoney } from '@/lib/labels';
+import { useInView, usePrefersReducedMotion } from '@/lib/motion';
 
 interface Bucket { id: string; n: number; value: number; annualised: number; reason: string }
 
@@ -21,9 +24,13 @@ const ADDRESSABLE = new Set(['components_spares', 'payload_deployment']);
 
 export function ProcurementBuckets({ buckets }: { buckets: Bucket[] }) {
   const max = Math.max(...buckets.map((b) => b.value));
+  const reduced = usePrefersReducedMotion();
+  const [ref, inView] = useInView<HTMLUListElement>();
+  const show = reduced || inView;
+
   return (
-    <ul className="space-y-2.5">
-      {buckets.map((b) => {
+    <ul ref={ref} className="space-y-2.5">
+      {buckets.map((b, i) => {
         const excluded = b.id.startsWith('excluded_');
         const addressable = ADDRESSABLE.has(b.id);
         const pct = Math.max(1, Math.round((b.value / max) * 100));
@@ -37,9 +44,16 @@ export function ProcurementBuckets({ buckets }: { buckets: Bucket[] }) {
               <span className="mono text-ink/70">{fmtMoney(b.value)}</span>
             </div>
             <div className="mt-1 h-2 w-full overflow-hidden rounded-sm bg-paper-line">
+              {/*
+                Bars grow from zero when the chart enters view so the eye follows
+                the size ordering; the widths themselves are the audited values.
+              */}
               <div
-                className={`h-full ${addressable ? 'bg-sea' : excluded ? 'bg-ink/15' : 'bg-ink/35'}`}
-                style={{ width: `${pct}%` }}
+                className={`bar-fill h-full ${addressable ? 'bg-sea' : excluded ? 'bg-ink/15' : 'bg-ink/35'}`}
+                style={{
+                  width: show ? `${pct}%` : '0%',
+                  transitionDelay: reduced ? '0ms' : `${i * 70}ms`,
+                }}
               />
             </div>
             <p className="mt-1 text-[11px] leading-snug text-ink/45">{b.reason}</p>

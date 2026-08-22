@@ -2,8 +2,9 @@
 
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
+import { usePrefersReducedMotion } from '@/lib/motion';
 import type { CandidateRow } from '@/lib/types';
-import { CATEGORY_LABEL, CENTRALITY_LABEL, QUEUE_LABEL } from '@/lib/data';
+import { CATEGORY_LABEL, CENTRALITY_LABEL, QUEUE_LABEL } from '@/lib/labels';
 
 const QUEUE_TONE: Record<string, string> = {
   tier_a: 'chip-moss', frontier: 'chip-sea', tier_b: 'chip-neutral', tier_c: 'chip-neutral',
@@ -13,12 +14,12 @@ function Select({
   label, value, onChange, options,
 }: { label: string; value: string; onChange: (v: string) => void; options: [string, string][] }) {
   return (
-    <label className="flex flex-col gap-1">
+    <label className="flex min-w-0 flex-col gap-1">
       <span className="text-[11px] font-medium uppercase tracking-wide text-ink/50">{label}</span>
       <select
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="rounded border border-paper-line bg-white px-2.5 py-1.5 text-[13px]"
+        className="w-full rounded border border-paper-line bg-white px-2.5 py-1.5 text-[13px]"
       >
         {options.map(([v, l]) => <option key={v} value={v}>{l}</option>)}
       </select>
@@ -27,6 +28,7 @@ function Select({
 }
 
 export default function RadarBrowser({ rows, detailIds }: { rows: CandidateRow[]; detailIds: string[] }) {
+  const reduced = usePrefersReducedMotion();
   const linkable = useMemo(() => new Set(detailIds), [detailIds]);
   const [q, setQ] = useState('');
   const [queue, setQueue] = useState('actionable');
@@ -67,13 +69,13 @@ export default function RadarBrowser({ rows, detailIds }: { rows: CandidateRow[]
     <div>
       <div className="card p-4">
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          <label className="flex flex-col gap-1 lg:col-span-3">
+          <label className="flex min-w-0 flex-col gap-1 lg:col-span-3">
             <span className="text-[11px] font-medium uppercase tracking-wide text-ink/50">Search</span>
             <input
               value={q}
               onChange={(e) => setQ(e.target.value)}
               placeholder="Name, institution, geography, evidence…"
-              className="rounded border border-paper-line bg-white px-3 py-2 text-[14px]"
+              className="w-full rounded border border-paper-line bg-white px-3 py-2 text-[14px]"
             />
           </label>
           <Select label="Queue" value={queue} onChange={setQueue} options={[
@@ -118,7 +120,7 @@ export default function RadarBrowser({ rows, detailIds }: { rows: CandidateRow[]
       </p>
 
       <ul className="mt-4 space-y-2">
-        {filtered.slice(0, 250).map((r) => {
+        {filtered.slice(0, 250).map((r, idx) => {
           const hasDetail = linkable.has(r.id);
           const queueNote =
             r.queue === 'tier_b' ? 'Research queue' :
@@ -160,7 +162,7 @@ export default function RadarBrowser({ rows, detailIds }: { rows: CandidateRow[]
               <div className="mt-3 border-t border-paper-line/70 pt-2.5">
                 {hasDetail ? (
                   <span className="text-[12.5px] font-medium text-sea">
-                    Open evidence detail <span aria-hidden>→</span>
+                    Open evidence detail <span className="arrow" aria-hidden>→</span>
                   </span>
                 ) : (
                   <span className="text-[12px] text-ink/45">
@@ -173,11 +175,20 @@ export default function RadarBrowser({ rows, detailIds }: { rows: CandidateRow[]
           );
 
           return (
-            <li key={r.id}>
+            <li
+              key={r.id}
+              style={
+                reduced || idx > 14
+                  ? undefined
+                  : {
+                      animation: `ofr-rise 460ms cubic-bezier(.22,.61,.36,1) ${Math.min(idx, 14) * 35}ms both`,
+                    }
+              }
+            >
               {hasDetail ? (
                 <Link
                   href={`/radar/${r.id}/`}
-                  className="card block p-4 transition-colors hover:border-sea/50 hover:bg-sea-pale/20"
+                  className="card-interactive block rounded-lg border border-paper-line bg-paper-card p-4"
                 >
                   {inner}
                 </Link>

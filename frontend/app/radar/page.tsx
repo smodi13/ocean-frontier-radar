@@ -19,7 +19,7 @@ export default function RadarPage() {
           </>
         }
       />
-      <Section>
+      <Section reveal={false}>
         <div className="mb-6 rounded-md border-l-[3px] border-l-sea bg-sea-pale/40 px-5 py-4">
           <p className="body text-[14px]">
             <strong>Two kinds of row.</strong> Records that have been through analyst review open an

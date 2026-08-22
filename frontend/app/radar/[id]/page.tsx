@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { BackLink, Chip, Epistemic, PageHeader, Section } from '@/components/Primitives';
 import { EvidenceList } from '@/components/Evidence';
+import { RevealStagger } from '@/components/motion/Reveal';
 import {
   CATEGORY_LABEL, CENTRALITY_LABEL, QUEUE_LABEL, detailIds, getCandidate,
 } from '@/lib/data';
@@ -93,7 +94,7 @@ export default async function CandidatePage({ params }: { params: Promise<{ id: 
               These organise evidence and allocate analyst attention. They are not an investment
               score and not a probability.
             </p>
-            <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+            <RevealStagger className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3" step={55}>
               {Object.entries(c.components).map(([dim, v]) => (
                 <div key={dim} className="card p-3">
                   <div className="flex items-baseline justify-between gap-2">
@@ -103,29 +104,29 @@ export default async function CandidatePage({ params }: { params: Promise<{ id: 
                   <p className="meta mt-1.5">{v.rationale}</p>
                 </div>
               ))}
-            </div>
+            </RevealStagger>
           </div>
         )}
       </Section>
 
       {(c.observed.length > 0 || c.inferred.length > 0 || c.unknown.length > 0) && (
-        <Section title="Observed, inferred, unknown" className="pt-0">
+        <Section title="Observed, inferred, unknown" className="pt-0" reveal={false}>
           <p className="meta mb-4 max-w-prose">
             The project keeps source-supported facts structurally separate from analyst
             interpretation and from open questions. The database enforces it: an “observed”
             statement cannot be stored without citing an evidence record.
           </p>
-          <div className="space-y-3">
+          <RevealStagger className="space-y-3" step={130}>
             <Epistemic kind="observed" items={c.observed} />
             <Epistemic kind="inferred" items={c.inferred} />
             <Epistemic kind="unknown" items={c.unknown} />
-          </div>
+          </RevealStagger>
         </Section>
       )}
 
       {(c.technicalKill.length > 0 || c.commercialKill.length > 0 || c.mustBeTrue.length > 0) && (
-        <Section title="Diligence questions" className="pt-0">
-          <div className="grid gap-3 lg:grid-cols-3">
+        <Section title="Diligence questions" className="pt-0" reveal={false}>
+          <RevealStagger className="grid gap-3 lg:grid-cols-3" step={90}>
             {c.mustBeTrue.length > 0 && (
               <div className="card p-4">
                 <h3 className="h3 mb-2 text-[14px]">What must be true</h3>
@@ -144,7 +145,7 @@ export default async function CandidatePage({ params }: { params: Promise<{ id: 
                 <ul className="space-y-2">{c.commercialKill.map((t, i) => <li key={i} className="body text-[13.5px]">{t}</li>)}</ul>
               </div>
             )}
-          </div>
+          </RevealStagger>
         </Section>
       )}
 

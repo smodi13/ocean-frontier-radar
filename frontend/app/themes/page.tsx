@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { Callout, Chip, PageHeader, Section } from '@/components/Primitives';
+import { Reveal } from '@/components/motion/Reveal';
+import { Counter } from '@/components/motion/Counter';
 import { themes } from '@/lib/data';
 
 export const metadata = { title: 'Themes · Ocean Frontier Radar' };
@@ -30,12 +32,13 @@ export default function ThemesPage() {
 
       <div className="wrap space-y-4 pb-16">
         {themes.map((t) => (
-          <section key={t.id} id={t.id} className="card scroll-mt-20 p-6 sm:p-8">
+          <Reveal key={t.id}>
+          <section id={t.id} className="card scroll-mt-20 p-6 sm:p-8">
             <div className="flex flex-wrap items-start justify-between gap-4">
               <h2 className="h2 text-[22px]">{t.label}</h2>
               <div className="flex gap-1.5">
-                <Chip tone="sea">{t.candidateCount} candidates</Chip>
-                {t.frontierCount > 0 && <Chip>{t.frontierCount} pre-company</Chip>}
+                <Chip tone="sea"><Counter value={t.candidateCount} /> candidates</Chip>
+                {t.frontierCount > 0 && <Chip><Counter value={t.frontierCount} /> pre-company</Chip>}
               </div>
             </div>
 
@@ -68,7 +71,10 @@ export default function ThemesPage() {
                 <ul className="flex flex-wrap gap-2">
                   {t.examples.map((e) => (
                     <li key={e.id}>
-                      <Link href={`/radar/${e.id}/`} className="card block px-3 py-2 text-[13px] hover:border-sea/40">
+                      <Link
+                        href={`/radar/${e.id}/`}
+                        className="card-interactive block rounded-lg border border-paper-line bg-paper-card px-3 py-2 text-[13px]"
+                      >
                         <span className="font-medium">{e.name}</span>
                         {e.institution && <span className="text-ink/50"> · {e.institution}</span>}
                       </Link>
@@ -93,6 +99,7 @@ export default function ThemesPage() {
               </div>
             )}
           </section>
+          </Reveal>
         ))}
       </div>
     </>

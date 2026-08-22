@@ -1,7 +1,22 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import { fmtMoney } from '@/lib/data';
+import { fmtMoney } from '@/lib/labels';
+import { usePrefersReducedMotion, useTweenedNumber } from '@/lib/motion';
+
+/**
+ * Money that eases between scenarios rather than jumping. The point is to make
+ * the *size of the change* legible when the reader switches bear/base/bull —
+ * the displayed value is always the real computed figure once the tween lands.
+ */
+function Money({ value, className = '' }: { value: number; className?: string }) {
+  const shown = useTweenedNumber(value, 520);
+  return (
+    <span className={`font-mono tabular-nums ${className}`} aria-label={fmtMoney(value)}>
+      <span aria-hidden>{fmtMoney(shown)}</span>
+    </span>
+  );
+}
 
 interface Assumption {
   driver: string; bear: number; base: number; bull: number; type: string; note: string;
@@ -27,6 +42,7 @@ type Scenario = 'bear' | 'base' | 'bull';
 
 export default function ScenarioModel({ assumptions }: { assumptions: Assumption[] }) {
   const [scenario, setScenario] = useState<Scenario>('base');
+  const reduced = usePrefersReducedMotion();
   const by = useMemo(
     () => Object.fromEntries(assumptions.map((a) => [a.driver, a])) as Record<string, Assumption>,
     [assumptions],
@@ -55,7 +71,8 @@ export default function ScenarioModel({ assumptions }: { assumptions: Assumption
           <button
             key={s}
             onClick={() => setScenario(s)}
-            className={`rounded border px-3 py-1.5 text-[13px] font-medium capitalize ${
+            aria-pressed={scenario === s}
+            className={`rounded border px-3 py-1.5 text-[13px] font-medium capitalize transition-colors duration-200 ${
               scenario === s
                 ? 'border-sea bg-sea text-white'
                 : 'border-paper-line bg-white text-ink/70 hover:border-sea/40'
@@ -77,20 +94,20 @@ export default function ScenarioModel({ assumptions }: { assumptions: Assumption
               {lines.map(([label, val]) => (
                 <tr key={label} className="border-b border-paper-line/70 last:border-0">
                   <td className="py-1.5 text-ink/75">{label}</td>
-                  <td className="py-1.5 text-right font-mono tabular-nums">{fmtMoney(val)}</td>
+                  <td className="py-1.5 text-right"><Money value={val} /></td>
                 </tr>
               ))}
               <tr className="border-t-2 border-paper-line font-semibold">
                 <td className="py-2">Total revenue</td>
-                <td className="py-2 text-right font-mono tabular-nums text-sea-deep">{fmtMoney(revenue)}</td>
+                <td className="py-2 text-right"><Money value={revenue} className="text-sea-deep" /></td>
               </tr>
               <tr><td className="py-1.5 text-ink/75">Gross profit</td>
-                  <td className="py-1.5 text-right font-mono tabular-nums">{fmtMoney(gross)}</td></tr>
+                  <td className="py-1.5 text-right"><Money value={gross} /></td></tr>
               <tr><td className="py-1.5 text-ink/75">Operating cost</td>
-                  <td className="py-1.5 text-right font-mono tabular-nums">({fmtMoney(opex)})</td></tr>
+                  <td className="py-1.5 text-right font-mono tabular-nums">(<Money value={opex} />)</td></tr>
               <tr className="border-t border-paper-line font-medium">
                 <td className="py-1.5">Operating profit</td>
-                <td className="py-1.5 text-right font-mono tabular-nums">{fmtMoney(gross - opex)}</td>
+                <td className="py-1.5 text-right"><Money value={gross - opex} /></td>
               </tr>
             </tbody>
           </table>
@@ -102,10 +119,16 @@ export default function ScenarioModel({ assumptions }: { assumptions: Assumption
             <div>
               <div className="flex items-baseline justify-between text-[13.5px]">
                 <span className="text-ink/75">Revenue</span>
-                <span className="mono">{fmtMoney(revenue)}</span>
+                <Money value={revenue} className="text-[13px]" />
               </div>
               <div className="mt-1 h-3 w-full overflow-hidden rounded-sm bg-paper-line">
-                <div className="h-full bg-sea" style={{ width: `${Math.min(100, (revenue / threshold) * 100)}%` }} />
+                <div
+                  className="h-full bg-sea"
+                  style={{
+                    width: `${Math.min(100, (revenue / threshold) * 100)}%`,
+                    transition: reduced ? 'none' : 'width 560ms cubic-bezier(.22,.61,.36,1)',
+                  }}
+                />
               </div>
               <div className="meta mt-1">Reference threshold {fmtMoney(threshold)}</div>
             </div>
@@ -132,7 +155,9 @@ export default function ScenarioModel({ assumptions }: { assumptions: Assumption
         <summary className="cursor-pointer text-[14px] font-medium">
           All model inputs ({assumptions.length}) — every assumption labelled
         </summary>
-        <table className="mt-4 w-full text-[13px]">
+        {/* Five numeric columns need to scroll on a phone rather than widen the page. */}
+        <div className="mt-4 overflow-x-auto">
+        <table className="w-full min-w-[560px] text-[13px]">
           <thead>
             <tr className="border-b border-paper-line text-left text-[11px] uppercase tracking-wide text-ink/50">
               <th className="py-2 pr-3 font-medium">Driver</th>
@@ -161,6 +186,7 @@ export default function ScenarioModel({ assumptions }: { assumptions: Assumption
             ))}
           </tbody>
         </table>
+        </div>
       </details>
     </div>
   );

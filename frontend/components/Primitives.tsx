@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
+import { Reveal } from '@/components/motion/Reveal';
 
 export function PageHeader({
   eyebrow, title, lede, children,
@@ -16,19 +17,33 @@ export function PageHeader({
   );
 }
 
+/**
+ * Sections reveal as a single block on scroll. Doing it here rather than at each
+ * call site keeps the rhythm identical across every page, and keeps the reveal
+ * at the level of a whole argument rather than a sentence.
+ * `reveal={false}` opts out where a section is already animated internally.
+ */
 export function Section({
-  id, title, kicker, children, className = '',
-}: { id?: string; title?: string; kicker?: string; children: ReactNode; className?: string }) {
-  return (
-    <section id={id} className={`wrap py-12 sm:py-16 ${className}`}>
+  id, title, kicker, children, className = '', reveal = true,
+}: {
+  id?: string; title?: string; kicker?: string; children: ReactNode;
+  className?: string; reveal?: boolean;
+}) {
+  const inner = (
+    <>
       {kicker && <p className="eyebrow mb-2">{kicker}</p>}
       {title && <h2 className="h2 mb-6">{title}</h2>}
       {children}
+    </>
+  );
+  return (
+    <section id={id} className={`wrap py-12 sm:py-16 ${className}`}>
+      {reveal ? <Reveal>{inner}</Reveal> : inner}
     </section>
   );
 }
 
-export function Stat({ value, label, hint }: { value: string; label: string; hint?: string }) {
+export function Stat({ value, label, hint }: { value: ReactNode; label: string; hint?: string }) {
   return (
     <div className="card p-4">
       <div className="stat-n text-sea-deep">{value}</div>
