@@ -3,6 +3,7 @@
 
 **Prepared:** 2026-08-21 · **Analyst:** outside-in, public sources only · All sources accessed 2026-08-21
 **Evidence register:** `research/armada/evidence_register.csv` (45 claims) · **Model:** `models/armada_underwriting.xlsx`
+**Phase 3 commit:** `bfd57afa4d48ee787b08210ff25441c6513b7773` (`bfd57af`)
 
 ---
 
