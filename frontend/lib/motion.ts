@@ -43,29 +43,67 @@ export function useInView<T extends HTMLElement>(
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+
+    let raf = 0;
+    let done = false;
+    const reveal = () => {
+      if (done) return;
+      done = true;
+      setInView(true);
+      cleanup();
+    };
+    const visible = () => {
+      // `top < innerHeight` is true both for an element on screen and for one
+      // the reader has already scrolled past. Only content still below the
+      // fold stays hidden — an element that has gone by must never be stuck
+      // mid-fade. (IntersectionObserver cannot cover this on its own: it
+      // reports threshold crossings, and a jump from "below the fold" to
+      // "above the fold" never changes isIntersecting, so it never fires.)
+      return el.getBoundingClientRect().top < window.innerHeight;
+    };
+
+    // A fast flick or a programmatic jump can move the page further in one
+    // frame than the observer samples, which would strand a block at opacity 0
+    // permanently. This position check is the guarantee; the observer is the
+    // thing that gets the trigger point right in normal use.
+    const onScroll = () => {
+      if (raf || done) return;
+      raf = requestAnimationFrame(() => {
+        raf = 0;
+        if (visible()) reveal();
+      });
+    };
+
+    let io: IntersectionObserver | null = null;
+    const cleanup = () => {
+      if (raf) cancelAnimationFrame(raf);
+      window.removeEventListener('scroll', onScroll);
+      io?.disconnect();
+    };
+
     if (typeof IntersectionObserver === 'undefined') {
       // Very old browsers: reveal on the next frame rather than synchronously,
       // so the effect never triggers a cascading render.
-      const raf = requestAnimationFrame(() => setInView(true));
-      return () => cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(reveal);
+      return cleanup;
     }
-    const io = new IntersectionObserver(
+
+    io = new IntersectionObserver(
       (entries) => {
         for (const e of entries) {
           // `bottom <= 0` means the element is already above the viewport: the
-          // reader arrived below it via an anchor link, a restored scroll
-          // position or a jump-scroll that outran the observer. Content that
-          // has been scrolled past must be visible, not stuck mid-fade.
-          if (e.isIntersecting || e.boundingClientRect.bottom <= 0) {
-            setInView(true);
-            io.disconnect();   // reveal once; never re-trigger on scroll
-          }
+          // reader arrived below it via an anchor link or a restored scroll
+          // position. Content that has been scrolled past must be visible,
+          // not stuck mid-fade.
+          if (e.isIntersecting || e.boundingClientRect.bottom <= 0) reveal();
         }
       },
       { rootMargin, threshold },
     );
     io.observe(el);
-    return () => io.disconnect();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    return cleanup;
   }, [rootMargin, threshold]);
 
   return [ref, inView];
