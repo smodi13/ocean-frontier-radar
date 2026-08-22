@@ -20,6 +20,15 @@ export default function RadarPage() {
         }
       />
       <Section>
+        <div className="mb-6 rounded-md border-l-[3px] border-l-sea bg-sea-pale/40 px-5 py-4">
+          <p className="body text-[14px]">
+            <strong>Two kinds of row.</strong> Records that have been through analyst review open an
+            evidence detail page. Tier B (<em>research queue</em>) and Tier C (<em>watch</em>) records
+            are shown with a dashed border and do not link anywhere — they have been surfaced and
+            classified, but no diligence has been done on them. Nothing here creates the appearance
+            of analysis that does not exist.
+          </p>
+        </div>
         <RadarBrowser rows={candidates} detailIds={detailIds()} />
       </Section>
     </>

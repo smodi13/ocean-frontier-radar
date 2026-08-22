@@ -119,11 +119,18 @@ export default function RadarBrowser({ rows, detailIds }: { rows: CandidateRow[]
 
       <ul className="mt-4 space-y-2">
         {filtered.slice(0, 250).map((r) => {
+          const hasDetail = linkable.has(r.id);
+          const queueNote =
+            r.queue === 'tier_b' ? 'Research queue' :
+            r.queue === 'tier_c' ? 'Watch' : null;
+
           const inner = (
             <>
               <div className="flex flex-wrap items-start justify-between gap-3">
                 <div className="min-w-0">
-                  <div className="text-[15px] font-semibold leading-snug">{r.name}</div>
+                  <div className={`text-[15px] font-semibold leading-snug ${hasDetail ? '' : 'text-ink/75'}`}>
+                    {r.name}
+                  </div>
                   <div className="meta mt-0.5">
                     {[r.institution, r.geography].filter(Boolean).join(' · ') || '—'}
                   </div>
@@ -148,14 +155,39 @@ export default function RadarBrowser({ rows, detailIds }: { rows: CandidateRow[]
                   <span key={f} className="chip chip-rust">{f.replace(/_/g, ' ').toLowerCase()}</span>
                 ))}
               </div>
+
+              {/* Affordance: linkable rows say so; queue records say why they are not. */}
+              <div className="mt-3 border-t border-paper-line/70 pt-2.5">
+                {hasDetail ? (
+                  <span className="text-[12.5px] font-medium text-sea">
+                    Open evidence detail <span aria-hidden>→</span>
+                  </span>
+                ) : (
+                  <span className="text-[12px] text-ink/45">
+                    {queueNote ?? 'Queue record'} — surfaced and classified, no diligence page.
+                    Detail pages exist only where analyst review has been done.
+                  </span>
+                )}
+              </div>
             </>
           );
+
           return (
             <li key={r.id}>
-              {linkable.has(r.id) ? (
-                <Link href={`/radar/${r.id}/`} className="card block p-4 hover:border-sea/40">{inner}</Link>
+              {hasDetail ? (
+                <Link
+                  href={`/radar/${r.id}/`}
+                  className="card block p-4 transition-colors hover:border-sea/50 hover:bg-sea-pale/20"
+                >
+                  {inner}
+                </Link>
               ) : (
-                <div className="card p-4">{inner}</div>
+                <div
+                  className="rounded-lg border border-dashed border-paper-line bg-paper/60 p-4 cursor-default"
+                  aria-disabled="true"
+                >
+                  {inner}
+                </div>
               )}
             </li>
           );

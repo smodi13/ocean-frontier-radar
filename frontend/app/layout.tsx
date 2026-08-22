@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { INDEPENDENCE_DISCLAIMER, REPO_URL } from '@/lib/site';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -48,12 +49,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <footer className="mt-20 border-t border-paper-line bg-white">
           <div className="wrap py-10">
-            <p className="meta max-w-prose">
-              Independent outside-in research project. Not affiliated with Propeller or with any
-              company researched. Built entirely from public information. Not investment advice.
-            </p>
-            <p className="meta mt-3">
-              <Link href="/methodology/" className="link">Methodology, limitations and AI disclosure</Link>
+            <p className="meta max-w-prose">{INDEPENDENCE_DISCLAIMER}</p>
+            <p className="meta mt-3 flex flex-wrap items-center gap-x-4 gap-y-1">
+              <Link href="/methodology/" className="link">
+                Methodology, limitations and AI disclosure
+              </Link>
+              <a href={REPO_URL} target="_blank" rel="noopener noreferrer" className="link">
+                Source code on GitHub
+              </a>
             </p>
           </div>
         </footer>

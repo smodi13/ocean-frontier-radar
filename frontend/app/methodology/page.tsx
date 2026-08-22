@@ -1,5 +1,9 @@
 import { Callout, PageHeader, Section, Stat } from '@/components/Primitives';
 import { fmtNum, summary } from '@/lib/data';
+import {
+  AI_DISCLOSURE, AI_DISCLOSURE_CAVEAT, AI_DISCLOSURE_POINTS,
+  INDEPENDENCE_DISCLAIMER, REPO_URL,
+} from '@/lib/site';
 
 export const metadata = { title: 'Methodology · Ocean Frontier Radar' };
 
@@ -135,20 +139,33 @@ export default function MethodologyPage() {
 
       <Section title="About and disclosure" className="pt-0">
         <div className="card max-w-prose p-6">
+          <h3 className="h3 mb-2 text-[14px]">Independent project</h3>
+          <p className="body">{INDEPENDENCE_DISCLAIMER}</p>
+
+          <h3 className="h3 mb-2 mt-6 text-[14px]">AI use</h3>
+          {AI_DISCLOSURE.map((para) => (
+            <p key={para} className="body mt-2 first:mt-0">{para}</p>
+          ))}
+          <ul className="mt-3 space-y-2">
+            {AI_DISCLOSURE_POINTS.map((point) => (
+              <li key={point} className="body flex gap-2.5 text-[14px]">
+                <span aria-hidden className="mt-2 h-1 w-1 shrink-0 rounded-full bg-sea/60" />
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="meta mt-4">{AI_DISCLOSURE_CAVEAT}</p>
+
+          <h3 className="h3 mb-2 mt-6 text-[14px]">Source code</h3>
           <p className="body">
-            This is an independent outside-in research project. It is not affiliated with Propeller,
-            and not affiliated with any company researched. It uses public information only and is
-            not investment advice.
+            The research pipeline, the export layer and this interface are open for inspection:{' '}
+            <a href={REPO_URL} target="_blank" rel="noopener noreferrer" className="link">
+              github.com/ocean-frontier-radar
+            </a>
+            . Every figure on this site is generated from committed research artifacts.
           </p>
-          <h3 className="h3 mt-5 mb-2 text-[14px]">AI disclosure</h3>
-          <p className="body">
-            AI tools were used to assist with software development, structured extraction and
-            research workflows. Material claims were retained with source traceability and
-            analyst-reviewed before inclusion. AI did not independently make investment decisions,
-            and machine-generated classification is stored separately from source evidence so the
-            two can never be confused.
-          </p>
-          <p className="meta mt-4">
+
+          <p className="meta mt-6">
             Data generated {summary.generatedAt.slice(0, 10)} from committed research outputs.
           </p>
         </div>

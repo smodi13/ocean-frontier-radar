@@ -39,8 +39,8 @@ export default function Home() {
                 hint="Federal award and procurement records scanned across all ingestion runs" />
           <Stat value={fmtNum(s.candidates)} label="Candidates retrieved"
                 hint="Records that passed retrieval and classification" />
-          <Stat value={fmtNum(s.actionableUniverse)} label="Actionable universe"
-                hint="Tier A + Tier B + Frontier" />
+          <Stat value={fmtNum(s.actionableUniverse)} label="In active research queues"
+                hint="Tier A + Tier B + Frontier. Records warranting analyst time — not investment recommendations." />
           <Stat value={fmtNum(s.institutions)} label="Institutions represented" />
           <Stat value={fmtNum(s.tierA)} label="Tier A — diligence now" />
           <Stat value={fmtNum(s.tierB)} label="Tier B — research queue" />
