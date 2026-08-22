@@ -1,0 +1,971 @@
+{
+ "theme": "maritime_autonomy",
+ "caveat": "Observed federal contract value in a keyword-derived sample. NOT a market size estimate, NOT a TAM. Excludes classified programmes, non-federal and non-US buyers entirely.",
+ "n_contracts": 87,
+ "total_observed": 244757930.51,
+ "year_span": {
+  "first": "2014",
+  "last": "2026",
+  "years": 13
+ },
+ "buckets": {
+  "rnd_program": {
+   "n": 13,
+   "value": 69037937.3,
+   "annualised": 5310610.56,
+   "reason": "Funded R&D. Relevant as demand signal; not a repeatable product line item."
+  },
+  "integration_prime": {
+   "n": 3,
+   "value": 65732962.29,
+   "annualised": 5056381.71,
+   "reason": "Prime/system-integration work; a subsystem vendor would sell into this, not win it."
+  },
+  "platform_purchase": {
+   "n": 35,
+   "value": 60262183.2,
+   "annualised": 4635552.55,
+   "reason": "Purchase or lease of a complete vehicle."
+  },
+  "services_support": {
+   "n": 10,
+   "value": 19530635.8,
+   "annualised": 1502356.6,
+   "reason": "Services, sustainment or evaluation labour, not hardware procurement."
+  },
+  "components_spares": {
+   "n": 11,
+   "value": 9624112.76,
+   "annualised": 740316.37,
+   "reason": "Component, spares and consumable hardware \u2014 the propulsion-subsystem slice."
+  },
+  "sensors_payload_dev": {
+   "n": 6,
+   "value": 9575984.77,
+   "annualised": 736614.21,
+   "reason": "Sensor or comms payload procurement \u2014 what an EPADS pod would carry."
+  },
+  "excluded_facilities": {
+   "n": 1,
+   "value": 8756246.0,
+   "annualised": 673557.38,
+   "reason": "Military construction. A building is not an addressable UUV market."
+  },
+  "payload_deployment": {
+   "n": 4,
+   "value": 1116089.65,
+   "annualised": 85853.05,
+   "reason": "Payload carriage or deployment hardware \u2014 the EPADS-relevant slice."
+  },
+  "launch_recovery": {
+   "n": 3,
+   "value": 958663.9,
+   "annualised": 73743.38,
+   "reason": "Launch-and-recovery hardware \u2014 adjacent to, but not, propulsion or payload."
+  },
+  "excluded_counter_uuv": {
+   "n": 1,
+   "value": 163114.84,
+   "annualised": 12547.3,
+   "reason": "Counter-UUV mission, i.e. defeating vehicles rather than buying them."
+  }
+ },
+ "excluded_as_false_comparables": {
+  "n": 2,
+  "value": 8919360.84,
+  "buckets": [
+   "excluded_facilities",
+   "excluded_counter_uuv"
+  ]
+ },
+ "narrow_addressable": {
+  "definition": "Components/spares plus payload-deployment hardware \u2014 line items a propulsion or payload subsystem vendor could plausibly win directly.",
+  "n": 15,
+  "value": 10740202.41,
+  "annualised": 826169.42
+ },
+ "broad_adjacency": {
+  "definition": "Narrow plus complete-vehicle purchases, sensor/comms payloads and launch-and-recovery \u2014 reachable only by selling through OEMs or expanding scope.",
+  "n": 59,
+  "value": 81537034.28,
+  "annualised": 6272079.56
+ },
+ "platform_embedded_case": {
+  "assumption": "ANALYST ASSUMPTION (not sourced): propulsion/control is 10% of complete-vehicle contract value.",
+  "platform_value_observed": 60262183.2,
+  "implied_subsystem_value": 6026218.32,
+  "implied_annualised": 463555.26
+ },
+ "records": [
+  {
+   "award_id": "N6600120C0025",
+   "recipient": "ARETE ASSOCIATES",
+   "agency": "Department of the Navy",
+   "amount": 41620236.37,
+   "start_date": "2020-08-24",
+   "bucket": "integration_prime",
+   "reason": "Prime/system-integration work; a subsystem vendor would sell into this, not win it.",
+   "description": "INTEGRATION SERVICES SUPPORTING INCREMENTAL UPGRADES, BLOCK UPGRADES, AND FUTURE GENERATIONS OF MK 18 FAMILY OF SYSTEMS UNMANNED UNDERWATER VEHICLES (UUVS), ADD"
+  },
+  {
+   "award_id": "HR001118C0026",
+   "recipient": "NORTHROP GRUMMAN SYSTEMS CORPORATION",
+   "agency": "Defense Contract Management Agency",
+   "amount": 24809969.51,
+   "start_date": "2017-12-06",
+   "bucket": "rnd_program",
+   "reason": "Funded R&D. Relevant as demand signal; not a repeatable product line item.",
+   "description": "HUNTER PROGRAM SEEKS TO DEVELOP AN INNOVATIVE CONCEPT FOR THE DELIVERY OF ADVANCED UNDERSEA PAYLOADS FROM EXTRA-LARGE UNMANNED UNDERWATER VEHICLES (XLUUVS). - P"
+  },
+  {
+   "award_id": "W58RGZ19F0500",
+   "recipient": "DEFENSE SYSTEMS AND SOLUTIONS",
+   "agency": "Department of the Army",
+   "amount": 22587951.92,
+   "start_date": "2019-09-17",
+   "bucket": "integration_prime",
+   "reason": "Prime/system-integration work; a subsystem vendor would sell into this, not win it.",
+   "description": "BUILD&INTEGRATE AUTONOMOUS UNDERWATER VEHICLE SYSTEM COMPONENTS FOR THE NEXT GENERATION MARK 18 FAMILY REMUS 600 AUV."
+  },
+  {
+   "award_id": "N0002422F8503",
+   "recipient": "UNIVERSITY OF TEXAS AT AUSTIN",
+   "agency": "Department of the Navy",
+   "amount": 15768820.0,
+   "start_date": "2022-03-10",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "ARL/UT - FY2017- FY2022 REQUIREMENTS - MEDIUM UNMANNED UNDERWATER VEHICLE (UUV) CAPABILITIES PACKAGE DEVELOPMENT"
+  },
+  {
+   "award_id": "FD01",
+   "recipient": "DELPHINUS ENGINEERING, INC.",
+   "agency": "Department of the Navy",
+   "amount": 12455401.23,
+   "start_date": "2016-05-09",
+   "bucket": "services_support",
+   "reason": "Services, sustainment or evaluation labour, not hardware procurement.",
+   "description": "IGF::CT::IGF  THE CONTRACTOR SHALL PROVIDE SCIENTIFIC, TECHNICAL, PROGRAMMATIC, AND ENGINEERING SERVICES IN THE DEVELOPMENT, TEST AND EVALUATION OF MARINE MATER"
+  },
+  {
+   "award_id": "N0001419C2015",
+   "recipient": "SEEMANN COMPOSITES, LLC",
+   "agency": "Department of the Navy",
+   "amount": 9125520.0,
+   "start_date": "2019-02-26",
+   "bucket": "rnd_program",
+   "reason": "Funded R&D. Relevant as demand signal; not a repeatable product line item.",
+   "description": "TECHNOLOGY IMPROVEMENTS FOR UNMANNED UNDERWATER VEHICLES"
+  },
+  {
+   "award_id": "N0002422F8584",
+   "recipient": "UNIVERSITY OF TEXAS AT AUSTIN",
+   "agency": "Department of the Navy",
+   "amount": 8900000.0,
+   "start_date": "2022-09-19",
+   "bucket": "rnd_program",
+   "reason": "Funded R&D. Relevant as demand signal; not a repeatable product line item.",
+   "description": "UNMANNED UNDERWATER VEHICLE OPERATIONAL DEMONSTRATION"
+  },
+  {
+   "award_id": "N4008519F7158",
+   "recipient": "ASTURIAN GROUP, INC.",
+   "agency": "Department of the Navy",
+   "amount": 8756246.0,
+   "start_date": "2019-09-28",
+   "bucket": "excluded_facilities",
+   "reason": "Military construction. A building is not an addressable UUV market.",
+   "description": "X099 DESIGN-BUILD BUILDING 1371, AUTONOMOUS UNDERWATER VEHICLE AD"
+  },
+  {
+   "award_id": "N0017320C2007",
+   "recipient": "GENERAL DYNAMICS MISSION SYSTEMS, INC.",
+   "agency": "Department of the Navy",
+   "amount": 8337452.2,
+   "start_date": "2020-01-28",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "MODIFICATION, PRODUCTION, MAINTENANCE AND AT SEA OPERATIONAL SUPPORT OF NAVAL RESEARCH LABORATORY'S AUTONOMOUS UNDERWATER VEHICLES."
+  },
+  {
+   "award_id": "N0017314C6002",
+   "recipient": "GENERAL DYNAMICS MISSION SYSTEMS, INC.",
+   "agency": "Defense Contract Management Agency",
+   "amount": 8287633.35,
+   "start_date": "2014-01-22",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "IGF::OT::IGF  71-3021-13 BLACK PEARL AUTONOMOUS UNDERWATER VEHICLE"
+  },
+  {
+   "award_id": "N0001419C2066",
+   "recipient": "METRON INCORPORATED",
+   "agency": "Department of the Navy",
+   "amount": 7244613.0,
+   "start_date": "2019-09-13",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "THE NAVY IS CONSIDERING USING AUTONOMOUS UNMANNED UNDERWATER VEHICLES (UUV) FOR MANY MISSIONS CURRENTLY BEING PERFORMED BY MANNED PLATFORMS. IN ORDER TO PERFORM"
+  },
+  {
+   "award_id": "N0001419C2070",
+   "recipient": "HADAL, INC",
+   "agency": "Department of the Navy",
+   "amount": 6455282.03,
+   "start_date": "2019-08-22",
+   "bucket": "rnd_program",
+   "reason": "Funded R&D. Relevant as demand signal; not a repeatable product line item.",
+   "description": "THIS ACTION IS TO INVESTIGATE MATERIALS AND APPROACHES TO DEVELOP A LOW-COST PRESSURE VESSEL TECHNOLOGY FOR AUTONOMOUS UNDERWATER VEHICLES."
+  },
+  {
+   "award_id": "N0002420F8558",
+   "recipient": "UNIVERSITY OF TEXAS AT AUSTIN",
+   "agency": "Department of the Navy",
+   "amount": 6085049.15,
+   "start_date": "2020-09-16",
+   "bucket": "rnd_program",
+   "reason": "Funded R&D. Relevant as demand signal; not a repeatable product line item.",
+   "description": "UNMANNED UNDERWATER VEHICLE (UUV) SENSOR PACKAGE DEVELOPMENT"
+  },
+  {
+   "award_id": "N6660425P0618",
+   "recipient": "C2 ROBOTICS PTY LTD",
+   "agency": "Department of the Navy",
+   "amount": 5100000.0,
+   "start_date": "2025-09-09",
+   "bucket": "components_spares",
+   "reason": "Component, spares and consumable hardware \u2014 the propulsion-subsystem slice.",
+   "description": "SPEARTOOTH LARGE UNMANNED UNDERWATER VEHICLES, SPARES KITS, BATTERY PACKS."
+  },
+  {
+   "award_id": "HR001121C0150",
+   "recipient": "NORTHROP GRUMMAN SYSTEMS CORPORATION",
+   "agency": "Defense Advanced Research Projects Agency",
+   "amount": 4887185.36,
+   "start_date": "2021-07-30",
+   "bucket": "rnd_program",
+   "reason": "Funded R&D. Relevant as demand signal; not a repeatable product line item.",
+   "description": "HUNTER PHASE 2, HUNTER PROGRAM SEEKS TO DEVELOP AN INNOVATIVE CONCEPT FOR THE DELIVERY OF ADVANCED UNDERSEA PAYLOADS FROM EXTRA-LARGE UNMANNED UNDERWATER VEHICL"
+  },
+  {
+   "award_id": "N0001416C3043",
+   "recipient": "METRON INCORPORATED",
+   "agency": "Department of the Navy",
+   "amount": 4871922.88,
+   "start_date": "2016-04-07",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "IGF::CT::IGF UNMANNED UNDERWATER VEHICLE (UUV) MISSION PLANNING, ENVIRONMENTAL, AND C4ISR SOFTWARE DEVELOPMENT"
+  },
+  {
+   "award_id": "N0001424C2209",
+   "recipient": "WOODS HOLE OCEANOGRAPHIC INSTITUTION",
+   "agency": "Department of the Navy",
+   "amount": 4739864.49,
+   "start_date": "2024-03-04",
+   "bucket": "rnd_program",
+   "reason": "Funded R&D. Relevant as demand signal; not a repeatable product line item.",
+   "description": "DEVELOPMENT, INTEGRATION, TEST AND DEMONSTRATION OF NEXT GENERATION AUTONOMOUS UNDERWATER VEHICLE SENSORS AND CAPABILITIES"
+  },
+  {
+   "award_id": "N0002425F8503",
+   "recipient": "UNIVERSITY OF TEXAS AT AUSTIN",
+   "agency": "Department of the Navy",
+   "amount": 4190500.0,
+   "start_date": "2024-12-20",
+   "bucket": "sensors_payload_dev",
+   "reason": "Sensor or comms payload procurement \u2014 what an EPADS pod would carry.",
+   "description": "SMALL UNMANNED UNDERWATER VEHICLE SENSOR SYSTEM CONFIGURATION"
+  },
+  {
+   "award_id": "N0002423F8575",
+   "recipient": "UNIVERSITY OF TEXAS AT AUSTIN",
+   "agency": "Department of the Navy",
+   "amount": 3000000.0,
+   "start_date": "2023-09-20",
+   "bucket": "sensors_payload_dev",
+   "reason": "Sensor or comms payload procurement \u2014 what an EPADS pod would carry.",
+   "description": "SMALL UNMANNED UNDERWATER VEHICLE (SUUV) SENSOR PACKAGE"
+  },
+  {
+   "award_id": "N6133125F0129",
+   "recipient": "HII UNMANNED SYSTEMS, INC",
+   "agency": "Department of the Navy",
+   "amount": 2579436.0,
+   "start_date": "2025-08-11",
+   "bucket": "services_support",
+   "reason": "Services, sustainment or evaluation labour, not hardware procurement.",
+   "description": "SERVICES FOR TROUBLESHOOTING, MAINTENANCE, REPAIR, OPERATIONAL, TECHNICAL AND DEPOT LEVEL SUPPORT FOR THE MK18 UNMANNED UNDERWATER VEHICLE FAMILY OF SYSTEMS PER"
+  },
+  {
+   "award_id": "N0001417C7026",
+   "recipient": "WOODS HOLE OCEANOGRAPHIC INSTITUTION",
+   "agency": "Department of the Navy",
+   "amount": 2412683.76,
+   "start_date": "2017-04-04",
+   "bucket": "rnd_program",
+   "reason": "Funded R&D. Relevant as demand signal; not a repeatable product line item.",
+   "description": "IGF::CL::IGF DEVELOPMENT AND DEMONSTRATION OF AUTONOMOUS UNDERWATER VEHICLE ADVANCED SENSOR AND OPERATIONAL CAPABILITIES"
+  },
+  {
+   "award_id": "N6133125C0004",
+   "recipient": "WOODS HOLE OCEANOGRAPHIC INSTITUTION",
+   "agency": "Department of the Navy",
+   "amount": 1989267.0,
+   "start_date": "2025-08-21",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "AN ACQUISITION OF A WHOI GEN 2 REMOTE ENVIRONMENTAL MONITORING UNITS (REMUS) 600 AUTONOMOUS UNDERWATER VEHICLE (AUV)."
+  },
+  {
+   "award_id": "N0001415C5080",
+   "recipient": "WOODS HOLE OCEANOGRAPHIC INSTITUTION",
+   "agency": "Department of the Navy",
+   "amount": 1824542.58,
+   "start_date": "2015-06-10",
+   "bucket": "sensors_payload_dev",
+   "reason": "Sensor or comms payload procurement \u2014 what an EPADS pod would carry.",
+   "description": "IGF::CT::IGF ACOUSTIC COMMUNICATION&NAVIGATION FOR UNMANNED UNDERWATER VEHICLE (UUV) APPLICATIONS"
+  },
+  {
+   "award_id": "N3943025P0001",
+   "recipient": "TELEDYNE INSTRUMENTS, INC.",
+   "agency": "Department of the Navy",
+   "amount": 1753328.0,
+   "start_date": "2025-07-08",
+   "bucket": "components_spares",
+   "reason": "Component, spares and consumable hardware \u2014 the propulsion-subsystem slice.",
+   "description": "THE REQUIREMENT IS TO PROCURE SPARE PARTS AND SOFTWARE MAINTENANCE FOR THE EXISTING AUTONOMOUS UNDERWATER VEHICLE OFFSHORE SURVEYOR TELEDYNE GAVIA."
+  },
+  {
+   "award_id": "1305M325C0006",
+   "recipient": "SAAB, INC",
+   "agency": "National Oceanic and Atmospheric Administration",
+   "amount": 1678904.0,
+   "start_date": "2025-09-19",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "LONG RANGE AUTONOMOUS UNDERWATER VEHICLE  IAW STATEMENT OF NEED AND SAAB PROPOSAL DATED 12/20/24"
+  },
+  {
+   "award_id": "W58RGZ25F0264",
+   "recipient": "DEFENSE SYSTEMS AND SOLUTIONS",
+   "agency": "Department of the Army",
+   "amount": 1524774.0,
+   "start_date": "2025-06-12",
+   "bucket": "integration_prime",
+   "reason": "Prime/system-integration work; a subsystem vendor would sell into this, not win it.",
+   "description": "MISSION SUPPORT EQUIPMENT (MSE) FOR THE LEGACY UUV (UNMANNED UNDERWATER VEHICLE) AND THE SMALL UNMANNED UNDERWATER VEHICLE (SUUV)."
+  },
+  {
+   "award_id": "N0002423F8597",
+   "recipient": "UNIVERSITY OF TEXAS AT AUSTIN",
+   "agency": "Department of the Navy",
+   "amount": 1400000.0,
+   "start_date": "2023-09-21",
+   "bucket": "services_support",
+   "reason": "Services, sustainment or evaluation labour, not hardware procurement.",
+   "description": "UNMANNED UNDERWATER VEHICLE TRAINING DEMONSTRATION"
+  },
+  {
+   "award_id": "140G0223C0013",
+   "recipient": "HII UNMANNED SYSTEMS, INC",
+   "agency": "U.S. Geological Survey",
+   "amount": 1259786.0,
+   "start_date": "2023-09-22",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "AUTONOMOUS UNDERWATER VEHICLE"
+  },
+  {
+   "award_id": "N0001415C5118",
+   "recipient": "APPLIED PHYSICAL SCIENCES CORP",
+   "agency": "Department of the Navy",
+   "amount": 1156152.94,
+   "start_date": "2015-09-30",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "IGF::CT::IGF  UNDERWATER ACOUSTIC TRACKING&COMMUNICATIONS FOR NEXTGEN UNMANNED UNDERWATER VEHICLES"
+  },
+  {
+   "award_id": "SPE8EL22FJ0CH",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 1150004.17,
+   "start_date": "2022-03-03",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "4556477365!R2500 UNMANNED UNDERWATER VEHICLE (UUV)"
+  },
+  {
+   "award_id": "N0002418F8059",
+   "recipient": "THE JOHNS HOPKINS UNIVERSITY APPLIED PHYSICS LABORATORY LLC",
+   "agency": "Defense Contract Management Agency",
+   "amount": 1130894.9,
+   "start_date": "2018-02-08",
+   "bucket": "services_support",
+   "reason": "Services, sustainment or evaluation labour, not hardware procurement.",
+   "description": "UNMANNED UNDERWATER VEHICLE INDEPENDENT EVALUATION"
+  },
+  {
+   "award_id": "SPE8EL23F1849",
+   "recipient": "ATLANTIC DIVING SUPPLY, INC.",
+   "agency": "Defense Logistics Agency",
+   "amount": 1063180.61,
+   "start_date": "2023-08-14",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "4561859995!R2500 AUTONOMOUS UNDERWATER VEHICLE SPAR"
+  },
+  {
+   "award_id": "N0002420F8164",
+   "recipient": "THE JOHNS HOPKINS UNIVERSITY APPLIED PHYSICS LABORATORY LLC",
+   "agency": "Department of the Navy",
+   "amount": 856000.0,
+   "start_date": "2020-09-28",
+   "bucket": "services_support",
+   "reason": "Services, sustainment or evaluation labour, not hardware procurement.",
+   "description": "UNMANNED UNDERWATER VEHICLE INDEPENDENT EVALUATIONS"
+  },
+  {
+   "award_id": "SPE8EL25FJ3DD",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 743386.82,
+   "start_date": "2025-07-29",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "4568935806!UNMANNED UNDERWATER VEHICLE (UUV) HARDWA"
+  },
+  {
+   "award_id": "SPE8EL23FJ1SL",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 735716.95,
+   "start_date": "2023-07-06",
+   "bucket": "components_spares",
+   "reason": "Component, spares and consumable hardware \u2014 the propulsion-subsystem slice.",
+   "description": "4561450382!UNMANNED UNDERWATER VEHICLE SUPPORT PACK"
+  },
+  {
+   "award_id": "N0002426C3058",
+   "recipient": "WHITE RIVER TECHNOLOGIES, INC.",
+   "agency": "Department of the Navy",
+   "amount": 693967.0,
+   "start_date": "2026-04-07",
+   "bucket": "rnd_program",
+   "reason": "Funded R&D. Relevant as demand signal; not a repeatable product line item.",
+   "description": "INNOVATIVE SIMULTANEOUS LOCALIZATION AND MAPPING TECHNIQUES FOR UNMANNED UNDERWATER VEHICLES"
+  },
+  {
+   "award_id": "N0002424F8521",
+   "recipient": "UNIVERSITY OF TEXAS AT AUSTIN",
+   "agency": "Department of the Navy",
+   "amount": 650000.0,
+   "start_date": "2024-03-29",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "MEDIUM UNMANNED UNDERWATER VEHICLE (UUV) CAPABILITIES PACKAGE"
+  },
+  {
+   "award_id": "SPE8EL23FJ0J2",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 568797.4,
+   "start_date": "2023-02-08",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "4559907199!UNMANNED UNDERWATER VEHICLE (UUV) HARDWA"
+  },
+  {
+   "award_id": "1305M324C0050",
+   "recipient": "UNIVERSITY OF WASHINGTON",
+   "agency": "National Oceanic and Atmospheric Administration",
+   "amount": 500324.0,
+   "start_date": "2024-09-05",
+   "bucket": "components_spares",
+   "reason": "Component, spares and consumable hardware \u2014 the propulsion-subsystem slice.",
+   "description": "THE PIFSC CRP SEEKS TO PROCURE TWO (2) SEAGLIDER SGX AUTONOMOUS UNDERWATER VEHICLES OUTFITTED WITH RBR LEGATO CTD, INCLUDING THE SHIPPING CASE, FIELD CRADLE, AN"
+  },
+  {
+   "award_id": "SPE8EL25FJ18G",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 474183.36,
+   "start_date": "2025-03-31",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "4567758148!UNMANNED UNDERWATER VEHICLE (UUV) HARDWA"
+  },
+  {
+   "award_id": "SPE8EL24FJ12X",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 457195.87,
+   "start_date": "2024-04-09",
+   "bucket": "launch_recovery",
+   "reason": "Launch-and-recovery hardware \u2014 adjacent to, but not, propulsion or payload.",
+   "description": "4564240065!UNMANNED UNDERWATER VEHICLE (UUV) LAUNCH"
+  },
+  {
+   "award_id": "SPE8EL22FJ0H8",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 447918.37,
+   "start_date": "2022-03-22",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "4556658995!SPECIALTY AUTONOMOUS UNDERWATER VEHICLE"
+  },
+  {
+   "award_id": "SPE8EL23FJ1WH",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 447400.0,
+   "start_date": "2023-07-20",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "4561621584!AUTONOMOUS UNDERWATER VEHICLE (AUV) HARD"
+  },
+  {
+   "award_id": "SPE8EL23FJ0YK",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 441332.5,
+   "start_date": "2023-03-31",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "4560479711!UNMANNED UNDERWATER VEHICLE (UUV) HARDWA"
+  },
+  {
+   "award_id": "N0018926PL047",
+   "recipient": "JAIA ROBOTICS INC",
+   "agency": "Department of the Navy",
+   "amount": 430821.57,
+   "start_date": "2026-04-14",
+   "bucket": "components_spares",
+   "reason": "Component, spares and consumable hardware \u2014 the propulsion-subsystem slice.",
+   "description": "JAIABOT MICRO-UNMANNED UNDERWATER VEHICLE (UUV), MULTI-VEHICLE PODS CAPABLE OF AUTONOMOUSLY COLLECTING HIGH RESOLUTION BIOGEOCHEMICAL, HYDROGRAPHIC SURVEY, AND "
+  },
+  {
+   "award_id": "N6133126F0040",
+   "recipient": "HII UNMANNED SYSTEMS, INC",
+   "agency": "Department of the Navy",
+   "amount": 430606.87,
+   "start_date": "2026-04-01",
+   "bucket": "services_support",
+   "reason": "Services, sustainment or evaluation labour, not hardware procurement.",
+   "description": "SUPPORT SERVICES ON TROUBLESHOOTING, MAINTENANCE, REPAIR, OPERATIONAL, TRAINING, TECHNICAL AND OVERALL SUPPORT FOR THE NOAA REMUS 620 UNMANNED UNDERWATER VEHICL"
+  },
+  {
+   "award_id": "140E0120C0004",
+   "recipient": "PHOENIX INTERNATIONAL HOLDINGS, INC.",
+   "agency": "Bureau of Safety and Environmental Enforcement",
+   "amount": 408855.45,
+   "start_date": "2020-03-05",
+   "bucket": "payload_deployment",
+   "reason": "Payload carriage or deployment hardware \u2014 the EPADS-relevant slice.",
+   "description": "\"AUTONOMOUS UNDERWATER VEHICLE DEPLOYABLE OIL SPILL IGNITER \"BSEE IGNITER\" - PHASE II.\""
+  },
+  {
+   "award_id": "140G0322P0093",
+   "recipient": "WOODS HOLE OCEANOGRAPHIC INSTITUTION",
+   "agency": "U.S. Geological Survey",
+   "amount": 400882.0,
+   "start_date": "2022-05-01",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "LEASE OF AN AUTONOMOUS UNDERWATER VEHICLE (AUV)"
+  },
+  {
+   "award_id": "N0002423F8361",
+   "recipient": "THE PENNSYLVANIA STATE UNIVERSITY",
+   "agency": "Department of the Navy",
+   "amount": 400000.0,
+   "start_date": "2023-09-12",
+   "bucket": "services_support",
+   "reason": "Services, sustainment or evaluation labour, not hardware procurement.",
+   "description": "UNMANNED UNDERWATER VEHICLE (UUV) EMPLOYMENT STUDY"
+  },
+  {
+   "award_id": "N6133125F0185",
+   "recipient": "HII UNMANNED SYSTEMS, INC",
+   "agency": "Department of the Navy",
+   "amount": 383151.12,
+   "start_date": "2025-09-19",
+   "bucket": "components_spares",
+   "reason": "Component, spares and consumable hardware \u2014 the propulsion-subsystem slice.",
+   "description": "MK18 UNMANNED UNDERWATER VEHICLE SYSTEM PARTS PURCHASE."
+  },
+  {
+   "award_id": "N0002425F8309",
+   "recipient": "THE PENNSYLVANIA STATE UNIVERSITY",
+   "agency": "Department of the Navy",
+   "amount": 350000.0,
+   "start_date": "2025-06-30",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "JOINT INTERMEDIATE FORCE CAPABILITIES OFFICE UNMANNED UNDERWATER VEHICLE"
+  },
+  {
+   "award_id": "SPE8EL24FJ1UJ",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 336306.32,
+   "start_date": "2024-06-13",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "4564909424!AUTONOMOUS UNDERWATER VEHICLE (AUV) PROB"
+  },
+  {
+   "award_id": "SPE8EL25FJ3L0",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 326800.0,
+   "start_date": "2025-08-05",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "4569006814!UNMANNED UNDERWATER VEHICLE (UUV) HARDWA"
+  },
+  {
+   "award_id": "SPE8EL25F19GH",
+   "recipient": "ATLANTIC DIVING SUPPLY, INC.",
+   "agency": "Defense Logistics Agency",
+   "amount": 319268.23,
+   "start_date": "2025-08-06",
+   "bucket": "sensors_payload_dev",
+   "reason": "Sensor or comms payload procurement \u2014 what an EPADS pod would carry.",
+   "description": "4569018567!UNMANNED UNDERWATER VEHICLE AND MAPPING"
+  },
+  {
+   "award_id": "140G0221P0143",
+   "recipient": "L3 TECHNOLOGIES INC",
+   "agency": "U.S. Geological Survey",
+   "amount": 303902.0,
+   "start_date": "2021-06-17",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "AUTONOMOUS UNDERWATER VEHICLE"
+  },
+  {
+   "award_id": "SPE8EL21FJ08Q",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 303348.94,
+   "start_date": "2021-05-05",
+   "bucket": "payload_deployment",
+   "reason": "Payload carriage or deployment hardware \u2014 the EPADS-relevant slice.",
+   "description": "4553442131!AUTONOMOUS UNDERWATER VEHICLE DEPLOYABLE"
+  },
+  {
+   "award_id": "N0002423F8358",
+   "recipient": "THE PENNSYLVANIA STATE UNIVERSITY",
+   "agency": "Department of the Navy",
+   "amount": 301000.0,
+   "start_date": "2023-06-06",
+   "bucket": "rnd_program",
+   "reason": "Funded R&D. Relevant as demand signal; not a repeatable product line item.",
+   "description": "PROTOTYPE CHEMICAL OXYGEN STORAGE SYSTEM FOR A FUEL CELL UNMANNED UNDERWATER VEHICLE (UUV)"
+  },
+  {
+   "award_id": "0689",
+   "recipient": "REDSTONE DEFENSE SYSTEMS",
+   "agency": "Department of the Army",
+   "amount": 294049.0,
+   "start_date": "2017-08-30",
+   "bucket": "rnd_program",
+   "reason": "Funded R&D. Relevant as demand signal; not a repeatable product line item.",
+   "description": "IGF::OT::IGF, THE PROTOTYPE INTEGRATION FACILITY (PIF) HAS A REQUIREMENT TO BUILD A LITHIUM-ION BATTERY CHARGING CONTAINER FOR THE NAVAL UNDERSEA WARFARE CENTER"
+  },
+  {
+   "award_id": "SPE8EL22FJ12Q",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 292786.38,
+   "start_date": "2022-06-16",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "4557598106!UNMANNED UNDERWATER VEHICLE (UUV) HARDWA"
+  },
+  {
+   "award_id": "SPE8EL23FJ1V1",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 275255.27,
+   "start_date": "2023-07-13",
+   "bucket": "launch_recovery",
+   "reason": "Launch-and-recovery hardware \u2014 adjacent to, but not, propulsion or payload.",
+   "description": "4561521935!UNMANNED UNDERWATER VEHICLE (UUV) LAUNCH"
+  },
+  {
+   "award_id": "N6600121P6621",
+   "recipient": "L3 TECHNOLOGIES INC",
+   "agency": "Department of the Navy",
+   "amount": 249990.0,
+   "start_date": "2021-09-20",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "AUTONOMOUS UNDERWATER VEHICLE (AUV)"
+  },
+  {
+   "award_id": "SPE8EL23FJ0CN",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 245438.51,
+   "start_date": "2023-01-06",
+   "bucket": "components_spares",
+   "reason": "Component, spares and consumable hardware \u2014 the propulsion-subsystem slice.",
+   "description": "4559540754!AUTONOMOUS UNDERWATER VEHICLE (AUV) RECO"
+  },
+  {
+   "award_id": "SPE8EL21FJ31N",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 238385.26,
+   "start_date": "2021-02-08",
+   "bucket": "payload_deployment",
+   "reason": "Payload carriage or deployment hardware \u2014 the EPADS-relevant slice.",
+   "description": "4552466093!AUTONOMOUS UNDERWATER VEHICLE DEPLOYABLE"
+  },
+  {
+   "award_id": "SPE8EL23FJ1XY",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 226212.76,
+   "start_date": "2023-07-22",
+   "bucket": "launch_recovery",
+   "reason": "Launch-and-recovery hardware \u2014 adjacent to, but not, propulsion or payload.",
+   "description": "4561637069!UNMANNED UNDERWATER VEHICLE (UUV) LAUNCH"
+  },
+  {
+   "award_id": "HR001122C0105",
+   "recipient": "INTEGER TECHNOLOGIES LLC",
+   "agency": "Defense Advanced Research Projects Agency",
+   "amount": 225000.0,
+   "start_date": "2022-04-01",
+   "bucket": "rnd_program",
+   "reason": "Funded R&D. Relevant as demand signal; not a repeatable product line item.",
+   "description": "REMOTE OPERATIONAL MONITORING UNIT LEVERAGING UUV SIMULATION (ROMULUS). UNMANNED UNDERWATER VEHICLE ANALYSIS AND FEASIBILITY TESTS."
+  },
+  {
+   "award_id": "140G0222P0203",
+   "recipient": "YSI INC",
+   "agency": "U.S. Geological Survey",
+   "amount": 215650.99,
+   "start_date": "2022-08-04",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "AUTONOMOUS UNDERWATER VEHICLE (AUV) SYSTEM"
+  },
+  {
+   "award_id": "SPE8EL22FJ06D",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 174463.83,
+   "start_date": "2022-01-27",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "4556103579!UNMANNED UNDERWATER VEHICLE (UUV) HARDWA"
+  },
+  {
+   "award_id": "1305M220PNCNS0428",
+   "recipient": "BAE SYSTEMS INFORMATION & ELECTRONIC SYSTEMS INTEGRATION INC",
+   "agency": "National Oceanic and Atmospheric Administration",
+   "amount": 172519.0,
+   "start_date": "2020-08-07",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "UNMANNED UNDERWATER VEHICLE"
+  },
+  {
+   "award_id": "SPE8EL23FJ2N5",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 172502.67,
+   "start_date": "2023-09-01",
+   "bucket": "components_spares",
+   "reason": "Component, spares and consumable hardware \u2014 the propulsion-subsystem slice.",
+   "description": "4562058027!AUTONOMOUS UNDERWATER VEHICLE CABLE 2.O"
+  },
+  {
+   "award_id": "SPE8EL23FJ005",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 169066.97,
+   "start_date": "2022-10-11",
+   "bucket": "components_spares",
+   "reason": "Component, spares and consumable hardware \u2014 the propulsion-subsystem slice.",
+   "description": "4558748126!UNMANNED UNDERWATER VEHICLE (UUV) TRAINE"
+  },
+  {
+   "award_id": "SPE8EL22FJ01V",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 167882.98,
+   "start_date": "2021-12-03",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "4555621505!UNMANNED UNDERWATER VEHICLE (UUV) HARDWA"
+  },
+  {
+   "award_id": "N6600125P6001",
+   "recipient": "L3 TECHNOLOGIES INC",
+   "agency": "Department of the Navy",
+   "amount": 165500.0,
+   "start_date": "2024-10-03",
+   "bucket": "payload_deployment",
+   "reason": "Payload carriage or deployment hardware \u2014 the EPADS-relevant slice.",
+   "description": "IVER3 AUTONOMOUS UNDERWATER VEHICLE, CASES, PAYLOAD, AND STAND."
+  },
+  {
+   "award_id": "0019",
+   "recipient": "THE JOHNS HOPKINS UNIVERSITY APPLIED PHYSICS LABORATORY LLC",
+   "agency": "Washington Headquarters Services",
+   "amount": 163114.84,
+   "start_date": "2015-08-24",
+   "bucket": "excluded_counter_uuv",
+   "reason": "Counter-UUV mission, i.e. defeating vehicles rather than buying them.",
+   "description": "IGF::CT::IGF SERVICES FOR PWS ENTITLED \"COUNTERING UNMANNED UNDERWATER VEHICLES, UNMANNED SURFACE VEHICLES, AND UNDERSEA INFRASTRUCTURE\""
+  },
+  {
+   "award_id": "SPE8EL25F13K4",
+   "recipient": "ATLANTIC DIVING SUPPLY, INC.",
+   "agency": "Defense Logistics Agency",
+   "amount": 161769.96,
+   "start_date": "2025-03-10",
+   "bucket": "sensors_payload_dev",
+   "reason": "Sensor or comms payload procurement \u2014 what an EPADS pod would carry.",
+   "description": "4567563037!UNMANNED UNDERWATER VEHICLE TACTICAL COM"
+  },
+  {
+   "award_id": "1305M321PNFFP0201",
+   "recipient": "JEFFREY S. ANDERSON",
+   "agency": "National Oceanic and Atmospheric Administration",
+   "amount": 157004.03,
+   "start_date": "2021-05-17",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "ASSIST IN OPERATION AND MAINTENANCE OF A SEABED AUTONOMOUS UNDERWATER VEHICLE (AUV) AS WELL AS ASSISTANCE IN ORGANIZING AND ANALYZING IMAGERY AND OTHER ASSOCIAT"
+  },
+  {
+   "award_id": "W911NF26CA003",
+   "recipient": "UNIVERSITY OF SYDNEY",
+   "agency": "Department of the Army",
+   "amount": 149979.5,
+   "start_date": "2026-01-01",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "AUTONOMOUS UNDERWATER VEHICLE (AUV)"
+  },
+  {
+   "award_id": "N5702326FA024",
+   "recipient": "AERMOR LLC",
+   "agency": "Department of the Navy",
+   "amount": 127296.8,
+   "start_date": "2026-04-02",
+   "bucket": "services_support",
+   "reason": "Services, sustainment or evaluation labour, not hardware procurement.",
+   "description": "UNMANNED UNDERWATER VEHICLE OPERATIONS CENTER (UUV OC)"
+  },
+  {
+   "award_id": "140M0122F0010",
+   "recipient": "APTIM FEDERAL SERVICES, LLC",
+   "agency": "Bureau of Ocean Energy Management",
+   "amount": 125633.0,
+   "start_date": "2022-02-01",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "MM-21-01 AUTONOMOUS UNDERWATER VEHICLES"
+  },
+  {
+   "award_id": "SPE8EL23FJ0SR",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 113079.57,
+   "start_date": "2023-03-10",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "4560240848!UNMANNED UNDERWATER VEHICLE (UUV) HARDWA"
+  },
+  {
+   "award_id": "SPE8EL23FJ1BT",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 112143.92,
+   "start_date": "2023-05-13",
+   "bucket": "components_spares",
+   "reason": "Component, spares and consumable hardware \u2014 the propulsion-subsystem slice.",
+   "description": "4560949158!UNMANNED UNDERWATER VEHICLE (UUV) MICRO"
+  },
+  {
+   "award_id": "1305M320PNRMA0462",
+   "recipient": "HIBBARD INSHORE, LLC",
+   "agency": "National Oceanic and Atmospheric Administration",
+   "amount": 108367.0,
+   "start_date": "2020-08-11",
+   "bucket": "rnd_program",
+   "reason": "Funded R&D. Relevant as demand signal; not a repeatable product line item.",
+   "description": "SABERTOOTH AUTONOMOUS UNDERWATER VEHICLE CAPABILITY DEMONSTRATION"
+  },
+  {
+   "award_id": "140G0221P0205",
+   "recipient": "THE SEXTON CORPORATION",
+   "agency": "U.S. Geological Survey",
+   "amount": 79904.0,
+   "start_date": "2021-08-26",
+   "bucket": "sensors_payload_dev",
+   "reason": "Sensor or comms payload procurement \u2014 what an EPADS pod would carry.",
+   "description": "PURCHASE OF TWO (2) CUSTOM CAMERA SYSTEMS FOR AUTONOMOUS UNDERWATER VEHICLES"
+  },
+  {
+   "award_id": "1305M325F0220",
+   "recipient": "CASE CONSULTANTS INTERNATIONAL LLC",
+   "agency": "National Oceanic and Atmospheric Administration",
+   "amount": 77000.0,
+   "start_date": "2025-09-19",
+   "bucket": "services_support",
+   "reason": "Services, sustainment or evaluation labour, not hardware procurement.",
+   "description": "THIS IS A TIME AND MATERIALS NON-PERSONAL SERVICE FOR EXPERT ANNOTATION OF IMAGERY COLLECTED BY AUTONOMOUS UNDERWATER VEHICLES (AUVS). THIS EXPERTISE IS ONLY NE"
+  },
+  {
+   "award_id": "1305M325P0263",
+   "recipient": "JEFFREY S. ANDERSON",
+   "agency": "National Oceanic and Atmospheric Administration",
+   "amount": 74000.0,
+   "start_date": "2025-09-17",
+   "bucket": "services_support",
+   "reason": "Services, sustainment or evaluation labour, not hardware procurement.",
+   "description": "SEABED AUTONOMOUS UNDERWATER VEHICLE (AUV) OPERATIONS AND MAINTENANCE FOR THE NORTHWEST FISHERIES SCIENCE CENTER (NWFSC)."
+  },
+  {
+   "award_id": "1305M223PNCNS0350",
+   "recipient": "ADVANCED NAVIGATION CORP.",
+   "agency": "National Oceanic and Atmospheric Administration",
+   "amount": 73249.0,
+   "start_date": "2023-09-06",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "AUTONOMOUS UNDERWATER VEHICLE (AUV)"
+  },
+  {
+   "award_id": "1305M324P0320",
+   "recipient": "JEFFREY S. ANDERSON",
+   "agency": "National Oceanic and Atmospheric Administration",
+   "amount": 71300.0,
+   "start_date": "2024-07-25",
+   "bucket": "platform_purchase",
+   "reason": "Purchase or lease of a complete vehicle.",
+   "description": "SCIENTIFIC AND TECHNICAL SUPPORT IN OPERATING A SEABED AUTONOMOUS UNDERWATER VEHICLE (AUV) OWNED BY NOAA NMFS."
+  },
+  {
+   "award_id": "SPE8EL24FJ1FG",
+   "recipient": "W S DARLEY & CO",
+   "agency": "Defense Logistics Agency",
+   "amount": 21619.05,
+   "start_date": "2024-05-15",
+   "bucket": "components_spares",
+   "reason": "Component, spares and consumable hardware \u2014 the propulsion-subsystem slice.",
+   "description": "4564639217!AUTONOMOUS UNDERWATER VEHICLE CABLE 2.1"
+  }
+ ]
+}
