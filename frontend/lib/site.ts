@@ -1,5 +1,5 @@
 /** Site-level constants. The repository URL is filled in once the repo exists. */
-export const REPO_URL = 'https://github.com/__GITHUB_OWNER__/ocean-frontier-radar';
+export const REPO_URL = 'https://github.com/smodi13/ocean-frontier-radar';
 
 export const AI_DISCLOSURE = [
   'This project was built with substantial AI assistance. Claude Code was used throughout: writing the ingestion, classification, entity-resolution and scoring code; building the export pipeline and this interface; debugging; organising research across phases; performing structured extraction and classification of award abstracts; and drafting and synthesising written analysis.',

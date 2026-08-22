@@ -160,7 +160,7 @@ export default function MethodologyPage() {
           <p className="body">
             The research pipeline, the export layer and this interface are open for inspection:{' '}
             <a href={REPO_URL} target="_blank" rel="noopener noreferrer" className="link">
-              github.com/ocean-frontier-radar
+              github.com/smodi13/ocean-frontier-radar
             </a>
             . Every figure on this site is generated from committed research artifacts.
           </p>
